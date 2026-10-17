@@ -4,6 +4,12 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Reel DeSArmKIhid (issue #2): FreeVideo, helpful with caveats
+- **Decision:** `ai/creative`, usefulness `helpful`, verdict `verified`. The tool is real and open source (checked on its GitHub README and a third-party wiki). The "no other tool does this" claim is filed as `misleading` in `hoax.md`, and the 4K/quality claim as `unverified` in the pending section, so the note is helpful overall but not uncritical.
+- **Source hierarchy:** the 8 GB "out of memory" chart is the project's own marketing, so it is treated as a vendor claim and compared against independent guides.
+- **Transcription fix:** the `base` model misheard this Hindi audio and printed confident English nonsense. `analyze_video.py` now detects non-English audio and redoes it with the `small` model, writing an English translation plus the original. The first pass is not used.
+- **Licence nuance:** the repo (primary source) says code is Apache-2.0 and weights use the MiniMax H3 Community License; the wiki said no licence was stated. The repo wins.
+
 ### Theme switch: System, Light or Dark
 - **Decision:** a three-way control at the top of Settings. System follows the phone and is the default; Light and Dark override it and are remembered on that phone. The page applies the saved choice before first paint, so there is no flash, and the browser's top bar colour follows the theme.
 - **How:** the dark colour tokens are defined once for the OS setting (unless Light is forced) and once for an explicit Dark choice, so each of the three states works whichever way the phone is set. Verified for all combinations in headless Chromium.

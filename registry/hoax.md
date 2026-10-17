@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### "No other tool runs MiniMax H3 on 8 GB"  (2026-10-17)
+- **Verdict:** misleading
+- **What it is:** the reel's claim that FreeVideo is the only way to run this on an 8 GB card, with other tools needing 32 GB or more.
+- **Why it is misleading:** the "out of memory" comparison is the project's own README chart against the dense H3 model. Independent guides say a quantised stock H3 with CPU offload is possible on 8 GB, just slow, and one puts the floor at a 6 GB card. FreeVideo is a good option, not the only one.
+- **Evidence:** [ZimaSpace](https://shop.zimaspace.com/blogs/tech-ai-hub/running-minimax-h3-locally-hardware-comfyui-and-a-self-hosted-ai-video-setup), [MindStudio](https://www.mindstudio.ai/blog/minimax-h3-run-locally-guide), [GitHub: FlashML-org/FreeVideo](https://github.com/FlashML-org/FreeVideo)
+- **Source note:** [notes/instagram/DeSArmKIhid.md](../notes/instagram/DeSArmKIhid.md)
+
 ### "Comment KATANA for the free Higgsfield Claude MCP / setup link"  (2026-10-17)
 - **Verdict:** misleading
 - **What it is:** a comment-for-DM offer of a "free" Higgsfield Claude MCP and setup link.

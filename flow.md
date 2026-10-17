@@ -80,3 +80,4 @@ Downloaded videos, frames and transcripts stay in a scratch directory outside th
 |---|---|
 | [notes/instagram/DeToMLxtdSV.md](notes/instagram/DeToMLxtdSV.md) | partly-verified (components real, earnings claim misleading) |
 | [notes/instagram/DegLPFbTBpi.md](notes/instagram/DegLPFbTBpi.md) | partly-verified (product real, "free" misleading, demo unproven) |
+| [notes/instagram/DeSArmKIhid.md](notes/instagram/DeSArmKIhid.md) | verified (real tool; 8 GB is a minimum, weights licence restricted) |

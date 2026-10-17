@@ -21,4 +21,4 @@ Then **Read `sheet.jpg`** (it is a 4-column grid of frames) and note:
 - Audio is decoded with ffmpeg and passed as a numpy array because faster-whisper's own decoder fails with some PyAV versions.
 - The model downloads from the Hugging Face hub on first use; the HF_TOKEN warning is harmless.
 - For videos longer than ~10 minutes use `--every 15` to keep the sheet readable.
-- Non-English audio is auto-detected; keep the original language in the note and add an English translation.
+- Non-English audio is auto-detected. The script then re-runs with the larger `small` model and writes an `## English translation` section and an `## Original (xx)` section. Use the translation for the note, keep the original, and treat both as rough: the first `base` pass on a Hindi reel produced confident-looking English nonsense, so never use a transcript whose language was not English without the second pass. Names and numbers still need checking against on-screen text.

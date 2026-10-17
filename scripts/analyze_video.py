@@ -48,8 +48,19 @@ def transcript(video, out):
     audio = np.frombuffer(raw, dtype=np.float32)
     model = WhisperModel("base", compute_type="int8")
     segs, info = model.transcribe(audio)
-    lines = [f"language: {info.language} ({info.language_probability:.2f})"]
-    lines += [f"[{s.start:.0f}s] {s.text.strip()}" for s in segs]
+    lang = info.language
+    lines = [f"language: {lang} ({info.language_probability:.2f})"]
+    if lang == "en":
+        lines += [f"[{s.start:.0f}s] {s.text.strip()}" for s in segs]
+    else:
+        # The base model garbles non-English speech. Redo it with the larger model, once in
+        # the original language and once translated to English (the translation is the
+        # readable one; the original is kept for names and checking).
+        model = WhisperModel("small", compute_type="int8")
+        for task, title in (("translate", "English translation"), ("transcribe", f"Original ({lang})")):
+            segs, _ = model.transcribe(audio, language=lang, task=task)
+            lines.append(f"## {title}")
+            lines += [f"[{s.start:.0f}s] {s.text.strip()}" for s in segs]
     (out / "transcript.txt").write_text("\n".join(lines) + "\n")
     print("\n".join(lines))
 

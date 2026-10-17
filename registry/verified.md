@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### FreeVideo: local MiniMax H3 (VDN-H3) video generation in ComfyUI  (2026-10-17)
+- **Verdict:** verified-with-caveats
+- **What it is:** an open-source local inference engine from FlashML that generates video (and audio) with a modified MiniMax H3 model (OpenVDN's 8-step VDN-H3) on consumer GPUs, as a ComfyUI plugin plus Windows launcher and Linux CLI.
+- **How to use / why it matters:** clone `FlashML-org/FreeVideo` into `ComfyUI/custom_nodes` (or use the Windows launcher / Linux `setup.sh`). Runs with as little as 8 GB VRAM and 16 GB RAM, no API key, so no per-video cost.
+- **Caveats:** 8 GB / 16 GB is the minimum, so expect heavy offloading and slow generation; it is not the stock H3 model; code is Apache-2.0 but the weights fall under the MiniMax H3 Community License (territorial and acceptable-use limits); Windows and Mac builds are previews; model packs are large (about 23 GB).
+- **Evidence:** [GitHub: FlashML-org/FreeVideo](https://github.com/FlashML-org/FreeVideo), [ComfyUI Wiki](https://comfyui-wiki.com/en/news/2026-10-04-freevideo-h3), [ZimaSpace on 8 GB limits](https://shop.zimaspace.com/blogs/tech-ai-hub/running-minimax-h3-locally-hardware-comfyui-and-a-self-hosted-ai-video-setup)
+- **Source note:** [notes/instagram/DeSArmKIhid.md](../notes/instagram/DeSArmKIhid.md)
+
 ### Higgsfield MCP connector and "Katana" skill for Claude  (2026-10-17)
 - **Verdict:** verified-with-caveats
 - **What it is:** Higgsfield's MCP server for Claude (`https://mcp.higgsfield.ai/mcp`) and "Katana", a skill that rebuilds a reference video (yours or a library preset) with up to five of your photos into a new MP4.
@@ -42,6 +50,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### FreeVideo gives 4K output with top speed and quality on 8 GB  (2026-10-17)
+- **Verdict:** unverified
+- **What it is:** the reel's "Free Unlimited 4K" banner and the claim that generation speed and quality are "number one" on 8 GB cards.
+- **Why pending:** the README says it unlocks 2K and 4K, but no benchmark or sample quality evidence for 8 GB was found, and third-party guides say low-VRAM setups are slow and softer.
+- **To resolve:** timings and output samples from an independent 8 GB user.
+- **Source note:** [notes/instagram/DeSArmKIhid.md](../notes/instagram/DeSArmKIhid.md)
 
 ### One prompt makes a full 15 s motion-graphics piece, no After Effects (Higgsfield Katana)  (2026-10-17)
 - **Verdict:** unverified
