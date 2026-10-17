@@ -1,0 +1,111 @@
+# Closed vocabulary for categorising links. The single source of truth.
+# A note picks ONE category (+ optional subcategory), optionally one location,
+# and may cross-list with `also`. scripts/build_index.py rejects anything not listed
+# here and rewrites aliases to the canonical key. To extend, edit this file (see the
+# categorize-link skill); to rename or merge, use scripts/taxonomy.py.
+
+categories:
+  ai:
+    label: AI
+    icon: spark
+    colors: ["#2dd4bf", "#3b82f6"]
+    aliases: [artificial-intelligence, genai, llm, ai-tools, ai-agents, ai-ideas]
+    about: Anything where AI is the point - tools, agents, ideas, creative use.
+    subcategories:
+      tools:      { label: Tools,      aliases: [ai-tool, apps, mcp, models] }
+      automation: { label: Automation, aliases: [agents, workflows, pipelines, youtube-automation] }
+      creative:   { label: Creative,   aliases: [video-generation, image-generation, motion-design, design, music-generation] }
+      ideas:      { label: Ideas,      aliases: [side-hustle, business-ideas, make-money-online, prompts] }
+  food:
+    label: Food
+    icon: fork
+    colors: ["#ff9f43", "#ff6b6b"]
+    aliases: [cooking, eating, restaurants]
+    about: Things to cook or eat.
+    subcategories:
+      recipes:  { label: Recipes,  aliases: [recipe, cooking, meal-prep] }
+      eateries: { label: Eateries, aliases: [restaurants, cafes, street-food, bars, food-places] }
+  places:
+    label: Places
+    icon: pin
+    colors: ["#34d399", "#0ea5e9"]
+    aliases: [travel, trips, destinations]
+    about: Where to go and stay. Pair with a location.
+    subcategories:
+      stays:  { label: Stays,  aliases: [hotels, hostels, resorts] }
+      sights: { label: Sights, aliases: [attractions, hikes, treks, things-to-do] }
+      events: { label: Events, aliases: [concerts, festivals, meetups] }
+  health:
+    label: Health & fitness
+    icon: heart
+    colors: ["#fb7185", "#f43f5e"]
+    aliases: [fitness, wellness]
+    about: Body and mind.
+    subcategories:
+      fitness:   { label: Fitness,   aliases: [workouts, gym, exercise] }
+      nutrition: { label: Nutrition, aliases: [diet, supplements] }
+      mind:      { label: Mind,      aliases: [mental-health, sleep, meditation] }
+  money:
+    label: Money
+    icon: coin
+    colors: ["#fbbf24", "#f59e0b"]
+    aliases: [finance]
+    about: Earning, saving, investing, business (not AI-specific; those are AI > Ideas).
+    subcategories:
+      investing: { label: Investing, aliases: [stocks, crypto, mutual-funds] }
+      saving:    { label: Saving,    aliases: [budgeting, tax, credit-cards] }
+      business:  { label: Business,  aliases: [startups, freelancing, marketing] }
+  tech:
+    label: Tech & dev
+    icon: code
+    colors: ["#94a3b8", "#475569"]
+    aliases: [technology, development, programming]
+    about: Software, gadgets and security outside the AI focus.
+    subcategories:
+      coding:  { label: Coding,  aliases: [programming, devtools, github, open-source] }
+      gadgets: { label: Gadgets, aliases: [phones, laptops, hardware] }
+      security: { label: Security, aliases: [privacy, hacking, scams] }
+  learning:
+    label: Learning & career
+    icon: book
+    colors: ["#a78bfa", "#7c3aed"]
+    aliases: [career, education, self-improvement]
+    about: Skills, jobs, productivity.
+    subcategories:
+      skills:       { label: Skills,       aliases: [courses, tutorials, languages] }
+      career:       { label: Career,       aliases: [jobs, interviews, resumes] }
+      productivity: { label: Productivity, aliases: [habits, notes, time-management] }
+  entertainment:
+    label: Entertainment
+    icon: play
+    colors: ["#f472b6", "#c026d3"]
+    aliases: [fun, memes]
+    about: For fun. Usually usefulness "noise".
+    subcategories:
+      humour: { label: Humour, aliases: [comedy, memes, skits] }
+      music:  { label: Music,  aliases: [songs, dance] }
+      sports: { label: Sports, aliases: [cricket, football, f1] }
+  other:
+    label: Other
+    icon: dots
+    colors: ["#a3a8b3", "#7d828f"]
+    aliases: [misc, uncategorized]
+    about: Last resort. Anything landing here should prompt extending this file.
+    subcategories: {}
+
+# Where a link is about, country then city. Optional on any note; independent of category.
+locations:
+  india:
+    label: India
+    aliases: [in, bharat]
+    cities:
+      delhi:   { label: Delhi,   aliases: [new-delhi, delhi-ncr, ncr] }
+      gurgaon: { label: Gurgaon, aliases: [gurugram] }
+  us:
+    label: US
+    aliases: [usa, united-states, america]
+    cities: {}
+  uk:
+    label: UK
+    aliases: [united-kingdom, britain, england]
+    cities: {}

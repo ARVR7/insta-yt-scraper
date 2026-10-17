@@ -20,10 +20,11 @@ fetch_status:
 verdict: partly-verified
 registry: registry/verified.md, registry/hoax.md
 title: Higgsfield Katana for Claude (motion graphics)
-topics: [ai-tools, video-generation, motion-design]
 tools: [higgsfield-mcp, katana]
 usefulness: mixed
 key_info: "Higgsfield MCP + Katana skill is real and works inside Claude, but it needs a paid Higgsfield plan (not free) and is a reference-video editing skill; the one-prompt motion-graphics demo is unproven."
+category: ai
+subcategory: creative
 ---
 
 # Higgsfield "Katana" for Claude: motion graphics without After Effects

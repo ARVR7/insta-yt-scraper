@@ -38,6 +38,8 @@ fact-check-claims  (WebSearch / WebFetch, primary sources)  -> "Research" table 
       v
 update-registries  -> registry/verified.md | registry/hoax.md | registry/sidequests.md
       v
+categorize-link -> category / subcategory / location / also, validated against taxonomy.yml
+      v
 update-library  -> scripts/build_index.py -> data/library.json + library/*.md (generated)
       v
 decision.md (why) + flow.md (what changed) -> commit -> push to main
@@ -56,11 +58,13 @@ decision.md (why) + flow.md (what changed) -> commit -> push to main
 | `scripts/fetch_instagram.py` | `<url> <outdir>` -> `meta.json`, `video.mp4`. |
 | `scripts/fetch_youtube.py` | `<url> <outdir> [--comments N]` -> `meta.json`, `comments.json`, `captions.*.vtt`, `video.mp4`; metadata survives a blocked download. |
 | `scripts/analyze_video.py` | `<video> <outdir> [--every N]` -> `frames/`, `sheet.jpg`, `transcript.txt`. |
-| `docs/` | Installable web app (GitHub Pages) with a Web Share Target. Three tabs: **Library** (search, usefulness filter; tap a card for a note with summary and what checks out), **Queue** (add a link; each link shows a Waiting / Working / Done track), **Claims** (verified, hoax, side quests as collapsible cards). Reads the repo through the GitHub API with a fine-grained token stored on the phone (Issues read/write, Contents read-only). |
-| `scripts/build_index.py` | Builds `data/library.json` and `library/` from note front matter. |
-| `data/library.json` | Generated index the app reads. |
-| `library/README.md`, `library/by-usefulness/`, `library/by-topic/` | Generated lists of every link with key info, grouped for reading on GitHub. |
-| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `update-library`, `analyze-comments`, `process-queue`. |
+| `docs/` | Installable web app (GitHub Pages) with a Web Share Target. Three tabs: **Library** (usefulness ring, a shelf of category tiles that drill into subcategories and locations, search; tap a card for a note with summary and what checks out), **Queue** (add a link; each link shows a Waiting / Working / Done track), **Claims** (verified, hoax, side quests as collapsible cards). Reads the repo through the GitHub API with a fine-grained token stored on the phone (Issues read/write, Contents read-only). |
+| `taxonomy.yml` | Closed vocabulary: categories with subcategories, aliases, icons and colours; locations (country, city). Single source of truth. |
+| `scripts/taxonomy.py` | Shared lookup code plus `check`, `merge-sub`, `merge-cat` and `rename-city` for keeping the taxonomy tidy as it grows. |
+| `scripts/build_index.py` | Validates notes against the taxonomy and builds `data/library.json`, `data/taxonomy.json` and `library/`. |
+| `data/library.json`, `data/taxonomy.json` | Generated index and vocabulary the app reads. |
+| `library/README.md`, `library/by-category/`, `library/by-location/`, `library/by-usefulness/` | Generated lists of every link with key info, grouped for reading on GitHub. |
+| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `categorize-link`, `update-library`, `analyze-comments`, `process-queue`. |
 | Link Inbox artifact | https://claude.ai/artifact/FLi1JREBRUV493gipCS5AG (source is not in the repo; it lives on claude.ai). |
 | `notes/instagram/<shortcode>.md` | One note per Instagram link. |
 | `notes/youtube/<video-id>.md` | One note per YouTube link. |

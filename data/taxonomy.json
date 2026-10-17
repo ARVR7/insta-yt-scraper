@@ -1,0 +1,224 @@
+{
+  "categories": [
+    {
+      "key": "ai",
+      "label": "AI",
+      "icon": "spark",
+      "colors": [
+        "#2dd4bf",
+        "#3b82f6"
+      ],
+      "subcategories": [
+        {
+          "key": "tools",
+          "label": "Tools"
+        },
+        {
+          "key": "automation",
+          "label": "Automation"
+        },
+        {
+          "key": "creative",
+          "label": "Creative"
+        },
+        {
+          "key": "ideas",
+          "label": "Ideas"
+        }
+      ]
+    },
+    {
+      "key": "food",
+      "label": "Food",
+      "icon": "fork",
+      "colors": [
+        "#ff9f43",
+        "#ff6b6b"
+      ],
+      "subcategories": [
+        {
+          "key": "recipes",
+          "label": "Recipes"
+        },
+        {
+          "key": "eateries",
+          "label": "Eateries"
+        }
+      ]
+    },
+    {
+      "key": "places",
+      "label": "Places",
+      "icon": "pin",
+      "colors": [
+        "#34d399",
+        "#0ea5e9"
+      ],
+      "subcategories": [
+        {
+          "key": "stays",
+          "label": "Stays"
+        },
+        {
+          "key": "sights",
+          "label": "Sights"
+        },
+        {
+          "key": "events",
+          "label": "Events"
+        }
+      ]
+    },
+    {
+      "key": "health",
+      "label": "Health & fitness",
+      "icon": "heart",
+      "colors": [
+        "#fb7185",
+        "#f43f5e"
+      ],
+      "subcategories": [
+        {
+          "key": "fitness",
+          "label": "Fitness"
+        },
+        {
+          "key": "nutrition",
+          "label": "Nutrition"
+        },
+        {
+          "key": "mind",
+          "label": "Mind"
+        }
+      ]
+    },
+    {
+      "key": "money",
+      "label": "Money",
+      "icon": "coin",
+      "colors": [
+        "#fbbf24",
+        "#f59e0b"
+      ],
+      "subcategories": [
+        {
+          "key": "investing",
+          "label": "Investing"
+        },
+        {
+          "key": "saving",
+          "label": "Saving"
+        },
+        {
+          "key": "business",
+          "label": "Business"
+        }
+      ]
+    },
+    {
+      "key": "tech",
+      "label": "Tech & dev",
+      "icon": "code",
+      "colors": [
+        "#94a3b8",
+        "#475569"
+      ],
+      "subcategories": [
+        {
+          "key": "coding",
+          "label": "Coding"
+        },
+        {
+          "key": "gadgets",
+          "label": "Gadgets"
+        },
+        {
+          "key": "security",
+          "label": "Security"
+        }
+      ]
+    },
+    {
+      "key": "learning",
+      "label": "Learning & career",
+      "icon": "book",
+      "colors": [
+        "#a78bfa",
+        "#7c3aed"
+      ],
+      "subcategories": [
+        {
+          "key": "skills",
+          "label": "Skills"
+        },
+        {
+          "key": "career",
+          "label": "Career"
+        },
+        {
+          "key": "productivity",
+          "label": "Productivity"
+        }
+      ]
+    },
+    {
+      "key": "entertainment",
+      "label": "Entertainment",
+      "icon": "play",
+      "colors": [
+        "#f472b6",
+        "#c026d3"
+      ],
+      "subcategories": [
+        {
+          "key": "humour",
+          "label": "Humour"
+        },
+        {
+          "key": "music",
+          "label": "Music"
+        },
+        {
+          "key": "sports",
+          "label": "Sports"
+        }
+      ]
+    },
+    {
+      "key": "other",
+      "label": "Other",
+      "icon": "dots",
+      "colors": [
+        "#a3a8b3",
+        "#7d828f"
+      ],
+      "subcategories": []
+    }
+  ],
+  "locations": [
+    {
+      "key": "india",
+      "label": "India",
+      "cities": [
+        {
+          "key": "delhi",
+          "label": "Delhi"
+        },
+        {
+          "key": "gurgaon",
+          "label": "Gurgaon"
+        }
+      ]
+    },
+    {
+      "key": "us",
+      "label": "US",
+      "cities": []
+    },
+    {
+      "key": "uk",
+      "label": "UK",
+      "cities": []
+    }
+  ]
+}

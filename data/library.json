@@ -7,11 +7,13 @@
     "author": "visionaryclown.tv",
     "posted": "2026-10-15 05:16:43+00:00",
     "type": "reel",
-    "topics": [
-      "ai-tools",
-      "video-generation",
-      "motion-design"
-    ],
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
     "tools": [
       "higgsfield-mcp",
       "katana"
@@ -29,11 +31,13 @@
     "author": "aiwithsanskar",
     "posted": "2026-10-10 08:29:51+00:00",
     "type": "reel",
-    "topics": [
-      "ai-tools",
-      "youtube-automation",
-      "make-money-online"
-    ],
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "automation",
+    "subcategory_label": "Automation",
+    "location": null,
+    "location_label": null,
+    "also": [],
     "tools": [
       "edge-tts",
       "pexels-api",

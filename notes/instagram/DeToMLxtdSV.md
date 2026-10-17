@@ -18,10 +18,11 @@ fetch_status:
 verdict: partly-verified
 registry: registry/verified.md, registry/hoax.md
 title: Free agentic AI YouTube studio (faceless channel automation)
-topics: [ai-tools, youtube-automation, make-money-online]
 tools: [edge-tts, pexels-api, gemini-api]
 usefulness: mixed
 key_info: "Real free building blocks (Edge TTS, Pexels API, Gemini free tier) but the specific repo is unverified and the autopilot-income claim is misleading; YouTube demonetizes mass-produced AI channels."
+category: ai
+subcategory: automation
 ---
 
 # Agentic AI YouTube studio (free, open source) – "comment TUBE"

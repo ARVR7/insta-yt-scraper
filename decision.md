@@ -4,6 +4,18 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Smart categorisation: a closed taxonomy with two axes
+- **Decision:** `taxonomy.yml` lists categories, their subcategories, aliases, icons and colours, plus locations (country, then city). Each note has one `category`, a `subcategory` (required when the category has any), an optional `location` and an optional `also` cross-list. The free-form `topics` field is removed.
+- **Why:** free tags fragment (`ai-tools`, `video-generation`, `ai-ideas` would have become three AI categories). A closed list, validated at build time, makes that impossible: unknown values fail the build and aliases (`artificial-intelligence`, `Gurugram`) are rewritten to the canonical key.
+- **Two axes:** "what is it about" (category) is separate from "where" (location). A Delhi cafe is Food > Eateries in Delhi and a Delhi trip is Places in Delhi, so nothing is filed twice. Places shows its locations as groups, which gives Delhi, Gurgaon, US and UK as asked.
+- **One AI category:** all AI content is `ai` with subcategories tools, automation, creative, ideas. Non-AI money and business content is `money`.
+- **Locations are only recorded when stated** in the caption, on-screen text or audio. They are never guessed.
+- **Cross-listing:** one primary category drives counts; `also` lists a link under a second category without double counting it.
+- **Growth:** `scripts/taxonomy.py` merges or renames subcategories, categories and cities across all notes, so a poor early split is one command to fix. New values are added to `taxonomy.yml` under the `categorize-link` rules and logged here.
+- **Starting set:** AI, Food, Places, Health & fitness, Money, Tech & dev, Learning & career, Entertainment, Other (capped; use means the taxonomy needs extending). Cities: Delhi and Gurgaon under India; US and UK as countries.
+- **Migration:** the two existing reels became `ai/automation` (free AI YouTube studio) and `ai/creative` (Higgsfield Katana).
+- **App:** the Library shows a shelf of category tiles with counts; choosing one reveals subcategory chips, then location chips (country, then city). The usefulness ring still filters independently.
+
 ### Visual redesign: liquid glass over an aurora gradient
 - **Decision:** the app now follows the iOS "liquid glass" direction: frosted translucent panels over a soft aurora gradient, big bold titles, squircle icon tiles whose gradient and glyph encode usefulness (check, wave, cross, dot), a floating pill tab bar, an iOS-style segmented control for Claims, and notes that open as a bottom sheet with a grabber. Dark mode follows the system setting.
 - **The ring:** the Library header is an activity-ring style donut split by usefulness; tapping a segment or a count filters the list. It replaces the row of filter chips, so there is less text, not more.

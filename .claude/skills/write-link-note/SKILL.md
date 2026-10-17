@@ -28,7 +28,10 @@ fetch_status:
   transcript: ok (tool, auto-generated) | none
   on_screen_text: read from frames | n/a
 title: <short descriptive title>
-topics: [ai-tools, video-generation]   # reuse tags from library/by-topic/
+category: ai                            # from taxonomy.yml, see categorize-link
+subcategory: automation
+location: india/delhi                   # optional, only if stated in the video
+also: []                                # optional cross-listing, e.g. [money/investing]
 tools: [named-tool-or-repo]             # optional
 usefulness: helpful | mixed | misleading | noise   # see update-library
 key_info: "<1-2 sentences: what it is and the most important caveat>"
@@ -49,7 +52,7 @@ registry: <link to the entry in registry/*.md>
 
 Rules:
 - Quote `key_info` and any front matter value containing `:` or `#` so the YAML stays valid.
-- Fill `title`, `topics`, `usefulness` and `key_info` after the research is done; `scripts/build_index.py` refuses notes without them.
+- Fill `title`, `category`, `subcategory`, `usefulness` and `key_info` after the research is done; `scripts/build_index.py` refuses notes without them.
 - Record what could not be fetched in `fetch_status` and the caveats; never fill a gap with a guess.
 - Quote the transcript lightly cleaned; mark guesses with `[?]`.
 - Keep the author's claims separate from your verdicts: the note's top sections say what the video says, `## Research` says what is true.

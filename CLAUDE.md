@@ -9,3 +9,4 @@ When the user shares an instagram.com or youtube.com / youtu.be link, use the `p
 - Do not ask for or use the user's Instagram/YouTube cookies.
 
 - Links can also arrive through the Link Inbox artifact (https://claude.ai/artifact/FLi1JREBRUV493gipCS5AG). When the user says to process the queue, use the `process-queue` skill.
+- Categories come only from `taxonomy.yml` (see the `categorize-link` skill). Never add free-form tags; extend the taxonomy instead and log it in `decision.md`.

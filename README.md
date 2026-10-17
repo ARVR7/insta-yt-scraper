@@ -3,7 +3,8 @@
 Share an Instagram reel/post or a YouTube video/short; get a markdown note, a fact-check, and an entry in a registry of verified tools or hoaxes.
 
 - `notes/` - one note per link
-- `library/` and `data/` - generated lists and index (by usefulness, by topic)
+- `taxonomy.yml` - the closed list of categories, subcategories and locations
+- `library/` and `data/` - generated lists and index (by category, location, usefulness)
 - `docs/` - the phone app (share target, queue, library, claims)
 - `registry/` - `verified.md`, `hoax.md`, `sidequests.md`
 - `.claude/skills/` - the reusable operations (start at `process-link`)
