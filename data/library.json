@@ -72,5 +72,26 @@
     "verdict": "verified",
     "key_info": "FreeVideo is a real, Apache-2.0 ComfyUI engine that runs a modified MiniMax H3 (VDN-H3) video model locally on 8 GB VRAM, but 8 GB is the minimum, it will be slow, and the model weights carry a restrictive community licence.",
     "note_path": "notes/instagram/DeSArmKIhid.md"
+  },
+  {
+    "id": "R4yihx8sEO8",
+    "platform": "youtube",
+    "url": "https://www.youtube.com/shorts/R4yihx8sEO8",
+    "title": "Arnold on the best tricep exercise",
+    "author": "PumpCrib",
+    "posted": "2026-04-24",
+    "type": "short",
+    "category": "health",
+    "category_label": "Health & fitness",
+    "subcategory": "fitness",
+    "subcategory_label": "Fitness",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "tools": [],
+    "usefulness": "mixed",
+    "verdict": "pending",
+    "key_info": "Clip repost of Arnold Schwarzenegger explaining his pick for the best tricep exercise. Video and audio could not be fetched, so the exercise named is not recorded.",
+    "note_path": "notes/youtube/R4yihx8sEO8.md"
   }
 ]

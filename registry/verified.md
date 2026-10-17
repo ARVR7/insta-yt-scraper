@@ -51,6 +51,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Arnold's best tricep exercise (PumpCrib short)  (2026-10-17)
+- **Verdict:** unverified
+- **What it is:** Short titled 'ARNOLD explains the BEST tricep exercise!'
+- **Why pending:** Video and audio could not be fetched, so the named exercise was never read.
+- **To resolve:** Paste the transcript or watch the source video at 6515s.
+- **Source note:** [notes/youtube/R4yihx8sEO8.md](../notes/youtube/R4yihx8sEO8.md)
+
 ### FreeVideo gives 4K output with top speed and quality on 8 GB  (2026-10-17)
 - **Verdict:** unverified
 - **What it is:** the reel's "Free Unlimited 4K" banner and the claim that generation speed and quality are "number one" on 8 GB cards.
