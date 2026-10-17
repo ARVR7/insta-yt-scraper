@@ -2,6 +2,15 @@
 
 How a shared link becomes notes and registry entries, and what lives where. Update this file whenever a script, skill or folder is added or changed.
 
+## Entry points
+
+```
+Link Inbox page (claude.ai artifact, db collection `links`) --user asks--> process-queue --> process-link (per link)
+chat message with a link ------------------------------------------------> process-link
+```
+
+The page only queues links and shows results; it cannot run scrapers or wake Claude. `process-queue` reads queued rows with `ArtifactData`, runs the pipeline, and writes status, verdict, summary and the note URL back so the page shows them.
+
 ## Pipeline
 
 ```
@@ -42,7 +51,8 @@ decision.md (why) + flow.md (what changed) -> commit -> push to main
 | `scripts/fetch_instagram.py` | `<url> <outdir>` -> `meta.json`, `video.mp4`. |
 | `scripts/fetch_youtube.py` | `<url> <outdir> [--comments N]` -> `meta.json`, `comments.json`, `captions.*.vtt`, `video.mp4`; metadata survives a blocked download. |
 | `scripts/analyze_video.py` | `<video> <outdir> [--every N]` -> `frames/`, `sheet.jpg`, `transcript.txt`. |
-| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`. |
+| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `process-queue`. |
+| Link Inbox artifact | https://claude.ai/artifact/FLi1JREBRUV493gipCS5AG (source is not in the repo; it lives on claude.ai). |
 | `notes/instagram/<shortcode>.md` | One note per Instagram link. |
 | `notes/youtube/<video-id>.md` | One note per YouTube link. |
 | `registry/verified.md` | Verified tools, hacks and facts, plus a Pending verification section. |

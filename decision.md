@@ -4,6 +4,12 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Link Inbox is a claude.ai artifact with a db queue, not a public website
+- **Decision:** a private artifact with the `db` capability holds the queue; `process-queue` reads and updates it through `ArtifactData`.
+- **Why:** a public site that triggers scrapers needs a server, and anything that writes to the repo needs a token exposed to the browser. The artifact gives login-protected writes, live status for the user, and no secrets. The GitHub-issue-as-queue alternative was rejected because the page could not show results without a server.
+- **Limit:** the page cannot wake Claude, because DB writes do not notify a session. Links are processed when the user asks (a "Copy request" button helps) or when a scheduled task is set up. I did not set up a recurring task without the user's say-so.
+- **Seed row:** the first reel was added as `done` so the page opens in a real working state. Its timestamps were approximate, not real clock times.
+
 ### Comment analysis added as a lead-finder, not a source
 - **Decision:** new `analyze-comments` skill; `fetch_youtube.py --comments N` saves comments; Instagram comments are taken only if the user pastes them or sends a screenshot.
 - **Why:** the user said comments may hold useful info but are mostly fake. `instaloader` raises `LoginRequiredException` for comments, and cookies are off the table, so anonymous Instagram comments are impossible. Comments only suggest leads (a repo link, a correction) that still go through `fact-check-claims`; keyword-only replies are treated as funnel noise.

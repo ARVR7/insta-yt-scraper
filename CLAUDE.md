@@ -7,3 +7,5 @@ When the user shares an instagram.com or youtube.com / youtu.be link, use the `p
 - Log non-obvious choices in `decision.md` and structural changes in `flow.md`.
 - Never claim something is fake just because it could not be found; use "unverified".
 - Do not ask for or use the user's Instagram/YouTube cookies.
+
+- Links can also arrive through the Link Inbox artifact (https://claude.ai/artifact/FLi1JREBRUV493gipCS5AG). When the user says to process the queue, use the `process-queue` skill.
