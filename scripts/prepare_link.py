@@ -240,7 +240,10 @@ def main():
             duration = round(float(d)) if d else duration
         except Exception:
             pass
-        run([sys.executable, str(HERE / "analyze_video.py"), str(video), str(out), "--ocr"], out / "analyze.log")
+        acode = run([sys.executable, str(HERE / "analyze_video.py"), str(video), str(out), "--ocr"], out / "analyze.log")
+        if acode != 0 or not (out / "transcript.txt").exists():
+            tail = [l for l in (out / "analyze.log").read_text().strip().splitlines() if l.strip()][-1:] or ["no output"]
+            gaps.append("ANALYSIS FAILED (video downloaded but frames/transcript/OCR missing): " + tail[0][:200])
         tp = out / "transcript.txt"
         transcript = tp.read_text() if tp.exists() else ""
         m = re.match(r"language: (\w+)", transcript)

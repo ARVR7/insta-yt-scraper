@@ -15,6 +15,11 @@ verdict.json (written by Claude; short):
     "summary": "...", "research": [["claim", "verdict", "evidence with [links](https://...)"]],
     "overall": "...", "caveats": ["...", "..."]
   },
+  "recipe": {                                     # REQUIRED for food/recipes: input for scripts/recipe_card.py
+    "title": "...", "servings": 2, "time": {"prep": 10, "cook": 15},
+    "ingredients": [{"name": "paneer", "qty": 200, "unit": "g"}], "steps": ["..."], "tips": [],
+    "claimed": {"kcal": 450, "protein": 35}                # only if the video states macros
+  },
   "overwrite": false,                             # true only to redo an existing note
   # (or give "note": "notes/instagram/<id>.md" for a note you already wrote by hand)
   "entries": [                                    # claim-level registry entries
@@ -168,7 +173,19 @@ def write_note(v):
     secs = sorted({e["section"] for e in v.get("entries", [])})
     reg = ", ".join(sorted({FILES[x] for x in secs})) or f.get("registry") or "none"
     q = json.dumps
+    recipe_md = ""
+    if f.get("category") == "food" and f.get("subcategory") == "recipes" and not v.get("recipe"):
+        fail("food/recipes notes need a \"recipe\" object (ingredients with amounts, steps) so macros and the recipe card can be built")
     fm_extra = ""
+    if v.get("recipe"):
+        import recipe_card
+        card = recipe_card.build(v["recipe"], id_=f"{platform}_{vid}")
+        card["source"] = card.get("source") or {"url": meta["url"], "author": meta.get("author")}
+        rp = ROOT / "recipes" / f"{platform}_{vid}.json"
+        rp.parent.mkdir(exist_ok=True)
+        rp.write_text(json.dumps(card, indent=1, ensure_ascii=False) + "\n", encoding="utf8")
+        recipe_md = recipe_card.to_markdown(card)
+        fm_extra += f"recipe: {q(str(rp.relative_to(ROOT)))}\n"
     if f.get("location"):
         fm_extra += f"location: {q(f['location'])}\n"
     if f.get("also"):
@@ -186,6 +203,8 @@ def write_note(v):
         out = re.sub(pat, lambda m, val=val: val, out, count=1, flags=re.M)
     for head, key in (("## Hook (on-screen text)", "hook"), ("## Call to action", "cta"), ("## What is shown on screen", "on_screen"), ("## Summary", "summary")):
         out = out.replace(f"{head}\nTODO", f"{head}\n{f.get(key) or 'None.'}", 1)
+    if recipe_md:
+        out = out.replace("## Research (checked", recipe_md + "\n## Research (checked", 1)
     rows = "\n".join("| " + " | ".join(str(c).replace("|", "/") for c in r) + " |" for r in f["research"])
     out = out.replace("| TODO | TODO | TODO |", rows, 1)
     out = out.replace("- TODO", "\n".join(f"- {c}" for c in (f.get("caveats") or ["None."])), 1)

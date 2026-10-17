@@ -14,6 +14,7 @@
     "location": null,
     "location_label": null,
     "also": [],
+    "recipe": null,
     "tools": [
       "higgsfield-mcp",
       "katana"
@@ -38,6 +39,7 @@
     "location": null,
     "location_label": null,
     "also": [],
+    "recipe": null,
     "tools": [
       "edge-tts",
       "pexels-api",
@@ -63,6 +65,7 @@
     "location": null,
     "location_label": null,
     "also": [],
+    "recipe": null,
     "tools": [
       "freevideo",
       "minimax-h3",
@@ -88,6 +91,7 @@
     "location": null,
     "location_label": null,
     "also": [],
+    "recipe": null,
     "tools": [
       "grok-bot"
     ],
@@ -111,6 +115,7 @@
     "location": null,
     "location_label": null,
     "also": [],
+    "recipe": null,
     "tools": [],
     "usefulness": "mixed",
     "verdict": "pending",

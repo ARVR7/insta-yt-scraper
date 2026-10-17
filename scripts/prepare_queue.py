@@ -80,6 +80,9 @@ def main():
         print(f"#{it['number']} {platform} {vid}: exit {r.returncode}: {(r.stdout or r.stderr).strip().splitlines()[0][:200] if (r.stdout or r.stderr).strip() else ''}")
         if r.returncode != 0:
             continue
+        if "ANALYSIS FAILED" in (out / "brief.md").read_text():
+            print("  not committed, will retry next run:", [l for l in (out / "brief.md").read_text().splitlines() if "ANALYSIS FAILED" in l][0][:300])
+            continue
         dest.mkdir(parents=True, exist_ok=True)
         for name in KEEP:
             if (out / name).exists():

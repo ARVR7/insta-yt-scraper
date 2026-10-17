@@ -71,6 +71,15 @@ def read_note(path, tax):
     loc_label = None
     if country:
         loc_label = locs[country]["label"] if not city else f"{locs[country]['cities'][city]['label']}, {locs[country]['label']}"
+    recipe = None
+    if meta.get("recipe"):
+        rp = ROOT / meta["recipe"]
+        if not rp.exists():
+            fail(path, f"recipe file {meta['recipe']} is missing")
+        card = json.loads(rp.read_text(encoding="utf8"))
+        ps = card["macros"]["per_serving"]
+        recipe = {"path": meta["recipe"], "servings": card["servings"], "kcal": ps["kcal"], "protein": ps["protein"],
+                  "carbs": ps["carbs"], "fat": ps["fat"], "diet": card["diet"]}
     return {
         "id": path.stem,
         "platform": meta["platform"],
@@ -86,6 +95,7 @@ def read_note(path, tax):
         "location": loc,
         "location_label": loc_label,
         "also": also,
+        "recipe": recipe,
         "tools": meta.get("tools") or [],
         "usefulness": meta["usefulness"],
         "verdict": meta["verdict"],
