@@ -157,6 +157,15 @@
   .cat .l { font-size: 12px; font-weight: 700; text-align: center; line-height: 1.15; }
   .cat .n { font-size: 11px; color: var(--ink-3); font-weight: 700; margin-top: -3px; }
   .cat[aria-pressed="true"] .tile { box-shadow: 0 0 0 3px var(--canvas), 0 0 0 5.5px var(--c2); }
+  .fbtn { position: relative; flex: none; width: 52px; height: 52px; }
+  .fbtn svg { fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
+  .fbadge { position: absolute; top: 2px; right: 2px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--cta-bg); color: var(--cta-fg); font-size: 11px; font-weight: 800; line-height: 18px; text-align: center; }
+  .flabel { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 18px 0 8px; }
+  .fbody .chips { gap: 8px; }
+  .sel { width: 100%; padding: 14px 16px; border-radius: 16px; font: 600 15px var(--font); color: var(--ink); background: var(--glass); border: 1px solid var(--glass-line); }
+  .fbar { position: sticky; bottom: calc(-40px - env(safe-area-inset-bottom)); display: flex; gap: 10px; align-items: center; margin: 22px -20px calc(-40px - env(safe-area-inset-bottom)); padding: 14px 20px calc(18px + env(safe-area-inset-bottom)); background: var(--glass-strong); border-top: 1px solid var(--hairline); }
+  .cta.wide { flex: 1; }
+  .sheet.filters { display: flex; flex-direction: column; } .sheet.filters .fbody { flex: 1; }
   .chips.scroll { flex-wrap: nowrap; overflow-x: auto; margin: 0 -18px; padding: 0 18px 2px; scrollbar-width: none; }
   .chips.scroll .chip { flex: none; }
   .chip[aria-pressed="true"] { background: var(--cta-bg); color: var(--cta-fg); border-color: transparent; }
@@ -219,7 +228,7 @@
   var ORDER = ["helpful", "mixed", "misleading", "noise"];
   var $ = function (id) { return document.getElementById(id); };
   var view = $("view"), sheet = $("sheet"), scrim = $("scrim");
-  var state = { library: null, filter: { q: "", usefulness: "", category: "", sub: "", loc: "" }, tax: null, flash: null, timer: null, refresh: false, tab: null };
+  var state = { library: null, filter: { q: "", usefulness: "", category: "", sub: "", loc: "", platform: "", author: "", tool: "", since: "", sort: "new" }, tax: null, flash: null, timer: null, refresh: false, tab: null };
   var SVGNS = "http://www.w3.org/2000/svg";
 
   /* ---------- storage and API ---------- */
@@ -434,6 +443,70 @@
     return (i.also || []).indexOf(sub ? cat + "/" + sub : cat) >= 0 || (!sub && (i.also || []).some(function (a) { return a.split("/")[0] === cat; }));
   }
   function inLoc(i, loc) { return !!i.location && (i.location === loc || i.location.indexOf(loc + "/") === 0); }
+  var RANK = { helpful: 0, mixed: 1, misleading: 2, noise: 3 };
+  var SINCE = [["", "Any time"], ["7", "Last 7 days"], ["30", "Last 30 days"], ["365", "This year"]];
+  function matches(i, f) {
+    if (f.usefulness && i.usefulness !== f.usefulness) return false;
+    if (f.category && !inCat(i, f.category, f.sub)) return false;
+    if (f.loc && !inLoc(i, f.loc)) return false;
+    if (f.platform && i.platform !== f.platform) return false;
+    if (f.author && i.author !== f.author) return false;
+    if (f.tool && (i.tools || []).indexOf(f.tool) < 0) return false;
+    if (f.since) { var t = Date.parse(i.posted); if (!isNaN(t) && Date.now() - t > Number(f.since) * 86400000) return false; }
+    var needle = f.q.trim().toLowerCase();
+    return !needle || [i.title, i.author, i.key_info, i.category_label, i.subcategory_label, i.location_label, (i.tools || []).join(" ")].join(" ").toLowerCase().indexOf(needle) >= 0;
+  }
+  function sortItems(arr, mode) {
+    var by = function (a, b) { return String(b.posted).localeCompare(String(a.posted)); };
+    return arr.slice().sort(mode === "old" ? function (a, b) { return -by(a, b); } : mode === "useful" ? function (a, b) { return (RANK[a.usefulness] - RANK[b.usefulness]) || by(a, b); } : by);
+  }
+  function activeFilters(f) {
+    var out = [];
+    if (f.platform) out.push([plat(f.platform), "platform"]);
+    if (f.author) out.push([f.author, "author"]);
+    if (f.tool) out.push([f.tool, "tool"]);
+    if (f.since) out.push([(SINCE.filter(function (x) { return x[0] === f.since; })[0] || [0, ""])[1], "since"]);
+    if (f.sort !== "new") out.push([f.sort === "old" ? "Oldest first" : "Most useful first", "sort"]);
+    return out;
+  }
+  function resetFilter(f, k) { f[k] = k === "sort" ? "new" : ""; }
+  function openFilters(lib, f, onChange) {
+    sheet.textContent = ""; sheet.classList.add("filters"); sheet.appendChild(el("div", "grab"));
+    var x = el("button", "round glass close"); x.type = "button"; x.setAttribute("aria-label", "Close"); x.appendChild(svg([["path", { d: "M6 6l12 12M18 6L6 18" }]]));
+    x.addEventListener("click", function () { closeSheet(false); }); sheet.appendChild(x);
+    sheet.appendChild(el("h2", "", "Filters")); sheet.lastChild.style.marginBottom = "18px";
+    var body = el("div", "fbody"); sheet.appendChild(body);
+    var cta = el("button", "cta wide"); cta.type = "button"; cta.addEventListener("click", function () { closeSheet(false); });
+    var bar = el("div", "fbar"); var reset = el("button", "chip", "Reset"); reset.type = "button";
+    reset.addEventListener("click", function () { ["platform", "author", "tool", "since", "sort", "usefulness"].forEach(function (k) { resetFilter(f, k); }); onChange(); build(); });
+    bar.appendChild(reset); bar.appendChild(cta); sheet.appendChild(bar);
+    function row(title, opts, key) {
+      body.appendChild(el("div", "flabel", title));
+      var r = el("div", "chips");
+      opts.forEach(function (o) { var b = el("button", "chip", o[1]); b.type = "button"; b.setAttribute("aria-pressed", f[key] === o[0] ? "true" : "false"); b.addEventListener("click", function () { f[key] = f[key] === o[0] && o[0] !== "" && key !== "sort" ? "" : o[0]; onChange(); build(); }); r.appendChild(b); });
+      body.appendChild(r);
+    }
+    function select(title, values, key, anyLabel) {
+      body.appendChild(el("div", "flabel", title));
+      var sel = el("select", "sel"); sel.setAttribute("aria-label", title);
+      var o0 = el("option", "", anyLabel); o0.value = ""; sel.appendChild(o0);
+      values.forEach(function (v) { var o = el("option", "", v[1]); o.value = v[0]; sel.appendChild(o); });
+      sel.value = f[key]; sel.addEventListener("change", function () { f[key] = sel.value; onChange(); build(); }); body.appendChild(sel);
+    }
+    function tally(get) { var c = {}; lib.forEach(function (i) { [].concat(get(i) || []).forEach(function (v) { if (v) c[v] = (c[v] || 0) + 1; }); }); return Object.keys(c).sort(function (a, b) { return c[b] - c[a] || a.localeCompare(b); }).map(function (k) { return [k, k + " (" + c[k] + ")"]; }); }
+    function build() {
+      body.textContent = "";
+      row("Sort by", [["new", "Newest"], ["old", "Oldest"], ["useful", "Most useful"]], "sort");
+      row("Usefulness", [["", "Any"]].concat(ORDER.map(function (u) { return [u, u]; })), "usefulness");
+      row("Platform", [["", "Any"], ["instagram", "Instagram"], ["youtube", "YouTube"]], "platform");
+      row("Posted", SINCE, "since");
+      var au = tally(function (i) { return i.author; }); if (au.length) select("Creator", au, "author", "Any creator");
+      var tl = tally(function (i) { return i.tools; }); if (tl.length) select("Tool", tl, "tool", "Any tool");
+      var n = lib.filter(function (i) { return matches(i, f); }).length;
+      cta.textContent = n === 1 ? "Show 1 link" : "Show " + n + " links";
+    }
+    build(); openSheet();
+  }
   function viewLibrary() {
     $("title").textContent = "Library"; view.textContent = "";
     if (!getToken()) { view.appendChild(needsToken()); return; }
@@ -454,7 +527,12 @@
         });
         hero.appendChild(legend); box.appendChild(hero);
       }
-      var q = el("input"); q.type = "search"; q.placeholder = "Search"; q.value = f.q; q.setAttribute("aria-label", "Search"); box.appendChild(q);
+      var q = el("input"); q.type = "search"; q.placeholder = "Search"; q.value = f.q; q.setAttribute("aria-label", "Search");
+      var sr = el("div", "row"), qw = el("div", "grow"); qw.appendChild(q); sr.appendChild(qw);
+      var fb = el("button", "round glass fbtn"); fb.type = "button"; fb.setAttribute("aria-label", "Filters");
+      fb.appendChild(svg([["path", { d: "M4 6h16M7 12h10M10 18h4" }]])); var badge = el("span", "fbadge"); fb.appendChild(badge);
+      fb.addEventListener("click", function () { openFilters(lib, f, draw); }); sr.appendChild(fb); box.appendChild(sr);
+      var activeRow = el("div", "chips scroll"); box.appendChild(activeRow);
       var shelf = el("div", "shelf"), subRow = el("div", "chips scroll"), locRow = el("div", "chips scroll"), cityRow = el("div", "chips scroll");
       box.appendChild(shelf); box.appendChild(subRow); box.appendChild(locRow); box.appendChild(cityRow); box.appendChild(results);
       var locLabel = {}; tax.locations.forEach(function (c) { locLabel[c.key] = c.label; c.cities.forEach(function (ci) { locLabel[c.key + "/" + ci.key] = ci.label; }); });
@@ -498,13 +576,11 @@
           }
         }
         locRow.hidden = !locRow.firstChild; cityRow.hidden = !cityRow.firstChild;
-        var needle = f.q.trim().toLowerCase();
-        var hit = lib.filter(function (i) {
-          if (f.usefulness && i.usefulness !== f.usefulness) return false;
-          if (f.category && !inCat(i, f.category, f.sub)) return false;
-          if (f.loc && !inLoc(i, f.loc)) return false;
-          return !needle || [i.title, i.author, i.key_info, i.category_label, i.subcategory_label, i.location_label, i.tools.join(" ")].join(" ").toLowerCase().indexOf(needle) >= 0;
-        });
+        var act = activeFilters(f); badge.textContent = act.length; badge.hidden = !act.length;
+        activeRow.textContent = "";
+        act.forEach(function (a) { var c = el("button", "chip", a[0] + "  \u2715"); c.type = "button"; c.setAttribute("aria-pressed", "true"); c.addEventListener("click", function () { resetFilter(f, a[1]); draw(); }); activeRow.appendChild(c); });
+        activeRow.hidden = !act.length;
+        var hit = sortItems(lib.filter(function (i) { return matches(i, f); }), f.sort);
         results.textContent = "";
         if (!hit.length) results.appendChild(el("p", "empty", lib.length ? "Nothing matches." : "Nothing here yet. Share a link to this app."));
         hit.forEach(function (it) { results.appendChild(itemCard(it)); });
@@ -530,7 +606,7 @@
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeSheet(false); });
 
   function viewNote(platform, id) {
-    sheet.textContent = "";
+    sheet.classList.remove("filters"); sheet.textContent = "";
     sheet.appendChild(el("div", "grab"));
     var x = el("button", "round glass close"); x.type = "button"; x.setAttribute("aria-label", "Close"); x.appendChild(svg([["path", { d: "M6 6l12 12M18 6L6 18" }]]));
     x.addEventListener("click", function () { closeSheet(false); }); sheet.appendChild(x);
@@ -550,7 +626,7 @@
       var url = (t.match(/^url:\s*(\S+)/m) || [])[1];
       if (url && /^https?:\/\//.test(url)) { var a = el("a", "btn-link", "Open original"); a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer"; head.appendChild(a); }
       var chipsRow = el("div", "chips");
-      function jump(f) { state.filter = Object.assign({ q: "", usefulness: "", category: "", sub: "", loc: "" }, f); closeSheet(true); location.hash = "#/library"; setTimeout(route, 0); }
+      function jump(f) { state.filter = Object.assign({ q: "", usefulness: "", category: "", sub: "", loc: "", platform: "", author: "", tool: "", since: "", sort: "new" }, f); closeSheet(true); location.hash = "#/library"; setTimeout(route, 0); }
       if (it.category) { var cb = el("button", "chip", catPath(it)); cb.type = "button"; cb.addEventListener("click", function () { jump({ category: it.category, sub: it.subcategory || "" }); }); chipsRow.appendChild(cb); }
       if (it.location) { var lb = el("button", "chip", it.location_label); lb.type = "button"; lb.addEventListener("click", function () { jump({ loc: it.location }); }); chipsRow.appendChild(lb); }
       (it.also || []).forEach(function (a) { var ck = a.split("/")[0], c = ((state.tax && state.tax.categories) || []).filter(function (x) { return x.key === ck; })[0]; var ab = el("button", "chip", "Also: " + (c ? c.label : ck)); ab.type = "button"; ab.addEventListener("click", function () { jump({ category: ck }); }); chipsRow.appendChild(ab); });

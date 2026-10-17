@@ -4,6 +4,11 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Filters: a sheet behind one button, with removable chips on the page
+- **Decision:** a filter button beside the search opens a bottom sheet with Sort (newest, oldest, most useful), Usefulness, Platform, Posted (any time, 7 days, 30 days, this year), Creator and Tool. The button shows how many are active; active ones appear as removable chips under the search; a live "Show N links" button and Reset sit at the bottom. Category, subcategory and location stay on the page as the shelf and chips, and the ring still filters usefulness, so the most used filters need no extra tap.
+- **Why:** the user asked for more filtering. Putting the less frequent options in a sheet keeps the page uncluttered, in line with the earlier "too text heavy" feedback. Creator and Tool are dropdowns because they grow without bound.
+- **How:** one `matches()` function drives the list and the live count, so they can never disagree. All filters combine (AND).
+
 ### Plain, uniform titles
 - **Decision:** a note's title names the thing the video is about in 2-6 words (max 50 characters), with no parentheses, hype, verdict, platform or creator. The creator moved to the note sheet's subtitle, and what the thing does plus its main caveat stays in `key_info`. `build_index.py` rejects titles over 50 characters or with parentheses, and the note's first heading must match.
 - **Why:** the user found the titles confusing. They were long paraphrases with a qualifier in brackets, which read differently on every card. Short names scan faster and stay consistent as the library grows. Queued links that are not processed yet show `Instagram link · <id start>…` instead of a bare id.
