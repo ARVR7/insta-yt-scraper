@@ -2,6 +2,17 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### "Comment KATANA for the free Higgsfield Claude MCP / setup link"  (2026-10-17)
+- **Verdict:** misleading
+- **What it is:** a comment-for-DM offer of a "free" Higgsfield Claude MCP and setup link.
+- **Why it is misleading:**
+  - Katana uses credits from a Higgsfield plan and "an active Higgsfield subscription is required"; the blog mentions no free option.
+  - There is nothing to send: the connector URL (`https://mcp.higgsfield.ai/mcp`) is published on Higgsfield's pages, so the comment funnel only collects engagement.
+  - The reel is tagged to @higgsfield.ai and reads as a promotion; the demo shows playback only, not a generation.
+- **Verdict scope:** the product is real; the "free" framing and the implied one-prompt result are not supported.
+- **Evidence:** [Higgsfield blog: Katana](https://higgsfield.ai/blog/higgsfield-katana), [Higgsfield MCP](https://higgsfield.ai/mcp)
+- **Source note:** [notes/instagram/DegLPFbTBpi.md](../notes/instagram/DegLPFbTBpi.md)
+
 ### "Free AI studio makes lacs of rupees every month on autopilot"  (2026-10-17)
 - **Verdict:** misleading
 - **What it is:** the reel's headline claim that a free, fully automated 24/7 AI YouTube pipeline produces "thousands" to "lacs" of rupees a month with no editor, voice actor or subscription.

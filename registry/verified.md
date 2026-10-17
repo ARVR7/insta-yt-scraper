@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Higgsfield MCP connector and "Katana" skill for Claude  (2026-10-17)
+- **Verdict:** verified-with-caveats
+- **What it is:** Higgsfield's MCP server for Claude (`https://mcp.higgsfield.ai/mcp`) and "Katana", a skill that rebuilds a reference video (yours or a library preset) with up to five of your photos into a new MP4.
+- **How to use / why it matters:** in Claude, Settings → Connectors → add a custom connector with that URL, sign in to Higgsfield, then ask for `/katana` or describe the edit. No separate API key.
+- **Caveats:** it spends credits from a Higgsfield plan and an active subscription is required, so it is not free. Instagram/TikTok profile links are not accepted as references; moderation may decline some generations. Claude shows the credit cost before each generation.
+- **Evidence:** [Higgsfield blog: Katana](https://higgsfield.ai/blog/higgsfield-katana), [Higgsfield MCP](https://higgsfield.ai/mcp)
+- **Source note:** [notes/instagram/DegLPFbTBpi.md](../notes/instagram/DegLPFbTBpi.md)
+
 ### YouTube demonetizes mass-produced / template-based AI content  (2026-10-17)
 - **Verdict:** verified
 - **What it is:** YouTube's Partner Program policy "inauthentic content" (renamed from "repetitious content", clarified 15 July 2025) makes mass-produced, template-looking and unoriginal AI-generated content ineligible for monetization. AI assistance on original, well-researched videos is allowed.
@@ -34,6 +42,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### One prompt makes a full 15 s motion-graphics piece, no After Effects (Higgsfield Katana)  (2026-10-17)
+- **Verdict:** unverified
+- **What it is:** the reel's claim that a single prompt to Claude via Katana produced the kinetic-type animation shown.
+- **Why pending:** Higgsfield describes Katana as a reference-based video editing skill, not prompt-only motion graphics, and the reel never shows a generation, only playback on a laptop.
+- **To resolve:** a screen recording of an actual Katana run, or Higgsfield documentation of prompt-only motion graphics.
+- **Source note:** [notes/instagram/DegLPFbTBpi.md](../notes/instagram/DegLPFbTBpi.md)
 
 ### "YouTube AI Agent Studio" GitHub repo (`youtube-agentic-ai-studio`)  (2026-10-17)
 - **Verdict:** unverified

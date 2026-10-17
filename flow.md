@@ -68,3 +68,4 @@ Downloaded videos, frames and transcripts stay in a scratch directory outside th
 | Note | Verdict |
 |---|---|
 | [notes/instagram/DeToMLxtdSV.md](notes/instagram/DeToMLxtdSV.md) | partly-verified (components real, earnings claim misleading) |
+| [notes/instagram/DegLPFbTBpi.md](notes/instagram/DegLPFbTBpi.md) | partly-verified (product real, "free" misleading, demo unproven) |

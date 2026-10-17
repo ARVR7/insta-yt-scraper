@@ -4,6 +4,11 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Reel DegLPFbTBpi (issue #1): partly-verified, "free" filed as misleading
+- **Decision:** Higgsfield MCP/Katana is `verified-with-caveats`; the "free" claim is `misleading` (subscription and credits required per Higgsfield's own blog); the one-prompt result is `unverified` and listed as pending.
+- **Why:** primary sources (Higgsfield blog and MCP page) confirm the product and that it is paid; neither shows prompt-only motion graphics, and the reel shows playback only. The sponsorship is noted as inference, not stated as fact.
+- **Process note:** this is the first link that arrived through the share-sheet app and GitHub issue queue.
+
 ### Share-sheet app on GitHub Pages; the queue moves to GitHub issues
 - **Decision:** `docs/` is a static installable web app with a Web Share Target. A shared link becomes an issue labelled `link`. `process-queue` reads those issues, comments the verdict and closes them. The artifact queue stays as a second input.
 - **Why:** the user wants Instagram/YouTube "Share" to list the app on Android. That needs a manifest `share_target` on a site we serve; the artifact page lives in a sandbox and cannot have one. A static site cannot write to the artifact database, but it can call the GitHub API, so issues became the shared queue.
