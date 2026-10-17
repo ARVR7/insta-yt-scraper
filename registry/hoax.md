@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### "Paid my rent in 5 minutes" by clipping podcasts  (2026-10-17)
+- **Verdict:** misleading
+- **What it is:** The reel's headline claim that copying a viral podcast link earns rent money almost instantly.
+- **Why it is misleading:** Pay is per verified view, about $1 per 1,000 on average, so one clip needs roughly 100,000 views to pay $100, and beginners typically earn $100-500 a month; the earning steps are hidden behind a comment-for-guide funnel.
+- **Evidence:** [OpenClip rates](https://openclip.app/guides/how-much-do-clippers-make), [Elev8or](https://www.elev8or.io/blog/whop-clipping)
+- **Source note:** [notes/instagram/DemnycCjEYg.md](../notes/instagram/DemnycCjEYg.md)
+
 ### Comment to get the guide to claim a billion free Muse tokens and a hands-free video channel  (2026-10-17)
 - **Verdict:** misleading
 - **What it is:** A comment-for-DM offer promising free tokens plus long-video generation and automatic YouTube uploads.

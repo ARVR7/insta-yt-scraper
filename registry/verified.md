@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Whop clipping: pay per 1,000 verified views  (2026-10-17)
+- **Verdict:** verified-with-caveats
+- **What it is:** On Whop's Content Rewards, brands set a rate per 1,000 views and a total budget; clippers post short clips of the brand's or creator's content and are paid for verified views.
+- **How to use / why it matters:** Join a campaign on Whop, read its rules, post clips to TikTok, Instagram or YouTube Shorts and submit them for verification.
+- **Caveats:** Rates reported at $0.20-6 per 1,000 views with an average near $1; beginners typically earn $100-500 a month; budgets are finite, bot-inflated views get you banned, and figures come from clipping-tool vendors rather than Whop.
+- **Evidence:** [Elev8or](https://www.elev8or.io/blog/whop-clipping), [OpenClip](https://openclip.app/guides/how-much-do-clippers-make), [Postiz](https://postiz.com/blog/whop-clipping-how-to-make-money-automate-it)
+- **Source note:** [notes/instagram/DemnycCjEYg.md](../notes/instagram/DemnycCjEYg.md)
+
 ### OpenShorts (self-hosted AI video clipper)  (2026-10-17)
 - **Verdict:** verified-with-caveats
 - **What it is:** An MIT-licensed tool that turns long videos into vertical 9:16 shorts with face-tracked cropping, captions and optional AI features; includes an MCP endpoint for agents.
