@@ -4,6 +4,13 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Hourly scheduled task processes the queue
+- **Decision:** scheduled task "Process Link Inbox queue" (hourly, minute :06, fresh session each run, model `claude-sonnet-5-5`). It first lists open `link` issues and stops at once if there are none, so empty runs stay cheap.
+- **Why:** the user asked for automatic processing. A fresh session per run avoids a long-lived session and re-reads the repo's `CLAUDE.md` each time.
+- **Effort:** the scheduled-task API has no effort setting, so "medium or less" is requested only through the prompt ("keep effort low"). The model was set explicitly, as the user asked.
+- **Risks noted:** the task stores no connectors, so a fresh session may lack the GitHub MCP tools; the first scheduled run must be checked. It only acts on issues authored by ARVR7 and on validated Instagram/YouTube URLs.
+- **App refresh:** the Queue tab re-polls every minute while visible; other tabs load fresh data on each visit. New app versions arrive on the next load because the service worker is network-first.
+
 ### Library: front matter is the source of truth; index and lists are generated
 - **Decision:** each note carries `title`, `topics`, `tools`, `usefulness` and `key_info` in its front matter. `scripts/build_index.py` generates `data/library.json` plus `library/` lists by usefulness and by topic. The claim-level files in `registry/` stay hand-curated.
 - **Why:** the user expects this to grow a lot. One place to edit (the note) keeps lists consistent, and generated per-topic and per-usefulness files avoid hand-maintained tables that rot. The two granularities answer different questions: `library/` says which videos were helpful, `registry/` says which individual claims are true or false.

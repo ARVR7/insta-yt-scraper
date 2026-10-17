@@ -333,6 +333,7 @@
 
   function viewQueue() {
     $("title").textContent = "Queue";
+    clearInterval(state.timer);
     clear(view);
     var card = el("div", "card");
     var flash = state.flash; state.flash = null;
@@ -349,6 +350,10 @@
       btn.disabled = true; status.className = "status"; status.textContent = "Queuing…";
       queueLink(p).then(function (r) { state.flash = r; viewQueue(); });
     });
+    // Refresh the queue every minute while it is on screen and nothing is being typed.
+    state.timer = setInterval(function () {
+      if (document.visibilityState === "visible" && !inp.value && document.activeElement !== inp) viewQueue();
+    }, 60000);
     list.appendChild(el("p", "muted", "Loading…"));
     loadIssues().then(function (issues) {
       return Promise.resolve(state.library || loadLibrary().catch(function () { return []; })).then(function (lib) {
@@ -452,6 +457,7 @@
     var tab = parts[0] || "overview";
     Array.prototype.forEach.call(document.querySelectorAll("nav a"), function (a) { a.setAttribute("aria-current", a.dataset.tab === (tab === "note" ? "library" : tab) ? "page" : "false"); });
     window.scrollTo(0, 0);
+    clearInterval(state.timer);
     if (tab === "queue") viewQueue();
     else if (tab === "library") viewLibrary();
     else if (tab === "claims") viewClaims(parts[1] || "verified");

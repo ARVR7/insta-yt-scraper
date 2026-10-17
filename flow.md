@@ -4,6 +4,8 @@ How a shared link becomes notes and registry entries, and what lives where. Upda
 
 ## Entry points
 
+An hourly scheduled task (`Process Link Inbox queue`, Sonnet 5.5) starts a fresh session that runs `process-queue` when open `link` issues exist.
+
 ```
 Android share sheet -> docs/ web app (GitHub Pages) -> GitHub issue labelled `link` --user asks--> process-queue
 Link Inbox page (claude.ai artifact, db collection `links`) --user asks--> process-queue --> process-link (per link)
