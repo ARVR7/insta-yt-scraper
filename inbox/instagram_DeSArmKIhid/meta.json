@@ -1,0 +1,24 @@
+{
+  "url": "https://www.instagram.com/reel/DeSArmKIhid/",
+  "platform": "instagram",
+  "shortcode": "DeSArmKIhid",
+  "author": "umarmullaai",
+  "posted_utc": "2026-10-09T17:12:44",
+  "is_video": true,
+  "duration_s": null,
+  "views": null,
+  "likes": 2820,
+  "comments": 2691,
+  "caption": "Make AI videos right on your own computer \ud83c\udfac\nFreeVideo runs MiniMax H3 locally and works with ComfyUI. It\u2019s designed to run on consumer hardware with as little as 8 GB VRAM and 16 GB RAM - though generation speed and results depend on your setup.\n\nAvailable for Windows, macOS, and Linux. Open source and free to try.\n\n#AIvideo #OpenSource #ComfyUI #AITools #GenerativeAI",
+  "hashtags": [
+    "aivideo",
+    "opensource",
+    "comfyui",
+    "aitools",
+    "generativeai"
+  ],
+  "mentions": [],
+  "location": null,
+  "fetched_via": "instaloader",
+  "video_file": "video.mp4"
+}
