@@ -4,6 +4,12 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### YouTube content is not obtainable from the cloud sandbox
+- **Finding:** for a public Short, every route to the audio or transcript failed from this environment: yt-dlp with seven player clients, youtube-transcript-api, and the WebFetch tool with a web transcript service. Only metadata comes through.
+- **Decision:** YouTube notes are written from metadata and marked `pending`, with an honest line that nothing was heard; the owner can supply a transcript through `--manual` when the content matters. Cookies are not used.
+- **Why:** inventing content from a title would be worse than a short note, and the cookie workaround was ruled out earlier.
+- **Seen in practice:** issue #4 (a PumpCrib Short of Arnold Schwarzenegger on triceps) was processed by the scheduled check in about a minute and produced exactly such a note.
+
 ### A failed Instagram fetch is treated as transient, not as a login wall
 - **Finding:** issue #3, a public video post, failed with "Fetching Post metadata failed" and I told the user it needed a login. That was wrong: Instagram was intermittently rate-limiting the sandbox (HTTP 429), the tools reported it as vague errors, and the same post downloaded fine when requests were spaced out.
 - **Decision:** `fetch_instagram.py` now alternates instaloader and yt-dlp with pauses (10, 20, 40 s) and ends with `RATE_LIMITED:` when the errors look transient. `prepare_link.py` turns that into exit code 4. `process-queue` then uses `retry-1` to `retry-3` labels and retries hourly, and asks the user only after three failed hourly attempts or for a clearly different block (exit 2).

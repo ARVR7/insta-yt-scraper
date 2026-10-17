@@ -28,6 +28,7 @@ python3 scripts/prepare_link.py "<url>" "$SCRATCH/<id>" [--queued-via "GitHub is
 | `transcript.txt`, `screen_text.txt`, `meta.json`, `video.mp4`, `comments.json` | Raw files, only if you need to dig |
 
 ## Notes
+- **YouTube gives metadata only** from the cloud sandbox (media, captions and transcripts are all blocked, see `fetch-youtube-video`). `brief.md` says `gaps: video: ...`; write the note from the title, description and chapters and mark it `pending`.
 - It reuses `fetch_instagram.py`, `fetch_youtube.py` and `analyze_video.py`; those skills describe their failure modes.
 - A repo marked `NOT FOUND` in "Looked up" means unverified, not fake. The anonymous GitHub API and github.com pages are blocked in the sandbox, so the lookup reads `raw.githubusercontent.com` instead; set `GITHUB_TOKEN` to get stars and dates.
 - OCR text is noisy (words run together). Use it to find names and numbers, then confirm them against the contact sheet or a source.

@@ -21,3 +21,14 @@ Add `--comments 100` to also save the top comments to `comments.json` (see `anal
   3. If `captions.*.vtt` exists, use it as the transcript instead of running `analyze-video`.
 - Shorts (`/shorts/<id>`) work like normal videos.
 - Playlists are ignored (`noplaylist`); only the single video is processed.
+
+## What cannot be done from the cloud sandbox (tested 2026-10-17)
+YouTube blocks this environment's IP for media and transcripts. Everything below failed for a public Short:
+- `yt-dlp` with every player client (default, tv_embedded, ios, android, mweb, web_safari, tv): HTTP 403, empty file, or "Sign in to confirm you're not a bot";
+- `youtube-transcript-api`: `RequestBlocked`;
+- the WebFetch tool on the video page and on a web transcript service: no transcript text.
+
+So for YouTube only **metadata** is available (title, channel, description, tags, chapters, counts). Rules:
+- Do not pretend to know what was said. Say in the note that no transcript was available, base the note on the title, description and chapters, and use `verdict: pending`.
+- If the title and description do not carry the content (clip reposts, "watch this" titles), keep the note short and say so in `key_info`; ask the owner for the transcript or key points only when the content matters, using `--manual` with their reply.
+- Cookies would fix it, but they are not requested or used.
