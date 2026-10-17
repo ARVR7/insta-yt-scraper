@@ -56,7 +56,7 @@ decision.md (why) + flow.md (what changed) -> commit -> push to main
 | `scripts/fetch_instagram.py` | `<url> <outdir>` -> `meta.json`, `video.mp4`. |
 | `scripts/fetch_youtube.py` | `<url> <outdir> [--comments N]` -> `meta.json`, `comments.json`, `captions.*.vtt`, `video.mp4`; metadata survives a blocked download. |
 | `scripts/analyze_video.py` | `<video> <outdir> [--every N]` -> `frames/`, `sheet.jpg`, `transcript.txt`. |
-| `docs/` | Installable web app (GitHub Pages) with a Web Share Target. Four tabs: **Overview** (counts, usefulness bar, topic cloud, latest), **Queue** (issues with a Queued/Processing/Done track), **Library** (search and filter by usefulness, platform and topic; tap for the full note), **Claims** (verified, hoax, side quests). Reads the repo through the GitHub API with a fine-grained token stored on the phone (Issues read/write, Contents read-only). |
+| `docs/` | Installable web app (GitHub Pages) with a Web Share Target. Three tabs: **Library** (search, usefulness filter; tap a card for a note with summary and what checks out), **Queue** (add a link; each link shows a Waiting / Working / Done track), **Claims** (verified, hoax, side quests as collapsible cards). Reads the repo through the GitHub API with a fine-grained token stored on the phone (Issues read/write, Contents read-only). |
 | `scripts/build_index.py` | Builds `data/library.json` and `library/` from note front matter. |
 | `data/library.json` | Generated index the app reads. |
 | `library/README.md`, `library/by-usefulness/`, `library/by-topic/` | Generated lists of every link with key info, grouped for reading on GitHub. |

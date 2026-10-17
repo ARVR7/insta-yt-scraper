@@ -4,6 +4,11 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### App simplified: three tabs, short cards, details on demand
+- **Decision:** removed the Overview tab, issue numbers, verdict strings, tool tags and explanatory paragraphs. Library cards show title, a coloured usefulness label, platform and a two-line key point. A note opens with title, the key point, "Open original" and topic chips, then collapsible Summary and "What checks out" sections; the full note is one tap deeper. Claims are collapsible cards. Counts appear only as the chips and a badge on Queue.
+- **Why:** the user found the first version too text-heavy and complex. Detail is still available, but only after a tap.
+- **Topic filter:** the dropdown is gone; tapping a topic chip on a note filters the library, and search also matches topics and tools.
+
 ### Hourly scheduled task processes the queue
 - **Decision:** scheduled task "Process Link Inbox queue" (hourly, minute :06, fresh session each run, model `claude-sonnet-5-5`). It first lists open `link` issues and stops at once if there are none, so empty runs stay cheap.
 - **Why:** the user asked for automatic processing. A fresh session per run avoids a long-lived session and re-reads the repo's `CLAUDE.md` each time.
