@@ -277,7 +277,10 @@ def main():
 
     # 3. visual review decision
     screen_chars = sum(len(x) for x in screen)
-    recipe_hint = bool(re.search(r"ingredient|recipe|\btbsp\b|\btsp\b|\bcups?\b|\bgrams?\b|\d\s?g\b|calories|\bkcal\b|macros|protein", blob, re.I))
+    # needs two different cooking signals, so 'protein' in a gym reel or 'cup' in a tech reel does not trigger it
+    signals = [r"ingredient", r"recipe", r"\btbsp\b|\btsp\b|tablespoon|teaspoon", r"\bcups?\b", r"\d\s?(?:g|gm|grams?)\b",
+               r"\bkcal\b|calories", r"macros", r"\bbake\b|\bsimmer\b|\bsaute\b|\bmarinate\b|\bpreheat\b"]
+    recipe_hint = sum(1 for p_ in signals if re.search(p_, blob, re.I)) >= 2
     talking_head = video.exists() and screen_chars < 120 and len(transcript) > 200 and not recipe_hint
     needs_visual = video.exists() and not talking_head
 
