@@ -5,6 +5,8 @@ Share an Instagram reel/post or a YouTube video/short; get a markdown note, a fa
 - `notes/` - one note per link
 - `taxonomy.yml` - the closed list of categories, subcategories and locations
 - `library/` and `data/` - generated lists and index (by category, location, usefulness)
+- `recipes/` - computed recipe cards (macros) for cooking videos
+- `inbox/` - links already scraped by GitHub Actions, waiting to be filed
 - `docs/` - the phone app (share target, queue, library, claims)
 - `registry/` - `verified.md`, `hoax.md`, `sidequests.md`
 - `.claude/skills/` - the reusable operations (start at `process-link`)
