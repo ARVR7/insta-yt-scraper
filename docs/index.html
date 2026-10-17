@@ -183,6 +183,37 @@
   .group > summary { padding: 15px 0; }
   .group .inner { padding-bottom: 16px; }
 
+.macro { font-size: 13px; font-weight: 700; color: var(--ink-2); display: flex; gap: 8px; flex-wrap: wrap; }
+  .macro span { background: var(--glass-strong); border: 1px solid var(--glass-line); border-radius: 999px; padding: 3px 10px; }
+  .recipe { padding: 18px; display: flex; flex-direction: column; gap: 16px; cursor: default; animation: none; }
+  .recipe h3 { margin: 0; font-size: 22px; letter-spacing: -.03em; line-height: 1.15; }
+  .rmeta { display: flex; gap: 8px; flex-wrap: wrap; }
+  .rmeta span { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--glass-strong); border: 1px solid var(--glass-line); }
+  .rmeta .veg::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--helpful); margin-right: 6px; }
+  .rmeta .nonveg::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--misleading); margin-right: 6px; }
+  .stepper { display: flex; align-items: center; gap: 12px; }
+  .stepper button { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--glass-line); background: var(--glass-strong); color: var(--ink); font: 700 20px var(--font); cursor: pointer; line-height: 1; }
+  .stepper b { font-size: 18px; min-width: 2ch; text-align: center; } .stepper span { color: var(--ink-2); font-size: 14px; font-weight: 600; }
+  .kcal { display: flex; align-items: baseline; gap: 8px; } .kcal b { font-size: 40px; letter-spacing: -.04em; line-height: 1; } .kcal span { color: var(--ink-2); font-weight: 600; font-size: 14px; }
+  .mbar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: var(--hairline); }
+  .mbar i { display: block; }
+  .p-c { background: #2dd4bf; } .c-c { background: #fbbf24; } .f-c { background: #fb7185; }
+  .mgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .mgrid div { display: flex; flex-direction: column; gap: 1px; } .mgrid b { font-size: 19px; letter-spacing: -.02em; } .mgrid span { font-size: 11px; font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; }
+  .mgrid span::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; background: var(--c, var(--ink-3)); }
+  .rsec { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 6px; }
+  .ing { display: flex; flex-direction: column; }
+  .ing label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--hairline); cursor: pointer; }
+  .ing input { width: 20px; height: 20px; margin: 2px 0 0; padding: 0; flex: none; accent-color: var(--accent); }
+  .ing .q { font-weight: 800; white-space: nowrap; } .ing .g { color: var(--ink-3); font-size: 12px; font-weight: 600; margin-left: 6px; }
+  .ing input:checked ~ div { opacity: .45; text-decoration: line-through; }
+  .grp { font-size: 13px; font-weight: 800; color: var(--ink-2); padding: 12px 0 2px; }
+  .steps { list-style: none; counter-reset: s; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .steps li { counter-increment: s; display: flex; gap: 12px; align-items: flex-start; cursor: pointer; }
+  .steps li::before { content: counter(s); flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--cta-bg); color: var(--cta-fg); font-weight: 800; font-size: 13px; display: grid; place-items: center; }
+  .steps li.done { opacity: .45; text-decoration: line-through; }
+  .rnote { font-size: 12px; color: var(--ink-3); line-height: 1.5; }
+  .rclaim { font-size: 13px; font-weight: 600; padding: 10px 12px; border-radius: 12px; background: var(--glass-strong); border: 1px solid var(--glass-line); }
   .md { overflow-wrap: anywhere; font-size: 15px; color: var(--ink); }
   .md h1 { font-size: 19px; margin: 4px 0 8px; } .md h2 { font-size: 16px; margin: 18px 0 6px; } .md h3 { font-size: 15px; margin: 12px 0 4px; }
   .md p, .md ul, .md blockquote, .md pre { margin: 0 0 10px; } .md ul { padding-left: 20px; }
@@ -430,6 +461,11 @@
     c.appendChild(tile(it.usefulness, it.usefulness));
     var b = el("div", "body");
     b.appendChild(el("h3", "", it.title)); b.appendChild(el("div", "sub", catPath(it) + (it.location_label ? " · " + it.location_label : ""))); b.appendChild(el("p", "key", it.key_info));
+    if (it.recipe) {
+      var mc = el("div", "macro");
+      [Math.round(it.recipe.kcal) + " kcal", Math.round(it.recipe.protein) + " g protein", Math.round(it.recipe.carbs) + " g carbs", Math.round(it.recipe.fat) + " g fat"].forEach(function (x) { mc.appendChild(el("span", "", x)); });
+      b.appendChild(mc);
+    }
     c.appendChild(b);
     c.addEventListener("click", function () { openNote(it); });
     c.addEventListener("keydown", function (e) { if (e.key === "Enter") openNote(it); });
@@ -605,6 +641,101 @@
     }).catch(function (e) { box.appendChild(failure(e, "the library")); });
   }
 
+  /* ---------- Recipe card ---------- */
+  var FRAC = [[0.125, "\u215b"], [0.25, "\u00bc"], [0.333, "\u2153"], [0.5, "\u00bd"], [0.667, "\u2154"], [0.75, "\u00be"]];
+  function fmtNum(q) {
+    if (q >= 10) return String(Math.round(q));
+    var w = Math.floor(q + 0.0001), f = q - w, best = "", bd = 0.07;
+    if (f < 0.07) return w ? String(w) : "0";
+    if (f > 0.93) return String(w + 1);
+    FRAC.forEach(function (x) { if (Math.abs(f - x[0]) < bd) { bd = Math.abs(f - x[0]); best = x[1]; } });
+    return best ? (w ? w + " " : "") + best : (Math.round(q * 10) / 10).toString();
+  }
+  function ingText(r, k) {
+    var q = r.qty, u = (r.unit || "").trim();
+    if (q === null || q === undefined || q === "" || q === 0) return { qty: "", name: r.name + (u ? ", " + u : "") };
+    var n = typeof q === "number" ? q : parseFloat(String(q).replace(/[^\d.]/g, "")) || 0;
+    return { qty: (r.estimated ? "~" : "") + fmtNum(n * k) + (u ? " " + u : ""), name: r.name };
+  }
+  function recipeCard(card, key) {
+    var base = card.servings || 1, servings = base, wrap = el("section", "card glass recipe");
+    var store = function (k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} };
+    var load = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
+    wrap.appendChild(el("h3", "", card.title));
+    var meta = el("div", "rmeta"), t = card.time || {}, tot = (t.prep || 0) + (t.cook || 0);
+    if (tot) meta.appendChild(el("span", "", tot + " min"));
+    if (card.cuisine) meta.appendChild(el("span", "", card.cuisine));
+    meta.appendChild(el("span", card.diet === "non-vegetarian" ? "nonveg" : "veg", card.diet + (card.vegan ? ", vegan" : "")));
+    wrap.appendChild(meta);
+
+    var stepper = el("div", "stepper"), minus = el("button", "", "\u2212"), plus = el("button", "", "+"), num = el("b"), lab = el("span", "", "servings");
+    minus.type = plus.type = "button"; minus.setAttribute("aria-label", "Fewer servings"); plus.setAttribute("aria-label", "More servings");
+    [minus, num, plus, lab].forEach(function (x) { stepper.appendChild(x); }); wrap.appendChild(stepper);
+
+    var macroBox = el("div", "list"); macroBox.style.gap = "12px"; wrap.appendChild(macroBox);
+    var ingBox = el("div"); wrap.appendChild(ingBox);
+    function macros() {
+      macroBox.textContent = "";
+      var ps = card.macros.per_serving, sp = card.macros.energy_split_pct || {};
+      var k = el("div", "kcal"); k.appendChild(el("b", "", String(Math.round(ps.kcal)))); k.appendChild(el("span", "", "kcal per serving")); macroBox.appendChild(k);
+      var bar = el("div", "mbar");
+      [["protein", "p-c"], ["carbs", "c-c"], ["fat", "f-c"]].forEach(function (x) { var i = el("i", x[1]); i.style.width = (sp[x[0]] || 0) + "%"; i.title = x[0] + " " + (sp[x[0]] || 0) + "%"; bar.appendChild(i); });
+      macroBox.appendChild(bar);
+      var g = el("div", "mgrid");
+      [["Protein", ps.protein, "#2dd4bf"], ["Carbs", ps.carbs, "#fbbf24"], ["Fat", ps.fat, "#fb7185"], ["Fibre", ps.fibre, null]].forEach(function (x) {
+        var d = el("div"); d.appendChild(el("b", "", Math.round(x[1]) + " g")); var s2 = el("span", "", x[0]); if (x[2]) s2.style.setProperty("--c", x[2]); d.appendChild(s2); g.appendChild(d);
+      });
+      macroBox.appendChild(g);
+      var total = card.macros.total, f = servings / base;
+      macroBox.appendChild(el("p", "rnote", "Whole recipe for " + servings + (servings === 1 ? " serving" : " servings") + ": " + Math.round(total.kcal * f) + " kcal, " + Math.round(total.protein * f) + " g protein, " + Math.round(total.carbs * f) + " g carbs, " + Math.round(total.fat * f) + " g fat. Energy split " + (sp.protein || 0) + "% protein, " + (sp.carbs || 0) + "% carbs, " + (sp.fat || 0) + "% fat."));
+      (card.claim_check || []).forEach(function (c) {
+        macroBox.appendChild(el("div", "rclaim", (c.verdict === "consistent" ? "\u2713 " : "\u26a0 ") + "The video says " + c.claimed + (c.field === "kcal" ? " kcal" : " g protein") + "; calculated " + Math.round(c.calculated) + " (" + (c.diff_pct > 0 ? "+" : "") + c.diff_pct + "%)."));
+      });
+    }
+    function ingredients() {
+      ingBox.textContent = ""; var k = servings / base, grp = null;
+      ingBox.appendChild(el("p", "rsec", "Ingredients"));
+      var list = el("div", "ing"); ingBox.appendChild(list);
+      card.ingredients.forEach(function (r, i) {
+        if ((r.group || null) !== grp) { grp = r.group || null; if (grp) list.appendChild(el("div", "grp", grp)); }
+        var lb = el("label"), cb = el("input"), id = "rc:" + key + ":" + i; cb.type = "checkbox"; cb.checked = load(id) === "1";
+        cb.addEventListener("change", function () { store(id, cb.checked ? "1" : null); });
+        var tx = ingText(r, k), d = el("div"); d.appendChild(el("span", "q", tx.qty)); d.appendChild(document.createTextNode(" " + tx.name + (r.note ? ", " + r.note : "")));
+        if (r.grams && (r.unit || "").toLowerCase() !== "g") d.appendChild(el("span", "g", Math.round(r.grams * k) + " g"));
+        lb.appendChild(cb); lb.appendChild(d); list.appendChild(lb);
+      });
+      var copy = el("button", "chip", "Copy shopping list"); copy.type = "button"; copy.style.marginTop = "10px"; copy.style.alignSelf = "flex-start";
+      copy.addEventListener("click", function () {
+        var lines = card.ingredients.map(function (r) { var t2 = ingText(r, servings / base); return "- " + t2.qty + " " + t2.name; }).join("\n");
+        try { navigator.clipboard.writeText(card.title + " (" + servings + " servings)\n" + lines).then(function () { copy.textContent = "Copied"; }, function () { copy.textContent = "Copy not allowed"; }); } catch (e) { copy.textContent = "Copy not allowed"; }
+      });
+      ingBox.appendChild(copy);
+    }
+    function refresh() { num.textContent = String(servings); minus.disabled = servings <= 1; macros(); ingredients(); }
+    minus.addEventListener("click", function () { if (servings > 1) { servings -= 1; refresh(); } });
+    plus.addEventListener("click", function () { if (servings < 24) { servings += 1; refresh(); } });
+    refresh();
+
+    if (card.steps && card.steps.length) {
+      wrap.appendChild(el("p", "rsec", "Method"));
+      var ol = el("ol", "steps");
+      card.steps.forEach(function (st, i) {
+        var li = el("li", "", st), id = "rs:" + key + ":" + i; if (load(id) === "1") li.classList.add("done");
+        li.addEventListener("click", function () { li.classList.toggle("done"); store(id, li.classList.contains("done") ? "1" : null); });
+        ol.appendChild(li);
+      });
+      wrap.appendChild(ol);
+    }
+    if (card.tips && card.tips.length) {
+      wrap.appendChild(el("p", "rsec", "Tips"));
+      var ul = el("ul", "steps"); ul.style.listStyle = "disc"; ul.style.paddingLeft = "20px"; ul.style.display = "block";
+      card.tips.forEach(function (x) { var li = el("li", "", x); li.style.display = "list-item"; li.style.cursor = "default"; li.style.marginBottom = "6px"; li.className = "tip"; ul.appendChild(li); });
+      wrap.appendChild(ul);
+    }
+    (card.notes || []).forEach(function (n) { wrap.appendChild(el("p", "rnote", n)); });
+    return wrap;
+  }
+
   /* ---------- Note sheet ---------- */
   function closeSheet(fromRoute) {
     if (sheet.hidden) return;
@@ -646,6 +777,10 @@
       (it.also || []).forEach(function (a) { var ck = a.split("/")[0], c = ((state.tax && state.tax.categories) || []).filter(function (x) { return x.key === ck; })[0]; var ab = el("button", "chip", "Also: " + (c ? c.label : ck)); ab.type = "button"; ab.addEventListener("click", function () { jump({ category: ck }); }); chipsRow.appendChild(ab); });
       if (chipsRow.firstChild) head.appendChild(chipsRow);
       box.appendChild(head);
+      if (it.recipe) {
+        var slot = el("div"); box.appendChild(slot);
+        file(it.recipe.path).then(function (rt) { slot.appendChild(recipeCard(JSON.parse(rt), platform + "_" + id)); }).catch(function () {});
+      }
       var parts = body.split(/^## /m).slice(1), by = {};
       parts.forEach(function (p) { var nl = p.indexOf("\n"); by[p.slice(0, nl).trim()] = p.slice(nl + 1); });
       var rk = Object.keys(by).filter(function (k) { return /^Research/.test(k); })[0];

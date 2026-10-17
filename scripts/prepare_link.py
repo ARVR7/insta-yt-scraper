@@ -277,7 +277,8 @@ def main():
 
     # 3. visual review decision
     screen_chars = sum(len(x) for x in screen)
-    talking_head = video.exists() and screen_chars < 120 and len(transcript) > 200
+    recipe_hint = bool(re.search(r"ingredient|recipe|\btbsp\b|\btsp\b|\bcups?\b|\bgrams?\b|\d\s?g\b|calories|\bkcal\b|macros|protein", blob, re.I))
+    talking_head = video.exists() and screen_chars < 120 and len(transcript) > 200 and not recipe_hint
     needs_visual = video.exists() and not talking_head
 
     likes, comments = meta.get("likes"), meta.get("comments")
@@ -293,6 +294,7 @@ def main():
          f"- url: {clean}", f"- author: {author}", f"- posted: {posted_iso}", f"- duration_s: {duration}",
          f"- likes: {likes}  comments: {comments}  comments/likes: {ratio}", f"- audio language: {lang}",
          f"- needs_visual_review: {'yes' if needs_visual else 'no'}" + (f"  (view {out / 'sheet.jpg'})" if needs_visual else "  (talking head, no readable screen text)" if talking_head else ""),
+         f"- recipe_hint: {'yes (looks like a recipe or nutrition video: follow the recipe-card skill)' if recipe_hint else 'no'}",
          f"- gaps: {'; '.join(gaps) if gaps else 'none'}", ""]
     if meta.get("title"):
         b += [f"## Title\n{meta['title']}", ""]

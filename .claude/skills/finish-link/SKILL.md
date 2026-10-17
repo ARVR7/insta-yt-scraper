@@ -37,10 +37,11 @@ Use the commit attribution lines from the session's instructions as `--trailer` 
     {"section": "hoax", "name": "...", "verdict": "misleading", "what": "...", "why": "...", "evidence": [["label", "https://..."]]},
     {"section": "sidequest", "name": "...", "what": "one line"}
   ],
+  "recipe": { "...": "required for food/recipes, see the recipe-card skill" },
   "decision": {"title": "...", "text": "..."}
 }
 ```
-- `location`, `also`, `entries` and `decision` are optional. Fields follow `categorize-link` and `write-link-note` (titles, usefulness scale). One registry entry per claim, not per video.
+- `location`, `also`, `entries` and `decision` are optional. `recipe` is mandatory for food/recipes notes: the script refuses the note without it and, when present, computes the macros, writes `recipes/<id>.json` and the Markdown card. Fields follow `categorize-link` and `write-link-note` (titles, usefulness scale). One registry entry per claim, not per video.
 - Add a `decision` only for non-routine choices (a taxonomy addition, a workaround, a rule you applied for the first time). Routine filing needs none.
 
 ## What the script does

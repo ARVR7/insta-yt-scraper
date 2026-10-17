@@ -19,6 +19,9 @@ python3 scripts/prepare_link.py "<url>" "$SCRATCH/<id>" [--queued-via "GitHub is
 | 4 | `RATE_LIMITED ...` | Instagram rate-limits the sandbox IP (HTTP 429) in bursts and the tools hide it behind vague errors. The fetcher already retried with pauses. This is **transient, not a login wall and not the user's fault**: do not ask the user for anything and do not mark `needs-input` yet. Queue item: follow the retry labels in `process-queue`. Chat: wait a minute and rerun once, then tell the user it is rate-limited |
 | 2 | `BLOCKED ...` | fetch failed (login wall, rate limit, network). Queue item: label `needs-input` and say what is needed. Chat: tell the user. Do not ask for cookies |
 
+## Scraping runs on GitHub runners
+When a link is queued from the phone app, `.github/workflows/prepare.yml` runs this same script on a GitHub runner within a minute (clean IP: the cloud sandbox is rate-limited by Instagram and cannot reach YouTube's media servers). It commits the result to `inbox/<platform>_<id>/` and labels the issue `prepared`. Running `prepare_link.py` for such a link prints `OK pre-prepared by GitHub Actions` and points at the inbox files instead of fetching again; `finish_link.py` deletes the inbox entry when the note is written. Use `--force` to scrape again.
+
 ## What it produces in `$SCRATCH/<id>/`
 | File | Use |
 |---|---|
@@ -28,7 +31,7 @@ python3 scripts/prepare_link.py "<url>" "$SCRATCH/<id>" [--queued-via "GitHub is
 | `transcript.txt`, `screen_text.txt`, `meta.json`, `video.mp4`, `comments.json` | Raw files, only if you need to dig |
 
 ## Notes
-- **YouTube gives metadata only** from the cloud sandbox (media, captions and transcripts are all blocked, see `fetch-youtube-video`). `brief.md` says `gaps: video: ...`; write the note from the title, description and chapters and mark it `pending`.
+- **YouTube gives metadata only** unless the owner added a `YOUTUBE_COOKIES` Actions secret (a Netscape-format cookies file; use a throwaway Google account). YouTube blocks datacenter IPs on GitHub's runners too ("Sign in to confirm you're not a bot") and from the cloud sandbox (media, captions and transcripts are all blocked, see `fetch-youtube-video`). `brief.md` says `gaps: video: ...`; write the note from the title, description and chapters and mark it `pending`.
 - It reuses `fetch_instagram.py`, `fetch_youtube.py` and `analyze_video.py`; those skills describe their failure modes.
 - A repo marked `NOT FOUND` in "Looked up" means unverified, not fake. The anonymous GitHub API and github.com pages are blocked in the sandbox, so the lookup reads `raw.githubusercontent.com` instead; set `GITHUB_TOKEN` to get stars and dates.
 - OCR text is noisy (words run together). Use it to find names and numbers, then confirm them against the contact sheet or a source.

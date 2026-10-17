@@ -4,6 +4,20 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Recipes get calculated macros and a recipe card
+- **Decision:** `food/recipes` notes must include a `recipe` object (ingredients with amounts, steps, optional macro claims). `scripts/recipe_card.py` converts amounts to grams, looks each ingredient up in `data/nutrition.json` and sums macros per serving, whole recipe and per 100 g, with the calorie split. `finish_link.py` writes `recipes/<id>.json` (the app's card) and a Markdown card in the note, and refuses a recipe note without it.
+- **Why a script, not the model:** adding up 15 ingredients from memory is error-prone and unrepeatable; a script gives the same answer every time and shows its working.
+- **Nutrition data:** 144 common and Indian-kitchen ingredients per 100 g, rounded from USDA FoodData Central and IFCT 2017, with unit conversions (tsp, tbsp, cup, piece, clove). The generator rejects rows whose calories disagree with 4P + 4(C-fibre) + 2 fibre + 9F by over 15% (for foods above 100 kcal and not very fibrous), which catches typos. The values were written from reference knowledge, not fetched live (the USDA and Open Food Facts APIs were rate-limited or down from the sandbox), so accuracy is about 10% and stated on every card. An unknown ingredient stops the build and must be added with a source, or given inline per 100 g from a visible label.
+- **Claim checking:** when the video states calories or protein, the card shows what was calculated and flags differences over 15%. First hand-checked case: a wrap claimed 450 kcal, the ingredients give about 608.
+- **Estimated amounts are flagged** (`~` in the app) rather than silently guessed; macros are for raw weights and the card says cooking and oil absorption change them.
+- **App:** the note sheet shows the card with a servings stepper that scales ingredients and macros, a macro bar and grid, a tick-off ingredient list, a copy-shopping-list button and tap-to-complete steps. Library cards for recipes show calories, protein, carbs and fat.
+
+### Scraping moved to GitHub runners
+- **Finding (tested):** from the cloud sandbox the connection to YouTube's media servers fails outright, and Instagram rate-limits the shared IP. On a GitHub runner Instagram downloaded on the first try, but YouTube still answered "Sign in to confirm you're not a bot" for media, and the transcript API was blocked. YouTube blocks datacenter IPs in general.
+- **Decision:** `.github/workflows/prepare.yml` runs `prepare_link.py` on a runner as soon as an issue is opened (owner only), plus a retry every four hours and a manual trigger. It commits the brief, draft note, contact sheet and transcript to `inbox/<platform>_<id>/` and labels the issue `prepared`. The model-side check then starts from that instead of scraping, and `finish_link.py` clears the inbox entry. Benefits: instant start, clean IP, no model tokens for the scraping.
+- **YouTube:** only cookies from a signed-in account get past the bot check. The workflow reads an optional `YOUTUBE_COOKIES` secret (Netscape cookie file) that only the owner can add; it never passes through Claude. Using a throwaway Google account is advised since automated use can get the account flagged.
+- **Silent failure fixed:** the first runner jobs prepared notes without a transcript or contact sheet and still reported success. Analysis failures now appear as "ANALYSIS FAILED" in the brief, the runner does not commit such results, and ffmpeg is installed explicitly.
+
 ### Two bugs the first unattended run exposed
 - **Unquoted error text in the draft note's front matter:** `prepare_link.py` wrote the blocked-video error ("ERROR: ...") unquoted, which is invalid YAML and broke `finish_link.py`; the standing session patched its draft by hand. All `fetch_status` values are now written as quoted strings, and the draft front matter is parsed in a test.
 - **Missing libraries in a fresh container:** the standing session had never run `setup.sh`, so `yt_dlp` was missing. `prepare_link.py` now installs `requirements.txt` itself when an import fails.

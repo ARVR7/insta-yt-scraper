@@ -20,6 +20,8 @@ The page only queues links and shows results; it cannot run scrapers or wake Cla
 user shares a link  (chat, or the app's issue queue via process-queue)
       |
       v
+GitHub Actions: prepare.yml runs prepare_link.py on a runner when the issue is opened -> inbox/<id>/ (Claude's later run reuses it)
+      v
 prepare_link.py   MECHANICAL, no model tokens (1-3 min)
       |   fetch_instagram.py / fetch_youtube.py -> metadata, caption, video, captions
       |   analyze_video.py -> frames + sheet.jpg, transcript (non-English translated), OCR text
@@ -58,12 +60,17 @@ Claude posts the printed comment on the issue and closes it
 | `docs/` | Installable web app (GitHub Pages) with a Web Share Target. Three tabs: **Library** (usefulness ring, a shelf of category tiles that drill into subcategories and locations, search and a filter sheet for sort, usefulness, platform, date, creator and tool; tap a card for a note with summary and what checks out), **Queue** (add a link; each link shows a Waiting / Working / Done track), **Claims** (verified, hoax, side quests as collapsible cards). Settings holds a System / Light / Dark theme switch. Reads the repo through the GitHub API with a fine-grained token stored on the phone (Issues read/write, Contents read-only). |
 | `taxonomy.yml` | Closed vocabulary: categories with subcategories, aliases, icons and colours; locations (country, city). Single source of truth. |
 | `scripts/taxonomy.py` | Shared lookup code plus `check`, `merge-sub`, `merge-cat` and `rename-city` for keeping the taxonomy tidy as it grows. |
+| `.github/workflows/prepare.yml` | Runs the scraping on a GitHub runner when a link is queued; commits to `inbox/`. |
+| `scripts/prepare_queue.py` | What the workflow runs: finds queued issues, prepares each, commits `inbox/`, labels `prepared`. |
+| `inbox/` | Prepared links waiting for the Claude check; deleted by `finish_link.py`. |
+| `scripts/recipe_card.py`, `scripts/build_nutrition.py`, `data/nutrition.json` | Recipe macros: ingredient lookup, unit conversion, card JSON and Markdown; the nutrition table and its sanity check. |
+| `recipes/<id>.json` | Computed recipe cards the app displays. |
 | `scripts/prepare_link.py` | One command for all mechanical work on a link; writes `brief.md` and `draft_note.md`. |
 | `scripts/finish_link.py` | One command for everything after the judgment: note, registry, index, flow table, comment, push. |
 | `scripts/build_index.py` | Validates notes against the taxonomy and builds `data/library.json`, `data/taxonomy.json` and `library/`. |
 | `data/library.json`, `data/taxonomy.json` | Generated index and vocabulary the app reads. |
 | `library/README.md`, `library/by-category/`, `library/by-location/`, `library/by-usefulness/` | Generated lists of every link with key info, grouped for reading on GitHub. |
-| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `prepare-link`, `finish-link`, `categorize-link`, `update-library`, `analyze-comments`, `process-queue`. |
+| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `prepare-link`, `finish-link`, `recipe-card`, `categorize-link`, `update-library`, `analyze-comments`, `process-queue`. |
 | Link Inbox artifact | https://claude.ai/artifact/FLi1JREBRUV493gipCS5AG (source is not in the repo; it lives on claude.ai). |
 | `notes/instagram/<shortcode>.md` | One note per Instagram link. |
 | `notes/youtube/<video-id>.md` | One note per YouTube link. |

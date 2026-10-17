@@ -18,7 +18,8 @@ also: [money/business]       # optional cross-listing, rarely needed
 ## How to choose
 1. **Category = what the video is for.** Ask: what would the viewer do with this? Cook it, eat there, visit it, build with AI, invest in it. Pick the category of that main takeaway.
 2. **One AI category.** Anything where AI is the point (tools, agents, AI side-hustles, AI creative work) is `ai` with a subcategory: `tools`, `automation`, `creative`, `ideas`. Do not use `money` or `tech` for these; `money` is for non-AI business and finance.
-3. **Food vs Places.** A recipe is `food/recipes`. A restaurant or cafe is `food/eateries` with a `location`. A trip, stay or sight is `places/...` with a `location`.
+3. **Recipes get a recipe card.** `food/recipes` notes need macros and a card; follow the `recipe-card` skill.
+3b. **Food vs Places.** A recipe is `food/recipes`. A restaurant or cafe is `food/eateries` with a `location`. A trip, stay or sight is `places/...` with a `location`.
 4. **Location is separate from category** and only set when the caption, on-screen text or audio states it (a city, area or country). Map areas to their city (Cyber Hub -> `india/gurgaon`). Never infer a location from the creator's accent, profile or a guess; leave it blank.
 5. **Aliases are accepted** (`ai-tools`, `Gurugram`) and rewritten by the build, but write the canonical key anyway.
 6. **`also`** only when a second category would genuinely be where the viewer looks for it (an AI tool for investing: `category: ai`, `also: [money/investing]`). The primary decides counts.
