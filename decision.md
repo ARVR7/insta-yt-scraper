@@ -4,6 +4,13 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Visual redesign: liquid glass over an aurora gradient
+- **Decision:** the app now follows the iOS "liquid glass" direction: frosted translucent panels over a soft aurora gradient, big bold titles, squircle icon tiles whose gradient and glyph encode usefulness (check, wave, cross, dot), a floating pill tab bar, an iOS-style segmented control for Claims, and notes that open as a bottom sheet with a grabber. Dark mode follows the system setting.
+- **The ring:** the Library header is an activity-ring style donut split by usefulness; tapping a segment or a count filters the list. It replaces the row of filter chips, so there is less text, not more.
+- **Motion:** cards rise in with a short stagger, presses scale, the Working state has a spinner and a sweeping progress bar. Everything respects reduced-motion, and the Queue's one-minute refresh skips the entrance animation.
+- **Why:** the plain version read as bland. Colour and shape now carry the meaning (usefulness, state), so the copy can stay short.
+- **Type:** Plus Jakarta Sans from Google Fonts with a system fallback, so the app still works offline.
+
 ### App simplified: three tabs, short cards, details on demand
 - **Decision:** removed the Overview tab, issue numbers, verdict strings, tool tags and explanatory paragraphs. Library cards show title, a coloured usefulness label, platform and a two-line key point. A note opens with title, the key point, "Open original" and topic chips, then collapsible Summary and "What checks out" sections; the full note is one tap deeper. Claims are collapsible cards. Counts appear only as the chips and a badge on Queue.
 - **Why:** the user found the first version too text-heavy and complex. Detail is still available, but only after a tap.
