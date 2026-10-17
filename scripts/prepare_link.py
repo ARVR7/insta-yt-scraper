@@ -16,7 +16,7 @@ repos and PyPI packages found. Then writes, into <outdir>:
   sheet.jpg       contact sheet (only look at it when brief.md says needs_visual_review: yes)
   meta.json, transcript.txt, screen_text.txt, video.mp4 ...
 
-Prints a short status. Exit codes: 0 ok, 3 already processed, 2 fetch blocked.
+Prints a short status. Exit codes: 0 ok, 3 already processed, 2 fetch blocked, 4 rate-limited (retry later).
 """
 import json
 import os
@@ -204,10 +204,12 @@ def main():
         code = run([sys.executable, str(HERE / fetcher), clean, str(out), *extra], out / "fetch.log")
         meta = json.loads((out / "meta.json").read_text()) if (out / "meta.json").exists() else None
         if code != 0 or not meta:
-            reason = (out / "fetch.log").read_text().strip().splitlines()[-1][:200] if (out / "fetch.log").exists() else "unknown"
-            (out / "brief.md").write_text(f"# BLOCKED\n\nFetch failed for {url}: {reason}\n")
-            print(f"BLOCKED fetch failed: {reason}")
-            sys.exit(2)
+            log = (out / "fetch.log").read_text() if (out / "fetch.log").exists() else ""
+            reason = log.strip().splitlines()[-1][:300] if log.strip() else "unknown"
+            transient = "RATE_LIMITED" in log
+            (out / "brief.md").write_text(f"# {'RATE_LIMITED' if transient else 'BLOCKED'}\n\nFetch failed for {url}: {reason}\n")
+            print(f"{'RATE_LIMITED (probably transient; retry later)' if transient else 'BLOCKED'}: {reason}")
+            sys.exit(4 if transient else 2)
 
     video = out / "video.mp4"
     gaps = []

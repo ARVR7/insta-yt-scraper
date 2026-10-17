@@ -16,6 +16,7 @@ python3 scripts/prepare_link.py "<url>" "$SCRATCH/<id>" [--queued-via "GitHub is
 |---|---|---|
 | 0 | prepared | continue with `process-link` |
 | 3 | `ALREADY_PROCESSED notes/...` | tell the user (or comment on the issue) that the note exists, link it, close the issue; stop |
+| 4 | `RATE_LIMITED ...` | Instagram rate-limits the sandbox IP (HTTP 429) in bursts and the tools hide it behind vague errors. The fetcher already retried with pauses. This is **transient, not a login wall and not the user's fault**: do not ask the user for anything and do not mark `needs-input` yet. Queue item: follow the retry labels in `process-queue`. Chat: wait a minute and rerun once, then tell the user it is rate-limited |
 | 2 | `BLOCKED ...` | fetch failed (login wall, rate limit, network). Queue item: label `needs-input` and say what is needed. Chat: tell the user. Do not ask for cookies |
 
 ## What it produces in `$SCRATCH/<id>/`
