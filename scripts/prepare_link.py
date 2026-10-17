@@ -172,7 +172,16 @@ def pypi_facts(pkg):
             "home": (d.get("project_urls") or {}).get("Homepage") or d.get("home_page")}
 
 
+def ensure_deps():
+    """Install requirements.txt when a library is missing (fresh containers skip setup.sh)."""
+    try:
+        import instaloader, yt_dlp, faster_whisper, numpy, PIL, yaml  # noqa: F401
+    except ImportError:
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(ROOT / "requirements.txt")], check=False)
+
+
 def main():
+    ensure_deps()
     args = sys.argv[1:]
     force = "--force" in args
     manual = None
@@ -302,12 +311,15 @@ def main():
     (out / "brief.md").write_text("\n".join(b))
 
     # 5. draft note with the mechanical parts filled in
-    fs = ["  metadata: " + ("user-provided text only (platform blocked anonymous access)" if meta.get("manual") else "ok" + (" (instaloader, anonymous)" if platform == "instagram" else " (yt-dlp)")),
-          f"  caption: {'ok' if caption else 'not returned'}",
-          "  video: " + ("downloaded" if video.exists() else "blocked (" + (meta.get("video_error") or "not downloaded")[:80] + ")"),
-          "  transcript: " + (("ok (faster-whisper" + (", translated" if lang not in ("en", "n/a") else "") + ", auto-generated, may contain errors)") if video.exists() and transcript else "YouTube captions" if transcript else "none"),
-          "  on_screen_text: " + ("OCR + contact sheet" if screen else "contact sheet only" if video.exists() else "n/a"),
-          "  comments: " + ("not fetched (Instagram requires login)" if platform == "instagram" else "see comments.json" if (out / "comments.json").exists() else "not fetched")]
+    def q(v):  # YAML-safe: error text often contains colons
+        return json.dumps(v, ensure_ascii=False)
+    fs = [
+        "  metadata: " + q("user-provided text only (platform blocked anonymous access)" if meta.get("manual") else "ok" + (" (instaloader/yt-dlp, anonymous)" if platform == "instagram" else " (yt-dlp)")),
+        "  caption: " + q("ok" if caption else "not returned"),
+        "  video: " + q("downloaded" if video.exists() else "blocked (" + (meta.get("video_error") or "not downloaded")[:80] + ")"),
+        "  transcript: " + q(("ok (faster-whisper" + (", translated" if lang not in ("en", "n/a") else "") + ", auto-generated, may contain errors)") if video.exists() and transcript else "YouTube captions" if transcript else "none"),
+        "  on_screen_text: " + q("OCR + contact sheet" if screen else "contact sheet only" if video.exists() else "n/a"),
+        "  comments: " + q("not fetched (Instagram requires login)" if platform == "instagram" else "see comments.json" if (out / "comments.json").exists() else "not fetched")]
     fm = ["---", f"url: {clean}", f"platform: {platform}", f"type: {kind}", f"author: {author}", f"posted: {posted_iso}",
           f"duration_s: {duration}", f"views: {meta.get('views') or 'not exposed'}", f"likes: {likes}", f"comments: {comments}",
           f"language: {lang}"]

@@ -4,6 +4,12 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Two bugs the first unattended run exposed
+- **Unquoted error text in the draft note's front matter:** `prepare_link.py` wrote the blocked-video error ("ERROR: ...") unquoted, which is invalid YAML and broke `finish_link.py`; the standing session patched its draft by hand. All `fetch_status` values are now written as quoted strings, and the draft front matter is parsed in a test.
+- **Missing libraries in a fresh container:** the standing session had never run `setup.sh`, so `yt_dlp` was missing. `prepare_link.py` now installs `requirements.txt` itself when an import fails.
+- **Measured cost of the first unattended run (issue #4):** about 4,700 output tokens and 47,000 newly written context tokens, with about 1.1 million tokens re-read from cache across 7 turns; list-price equivalent about $0.35 (not Pro billing). The session's own estimate of "roughly 100k" was its budget counter, not billing. A thin YouTube note is the cheap case.
+- **Instruction handling:** the standing session declined to edit the hourly task's prompt when another session asked it to, because that change was outside its own instructions. That is the right behaviour; the rule about Claude's own comments lives in the `process-queue` skill, which the check follows.
+
 ### YouTube content is not obtainable from the cloud sandbox
 - **Finding:** for a public Short, every route to the audio or transcript failed from this environment: yt-dlp with seven player clients, youtube-transcript-api, and the WebFetch tool with a web transcript service. Only metadata comes through.
 - **Decision:** YouTube notes are written from metadata and marked `pending`, with an honest line that nothing was heard; the owner can supply a transcript through `--manual` when the content matters. Cookies are not used.
