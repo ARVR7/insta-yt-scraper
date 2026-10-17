@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Fetch metadata, captions and the video of a YouTube video or short.
 
-Usage: fetch_youtube.py <url> <outdir>
-Writes <outdir>/meta.json, <outdir>/captions.*.vtt (best effort) and <outdir>/video.mp4.
+Usage: fetch_youtube.py <url> <outdir> [--comments N]
+Writes <outdir>/comments.json (top N comments, only with --comments), <outdir>/meta.json, <outdir>/captions.*.vtt (best effort) and <outdir>/video.mp4.
 """
 import json
 import sys
@@ -11,7 +11,7 @@ from pathlib import Path
 import yt_dlp
 
 
-def main(url, outdir):
+def main(url, outdir, n_comments=0):
     out = Path(outdir)
     out.mkdir(parents=True, exist_ok=True)
     base = {
@@ -25,6 +25,9 @@ def main(url, outdir):
         "format": "bv*[height<=720]+ba/b[height<=720]/b",
         "merge_output_format": "mp4",
     }
+    if n_comments:
+        base["getcomments"] = True
+        base["extractor_args"] = {"youtube": {"max_comments": [str(n_comments), "0", "0", "0"]}}
     # Metadata first, so it survives even when the media download is blocked.
     with yt_dlp.YoutubeDL({**base, "skip_download": True}) as ydl:
         info = ydl.extract_info(url, download=False)
@@ -50,6 +53,12 @@ def main(url, outdir):
             ydl.download([url])
     except Exception as e:
         print(f"captions skipped: {e}", file=sys.stderr)
+    if n_comments:
+        comments = [
+            {k: c.get(k) for k in ("author", "text", "like_count", "is_pinned", "author_is_uploader", "parent")}
+            for c in info.get("comments") or []
+        ]
+        (out / "comments.json").write_text(json.dumps(comments, indent=2, ensure_ascii=False))
     meta = {
         "url": info.get("webpage_url"),
         "platform": "youtube",
@@ -75,6 +84,12 @@ def main(url, outdir):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    args = sys.argv[1:]
+    n = 0
+    if "--comments" in args:
+        i = args.index("--comments")
+        n = int(args[i + 1])
+        del args[i:i + 2]
+    if len(args) != 2:
         sys.exit(__doc__)
-    main(*sys.argv[1:])
+    main(args[0], args[1], n)

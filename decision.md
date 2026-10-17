@@ -4,6 +4,11 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Comment analysis added as a lead-finder, not a source
+- **Decision:** new `analyze-comments` skill; `fetch_youtube.py --comments N` saves comments; Instagram comments are taken only if the user pastes them or sends a screenshot.
+- **Why:** the user said comments may hold useful info but are mostly fake. `instaloader` raises `LoginRequiredException` for comments, and cookies are off the table, so anonymous Instagram comments are impossible. Comments only suggest leads (a repo link, a correction) that still go through `fact-check-claims`; keyword-only replies are treated as funnel noise.
+- **Limit:** the YouTube comment path returned 0 comments on the one video tried in the sandbox, so it is untested at volume.
+
 ### Verdict categories and where unverified items go
 - **Decision:** five verdicts (`verified`, `verified-with-caveats`, `unverified`, `misleading`, `hoax`). Unverified items live in a "Pending verification" section of `registry/verified.md`, not in `hoax.md`.
 - **Why:** the user asked for one file of correct items and one of hoaxes. Failing to find something is not proof that it is fake, so it must not be filed as a hoax. The reel's earnings claim is `misleading` (real tools, unsubstantiated promise), which belongs in `hoax.md`.

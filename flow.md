@@ -14,6 +14,9 @@ process-link  (.claude/skills/process-link)
       |-- youtube.com    -> fetch-youtube-video  -> scripts/fetch_youtube.py    (yt-dlp)
       |         both write meta.json (+ video.mp4, captions) into a scratch dir, not the repo
       v
+analyze-comments (YouTube via fetch_youtube.py --comments; Instagram only if the user pastes them)
+      |         -> leads + noise ratio, no claim is trusted from comments
+      v
 analyze-video  -> scripts/analyze_video.py  (ffmpeg frames + contact sheet + faster-whisper transcript)
       |         then Claude reads sheet.jpg for on-screen text
       v
@@ -37,9 +40,9 @@ decision.md (why) + flow.md (what changed) -> commit -> push to main
 | `requirements.txt` | Python deps: instaloader, yt-dlp, faster-whisper, numpy, Pillow. ffmpeg is a system dependency. |
 | `scripts/setup.sh` | Installs deps and checks for ffmpeg. |
 | `scripts/fetch_instagram.py` | `<url> <outdir>` -> `meta.json`, `video.mp4`. |
-| `scripts/fetch_youtube.py` | `<url> <outdir>` -> `meta.json`, `captions.*.vtt`, `video.mp4`; metadata survives a blocked download. |
+| `scripts/fetch_youtube.py` | `<url> <outdir> [--comments N]` -> `meta.json`, `comments.json`, `captions.*.vtt`, `video.mp4`; metadata survives a blocked download. |
 | `scripts/analyze_video.py` | `<video> <outdir> [--every N]` -> `frames/`, `sheet.jpg`, `transcript.txt`. |
-| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `write-link-note`, `fact-check-claims`, `update-registries`. |
+| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`. |
 | `notes/instagram/<shortcode>.md` | One note per Instagram link. |
 | `notes/youtube/<video-id>.md` | One note per YouTube link. |
 | `registry/verified.md` | Verified tools, hacks and facts, plus a Pending verification section. |

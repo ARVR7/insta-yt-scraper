@@ -10,7 +10,7 @@ bash scripts/setup.sh
 python3 scripts/fetch_youtube.py "<url>" "$SCRATCH/<video-id>"
 ```
 
-Writes `meta.json` (title, channel, date, views, likes, description, tags, chapters, `video_error`), `captions.*.vtt` when available, and `video.mp4` (<=720p) when the media is reachable.
+Add `--comments 100` to also save the top comments to `comments.json` (see `analyze-comments`). Writes `meta.json` (title, channel, date, views, likes, description, tags, chapters, `video_error`), `captions.*.vtt` when available, and `video.mp4` (<=720p) when the media is reachable.
 
 ## Known behaviour
 - Metadata always comes first and is saved even if the media download fails.

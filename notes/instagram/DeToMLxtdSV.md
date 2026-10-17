@@ -54,6 +54,9 @@ Feature table as read from the README:
 ## Summary
 A promo reel for an open-source Python tool that automates a faceless YouTube channel: Gemini picks topics, writes the script, Edge TTS narrates it, Pexels stock footage is animated, and a Shorts version is cut. A local dashboard handles human approval, then it auto-uploads to YouTube.
 
+## Comments
+Not read: Instagram requires a login to list comments. The count is 464 against 402 likes. Because the call to action is "comment TUBE", many of those are likely keyword-only funnel replies, so the count says little about real interest (inference, not verified). If you paste the top comments, I'll look for the repo link or corrections.
+
 ## Research (checked 2026-10-17)
 
 | Claim | Verdict | Evidence |

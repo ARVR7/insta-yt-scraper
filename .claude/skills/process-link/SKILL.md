@@ -9,11 +9,12 @@ Run these steps in order. Each step is its own skill; read it before running it.
 
 1. **Fetch** - `fetch-instagram-post` for instagram.com links, `fetch-youtube-video` for youtube.com / youtu.be links. Output goes to a scratch directory, never into the repo.
 2. **Analyze** - `analyze-video` on the downloaded video (frames, contact sheet, transcript). Look at `sheet.jpg` to read on-screen text.
-3. **Write the note** - `write-link-note` creates `notes/<platform>/<id>.md`.
-4. **Fact-check** - `fact-check-claims` researches every checkable claim in the video and returns verdicts.
-5. **Registries** - `update-registries` files each verdict in `registry/verified.md`, `registry/hoax.md` or `registry/sidequests.md`, and links back to the note.
-6. **Docs** - append a dated entry to `decision.md` for every non-obvious choice made in this run (including workarounds for blocked fetches). Update `flow.md` if a script, skill or folder was added or changed.
-7. **Ship** - commit and push straight to `main` (the user's standing instruction). Commit message: `Add note for <platform> <id>`.
+3. **Comments** - `analyze-comments` when comments are available (YouTube) or the user pastes them (Instagram). Use them only for leads, e.g. the real repo link.
+4. **Write the note** - `write-link-note` creates `notes/<platform>/<id>.md`.
+5. **Fact-check** - `fact-check-claims` researches every checkable claim in the video and returns verdicts.
+6. **Registries** - `update-registries` files each verdict in `registry/verified.md`, `registry/hoax.md` or `registry/sidequests.md`, and links back to the note.
+7. **Docs** - append a dated entry to `decision.md` for every non-obvious choice made in this run (including workarounds for blocked fetches). Update `flow.md` if a script, skill or folder was added or changed.
+8. **Ship** - commit and push straight to `main` (the user's standing instruction). Commit message: `Add note for <platform> <id>`.
 
 Finish by telling the user: what the post is, the verdicts, what could not be fetched, and anything you need from them.
 

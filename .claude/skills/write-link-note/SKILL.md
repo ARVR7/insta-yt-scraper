@@ -37,6 +37,7 @@ registry: <link to the entry in registry/*.md>
 ## Transcript (auto)
 ## What is shown on screen
 ## Summary
+## Comments        <- filled by analyze-comments (omit if unavailable, say why)
 ## Research        <- filled by fact-check-claims: claim | verdict | evidence + links
 ## Notes / caveats
 ```
