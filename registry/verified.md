@@ -83,6 +83,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### chinaai.app gives free Seedance, Kling and Wan video generation  (2026-10-17)
+- **Verdict:** unverified
+- **What it is:** The reel says this site offers the best video models for free once free mode is on.
+- **Why pending:** The page lists the models and 'no credit card required' but states no free allowance, sells credits, and names no operator; the free-mode setting is not shown.
+- **To resolve:** The site's pricing and terms pages, or a screen recording of a free generation from sign-up to result.
+- **Source note:** [notes/instagram/DeCH_lVqG-k.md](../notes/instagram/DeCH_lVqG-k.md)
+
 ### Meta Muse gives 1 billion free tokens through invite codes  (2026-10-17)
 - **Verdict:** unverified
 - **What it is:** Reported referral offer: redeem an invite code within 48 hours of signing up for 1 billion Muse tokens each.

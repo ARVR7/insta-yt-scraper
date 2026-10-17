@@ -172,6 +172,33 @@
     "note_path": "notes/instagram/DeSArmKIhid.md"
   },
   {
+    "id": "DeCH_lVqG-k",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DeCH_lVqG-k/",
+    "title": "China AI video generator",
+    "author": "snnubbo",
+    "posted": "2026-10-03 13:05:40+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "chinaai",
+      "seedance",
+      "kling",
+      "wan"
+    ],
+    "usefulness": "mixed",
+    "verdict": "pending",
+    "key_info": "chinaai.app is a real site that bundles Seedance, Kling and Wan video models, but nothing I could read says it is free, and it names no operator, so the reel's free claim is unverified.",
+    "note_path": "notes/instagram/DeCH_lVqG-k.md"
+  },
+  {
     "id": "Dd1_GC-sJVz",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/Dd1_GC-sJVz/",
