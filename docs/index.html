@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Link Inbox</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0e6b5a">
+<link rel="icon" href="icon-192.png">
+<style>
+  :root { --bg:#f2f5f3; --surface:#fff; --fg:#15201c; --muted:#5a6a63; --line:#d5ddd9; --accent:#0e6b5a; --accent-fg:#fff; --ok:#14603a; --err:#8a1f1f; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1613; --surface:#17211d; --fg:#e4ece8; --muted:#93a39b; --line:#2a3832; --accent:#3fb59d; --accent-fg:#07130f; --ok:#7fd5a4; --err:#f0a0a0; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+         padding: max(24px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); }
+  main { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+  h1 { font-size: 24px; margin: 0; letter-spacing: -.01em; }
+  p { margin: 0; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; }
+  .status { font-weight: 600; min-height: 1.5em; overflow-wrap: anywhere; }
+  .status.ok { color: var(--ok); } .status.err { color: var(--err); }
+  input { width: 100%; padding: 12px; font: 14px ui-monospace,Menlo,monospace; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
+  button { font: 600 14px system-ui; padding: 12px 16px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-fg); cursor: pointer; }
+  button.ghost { background: transparent; color: var(--accent); border-color: var(--line); }
+  form { display: flex; gap: 8px; flex-wrap: wrap; } form > .grow { flex: 1 1 220px; min-width: 0; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { padding: 10px 0; border-bottom: 1px solid var(--line); display: flex; gap: 10px; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+  li a { color: var(--accent); overflow-wrap: anywhere; min-width: 0; }
+  .tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Link Inbox</h1>
+    <p class="muted">Share an Instagram or YouTube link to this app. It is queued as a GitHub issue for Claude to process.</p>
+  </header>
+
+  <div class="card">
+    <p id="status" class="status" role="status">Ready.</p>
+    <form id="manual" autocomplete="off">
+      <div class="grow"><input id="manualUrl" type="url" inputmode="url" placeholder="Paste a link" aria-label="Link to queue"></div>
+      <button type="submit">Queue</button>
+    </form>
+  </div>
+
+  <div class="card" id="setup">
+    <p><strong>GitHub token</strong></p>
+    <p class="muted">Needed once on this phone. Create a fine-grained token for the repository <code id="repoName"></code> only, with <em>Issues: Read and write</em> and nothing else. It is stored in this browser only.</p>
+    <form id="tokenForm" autocomplete="off">
+      <div class="grow"><input id="token" type="password" placeholder="github_pat_…" aria-label="GitHub token"></div>
+      <button type="submit">Save</button>
+    </form>
+    <button class="ghost" id="clearToken" type="button" hidden>Remove token from this phone</button>
+  </div>
+
+  <section>
+    <p class="tag">Recent links</p>
+    <ul id="recent"></ul>
+  </section>
+</main>
+
+<script>
+(function () {
+  var OWNER = "ARVR7", REPO = "insta-yt-scraper", LABEL = "link";
+  var $ = function (id) { return document.getElementById(id); };
+  $("repoName").textContent = OWNER + "/" + REPO;
+
+  function getToken() { try { return localStorage.getItem("gh_token") || ""; } catch (e) { return ""; } }
+  function setToken(v) { try { v ? localStorage.setItem("gh_token", v) : localStorage.removeItem("gh_token"); } catch (e) {} }
+  function say(t, kind) { var s = $("status"); s.textContent = t; s.className = "status" + (kind ? " " + kind : ""); }
+
+  // Pull the first supported link out of free text: Android share sheets put the URL in "text".
+  function findLink(text) {
+    var urls = (text || "").match(/https?:\/\/[^\s<>"']+/g) || [];
+    for (var i = 0; i < urls.length; i++) { var p = parse(urls[i]); if (p) return p; }
+    return null;
+  }
+  function parse(raw) {
+    var u; try { u = new URL(raw); } catch (e) { return null; }
+    var host = u.hostname.replace(/^www\.|^m\./, ""), m;
+    if (host === "instagram.com") {
+      m = u.pathname.match(/^\/(?:[\w.]+\/)?(reel|reels|p|tv)\/([\w-]+)/);
+      if (m) return { platform: "instagram", key: m[2], url: "https://www.instagram.com/" + (m[1] === "p" ? "p" : "reel") + "/" + m[2] + "/" };
+    }
+    if (host === "youtu.be") { m = u.pathname.match(/^\/([\w-]{6,})/); if (m) return { platform: "youtube", key: m[1], url: "https://www.youtube.com/watch?v=" + m[1] }; }
+    if (host === "youtube.com" || host === "music.youtube.com") {
+      var id = u.searchParams.get("v"); m = u.pathname.match(/^\/(shorts|embed|live)\/([\w-]{6,})/);
+      if (m) id = m[2];
+      if (id && /^[\w-]{6,}$/.test(id)) return { platform: "youtube", key: id, url: m && m[1] === "shorts" ? "https://www.youtube.com/shorts/" + id : "https://www.youtube.com/watch?v=" + id };
+    }
+    return null;
+  }
+
+  function gh(path, opts) {
+    opts = opts || {};
+    opts.headers = Object.assign({ "Accept": "application/vnd.github+json", "Authorization": "Bearer " + getToken(), "X-GitHub-Api-Version": "2022-11-28" }, opts.headers || {});
+    return fetch("https://api.github.com/repos/" + OWNER + "/" + REPO + path, opts).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) { var e = new Error(j.message || ("HTTP " + r.status)); e.status = r.status; throw e; } return j; });
+    });
+  }
+
+  function queue(p) {
+    if (!getToken()) { say("Add your GitHub token below first, then share the link again.", "err"); return Promise.resolve(); }
+    var title = "Link: " + p.platform + " " + p.key;
+    say("Queuing " + p.url + " …");
+    return gh("/issues?labels=" + LABEL + "&state=all&per_page=100").then(function (issues) {
+      var dup = issues.filter(function (i) { return i.title === title && !i.pull_request; })[0];
+      if (dup) { say("Already queued (issue #" + dup.number + ", " + dup.state + ").", "ok"); return; }
+      return gh("/issues", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title: title, body: p.url, labels: [LABEL] }) })
+        .then(function (i) { say("Queued as issue #" + i.number + ". Ask Claude to process the queue.", "ok"); });
+    }).catch(function (e) {
+      say(e.status === 401 || e.status === 403 || e.status === 404 ? "GitHub refused the token (" + e.message + "). Check it covers " + OWNER + "/" + REPO + " with Issues write." : "Could not queue: " + e.message, "err");
+    }).then(loadRecent);
+  }
+
+  function loadRecent() {
+    var ul = $("recent"); ul.textContent = "";
+    if (!getToken()) return;
+    return gh("/issues?labels=" + LABEL + "&state=all&per_page=15").then(function (issues) {
+      issues.filter(function (i) { return !i.pull_request; }).forEach(function (i) {
+        var li = document.createElement("li"), a = document.createElement("a"), t = document.createElement("span");
+        a.href = i.html_url; a.target = "_blank"; a.rel = "noopener"; a.textContent = i.title.replace(/^Link: /, "");
+        t.className = "tag"; t.textContent = i.state === "closed" ? "done" : "queued";
+        li.appendChild(a); li.appendChild(t); ul.appendChild(li);
+      });
+    }).catch(function () {});
+  }
+
+  function refreshSetup() { var has = !!getToken(); $("clearToken").hidden = !has; $("token").placeholder = has ? "Token saved. Paste a new one to replace." : "github_pat_…"; }
+
+  $("manual").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var p = findLink($("manualUrl").value);
+    if (!p) { say("That is not an Instagram reel/post or YouTube video link.", "err"); return; }
+    queue(p).then(function () { $("manualUrl").value = ""; });
+  });
+  $("tokenForm").addEventListener("submit", function (e) {
+    e.preventDefault(); var v = $("token").value.trim(); if (!v) return;
+    setToken(v); $("token").value = ""; refreshSetup(); say("Token saved on this phone.", "ok"); loadRecent();
+  });
+  $("clearToken").addEventListener("click", function () { setToken(""); refreshSetup(); $("recent").textContent = ""; say("Token removed.", "ok"); });
+
+  refreshSetup();
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function () {});
+
+  // Share target arrives as ?title=…&text=…&url=…
+  var q = new URLSearchParams(location.search);
+  var shared = [q.get("url"), q.get("text"), q.get("title")].filter(Boolean).join(" ");
+  if (shared) {
+    var p = findLink(shared);
+    history.replaceState(null, "", location.pathname);
+    if (p) queue(p); else { say("No Instagram or YouTube link found in what was shared.", "err"); loadRecent(); }
+  } else loadRecent();
+})();
+</script>
+</body>
+</html>

@@ -4,6 +4,14 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Share-sheet app on GitHub Pages; the queue moves to GitHub issues
+- **Decision:** `docs/` is a static installable web app with a Web Share Target. A shared link becomes an issue labelled `link`. `process-queue` reads those issues, comments the verdict and closes them. The artifact queue stays as a second input.
+- **Why:** the user wants Instagram/YouTube "Share" to list the app on Android. That needs a manifest `share_target` on a site we serve; the artifact page lives in a sandbox and cannot have one. A static site cannot write to the artifact database, but it can call the GitHub API, so issues became the shared queue.
+- **Security:** the token is a fine-grained one the user creates, limited to this repo with Issues read/write only, kept in that phone's `localStorage`, never committed. The repo and label are constants in the page. Issues are untrusted input: only a validated Instagram/YouTube URL is used and issues from other authors are ignored.
+- **Duplicates:** the app checks existing `link` issues for the same title before creating one.
+- **Service worker:** network-first and same-origin only, so it never touches GitHub API calls and a new deploy is never stale.
+- **Tested:** share URL parsing, issue creation and the no-link case against a mocked GitHub API in headless Chromium. Not tested on a real phone or against the real API.
+
 ### Link Inbox is a claude.ai artifact with a db queue, not a public website
 - **Decision:** a private artifact with the `db` capability holds the queue; `process-queue` reads and updates it through `ArtifactData`.
 - **Why:** a public site that triggers scrapers needs a server, and anything that writes to the repo needs a token exposed to the browser. The artifact gives login-protected writes, live status for the user, and no secrets. The GitHub-issue-as-queue alternative was rejected because the page could not show results without a server.

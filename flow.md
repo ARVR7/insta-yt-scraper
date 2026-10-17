@@ -5,6 +5,7 @@ How a shared link becomes notes and registry entries, and what lives where. Upda
 ## Entry points
 
 ```
+Android share sheet -> docs/ web app (GitHub Pages) -> GitHub issue labelled `link` --user asks--> process-queue
 Link Inbox page (claude.ai artifact, db collection `links`) --user asks--> process-queue --> process-link (per link)
 chat message with a link ------------------------------------------------> process-link
 ```
@@ -51,6 +52,7 @@ decision.md (why) + flow.md (what changed) -> commit -> push to main
 | `scripts/fetch_instagram.py` | `<url> <outdir>` -> `meta.json`, `video.mp4`. |
 | `scripts/fetch_youtube.py` | `<url> <outdir> [--comments N]` -> `meta.json`, `comments.json`, `captions.*.vtt`, `video.mp4`; metadata survives a blocked download. |
 | `scripts/analyze_video.py` | `<video> <outdir> [--every N]` -> `frames/`, `sheet.jpg`, `transcript.txt`. |
+| `docs/` | Installable web app (GitHub Pages) with a Web Share Target: `index.html`, `manifest.webmanifest`, `sw.js`, icons. Receives a shared link and creates a `link`-labelled issue using a fine-grained token stored on the phone. |
 | `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `process-queue`. |
 | Link Inbox artifact | https://claude.ai/artifact/FLi1JREBRUV493gipCS5AG (source is not in the repo; it lives on claude.ai). |
 | `notes/instagram/<shortcode>.md` | One note per Instagram link. |
