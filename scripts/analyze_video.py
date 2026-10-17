@@ -6,6 +6,8 @@ Writes <outdir>/frames/f*.jpg, <outdir>/sheet.jpg (view it to read on-screen tex
 and <outdir>/transcript.txt. Requires ffmpeg on PATH.
 """
 import glob
+import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -65,8 +67,37 @@ def transcript(video, out):
     print("\n".join(lines))
 
 
+def screen_text(video, out, every=3):
+    """OCR the on-screen text. Returns lines (deduplicated) or [] when OCR is unavailable.
+
+    Phone footage of screens is noisy, so this finds names, URLs and numbers for lookup;
+    it does not replace looking at the contact sheet for visual content.
+    """
+    try:
+        from rapidocr_onnxruntime import RapidOCR
+    except Exception:
+        return None
+    tmp = out / "ocr_frames"
+    tmp.mkdir(parents=True, exist_ok=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", video, "-vf", f"fps=1/{every},scale=1080:-1",
+                    str(tmp / "o%03d.jpg")], check=True)
+    engine = RapidOCR()
+    seen, lines = set(), []
+    for n, f in enumerate(sorted(glob.glob(str(tmp / "o*.jpg")))):
+        res, _ = engine(f)
+        for r in res or []:
+            t = r[1].strip()
+            key = re.sub(r"\W+", "", t.lower())
+            if float(r[2]) > 0.7 and len(key) > 3 and key not in seen:
+                seen.add(key)
+                lines.append(f"[{n * every}s] {t}")
+    shutil.rmtree(tmp, ignore_errors=True)
+    (out / "screen_text.txt").write_text("\n".join(lines) + "\n")
+    return lines
+
+
 def main():
-    args = sys.argv[1:]
+    args = [a for a in sys.argv[1:] if a != "--ocr"]
     every = 4
     if "--every" in args:
         i = args.index("--every")
@@ -79,6 +110,8 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     frames(video, out, every)
     transcript(video, out)
+    if "--ocr" in sys.argv:
+        screen_text(video, out)
 
 
 if __name__ == "__main__":

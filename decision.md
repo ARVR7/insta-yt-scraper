@@ -4,6 +4,16 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Mechanical front and back halves; the model only judges
+- **Decision:** two scripts now carry everything that needs no judgment. `prepare_link.py` does the fetch, frames, transcript (with translation), OCR, candidate extraction and source lookups, and writes a compact `brief.md` plus a draft note. `finish_link.py` takes one small `verdict.json`, writes the note from the draft, files registry entries, rebuilds the library, regenerates the `flow.md` notes table, produces the issue comment and pushes with retries. Claude reads one file, researches, and writes one JSON.
+- **Why:** the user asked to make as much mechanical as possible without hurting quality. The model previously retyped boilerplate (metadata, caption, transcript, registry markdown, git commands) and read several large tool outputs; those steps need no judgment.
+- **Quality safeguards:** judgment stays with the model (title, category, usefulness, verdicts, which claims to check, research beyond the lookups). `finish_link.py` validates the note and taxonomy before changing any file, rejects leftover `TODO`s, skips duplicate registry entries and never overwrites a note unless asked. The contact sheet is still viewed whenever the video has anything to see; it is skipped only for a talking head with no readable text.
+- **OCR is a finder, not a reader:** phone footage of screens gives noisy text (words run together), so OCR is used to surface names, repos and numbers for lookup, and the sheet remains the reference for visual content.
+- **Lookups use `raw.githubusercontent.com`:** the sandbox proxy returns 403 for the GitHub API and github.com pages, but raw files work, giving existence, licence and README lines on requirements, limits and price without a model call. A repo not found is reported as unverified, never as fake. Stars and dates need a `GITHUB_TOKEN`.
+- **Research budget:** start from the lookups; normally 2-4 searches or page reads per link; none for entertainment.
+- **Also fixed:** compiled Python caches had been committed; they are now ignored and removed.
+- **Not done:** the hourly scheduled check still starts a model session to list issues. Making that check model-free needs a GitHub Action holding a secret to start the run, which has to be set up by the user.
+
 ### Reel DeSArmKIhid (issue #2): FreeVideo, helpful with caveats
 - **Decision:** `ai/creative`, usefulness `helpful`, verdict `verified`. The tool is real and open source (checked on its GitHub README and a third-party wiki). The "no other tool does this" claim is filed as `misleading` in `hoax.md`, and the 4K/quality claim as `unverified` in the pending section, so the note is helpful overall but not uncritical.
 - **Source hierarchy:** the 8 GB "out of memory" chart is the project's own marketing, so it is treated as a vendor claim and compared against independent guides.

@@ -37,6 +37,8 @@ def fail(path, msg):
 
 
 def read_note(path, tax):
+    if re.search(r"\bTODO\b", path.read_text(encoding="utf8")):
+        fail(path, "still contains TODO placeholders from the draft")
     meta = tx.get_meta(path)
     missing = [k for k in REQUIRED if not meta.get(k)]
     if missing:

@@ -5,6 +5,7 @@ description: Research whether the tools, hacks, numbers and income claims in a v
 
 # fact-check-claims
 
+0. Start from the brief's "Looked up" section: repo existence, licence and README lines about requirements, limits and price were fetched mechanically from primary sources, so do not re-fetch them. A web search or page read is only for what it does not cover. Budget: normally 2-4 searches or page reads per link; stop once every claim has a source or is marked unverified, and skip entirely for entertainment.
 0. If `analyze-comments` produced leads (a repo link, a correction), check them like any other claim.
 1. **List the checkable claims** from the transcript and frames: named tools/repos, features, prices ("free"), numbers, income or growth promises, "secret" tricks, legal/policy statements.
 2. **Check each one against primary sources first**: the repo or product page, official docs, the platform's policy page, the package index (PyPI/npm), the API provider's pricing page. Use `WebSearch` to find them and `WebFetch` to read them. Secondary blogs only as supporting evidence.

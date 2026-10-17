@@ -1,6 +1,7 @@
-instaloader
-yt-dlp
-faster-whisper
-numpy
 Pillow
+faster-whisper
+instaloader
+numpy
 pyyaml
+rapidocr-onnxruntime
+yt-dlp

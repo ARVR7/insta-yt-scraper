@@ -1,26 +1,23 @@
 ---
 name: process-link
-description: Full pipeline for a shared Instagram reel/post or YouTube video/short - fetch, analyze, write the note, fact-check the claims, update the registries and docs, then push to main. Use whenever the user shares an instagram.com or youtube.com/youtu.be link.
+description: Full pipeline for a shared Instagram reel/post or YouTube video/short - mechanical prepare, read the brief, research the claims, write the verdicts, finish and push. Use whenever the user shares an instagram.com or youtube.com/youtu.be link.
 ---
 
 # process-link
 
-Run these steps in order. Each step is its own skill; read it before running it.
+Everything that does not need judgment is a script, so the model only reads one brief, researches, and writes one small JSON file.
 
-1. **Fetch** - `fetch-instagram-post` for instagram.com links, `fetch-youtube-video` for youtube.com / youtu.be links. Output goes to a scratch directory, never into the repo.
-2. **Analyze** - `analyze-video` on the downloaded video (frames, contact sheet, transcript). Look at `sheet.jpg` to read on-screen text.
-3. **Comments** - `analyze-comments` when comments are available (YouTube) or the user pastes them (Instagram). Use them only for leads, e.g. the real repo link.
-4. **Write the note** - `write-link-note` creates `notes/<platform>/<id>.md`.
-5. **Fact-check** - `fact-check-claims` researches every checkable claim in the video and returns verdicts.
-6. **Registries** - `update-registries` files each verdict in `registry/verified.md`, `registry/hoax.md` or `registry/sidequests.md`, and links back to the note.
-7. **Categorize** - `categorize-link` sets `category`, `subcategory`, `location` (and `also`) in the note's front matter from `taxonomy.yml`.
-8. **Library** - `update-library` rebuilds `data/library.json` and the `library/` lists from the notes.
-9. **Docs** - append a dated entry to `decision.md` for every non-obvious choice made in this run (including workarounds for blocked fetches). Update `flow.md` if a script, skill or folder was added or changed.
-10. **Ship** - commit and push straight to `main` (the user's standing instruction). Commit the note, registry entries, `data/` and `library/` together. Commit message: `Add note for <platform> <id>`.
-
-Finish by telling the user: what the post is, the verdicts, what could not be fetched, and anything you need from them.
+1. **Prepare (mechanical)** - `prepare-link`: `python3 scripts/prepare_link.py "<url>" "$SCRATCH/<id>" [--queued-via "GitHub issue #N"]`. Exit 3 means the note already exists (say so and stop); exit 2 means the fetch is blocked (tell the user or mark `needs-input`).
+2. **Read** `$SCRATCH/<id>/brief.md` and nothing else. Look at `sheet.jpg` only if the brief says `needs_visual_review: yes`. For YouTube, read `comments.json` only if it is non-empty, with `analyze-comments`.
+3. **Research** - `fact-check-claims`, starting from the brief's "Looked up" section (already primary-source facts) and its candidate list. Search the web only for claims those do not cover, and stop when every claim has a source or is marked unverified. Skip research for entertainment videos (side quest).
+4. **Judge** - choose title, `categorize-link` fields, usefulness and verdicts using `write-link-note` (titles) and the usefulness scale in `update-library`; draft the registry entries.
+5. **Finish (mechanical)** - write `verdict.json` and run `finish-link`: `python3 scripts/finish_link.py "$SCRATCH/<id>/verdict.json" --push --trailer "<attribution>"`. It writes the note from the draft, files the registry entries, rebuilds the library and `flow.md`, and pushes to `main`.
+6. **Report** - queue item: post the printed comment on the issue and close it. Chat: tell the user what it is, the verdicts, what could not be fetched, and anything needed from them.
 
 Rules:
-- Never claim a verdict the research did not support. "Could not verify" is a valid result; put it in the Pending section of `registry/verified.md`, not in hoax.
-- If the video is not informative (entertainment, no checkable claim or tool), skip fact-checking and add it to `registry/sidequests.md` instead.
-- If several links arrive at once, process them one by one; do not batch commits across links.
+- Never claim a verdict the research did not support; "could not verify" goes in the pending section, not in hoax.
+- Log non-obvious choices through the `decision` field of `verdict.json`, never in chat only.
+- Several links at once: process them one at a time; one commit per link.
+- Never ask for cookies; keep media out of the repo.
+
+The older single-step skills (`fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `write-link-note`, `update-registries`, `update-library`) stay as reference and manual fallbacks; the scripts above call the same code.

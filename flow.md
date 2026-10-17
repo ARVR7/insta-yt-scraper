@@ -17,32 +17,29 @@ The page only queues links and shows results; it cannot run scrapers or wake Cla
 ## Pipeline
 
 ```
-user shares a link
+user shares a link  (chat, or the app's issue queue via process-queue)
       |
       v
-process-link  (.claude/skills/process-link)
-      |
-      |-- instagram.com  -> fetch-instagram-post -> scripts/fetch_instagram.py  (instaloader)
-      |-- youtube.com    -> fetch-youtube-video  -> scripts/fetch_youtube.py    (yt-dlp)
-      |         both write meta.json (+ video.mp4, captions) into a scratch dir, not the repo
+prepare_link.py   MECHANICAL, no model tokens (1-3 min)
+      |   fetch_instagram.py / fetch_youtube.py -> metadata, caption, video, captions
+      |   analyze_video.py -> frames + sheet.jpg, transcript (non-English translated), OCR text
+      |   regex candidates (GitHub repos, pip/npm names, URLs, @handles, prices, income claims)
+      |   lookups: GitHub raw files (licence, README lines on requirements/limits), PyPI JSON
+      |   writes brief.md + draft_note.md; skips links already processed
       v
-analyze-comments (YouTube via fetch_youtube.py --comments; Instagram only if the user pastes them)
-      |         -> leads + noise ratio, no claim is trusted from comments
+Claude (the only judgment)
+      |   read brief.md (+ sheet.jpg only if flagged), research what the lookups did not cover
+      |   categorize per taxonomy.yml, decide usefulness and verdicts
+      |   write verdict.json  (title, category, usefulness, key_info, summary, research rows, registry entries)
       v
-analyze-video  -> scripts/analyze_video.py  (ffmpeg frames + contact sheet + faster-whisper transcript)
-      |         then Claude reads sheet.jpg for on-screen text
+finish_link.py    MECHANICAL
+      |   validates note + taxonomy first, writes notes/<platform>/<id>.md from the draft
+      |   adds registry entries (verified / pending / hoax / sidequests), appends decision
+      |   build_index.py -> data/library.json, data/taxonomy.json, library/*
+      |   regenerates the "Current notes" table below, writes the issue comment
+      |   commits and pushes to main with retries
       v
-write-link-note  -> notes/<platform>/<id>.md
-      v
-fact-check-claims  (WebSearch / WebFetch, primary sources)  -> "Research" table in the note
-      v
-update-registries  -> registry/verified.md | registry/hoax.md | registry/sidequests.md
-      v
-categorize-link -> category / subcategory / location / also, validated against taxonomy.yml
-      v
-update-library  -> scripts/build_index.py -> data/library.json + library/*.md (generated)
-      v
-decision.md (why) + flow.md (what changed) -> commit -> push to main
+Claude posts the printed comment on the issue and closes it
 ```
 
 ## Repository map
@@ -61,10 +58,12 @@ decision.md (why) + flow.md (what changed) -> commit -> push to main
 | `docs/` | Installable web app (GitHub Pages) with a Web Share Target. Three tabs: **Library** (usefulness ring, a shelf of category tiles that drill into subcategories and locations, search and a filter sheet for sort, usefulness, platform, date, creator and tool; tap a card for a note with summary and what checks out), **Queue** (add a link; each link shows a Waiting / Working / Done track), **Claims** (verified, hoax, side quests as collapsible cards). Settings holds a System / Light / Dark theme switch. Reads the repo through the GitHub API with a fine-grained token stored on the phone (Issues read/write, Contents read-only). |
 | `taxonomy.yml` | Closed vocabulary: categories with subcategories, aliases, icons and colours; locations (country, city). Single source of truth. |
 | `scripts/taxonomy.py` | Shared lookup code plus `check`, `merge-sub`, `merge-cat` and `rename-city` for keeping the taxonomy tidy as it grows. |
+| `scripts/prepare_link.py` | One command for all mechanical work on a link; writes `brief.md` and `draft_note.md`. |
+| `scripts/finish_link.py` | One command for everything after the judgment: note, registry, index, flow table, comment, push. |
 | `scripts/build_index.py` | Validates notes against the taxonomy and builds `data/library.json`, `data/taxonomy.json` and `library/`. |
 | `data/library.json`, `data/taxonomy.json` | Generated index and vocabulary the app reads. |
 | `library/README.md`, `library/by-category/`, `library/by-location/`, `library/by-usefulness/` | Generated lists of every link with key info, grouped for reading on GitHub. |
-| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `categorize-link`, `update-library`, `analyze-comments`, `process-queue`. |
+| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `prepare-link`, `finish-link`, `categorize-link`, `update-library`, `analyze-comments`, `process-queue`. |
 | Link Inbox artifact | https://claude.ai/artifact/FLi1JREBRUV493gipCS5AG (source is not in the repo; it lives on claude.ai). |
 | `notes/instagram/<shortcode>.md` | One note per Instagram link. |
 | `notes/youtube/<video-id>.md` | One note per YouTube link. |
@@ -76,8 +75,8 @@ decision.md (why) + flow.md (what changed) -> commit -> push to main
 Downloaded videos, frames and transcripts stay in a scratch directory outside the repo. Only the note, registry entries and docs are committed, so the repo stays small and contains no downloaded media.
 
 ## Current notes
-| Note | Verdict |
+| Note | Category · usefulness · verdict |
 |---|---|
-| [notes/instagram/DeToMLxtdSV.md](notes/instagram/DeToMLxtdSV.md) | partly-verified (components real, earnings claim misleading) |
-| [notes/instagram/DegLPFbTBpi.md](notes/instagram/DegLPFbTBpi.md) | partly-verified (product real, "free" misleading, demo unproven) |
-| [notes/instagram/DeSArmKIhid.md](notes/instagram/DeSArmKIhid.md) | verified (real tool; 8 GB is a minimum, weights licence restricted) |
+| [notes/instagram/DegLPFbTBpi.md](notes/instagram/DegLPFbTBpi.md) | AI · mixed · partly-verified |
+| [notes/instagram/DeToMLxtdSV.md](notes/instagram/DeToMLxtdSV.md) | AI · mixed · partly-verified |
+| [notes/instagram/DeSArmKIhid.md](notes/instagram/DeSArmKIhid.md) | AI · helpful · verified |
