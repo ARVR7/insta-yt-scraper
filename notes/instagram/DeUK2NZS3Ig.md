@@ -17,17 +17,17 @@ fetch_status:
   transcript: "ok (faster-whisper, translated, auto-generated, may contain errors)"
   on_screen_text: "OCR + contact sheet"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
+title: "Motion design prompt repo"
+category: ai
+subcategory: creative
+usefulness: mixed
 tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+key_info: "A GitHub repo of 500+ AI motion-design prompts (MIT licence, shown on screen) that the creator only shares via a share-in-DM funnel; the repo itself could not be identified, so the claims are unverified."
+verdict: pending
+registry: registry/verified.md
 ---
 
-# TODO
+# Motion design prompt repo
 
 ## Caption / hashtags
 > SHARE this Reel in DM to get the repo with 500+ viral AI motion design prompts 📩
@@ -55,19 +55,19 @@ registry: TODO
 Hashtags: #aivideo #motiondesign #aiprompts #aitools #contentcreator.
 
 ## Hook (on-screen text)
-TODO
+"THIS REPO JUST KILLED MOTION DESIGNERS"
 
 ## Call to action
-TODO
+Share the reel in DM to get the repo; the creator also says comments work but that the automation is glitching.
 
 ## Transcript (auto)
 > Bro, if you are also thinking that people are prompting that AI is generating so many videos, then look at this. Bro, there are 500 viral motion design videos which people have made which you can literally remake by copying the prompt. And the prompt is given. If you also want this, then share this reel with me and I will also send it to you. You can comment as well but I don't know why my automation is glitching. Rest follow me for such resources.
 
 ## What is shown on screen
-TODO
+A GitHub README showing the MIT licence and a gallery of motion-design demos credited to many creators' handles, each labelled Prompt and tagged with technologies such as SVG, GSAP, Canvas, Three.js and easing. A star count of about 52,397 is read from the screen by OCR and is not confirmed. No repo name is legible.
 
 ## Summary
-TODO
+The creator says a repo collects 500+ viral AI-made motion designs, each with the exact prompt, so you can copy a prompt and remake the design. The repo name is never shown and the link is withheld unless you share the reel.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 9611 against 9748 likes (comments/likes 0.99; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -76,9 +76,13 @@ Not read: Instagram requires a login to list comments. The count is 9611 against
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| A repo with 500+ viral motion design prompts exists | unverified | The repo name is not shown. Searches found similar projects ([MotionSites prompt collection](https://github.com/nomaan5541/motionsites-prompt-collection), 661 web-design prompts, MIT) but none confirmed as this one. |
+| Every design comes with its exact prompt | unverified | The screen shows items labelled Prompt, but nothing opens a prompt. |
+| It is free to get | misleading | The link is gated behind sharing the reel in DMs; a public MIT repo needs no gate. |
 
-Overall: TODO
+Overall: Probably a real prompt gallery, but unidentified and sold as an insider drop.
 
 ## Notes / caveats
-- TODO
+- Hindi audio translated automatically.
+- Comments (9,611 against 9,748 likes) were not read: Instagram needs a login for them.
+- Many credited handles appear on screen (OCR); crediting does not show the creators agreed to the collection.

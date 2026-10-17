@@ -75,6 +75,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Repo of 500+ viral AI motion design prompts  (2026-10-17)
+- **Verdict:** unverified
+- **What it is:** A GitHub repository, MIT licensed, of 500+ motion designs each with the exact AI prompt behind it, as shown in the reel.
+- **Why pending:** The reel never shows the repo name and the link is only sent after you share the reel; searches found only similar collections.
+- **To resolve:** The repo URL (ask the creator or find it by searching GitHub for the technologies named on screen), then check its README, licence and sample prompts.
+- **Source note:** [notes/instagram/DeUK2NZS3Ig.md](../notes/instagram/DeUK2NZS3Ig.md)
+
 ### Jio's free Google AI Pro includes the Colab A100  (2026-10-17)
 - **Verdict:** unverified
 - **What it is:** Whether the 18-month Jio offer carries the new Colab benefits.
