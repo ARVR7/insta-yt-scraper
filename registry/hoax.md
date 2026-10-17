@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### "Comment for the free set of AI agents that run your life" (Grok Bot reel)  (2026-10-17)
+- **Verdict:** misleading
+- **What it is:** A comment-for-DM offer of a free set of agents, framed as an insider tip.
+- **Why it is misleading:** The end card says the video is sponsored by SpaceXAI, so it is an ad. The agents are only useful inside Grok Bot, which needs a paid plan, so 'free' covers the instructions, not the running.
+- **Evidence:** [Implicator](https://www.implicator.ai/spacexai-grok-bot-starts-at-120-a-seat/), [Codersera](https://codersera.com/blog/grok-bot-complete-guide-2026/)
+- **Source note:** [notes/instagram/Dd1_GC-sJVz.md](../notes/instagram/Dd1_GC-sJVz.md)
+
 ### "No other tool runs MiniMax H3 on 8 GB"  (2026-10-17)
 - **Verdict:** misleading
 - **What it is:** the reel's claim that FreeVideo is the only way to run this on an 8 GB card, with other tools needing 32 GB or more.

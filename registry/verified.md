@@ -4,6 +4,22 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### LinkedIn's rules against automated tools put auto-apply bots at risk  (2026-10-17)
+- **Verdict:** verified-with-caveats
+- **What it is:** LinkedIn's User Agreement prohibits automated tools and scraping, and LinkedIn has sued scrapers under that agreement and computer-fraud law.
+- **How to use / why it matters:** Treat any agent that applies to jobs or messages people on LinkedIn for you as a risk to your account (restriction or termination).
+- **Caveats:** The broader reading that it covers ordinary users of automation comes from a third-party analysis, not a legal ruling, and enforceability depends on jurisdiction.
+- **Evidence:** [ConductAtlas analysis](https://conductatlas.com/platform/linkedin/linkedin-user-agreement/prohibition-on-scraping-and-automated-data-collection/), [TechCrunch on LinkedIn suing scrapers](https://techcrunch.com/2016/08/15/linkedin-sues-scrapers/)
+- **Source note:** [notes/instagram/Dd1_GC-sJVz.md](../notes/instagram/Dd1_GC-sJVz.md)
+
+### Grok Bot (SpaceXAI cloud agent)  (2026-10-17)
+- **Verdict:** verified-with-caveats
+- **What it is:** A SpaceXAI product in beta since 11 August 2026: an AI agent that runs in the cloud, signs into software, inboxes and websites (including ones without an API) and keeps working after you close your laptop.
+- **How to use / why it matters:** Available to SuperGrok Heavy, Cursor Ultra and Cursor Teams Premium subscribers on macOS, Windows, Linux and iOS (Android to follow); you create named agents with instructions and publish them.
+- **Caveats:** Paid, not free; reported prices differ ($120 per team seat, $200 personal, $300 for SuperGrok Heavy). It is a beta, no official pricing page was found, and the reel is sponsored.
+- **Evidence:** [Constellation Research](https://www.constellationr.com/insights/news/spacexai-launches-grok-bot-work-assistant), [Implicator](https://www.implicator.ai/spacexai-grok-bot-starts-at-120-a-seat/), [Korben](https://korben.info/en/grok-bot-launches-beta.html)
+- **Source note:** [notes/instagram/Dd1_GC-sJVz.md](../notes/instagram/Dd1_GC-sJVz.md)
+
 ### FreeVideo: local MiniMax H3 (VDN-H3) video generation in ComfyUI  (2026-10-17)
 - **Verdict:** verified-with-caveats
 - **What it is:** an open-source local inference engine from FlashML that generates video (and audio) with a modified MiniMax H3 model (OpenVDN's 8-step VDN-H3) on consumer GPUs, as a ComfyUI plugin plus Windows launcher and Linux CLI.
@@ -50,6 +66,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Grok Bot agents swipe Tinder, win airline refunds and buy concert tickets  (2026-10-17)
+- **Verdict:** unverified
+- **What it is:** The reel's claims about what its example agents accomplish.
+- **Why pending:** The screen shows only agent descriptions and a publish screen, never a completed swipe, refund or ticket purchase. The on-screen flight agent only hunts cheap fares and the event agent only flags nights. Tinder's terms on automation were not checked.
+- **To resolve:** A screen recording of a finished run for each task, and Tinder's current terms on bots and automation.
+- **Source note:** [notes/instagram/Dd1_GC-sJVz.md](../notes/instagram/Dd1_GC-sJVz.md)
 
 ### Arnold's best tricep exercise (PumpCrib short)  (2026-10-17)
 - **Verdict:** unverified
