@@ -1,5 +1,30 @@
 [
   {
+    "id": "DemHB0GhG_R",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DemHB0GhG_R/",
+    "title": "Colab A100 with Google AI Pro",
+    "author": "baljeet.ai",
+    "posted": "2026-10-17 12:29:46+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "google-colab",
+      "gemma"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Google AI Pro now bundles premium Colab with A100 80GB access (per a Google Gemma post), and Jio users in India get Google AI Pro free for 18 months; the GPU runs on compute units, is not guaranteed, and whether Jio's plan includes Colab is unconfirmed.",
+    "note_path": "notes/instagram/DemHB0GhG_R.md"
+  },
+  {
     "id": "DegLPFbTBpi",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DegLPFbTBpi/",

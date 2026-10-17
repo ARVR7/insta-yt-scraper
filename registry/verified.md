@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Google AI Pro includes premium Colab (A100 80GB)  (2026-10-17)
+- **Verdict:** verified-with-caveats
+- **What it is:** Google AI Pro plans now include premium Colab benefits with A100 80GB GPU access (Ultra adds H100s), announced by Google's Gemma account on 9-10 October 2026.
+- **How to use / why it matters:** Subscribe to Google AI Pro (in India, claim the free 18 months through MyJio if you are an eligible Jio user), then pick the A100 runtime in Colab to run or fine-tune Gemma-class models.
+- **Caveats:** Runs on Colab compute units (one source says 200 a month), hardware is not guaranteed, and the announcement is only confirmed through the Gemma post and secondary coverage, not an official page I read.
+- **Evidence:** [AI Post Hub](https://www.aiposthub.com/google-ai-pro-colab-a100-80gb-gemma-experiments/), [Inside](https://www.inside.com.tw/article/42497-google-ai-pro-colab-200-compute-units-a100-cli), [Gulf News on Jio's 18 months](https://gulfnews.com/technology/companies/google-and-jio-launch-free-18-month-ai-pro-access-for-millions-in-india-1.500328266)
+- **Source note:** [notes/instagram/DemHB0GhG_R.md](../notes/instagram/DemHB0GhG_R.md)
+
 ### LinkedIn's rules against automated tools put auto-apply bots at risk  (2026-10-17)
 - **Verdict:** verified-with-caveats
 - **What it is:** LinkedIn's User Agreement prohibits automated tools and scraping, and LinkedIn has sued scrapers under that agreement and computer-fraud law.
@@ -66,6 +74,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Jio's free Google AI Pro includes the Colab A100  (2026-10-17)
+- **Verdict:** unverified
+- **What it is:** Whether the 18-month Jio offer carries the new Colab benefits.
+- **Why pending:** The Jio coverage lists Gemini Pro and developer limits but never mentions Colab.
+- **To resolve:** Google's AI Pro plan page or a Jio user confirming Colab access.
+- **Source note:** [notes/instagram/DemHB0GhG_R.md](../notes/instagram/DemHB0GhG_R.md)
 
 ### Grok Bot agents swipe Tinder, win airline refunds and buy concert tickets  (2026-10-17)
 - **Verdict:** unverified
