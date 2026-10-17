@@ -199,6 +199,13 @@ def main():
     if note.exists() and not force:
         print(f"ALREADY_PROCESSED {note.relative_to(ROOT)}")
         sys.exit(3)
+    inbox = ROOT / "inbox" / f"{platform}_{vid}"
+    if (inbox / "brief.md").exists() and not force:
+        nv = re.search(r"needs_visual_review: (\w+)", (inbox / "brief.md").read_text())
+        print(f"OK pre-prepared by GitHub Actions: {inbox.relative_to(ROOT)}")
+        print(f"needs_visual_review: {nv.group(1) if nv else 'yes'}")
+        print(f"read: {inbox / 'brief.md'}   edit: {inbox / 'draft_note.md'}   sheet: {inbox / 'sheet.jpg'}")
+        sys.exit(0)
     out = Path(outdir)
     out.mkdir(parents=True, exist_ok=True)
 

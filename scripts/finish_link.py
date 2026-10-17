@@ -218,6 +218,11 @@ def main():
     done, skipped = add_entries(v.get("entries", []), note_rel)
     if v.get("decision"):
         add_decision(v["decision"])
+    if v.get("draft"):  # a draft prepared by GitHub Actions lives in inbox/; it has served its purpose
+        d = Path(v["draft"]).resolve().parent
+        if d.parent == (ROOT / "inbox").resolve():
+            import shutil
+            shutil.rmtree(d, ignore_errors=True)
     items = json.loads((ROOT / "data" / "library.json").read_text())
     refresh_flow(items)
     me = next((i for i in items if i["note_path"] == note_rel), None)

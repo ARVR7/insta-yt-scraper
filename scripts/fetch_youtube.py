@@ -5,6 +5,7 @@ Usage: fetch_youtube.py <url> <outdir> [--comments N]
 Writes <outdir>/comments.json (top N comments, only with --comments), <outdir>/meta.json, <outdir>/captions.*.vtt (best effort) and <outdir>/video.mp4.
 """
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -19,6 +20,8 @@ def main(url, outdir, n_comments=0):
         "noplaylist": True,
         "js_runtimes": {"node": {}},  # YouTube extraction needs a JS runtime
     }
+    if os.environ.get("YT_COOKIES_FILE"):  # optional: lets YouTube serve media to a datacenter IP
+        base["cookiefile"] = os.environ["YT_COOKIES_FILE"]
     opts = {
         **base,
         "outtmpl": str(out / "video.%(ext)s"),

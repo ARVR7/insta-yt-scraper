@@ -1,0 +1,48 @@
+name: prepare-link
+# Scrapes shared links on a GitHub runner the moment they are queued: a clean IP (the cloud sandbox
+# is rate-limited by Instagram and cannot reach YouTube's media servers at all), instant, and free
+# of model tokens. Results land in inbox/ for the Claude check to finish.
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Instagram/YouTube URL to prepare (empty = all open queue issues not yet prepared)"
+        required: false
+      force:
+        description: "Redo even if already prepared or filed (true/false)"
+        default: "false"
+  schedule:
+    - cron: "23 */4 * * *"   # retries anything that failed earlier (rate limits)
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: prepare-link
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.event_name != 'issues' || github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GH_TOKEN: ${{ github.token }}
+      EVENT_NAME: ${{ github.event_name }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      INPUT_URL: ${{ inputs.url }}
+      INPUT_FORCE: ${{ inputs.force }}
+      YT_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: whisper-small-v1
+      - run: pip install -q -r requirements.txt
+      - name: Prepare queued links
+        run: python scripts/prepare_queue.py
