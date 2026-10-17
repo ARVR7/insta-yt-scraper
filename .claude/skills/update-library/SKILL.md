@@ -1,6 +1,6 @@
 ---
 name: update-library
-description: Rebuild the library index (data/library.json and the library/ lists by usefulness and topic) from the notes. Use after every new or edited note, before committing.
+description: Rebuild the library index (data/library.json and the library/ lists by category, location and usefulness) from the notes. Use after every new or edited note, before committing.
 ---
 
 # update-library
