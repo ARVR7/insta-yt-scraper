@@ -545,7 +545,7 @@
       var head = el("div", "head u-" + (it.usefulness || "noise"));
       head.appendChild(tile(it.usefulness, it.usefulness));
       head.appendChild(el("h2", "", it.title || id));
-      head.appendChild(el("div", "msg", plat(platform) + (it.usefulness ? " · " + it.usefulness : "")));
+      head.appendChild(el("div", "msg", plat(platform) + (it.author ? " · " + (platform === "instagram" ? "@" : "") + it.author : "")));
       if (it.key_info) head.appendChild(el("p", "big", it.key_info));
       var url = (t.match(/^url:\s*(\S+)/m) || [])[1];
       if (url && /^https?:\/\//.test(url)) { var a = el("a", "btn-link", "Open original"); a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer"; head.appendChild(a); }
@@ -604,7 +604,7 @@
           var c = el("article", "card glass u-" + (done ? done.usefulness : tk.warn ? "misleading" : "noise")); c.tabIndex = 0;
           c.appendChild(done ? tile(done.usefulness, done.usefulness) : tk.warn ? tile("alert", "misleading") : tk.step === 2 ? tile("", "noise", true) : tile("wait", "noise"));
           var b = el("div", "body");
-          b.appendChild(el("h3", "", done ? done.title : (m ? plat(m[1]) + " · " + m[2] : iss.title)));
+          b.appendChild(el("h3", "", done ? done.title : (m ? plat(m[1]) + " link · " + m[2].slice(0, 6) + "…" : iss.title)));
           b.appendChild(el("div", "sub", (done ? done.usefulness + " · " : "") + tk.word)); b.appendChild(tk.node); c.appendChild(b);
           var go = function () { if (done) openNote(done); else window.open(iss.html_url, "_blank", "noopener"); };
           c.addEventListener("click", go); c.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });

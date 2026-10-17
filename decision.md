@@ -4,6 +4,11 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Plain, uniform titles
+- **Decision:** a note's title names the thing the video is about in 2-6 words (max 50 characters), with no parentheses, hype, verdict, platform or creator. The creator moved to the note sheet's subtitle, and what the thing does plus its main caveat stays in `key_info`. `build_index.py` rejects titles over 50 characters or with parentheses, and the note's first heading must match.
+- **Why:** the user found the titles confusing. They were long paraphrases with a qualifier in brackets, which read differently on every card. Short names scan faster and stay consistent as the library grows. Queued links that are not processed yet show `Instagram link · <id start>…` instead of a bare id.
+- **Retitled:** "AI YouTube channel automation" and "Higgsfield Katana in Claude".
+
 ### Smart categorisation: a closed taxonomy with two axes
 - **Decision:** `taxonomy.yml` lists categories, their subcategories, aliases, icons and colours, plus locations (country, then city). Each note has one `category`, a `subcategory` (required when the category has any), an optional `location` and an optional `also` cross-list. The free-form `topics` field is removed.
 - **Why:** free tags fragment (`ai-tools`, `video-generation`, `ai-ideas` would have become three AI categories). A closed list, validated at build time, makes that impossible: unknown values fail the build and aliases (`artificial-intelligence`, `Gurugram`) are rewritten to the canonical key.

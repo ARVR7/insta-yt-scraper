@@ -27,7 +27,7 @@ fetch_status:
   video: downloaded | blocked (reason)
   transcript: ok (tool, auto-generated) | none
   on_screen_text: read from frames | n/a
-title: <short descriptive title>
+title: <plain name, max 6 words, e.g. "Higgsfield Katana in Claude">
 category: ai                            # from taxonomy.yml, see categorize-link
 subcategory: automation
 location: india/delhi                   # optional, only if stated in the video
@@ -49,6 +49,14 @@ registry: <link to the entry in registry/*.md>
 ## Research        <- filled by fact-check-claims: claim | verdict | evidence + links
 ## Notes / caveats
 ```
+
+## Titles
+The title is the first thing the user scans, so keep it plain and uniform:
+- Name **the thing the video is about** (the tool, recipe, place or idea), in 2-6 words and at most 50 characters: `Higgsfield Katana in Claude`, `Paneer tikka wrap`, `Hauz Khas fort at sunset`.
+- No parentheses, no hype, no clickbait, no emoji, no question marks, and do not copy the creator's headline.
+- Do not put the verdict, the platform or the creator in the title; the app shows those separately, and `key_info` carries what it does and the main caveat.
+- The note's first heading (`# ...`) must be the same text as `title`.
+- `scripts/build_index.py` rejects titles over 50 characters or containing parentheses.
 
 Rules:
 - Quote `key_info` and any front matter value containing `:` or `#` so the YAML stays valid.

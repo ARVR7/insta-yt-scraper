@@ -41,6 +41,9 @@ def read_note(path, tax):
     missing = [k for k in REQUIRED if not meta.get(k)]
     if missing:
         fail(path, f"front matter lacks {', '.join(missing)}")
+    title = str(meta["title"])
+    if len(title) > 50 or "(" in title or ")" in title:
+        fail(path, f"title '{title}' must be a plain name of at most 50 characters with no parentheses")
     if meta["usefulness"] not in USEFULNESS:
         fail(path, f"usefulness must be one of {USEFULNESS}")
     cats = tax["categories"]

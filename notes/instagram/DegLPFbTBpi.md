@@ -19,7 +19,7 @@ fetch_status:
   comments: not fetched (Instagram requires login)
 verdict: partly-verified
 registry: registry/verified.md, registry/hoax.md
-title: Higgsfield Katana for Claude (motion graphics)
+title: Higgsfield Katana in Claude
 tools: [higgsfield-mcp, katana]
 usefulness: mixed
 key_info: "Higgsfield MCP + Katana skill is real and works inside Claude, but it needs a paid Higgsfield plan (not free) and is a reference-video editing skill; the one-prompt motion-graphics demo is unproven."
@@ -27,7 +27,7 @@ category: ai
 subcategory: creative
 ---
 
-# Higgsfield "Katana" for Claude: motion graphics without After Effects
+# Higgsfield Katana in Claude
 
 ## Caption / hashtags
 > Claude made this whole video. Not one frame in After Effects. Every animation, every number, every sound you hear came from prompts. No editor, no motion designer, no templates. Want one like this for your own product? Comment "KATANA" and I'll send you the Free Higgsfield Claude MCP! @higgsfield.ai
