@@ -15,6 +15,8 @@ fetch_status:
   video: downloaded
   transcript: ok (faster-whisper base, auto-generated, may contain errors)
   on_screen_text: read from sampled frames (1 frame / 4s)
+verdict: partly-verified
+registry: registry/verified.md, registry/hoax.md
 ---
 
 # Agentic AI YouTube studio (free, open source) – "comment TUBE"
@@ -51,6 +53,18 @@ Feature table as read from the README:
 
 ## Summary
 A promo reel for an open-source Python tool that automates a faceless YouTube channel: Gemini picks topics, writes the script, Edge TTS narrates it, Pexels stock footage is animated, and a Shorts version is cut. A local dashboard handles human approval, then it auto-uploads to YouTube.
+
+## Research (checked 2026-10-17)
+
+| Claim | Verdict | Evidence |
+|---|---|---|
+| Free Edge TTS voice, no API key | verified-with-caveats (unofficial service) | [PyPI](https://pypi.org/project/edge-tts), [GitHub](https://github.com/rany2/edge-tts) |
+| Free Pexels stock footage via API | verified-with-caveats (200 req/h, 20k/month, attribution) | [Pexels Help](https://help.pexels.com/hc/en-us/articles/47677890260761-Is-the-Pexels-API-free-to-use) |
+| Free Gemini for research and scripts | verified-with-caveats (free-tier quotas vary) | [Gemini rate limits](https://ai.google.dev/gemini-api/docs/rate-limits) |
+| The specific "YouTube AI Agent Studio" repo | unverified (not found in two searches; owner not legible) | see `registry/verified.md` Pending |
+| Earns "thousands to lacs of rupees" per month on autopilot | misleading (no evidence; contradicts YouTube policy risk) | [YouTube Help](https://support.google.com/youtube/answer/1311392), `registry/hoax.md` |
+
+Overall: the building blocks are real and free; the money claim is unsubstantiated.
 
 ## Notes / caveats
 - The earnings framing ("lacs of rupees every month") is promotional and unverified.

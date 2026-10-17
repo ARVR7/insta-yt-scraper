@@ -1,19 +1,12 @@
 # insta-yt-scraper
 
-One markdown note per shared YouTube / Instagram link.
+Share an Instagram reel/post or a YouTube video/short; get a markdown note, a fact-check, and an entry in a registry of verified tools or hoaxes.
 
-## Layout
+- `notes/` - one note per link
+- `registry/` - `verified.md`, `hoax.md`, `sidequests.md`
+- `.claude/skills/` - the reusable operations (start at `process-link`)
+- `scripts/` - fetch and analysis scripts
+- `decision.md` - why things are the way they are
+- `flow.md` - how it all fits together
 
-```
-notes/youtube/<video-id>.md
-notes/instagram/<shortcode>.md
-```
-
-## Note format
-
-Each note has front matter (url, platform, author, date, fetch status), then:
-
-- Caption / description and hashtags
-- Transcript (if audio could be fetched)
-- Summary and key points
-- Notes on anything that could not be fetched
+Setup: `bash scripts/setup.sh` (needs ffmpeg).

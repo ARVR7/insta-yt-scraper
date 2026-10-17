@@ -1,0 +1,5 @@
+instaloader
+yt-dlp
+faster-whisper
+numpy
+Pillow

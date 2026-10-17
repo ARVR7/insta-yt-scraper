@@ -1,0 +1,47 @@
+# Decisions
+
+Every non-obvious decision, with the reason. Newest first. Add an entry whenever you choose between options, work around a limit, or change a rule.
+
+## 2026-10-17
+
+### Verdict categories and where unverified items go
+- **Decision:** five verdicts (`verified`, `verified-with-caveats`, `unverified`, `misleading`, `hoax`). Unverified items live in a "Pending verification" section of `registry/verified.md`, not in `hoax.md`.
+- **Why:** the user asked for one file of correct items and one of hoaxes. Failing to find something is not proof that it is fake, so it must not be filed as a hoax. The reel's earnings claim is `misleading` (real tools, unsubstantiated promise), which belongs in `hoax.md`.
+
+### Skill split: one skill per reusable operation plus an orchestrator
+- **Decision:** `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `write-link-note`, `fact-check-claims`, `update-registries`, and `process-link` that chains them.
+- **Why:** the user asked for a skill per distinct operation. Fetching differs per platform, analysis is shared, and fact-checking and filing are independent of the source, so each can be reused alone. `process-link` gives the single entry point for "the user shared a link".
+
+### Scripts live in `scripts/`, skills only describe when and how to call them
+- **Decision:** logic is in Python files under `scripts/`; skills hold instructions and known failure modes.
+- **Why:** the exact commands were tested once and should not be retyped from memory. Scripts can be fixed in one place.
+
+### Instagram: `instaloader`, anonymous, no cookies
+- **Decision:** use `instaloader` for metadata and the video URL, then download it directly.
+- **Why:** plain `curl` returns a login shell with no data, and `yt-dlp` was redirected to the login page ("rate-limit for accessing posts anonymously"). `instaloader` returned the author, date, likes, comments and a video URL anonymously. Cookies were not requested because sharing a session cookie is a security risk.
+- **Known gap:** it returned `caption = None` for the first reel; the note records "not returned" rather than inventing one.
+
+### Transcription: faster-whisper `base`, audio passed as a numpy array
+- **Decision:** decode audio with ffmpeg and hand the array to faster-whisper.
+- **Why:** faster-whisper's built-in decoder crashed (`open() got an unexpected keyword argument 'metadata_errors'`) because of a PyAV version mismatch. The `base` model on CPU with int8 is fast enough and accurate enough for short reels; transcripts are labelled auto-generated.
+
+### YouTube: metadata first, media and captions best-effort
+- **Decision:** `fetch_youtube.py` saves `meta.json` before trying the download, passes `node` as the JS runtime, and treats captions as non-fatal.
+- **Why:** from the cloud sandbox the metadata call works, but the media download returned HTTP 403 and captions HTTP 429. A single combined call lost everything when one part failed. Skills document the fallbacks (use description/chapters, or ask the user for the transcript or file).
+- **Not done:** no cookies or proxy tricks to bypass the block.
+
+### Fact-check from primary sources, never run untrusted code
+- **Decision:** claims are checked against official docs/policy pages and package indexes; code from the repos in videos is read, not executed.
+- **Why:** these videos promote tools from unknown authors; running them is a security risk and not needed to judge a claim.
+
+### Repo: direct pushes to `main`, no PRs
+- **Decision:** commit and push every note straight to `main`.
+- **Why:** the user said everything should go directly into `main`. The empty repo had no default branch, so `main` was created from the first commit.
+
+### `ARVR7/insta-yt-scraper` created by the user, not by Claude
+- **Decision:** the user created the repo and Claude attached it.
+- **Why:** the GitHub integration returned 403 on repository creation (not permitted to create repos), so the user made an empty repo.
+
+### Reel DeToMLxtdSV: verdict "partly-verified"
+- **Decision:** tool components `verified-with-caveats`, the specific repo `unverified`, the income claim `misleading`.
+- **Why:** see `notes/instagram/DeToMLxtdSV.md`. The repo name could not be found in two searches and the owner is not legible on screen.
