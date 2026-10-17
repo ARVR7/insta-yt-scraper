@@ -4,6 +4,10 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Theme switch: System, Light or Dark
+- **Decision:** a three-way control at the top of Settings. System follows the phone and is the default; Light and Dark override it and are remembered on that phone. The page applies the saved choice before first paint, so there is no flash, and the browser's top bar colour follows the theme.
+- **How:** the dark colour tokens are defined once for the OS setting (unless Light is forced) and once for an explicit Dark choice, so each of the three states works whichever way the phone is set. Verified for all combinations in headless Chromium.
+
 ### Filters: a sheet behind one button, with removable chips on the page
 - **Decision:** a filter button beside the search opens a bottom sheet with Sort (newest, oldest, most useful), Usefulness, Platform, Posted (any time, 7 days, 30 days, this year), Creator and Tool. The button shows how many are active; active ones appear as removable chips under the search; a live "Show N links" button and Reset sit at the bottom. Category, subcategory and location stay on the page as the shelf and chips, and the ring still filters usefulness, so the most used filters need no extra tap.
 - **Why:** the user asked for more filtering. Putting the less frequent options in a sheet keeps the page uncluttered, in line with the earlier "too text heavy" feedback. Creator and Tool are dropdowns because they grow without bound.

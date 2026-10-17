@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Link Inbox</title>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#0e6b5a">
+<meta name="theme-color" id="themeColor" content="#eef0f6">
 <link rel="icon" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
     --font:"Plus Jakarta Sans", ui-rounded, -apple-system, "SF Pro Display", system-ui, "Segoe UI", Roboto, sans-serif;
     color-scheme: light;
   }
-  @media (prefers-color-scheme: dark) { :root {
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
     --ink:#f4f6fb; --ink-2:rgba(244,246,251,.66); --ink-3:rgba(244,246,251,.42);
     --canvas:#0a0c12;
     --glass:rgba(34,38,52,.55); --glass-strong:rgba(30,34,48,.82); --glass-line:rgba(255,255,255,.12); --hairline:rgba(255,255,255,.09);
@@ -33,6 +34,14 @@
     --cta-bg:#f4f6fb; --cta-fg:#12141a; --accent:#5fe0c3;
     --aurora-a:rgba(30,170,140,.42); --aurora-b:rgba(190,110,30,.3); --aurora-c:rgba(190,50,100,.28); --aurora-d:rgba(60,90,220,.34);
     color-scheme: dark; } }
+  :root[data-theme="dark"] {
+    --ink:#f4f6fb; --ink-2:rgba(244,246,251,.66); --ink-3:rgba(244,246,251,.42);
+    --canvas:#0a0c12;
+    --glass:rgba(34,38,52,.55); --glass-strong:rgba(30,34,48,.82); --glass-line:rgba(255,255,255,.12); --hairline:rgba(255,255,255,.09);
+    --shadow:0 12px 34px -12px rgba(0,0,0,.7), 0 2px 6px rgba(0,0,0,.3);
+    --cta-bg:#f4f6fb; --cta-fg:#12141a; --accent:#5fe0c3;
+    --aurora-a:rgba(30,170,140,.42); --aurora-b:rgba(190,110,30,.3); --aurora-c:rgba(190,50,100,.28); --aurora-d:rgba(60,90,220,.34);
+    color-scheme: dark; }
 
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html, body { margin: 0; }
@@ -201,6 +210,11 @@
   </div>
 
   <section id="settings" class="glass" style="padding:18px; display:flex; flex-direction:column; gap:12px" hidden>
+    <div class="seg glass" id="themeSeg" role="group" aria-label="Theme">
+      <button type="button" data-theme-choice="system">System</button>
+      <button type="button" data-theme-choice="light">Light</button>
+      <button type="button" data-theme-choice="dark">Dark</button>
+    </div>
     <p class="msg" style="padding:0">Paste a GitHub token for <code id="repoName"></code> (Issues: read and write, Contents: read-only). It stays on this phone.</p>
     <form id="tokenForm" class="row" autocomplete="off">
       <div class="grow"><input id="token" type="password" placeholder="github_pat_…" aria-label="GitHub token"></div>
@@ -742,6 +756,19 @@
     else if (tab === "claims") viewClaims(parts[1] || "verified");
     else viewLibrary();
   }
+
+  /* ---------- theme: system / light / dark ---------- */
+  function getTheme() { try { var t = localStorage.getItem("theme"); return t === "light" || t === "dark" ? t : "system"; } catch (e) { return "system"; } }
+  function applyTheme(t) {
+    var r = document.documentElement;
+    if (t === "light" || t === "dark") r.setAttribute("data-theme", t); else r.removeAttribute("data-theme");
+    try { t === "system" ? localStorage.removeItem("theme") : localStorage.setItem("theme", t); } catch (e) {}
+    Array.prototype.forEach.call(document.querySelectorAll("#themeSeg button"), function (b) { b.setAttribute("aria-pressed", b.dataset.themeChoice === t ? "true" : "false"); });
+    var c = getComputedStyle(r).getPropertyValue("--canvas").trim(); if (c) $("themeColor").setAttribute("content", c);
+  }
+  Array.prototype.forEach.call(document.querySelectorAll("#themeSeg button"), function (b) { b.addEventListener("click", function () { applyTheme(b.dataset.themeChoice); }); });
+  if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () { if (getTheme() === "system") applyTheme("system"); });
+  applyTheme(getTheme());
 
   /* ---------- settings ---------- */
   $("repoName").textContent = OWNER + "/" + REPO;
