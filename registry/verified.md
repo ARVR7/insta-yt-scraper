@@ -75,6 +75,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Meta Muse gives 1 billion free tokens through invite codes  (2026-10-17)
+- **Verdict:** unverified
+- **What it is:** Reported referral offer: redeem an invite code within 48 hours of signing up for 1 billion Muse tokens each.
+- **Why pending:** Only third-party blogs report it, none tied to a Meta page, and the same reel says one billion in the audio and one million in the caption.
+- **To resolve:** Meta's own Muse page or help centre confirming the offer, the regions and the expiry.
+- **Source note:** [notes/instagram/DelxZzcvW49.md](../notes/instagram/DelxZzcvW49.md)
+
 ### Repo of 500+ viral AI motion design prompts  (2026-10-17)
 - **Verdict:** unverified
 - **What it is:** A GitHub repository, MIT licensed, of 500+ motion designs each with the exact AI prompt behind it, as shown in the reel.

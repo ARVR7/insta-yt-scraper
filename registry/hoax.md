@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### Comment to get the guide to claim a billion free Muse tokens and a hands-free video channel  (2026-10-17)
+- **Verdict:** misleading
+- **What it is:** A comment-for-DM offer promising free tokens plus long-video generation and automatic YouTube uploads.
+- **Why it is misleading:** The token offer is reported only as an invite-code referral, availability in India is doubtful, and the video-generation and YouTube-upload claims could not be confirmed for Muse; the setup is not shown and the link is gated behind a comment funnel.
+- **Evidence:** [Bitdoze](https://www.bitdoze.com/muse-ai-meta-agent/), [ToolNavs](https://toolnavs.com/article/2025-new-meta-muse-user-benefits-are-here-get-an-invitation-code-zz0z7n-to-receive-1)
+- **Source note:** [notes/instagram/DelxZzcvW49.md](../notes/instagram/DelxZzcvW49.md)
+
 ### "Comment for the free set of AI agents that run your life" (Grok Bot reel)  (2026-10-17)
 - **Verdict:** misleading
 - **What it is:** A comment-for-DM offer of a free set of agents, framed as an insider tip.
