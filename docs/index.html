@@ -8,77 +8,178 @@
 <meta name="theme-color" content="#0e6b5a">
 <link rel="icon" href="icon-192.png">
 <style>
-  :root { --bg:#f2f5f3; --surface:#fff; --fg:#15201c; --muted:#5a6a63; --line:#d5ddd9; --accent:#0e6b5a; --accent-fg:#fff; --ok:#14603a; --err:#8a1f1f; color-scheme: light; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#0f1613; --surface:#17211d; --fg:#e4ece8; --muted:#93a39b; --line:#2a3832; --accent:#3fb59d; --accent-fg:#07130f; --ok:#7fd5a4; --err:#f0a0a0; color-scheme: dark; } }
+  :root {
+    --bg:#f2f5f3; --surface:#fff; --fg:#15201c; --muted:#5a6a63; --line:#d5ddd9;
+    --accent:#0e6b5a; --accent-fg:#fff;
+    --helpful:#1f8a52; --mixed:#c98a10; --misleading:#c2393a; --noise:#7c8a84;
+    --helpful-bg:#d4efdf; --mixed-bg:#fff1cf; --misleading-bg:#fbdcdc; --noise-bg:#e4e9e6;
+    --ok:#14603a; --err:#8a1f1f;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) { :root {
+    --bg:#0f1613; --surface:#17211d; --fg:#e4ece8; --muted:#93a39b; --line:#2a3832;
+    --accent:#3fb59d; --accent-fg:#07130f;
+    --helpful:#4cc283; --mixed:#e3a935; --misleading:#e46a6a; --noise:#8fa097;
+    --helpful-bg:#12362a; --mixed-bg:#3a2f10; --misleading-bg:#411a1a; --noise-bg:#222d28;
+    --ok:#7fd5a4; --err:#f0a0a0; color-scheme: dark; } }
   * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-         padding: max(24px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); }
-  main { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
-  h1 { font-size: 24px; margin: 0; letter-spacing: -.01em; }
+  html, body { margin: 0; }
+  body { background:var(--bg); color:var(--fg); font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+         padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) calc(76px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); }
+  main { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+  h1 { font-size: 22px; margin: 0; letter-spacing: -.01em; }
+  h2 { font-size: 12px; margin: 0; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
   p { margin: 0; }
+  a { color: var(--accent); }
   .muted { color: var(--muted); font-size: 13px; }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; }
-  .status { font-weight: 600; min-height: 1.5em; overflow-wrap: anywhere; }
-  .status.ok { color: var(--ok); } .status.err { color: var(--err); }
-  input { width: 100%; padding: 12px; font: 14px ui-monospace,Menlo,monospace; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
-  button { font: 600 14px system-ui; padding: 12px 16px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-fg); cursor: pointer; }
+  input, select { width: 100%; padding: 11px 12px; font: 14px system-ui; color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+  input.mono { font-family: var(--mono); font-size: 13px; }
+  button { font: 600 14px system-ui; padding: 11px 15px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-fg); cursor: pointer; }
   button.ghost { background: transparent; color: var(--accent); border-color: var(--line); }
-  form { display: flex; gap: 8px; flex-wrap: wrap; } form > .grow { flex: 1 1 220px; min-width: 0; }
-  ul { list-style: none; margin: 0; padding: 0; }
-  li { padding: 10px 0; border-bottom: 1px solid var(--line); display: flex; gap: 10px; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
-  li a { color: var(--accent); overflow-wrap: anywhere; min-width: 0; }
-  .tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  button.tiny { padding: 6px 10px; font-size: 12px; }
+  button:disabled { opacity: .55; cursor: default; }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   [hidden] { display: none !important; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .grow { flex: 1 1 200px; min-width: 0; }
+  .status { font-weight: 600; overflow-wrap: anywhere; min-height: 1.4em; }
+  .status.ok { color: var(--ok); } .status.err { color: var(--err); }
+
+  nav { position: fixed; left: 0; right: 0; bottom: 0; background: var(--surface); border-top: 1px solid var(--line);
+        display: flex; justify-content: center; padding-bottom: env(safe-area-inset-bottom); z-index: 5; }
+  nav .inner { display: flex; width: 100%; max-width: 720px; }
+  nav a { flex: 1; text-align: center; padding: 11px 4px 10px; color: var(--muted); text-decoration: none; font-size: 12px; font-weight: 600; border-top: 3px solid transparent; }
+  nav a b { display: block; font-size: 16px; line-height: 1.1; font-family: var(--mono); }
+  nav a[aria-current="page"] { color: var(--accent); border-top-color: var(--accent); }
+
+  .u-helpful { --u: var(--helpful); --ub: var(--helpful-bg); } .u-mixed { --u: var(--mixed); --ub: var(--mixed-bg); }
+  .u-misleading { --u: var(--misleading); --ub: var(--misleading-bg); } .u-noise { --u: var(--noise); --ub: var(--noise-bg); }
+  .stripe { border-left: 5px solid var(--u, var(--noise)); }
+  .pill { font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; background: var(--ub, var(--noise-bg)); color: var(--u, var(--muted)); white-space: nowrap; }
+  .chip { font: 600 12px system-ui; padding: 6px 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+  .tool { font: 12px var(--mono); color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px; }
+
+  .bar { display: flex; height: 18px; border-radius: 4px; overflow: hidden; background: var(--noise-bg); }
+  .bar span { display: block; background: var(--u); }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--u); margin-right: 6px; }
+  .stat { font: 600 28px var(--mono); }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; }
+  .cloud { display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline; }
+
+  .item { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 6px; cursor: pointer; }
+  .item h3 { margin: 0; font-size: 15px; line-height: 1.3; }
+  .item .meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 12px; color: var(--muted); }
+  .item p.key { font-size: 14px; }
+  .list { display: grid; gap: 10px; }
+
+  .track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .track span { height: 6px; border-radius: 3px; background: var(--line); }
+  .track span.on { background: var(--accent); }
+  .track.warn span.on { background: var(--misleading); }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-top: 4px; }
+  .steps span:nth-child(2) { text-align: center; } .steps span:nth-child(3) { text-align: right; }
+
+  .md { overflow-wrap: anywhere; }
+  .md h1 { font-size: 20px; margin: 4px 0 8px; } .md h2 { font-size: 15px; letter-spacing: 0; text-transform: none; color: var(--fg); margin: 18px 0 6px; }
+  .md h3 { font-size: 14px; margin: 14px 0 4px; }
+  .md p, .md ul, .md blockquote, .md pre { margin: 0 0 10px; }
+  .md ul { padding-left: 20px; }
+  .md blockquote { border-left: 3px solid var(--line); padding-left: 12px; color: var(--muted); }
+  .md code { font: 12.5px var(--mono); background: var(--noise-bg); padding: 1px 5px; border-radius: 4px; }
+  .md pre { background: var(--noise-bg); padding: 10px; border-radius: 6px; overflow-x: auto; } .md pre code { background: none; padding: 0; }
+  .md .scroll { overflow-x: auto; margin-bottom: 10px; }
+  .md table { border-collapse: collapse; font-size: 13px; min-width: 100%; }
+  .md th, .md td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
+  .md th { background: var(--noise-bg); }
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <h1>Link Inbox</h1>
-    <p class="muted">Share an Instagram or YouTube link to this app. It is queued as a GitHub issue for Claude to process.</p>
-  </header>
-
-  <div class="card">
-    <p id="status" class="status" role="status">Ready.</p>
-    <form id="manual" autocomplete="off">
-      <div class="grow"><input id="manualUrl" type="url" inputmode="url" placeholder="Paste a link" aria-label="Link to queue"></div>
-      <button type="submit">Queue</button>
-    </form>
+  <div class="top">
+    <h1 id="title">Link Inbox</h1>
+    <button class="ghost tiny" id="gear" type="button">Settings</button>
   </div>
 
-  <div class="card" id="setup">
-    <p><strong>GitHub token</strong></p>
-    <p class="muted">Needed once on this phone. Create a fine-grained token for the repository <code id="repoName"></code> only, with <em>Issues: Read and write</em> and nothing else. It is stored in this browser only.</p>
-    <form id="tokenForm" autocomplete="off">
-      <div class="grow"><input id="token" type="password" placeholder="github_pat_…" aria-label="GitHub token"></div>
+  <section class="card" id="settings" hidden>
+    <h2>GitHub token</h2>
+    <p class="muted">Needed once on this phone. Create a fine-grained token for <code id="repoName"></code> only, with <em>Issues: Read and write</em> and <em>Contents: Read-only</em>. It is stored in this browser only.</p>
+    <form id="tokenForm" class="row" autocomplete="off">
+      <div class="grow"><input id="token" class="mono" type="password" placeholder="github_pat_…" aria-label="GitHub token"></div>
       <button type="submit">Save</button>
     </form>
-    <button class="ghost" id="clearToken" type="button" hidden>Remove token from this phone</button>
-  </div>
-
-  <section>
-    <p class="tag">Recent links</p>
-    <ul id="recent"></ul>
+    <button class="ghost tiny" id="clearToken" type="button" hidden>Remove token from this phone</button>
   </section>
+
+  <div id="view"></div>
 </main>
+
+<nav><div class="inner">
+  <a href="#/overview" data-tab="overview"><b>◔</b>Overview</a>
+  <a href="#/queue" data-tab="queue"><b>⇩</b>Queue</a>
+  <a href="#/library" data-tab="library"><b>▤</b>Library</a>
+  <a href="#/claims" data-tab="claims"><b>✓✗</b>Claims</a>
+</div></nav>
 
 <script>
 (function () {
+  "use strict";
   var OWNER = "ARVR7", REPO = "insta-yt-scraper", LABEL = "link";
+  var ORDER = ["helpful", "mixed", "misleading", "noise"];
   var $ = function (id) { return document.getElementById(id); };
-  $("repoName").textContent = OWNER + "/" + REPO;
+  var view = $("view");
+  var state = { library: null, filter: { q: "", usefulness: "", platform: "", topic: "" }, flash: null };
 
+  /* ---------- storage and API ---------- */
   function getToken() { try { return localStorage.getItem("gh_token") || ""; } catch (e) { return ""; } }
   function setToken(v) { try { v ? localStorage.setItem("gh_token", v) : localStorage.removeItem("gh_token"); } catch (e) {} }
-  function say(t, kind) { var s = $("status"); s.textContent = t; s.className = "status" + (kind ? " " + kind : ""); }
+  function cacheGet(k) { try { return JSON.parse(localStorage.getItem("c:" + k)); } catch (e) { return null; } }
+  function cacheSet(k, v) { try { localStorage.setItem("c:" + k, JSON.stringify(v)); } catch (e) {} }
 
-  // Pull the first supported link out of free text: Android share sheets put the URL in "text".
-  function findLink(text) {
-    var urls = (text || "").match(/https?:\/\/[^\s<>"']+/g) || [];
-    for (var i = 0; i < urls.length; i++) { var p = parse(urls[i]); if (p) return p; }
-    return null;
+  function api(path, opts, raw) {
+    opts = opts || {};
+    opts.headers = Object.assign({ "Accept": raw ? "application/vnd.github.raw+json" : "application/vnd.github+json",
+      "Authorization": "Bearer " + getToken(), "X-GitHub-Api-Version": "2022-11-28" }, opts.headers || {});
+    return fetch("https://api.github.com/repos/" + OWNER + "/" + REPO + path, opts).then(function (r) {
+      if (r.ok) return raw ? r.text() : r.json();
+      return r.json().catch(function () { return {}; }).then(function (j) { var e = new Error(j.message || ("HTTP " + r.status)); e.status = r.status; throw e; });
+    });
   }
+  // File from the repo, falling back to the last good copy when offline.
+  function file(path) {
+    return api("/contents/" + path + "?ref=main", null, true).then(function (t) { cacheSet(path, t); return t; })
+      .catch(function (e) { var c = cacheGet(path); if (c != null) return c; throw e; });
+  }
+  function loadLibrary() { return file("data/library.json").then(function (t) { state.library = JSON.parse(t); return state.library; }); }
+  function loadIssues() {
+    return api("/issues?labels=" + LABEL + "&state=all&per_page=50").then(function (l) { return l.filter(function (i) { return !i.pull_request; }); });
+  }
+
+  /* ---------- helpers ---------- */
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function clear(n) { n.textContent = ""; }
+  function plat(p) { return p === "instagram" ? "Instagram" : p === "youtube" ? "YouTube" : p; }
+  function pill(u) { return el("span", "pill u-" + u, u); }
+  function needsToken() {
+    var c = el("div", "card");
+    c.appendChild(el("p", "", "Add your GitHub token in Settings to load your queue and library."));
+    var b = el("button", "", "Open Settings"); b.type = "button";
+    b.addEventListener("click", function () { $("settings").hidden = false; $("token").focus(); });
+    c.appendChild(b); return c;
+  }
+  function errCard(e, what) {
+    var c = el("div", "card");
+    c.appendChild(el("p", "status err", "Could not load " + what + (e ? ": " + e.message : "") + "."));
+    if (e && (e.status === 401 || e.status === 403 || e.status === 404))
+      c.appendChild(el("p", "muted", "Check the token covers " + OWNER + "/" + REPO + " with Issues: Read and write and Contents: Read-only. A 404 on the library means no note has been indexed yet."));
+    return c;
+  }
+
+  /* ---------- link parsing (share target and manual add) ---------- */
   function parse(raw) {
     var u; try { u = new URL(raw); } catch (e) { return null; }
     var host = u.hostname.replace(/^www\.|^m\./, ""), m;
@@ -94,68 +195,291 @@
     }
     return null;
   }
-
-  function gh(path, opts) {
-    opts = opts || {};
-    opts.headers = Object.assign({ "Accept": "application/vnd.github+json", "Authorization": "Bearer " + getToken(), "X-GitHub-Api-Version": "2022-11-28" }, opts.headers || {});
-    return fetch("https://api.github.com/repos/" + OWNER + "/" + REPO + path, opts).then(function (r) {
-      return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) { var e = new Error(j.message || ("HTTP " + r.status)); e.status = r.status; throw e; } return j; });
+  function findLink(text) {
+    var urls = (text || "").match(/https?:\/\/[^\s<>"']+/g) || [];
+    for (var i = 0; i < urls.length; i++) { var p = parse(urls[i]); if (p) return p; }
+    return null;
+  }
+  function queueLink(p) {
+    var title = "Link: " + p.platform + " " + p.key;
+    return api("/issues?labels=" + LABEL + "&state=all&per_page=100").then(function (issues) {
+      var dup = issues.filter(function (i) { return i.title === title && !i.pull_request; })[0];
+      if (dup) return { msg: "Already queued (issue #" + dup.number + ", " + dup.state + ").", ok: true };
+      return api("/issues", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ title: title, body: p.url, labels: [LABEL] }) })
+        .then(function (i) { return { msg: "Queued as issue #" + i.number + ". Ask Claude to process the queue.", ok: true }; });
+    }).catch(function (e) {
+      return { msg: e.status === 401 || e.status === 403 || e.status === 404 ? "GitHub refused the token (" + e.message + ")." : "Could not queue: " + e.message, ok: false };
     });
   }
 
-  function queue(p) {
-    if (!getToken()) { say("Add your GitHub token below first, then share the link again.", "err"); return Promise.resolve(); }
-    var title = "Link: " + p.platform + " " + p.key;
-    say("Queuing " + p.url + " …");
-    return gh("/issues?labels=" + LABEL + "&state=all&per_page=100").then(function (issues) {
-      var dup = issues.filter(function (i) { return i.title === title && !i.pull_request; })[0];
-      if (dup) { say("Already queued (issue #" + dup.number + ", " + dup.state + ").", "ok"); return; }
-      return gh("/issues", { method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ title: title, body: p.url, labels: [LABEL] }) })
-        .then(function (i) { say("Queued as issue #" + i.number + ". Ask Claude to process the queue.", "ok"); });
-    }).catch(function (e) {
-      say(e.status === 401 || e.status === 403 || e.status === 404 ? "GitHub refused the token (" + e.message + "). Check it covers " + OWNER + "/" + REPO + " with Issues write." : "Could not queue: " + e.message, "err");
-    }).then(loadRecent);
+  /* ---------- safe markdown renderer: builds DOM nodes, never innerHTML ---------- */
+  function safeHref(h) {
+    var m = h.match(/^(?:\.\.?\/)*notes\/(instagram|youtube)\/([\w-]+)\.md$/);
+    if (m) return "#/note/" + m[1] + "/" + m[2];
+    return /^https?:\/\//i.test(h) ? h : null;
+  }
+  function inline(parent, s) {
+    var re = /(\*\*[^*]+\*\*|`[^`]+`|\[[^\]]+\]\([^)\s]+\)|\*[^*\s][^*]*\*|_[^_\s][^_]*_)/g, last = 0, m;
+    while ((m = re.exec(s))) {
+      if (m.index > last) parent.appendChild(document.createTextNode(s.slice(last, m.index)));
+      var t = m[0];
+      if (t.charAt(0) === "`") parent.appendChild(el("code", "", t.slice(1, -1)));
+      else if (t.indexOf("**") === 0) { var b = el("strong"); inline(b, t.slice(2, -2)); parent.appendChild(b); }
+      else if (t.charAt(0) === "[") {
+        var lm = t.match(/^\[([^\]]+)\]\(([^)\s]+)\)$/), href = safeHref(lm[2]);
+        if (href) { var a = el("a"); a.href = href; if (href.charAt(0) !== "#") { a.target = "_blank"; a.rel = "noopener noreferrer"; } inline(a, lm[1]); parent.appendChild(a); }
+        else parent.appendChild(document.createTextNode(lm[1]));
+      } else { var em = el("em"); inline(em, t.slice(1, -1)); parent.appendChild(em); }
+      last = m.index + t.length;
+    }
+    if (last < s.length) parent.appendChild(document.createTextNode(s.slice(last)));
+  }
+  function renderMd(src) {
+    var root = el("div", "md");
+    var lines = src.replace(/^---\n[\s\S]*?\n---\n/, "").split("\n"), i = 0;
+    while (i < lines.length) {
+      var l = lines[i], m;
+      if (/^\s*$/.test(l)) { i++; continue; }
+      if (/^```/.test(l)) { var code = []; i++; while (i < lines.length && !/^```/.test(lines[i])) code.push(lines[i++]); i++; var pre = el("pre"); pre.appendChild(el("code", "", code.join("\n"))); root.appendChild(pre); continue; }
+      if ((m = l.match(/^(#{1,3})\s+(.*)$/))) { var h = el("h" + m[1].length); inline(h, m[2]); root.appendChild(h); i++; continue; }
+      if (/^>\s?/.test(l)) { var q = []; while (i < lines.length && /^>\s?/.test(lines[i])) q.push(lines[i++].replace(/^>\s?/, "")); var bq = el("blockquote"); inline(bq, q.join(" ")); root.appendChild(bq); continue; }
+      if (/^\|.*\|\s*$/.test(l) && i + 1 < lines.length && /^\|[\s:|-]+\|\s*$/.test(lines[i + 1])) {
+        var rows = []; while (i < lines.length && /^\|.*\|\s*$/.test(lines[i])) rows.push(lines[i++]);
+        var cells = function (r) { return r.replace(/^\||\|\s*$/g, "").split("|").map(function (c) { return c.trim(); }); };
+        var t = el("table"), thead = el("thead"), tr = el("tr");
+        cells(rows[0]).forEach(function (c) { var th = el("th"); inline(th, c); tr.appendChild(th); }); thead.appendChild(tr); t.appendChild(thead);
+        var tb = el("tbody"); rows.slice(2).forEach(function (r) { var trr = el("tr"); cells(r).forEach(function (c) { var td = el("td"); inline(td, c); trr.appendChild(td); }); tb.appendChild(trr); });
+        t.appendChild(tb); var sc = el("div", "scroll"); sc.appendChild(t); root.appendChild(sc); continue;
+      }
+      if (/^\s*[-*]\s+/.test(l)) {
+        var ul = el("ul");
+        while (i < lines.length && /^\s*[-*]\s+/.test(lines[i])) {
+          var li = el("li"), text = lines[i++].replace(/^\s*[-*]\s+/, "");
+          while (i < lines.length && /^\s{2,}\S/.test(lines[i]) && !/^\s*[-*]\s+/.test(lines[i])) text += " " + lines[i++].trim();
+          inline(li, text); ul.appendChild(li);
+          var sub = null;
+          while (i < lines.length && /^\s{2,}[-*]\s+/.test(lines[i])) { sub = sub || el("ul"); var sli = el("li"); inline(sli, lines[i++].replace(/^\s+[-*]\s+/, "")); sub.appendChild(sli); }
+          if (sub) li.appendChild(sub);
+        }
+        root.appendChild(ul); continue;
+      }
+      var para = [l]; i++;
+      while (i < lines.length && !/^\s*$/.test(lines[i]) && !/^(#{1,3}\s|>|```|\|.*\||\s*[-*]\s+)/.test(lines[i])) para.push(lines[i++]);
+      var p = el("p"); inline(p, para.join(" ")); root.appendChild(p);
+    }
+    return root;
   }
 
-  function loadRecent() {
-    var ul = $("recent"); ul.textContent = "";
-    if (!getToken()) return;
-    return gh("/issues?labels=" + LABEL + "&state=all&per_page=15").then(function (issues) {
-      issues.filter(function (i) { return !i.pull_request; }).forEach(function (i) {
-        var li = document.createElement("li"), a = document.createElement("a"), t = document.createElement("span");
-        a.href = i.html_url; a.target = "_blank"; a.rel = "noopener"; a.textContent = i.title.replace(/^Link: /, "");
-        t.className = "tag"; t.textContent = i.state === "closed" ? "done" : "queued";
-        li.appendChild(a); li.appendChild(t); ul.appendChild(li);
+  /* ---------- views ---------- */
+  function itemCard(it) {
+    var c = el("article", "item stripe u-" + it.usefulness);
+    c.tabIndex = 0;
+    var meta = el("div", "meta"); meta.appendChild(pill(it.usefulness));
+    meta.appendChild(el("span", "", plat(it.platform) + (it.author ? " · " + it.author : "")));
+    if (it.verdict) meta.appendChild(el("span", "", it.verdict));
+    c.appendChild(el("h3", "", it.title)); c.appendChild(meta); c.appendChild(el("p", "key", it.key_info));
+    if (it.tools && it.tools.length) { var t = el("div", "row"); it.tools.forEach(function (x) { t.appendChild(el("span", "tool", x)); }); c.appendChild(t); }
+    var go = function () { location.hash = "#/note/" + it.platform + "/" + it.id; };
+    c.addEventListener("click", go); c.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
+    return c;
+  }
+
+  function viewOverview() {
+    $("title").textContent = "Overview";
+    clear(view);
+    if (!getToken()) { view.appendChild(needsToken()); return; }
+    var box = el("div", "list"); view.appendChild(box); box.appendChild(el("p", "muted", "Loading…"));
+    Promise.all([loadLibrary().catch(function (e) { return e; }), loadIssues().catch(function (e) { return e; })]).then(function (r) {
+      clear(box);
+      var lib = Array.isArray(r[0]) ? r[0] : null, issues = Array.isArray(r[1]) ? r[1] : null;
+      var open = issues ? issues.filter(function (i) { return i.state === "open"; }).length : "–";
+      var tiles = el("div", "tiles");
+      [[lib ? lib.length : "–", "links filed"], [open, "waiting in queue"], [lib ? lib.filter(function (i) { return i.usefulness === "helpful"; }).length : "–", "helpful"]].forEach(function (t) {
+        var d = el("div", "card"); d.appendChild(el("div", "stat", String(t[0]))); d.appendChild(el("div", "muted", t[1])); tiles.appendChild(d);
       });
-    }).catch(function () {});
+      box.appendChild(tiles);
+      if (!lib) { box.appendChild(errCard(r[0], "the library")); return; }
+      var card = el("div", "card"); card.appendChild(el("h2", "", "How useful is what you save"));
+      var bar = el("div", "bar"), legend = el("div", "legend");
+      ORDER.forEach(function (u) {
+        var n = lib.filter(function (i) { return i.usefulness === u; }).length;
+        if (n) { var s = el("span", "u-" + u); s.style.width = (100 * n / lib.length) + "%"; s.title = u + ": " + n; bar.appendChild(s); }
+        var lg = el("span", "u-" + u); lg.appendChild(el("i")); lg.appendChild(document.createTextNode(u + " " + n)); legend.appendChild(lg);
+      });
+      card.appendChild(bar); card.appendChild(legend); box.appendChild(card);
+
+      var counts = {}; lib.forEach(function (i) { (i.topics.length ? i.topics : ["untagged"]).forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); });
+      var tc = el("div", "card"); tc.appendChild(el("h2", "", "Topics")); var cloud = el("div", "cloud");
+      Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; }).forEach(function (t) {
+        var b = el("button", "chip", t + " " + counts[t]); b.type = "button"; b.style.fontSize = (12 + Math.min(counts[t], 6)) + "px";
+        b.addEventListener("click", function () { state.filter = { q: "", usefulness: "", platform: "", topic: t }; location.hash = "#/library"; });
+        cloud.appendChild(b);
+      });
+      tc.appendChild(cloud); box.appendChild(tc);
+      box.appendChild(el("h2", "", "Latest"));
+      lib.slice(0, 5).forEach(function (it) { box.appendChild(itemCard(it)); });
+    });
   }
 
-  function refreshSetup() { var has = !!getToken(); $("clearToken").hidden = !has; $("token").placeholder = has ? "Token saved. Paste a new one to replace." : "github_pat_…"; }
+  function progress(issue) {
+    var labels = issue.labels.map(function (l) { return l.name; });
+    var step = issue.state === "closed" ? 3 : labels.indexOf("processing") >= 0 || labels.indexOf("needs-input") >= 0 ? 2 : 1;
+    var warn = labels.indexOf("needs-input") >= 0 && issue.state !== "closed";
+    var tr = el("div", "track" + (warn ? " warn" : ""));
+    for (var k = 1; k <= 3; k++) tr.appendChild(el("span", k <= step ? "on" : ""));
+    var st = el("div", "steps"); ["Queued", warn ? "Needs input" : "Processing", "Done"].forEach(function (s) { st.appendChild(el("span", "", s)); });
+    var w = el("div"); w.appendChild(tr); w.appendChild(st); return w;
+  }
 
-  $("manual").addEventListener("submit", function (e) {
-    e.preventDefault();
-    var p = findLink($("manualUrl").value);
-    if (!p) { say("That is not an Instagram reel/post or YouTube video link.", "err"); return; }
-    queue(p).then(function () { $("manualUrl").value = ""; });
-  });
-  $("tokenForm").addEventListener("submit", function (e) {
-    e.preventDefault(); var v = $("token").value.trim(); if (!v) return;
-    setToken(v); $("token").value = ""; refreshSetup(); say("Token saved on this phone.", "ok"); loadRecent();
-  });
-  $("clearToken").addEventListener("click", function () { setToken(""); refreshSetup(); $("recent").textContent = ""; say("Token removed.", "ok"); });
+  function viewQueue() {
+    $("title").textContent = "Queue";
+    clear(view);
+    var card = el("div", "card");
+    var flash = state.flash; state.flash = null;
+    var status = el("p", "status" + (flash ? (flash.ok ? " ok" : " err") : ""), flash ? flash.msg : "Share a link to this app, or paste one here.");
+    var form = el("form", "row"); form.autocomplete = "off";
+    var wrap = el("div", "grow"), inp = el("input", "mono"); inp.type = "url"; inp.placeholder = "Paste a link"; inp.setAttribute("aria-label", "Link to queue"); wrap.appendChild(inp);
+    var btn = el("button", "", "Queue"); btn.type = "submit";
+    form.appendChild(wrap); form.appendChild(btn); card.appendChild(status); card.appendChild(form); view.appendChild(card);
+    var list = el("div", "list"); view.appendChild(list);
+    if (!getToken()) { list.appendChild(needsToken()); return; }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); var p = findLink(inp.value);
+      if (!p) { status.className = "status err"; status.textContent = "That is not an Instagram reel/post or YouTube video link."; return; }
+      btn.disabled = true; status.className = "status"; status.textContent = "Queuing…";
+      queueLink(p).then(function (r) { state.flash = r; viewQueue(); });
+    });
+    list.appendChild(el("p", "muted", "Loading…"));
+    loadIssues().then(function (issues) {
+      return Promise.resolve(state.library || loadLibrary().catch(function () { return []; })).then(function (lib) {
+        clear(list);
+        if (!issues.length) { list.appendChild(el("p", "muted", "Nothing queued yet.")); return; }
+        issues.forEach(function (iss) {
+          var m = iss.title.match(/^Link: (\w+) ([\w-]+)$/);
+          var done = m && (lib || []).filter(function (x) { return x.platform === m[1] && x.id === m[2]; })[0];
+          var c = el("article", "item" + (done ? " stripe u-" + done.usefulness : ""));
+          c.tabIndex = 0;
+          c.appendChild(el("h3", "", done ? done.title : iss.title.replace(/^Link: /, "")));
+          var meta = el("div", "meta"); if (done) meta.appendChild(pill(done.usefulness));
+          meta.appendChild(el("span", "", m ? plat(m[1]) : "link")); meta.appendChild(el("span", "", "issue #" + iss.number));
+          c.appendChild(meta); c.appendChild(progress(iss));
+          if (done) c.appendChild(el("p", "key", done.key_info));
+          var go = function () { if (done) location.hash = "#/note/" + done.platform + "/" + done.id; else window.open(iss.html_url, "_blank", "noopener"); };
+          c.addEventListener("click", go); c.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
+          list.appendChild(c);
+        });
+      });
+    }).catch(function (e) { clear(list); list.appendChild(errCard(e, "the queue")); });
+  }
 
-  refreshSetup();
+  function viewLibrary() {
+    $("title").textContent = "Library";
+    clear(view);
+    if (!getToken()) { view.appendChild(needsToken()); return; }
+    var holder = el("div", "list"); view.appendChild(holder); holder.appendChild(el("p", "muted", "Loading…"));
+    loadLibrary().then(function (lib) {
+      clear(holder);
+      var f = state.filter;
+      var q = el("input"); q.type = "search"; q.placeholder = "Search title, tool, key info"; q.value = f.q; q.setAttribute("aria-label", "Search the library");
+      holder.appendChild(q);
+      var chips = el("div", "row"); holder.appendChild(chips);
+      var sel = el("select"); sel.setAttribute("aria-label", "Topic");
+      var topics = {}; lib.forEach(function (i) { i.topics.forEach(function (t) { topics[t] = 1; }); });
+      var o0 = el("option", "", "All topics"); o0.value = ""; sel.appendChild(o0);
+      Object.keys(topics).sort().forEach(function (t) { var o = el("option", "", t); o.value = t; sel.appendChild(o); });
+      sel.value = f.topic; holder.appendChild(sel);
+      var count = el("p", "muted"); holder.appendChild(count);
+      var results = el("div", "list"); holder.appendChild(results);
+      var defs = ORDER.map(function (u) { return ["usefulness", u, u]; }).concat([["platform", "instagram", "Instagram"], ["platform", "youtube", "YouTube"]]);
+      var btns = defs.map(function (d) {
+        var b = el("button", "chip", d[2]); b.type = "button";
+        b.addEventListener("click", function () { f[d[0]] = f[d[0]] === d[1] ? "" : d[1]; draw(); }); chips.appendChild(b); return b;
+      });
+      function draw() {
+        btns.forEach(function (b, k) { b.setAttribute("aria-pressed", f[defs[k][0]] === defs[k][1] ? "true" : "false"); });
+        var needle = f.q.trim().toLowerCase();
+        var hit = lib.filter(function (i) {
+          if (f.usefulness && i.usefulness !== f.usefulness) return false;
+          if (f.platform && i.platform !== f.platform) return false;
+          if (f.topic && i.topics.indexOf(f.topic) < 0) return false;
+          return !needle || [i.title, i.author, i.key_info, i.verdict, i.topics.join(" "), i.tools.join(" ")].join(" ").toLowerCase().indexOf(needle) >= 0;
+        });
+        count.textContent = hit.length + " of " + lib.length + " links";
+        clear(results);
+        if (!hit.length) results.appendChild(el("p", "muted", lib.length ? "No links match these filters." : "No links filed yet. Share one to this app, then ask Claude to process the queue."));
+        hit.forEach(function (it) { results.appendChild(itemCard(it)); });
+      }
+      q.addEventListener("input", function () { f.q = q.value; draw(); });
+      sel.addEventListener("change", function () { f.topic = sel.value; draw(); });
+      draw();
+    }).catch(function (e) { clear(holder); holder.appendChild(errCard(e, "the library")); });
+  }
+
+  function viewNote(platform, id) {
+    $("title").textContent = "Note";
+    clear(view);
+    var back = el("button", "ghost tiny", "← Back"); back.type = "button";
+    back.addEventListener("click", function () { history.length > 1 ? history.back() : (location.hash = "#/library"); });
+    view.appendChild(back);
+    if (!getToken()) { view.appendChild(needsToken()); return; }
+    var card = el("div", "card"); view.appendChild(card); card.appendChild(el("p", "muted", "Loading…"));
+    file("notes/" + platform + "/" + id + ".md").then(function (t) {
+      clear(card);
+      var fm = (t.match(/^---\n([\s\S]*?)\n---\n/) || [])[1] || "";
+      var url = (fm.match(/^url:\s*(\S+)/m) || [])[1], u = (fm.match(/^usefulness:\s*(\w+)/m) || [])[1];
+      if (u && ORDER.indexOf(u) >= 0) card.className = "card stripe u-" + u;
+      if (url && /^https?:\/\//.test(url)) { var a = el("a", "", "Open the original post ↗"); a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer"; card.appendChild(a); }
+      card.appendChild(renderMd(t));
+    }).catch(function (e) { clear(card); card.appendChild(errCard(e, "this note")); });
+  }
+
+  var CLAIMS = [["verified", "Verified", "registry/verified.md"], ["hoax", "Hoax", "registry/hoax.md"], ["sidequests", "Side quests", "registry/sidequests.md"]];
+  function viewClaims(which) {
+    $("title").textContent = "Claims";
+    clear(view);
+    var seg = el("div", "row");
+    CLAIMS.forEach(function (c) { var b = el("button", "chip", c[1]); b.type = "button"; b.setAttribute("aria-pressed", c[0] === which ? "true" : "false"); b.addEventListener("click", function () { location.hash = "#/claims/" + c[0]; }); seg.appendChild(b); });
+    view.appendChild(seg);
+    if (!getToken()) { view.appendChild(needsToken()); return; }
+    var card = el("div", "card"); view.appendChild(card); card.appendChild(el("p", "muted", "Loading…"));
+    var path = (CLAIMS.filter(function (c) { return c[0] === which; })[0] || CLAIMS[0])[2];
+    file(path).then(function (t) { clear(card); card.appendChild(renderMd(t)); }).catch(function (e) { clear(card); card.appendChild(errCard(e, "the registry")); });
+  }
+
+  /* ---------- router ---------- */
+  function route() {
+    var parts = location.hash.replace(/^#\/?/, "").split("/");
+    var tab = parts[0] || "overview";
+    Array.prototype.forEach.call(document.querySelectorAll("nav a"), function (a) { a.setAttribute("aria-current", a.dataset.tab === (tab === "note" ? "library" : tab) ? "page" : "false"); });
+    window.scrollTo(0, 0);
+    if (tab === "queue") viewQueue();
+    else if (tab === "library") viewLibrary();
+    else if (tab === "claims") viewClaims(parts[1] || "verified");
+    else if (tab === "note" && parts[1] && parts[2]) viewNote(parts[1].replace(/[^\w]/g, ""), parts[2].replace(/[^\w-]/g, ""));
+    else viewOverview();
+  }
+
+  /* ---------- settings ---------- */
+  $("repoName").textContent = OWNER + "/" + REPO;
+  function refreshSettings() { var has = !!getToken(); $("clearToken").hidden = !has; $("token").placeholder = has ? "Token saved. Paste a new one to replace." : "github_pat_…"; }
+  $("gear").addEventListener("click", function () { $("settings").hidden = !$("settings").hidden; });
+  $("tokenForm").addEventListener("submit", function (e) { e.preventDefault(); var v = $("token").value.trim(); if (!v) return; setToken(v); $("token").value = ""; $("settings").hidden = true; refreshSettings(); state.library = null; route(); });
+  $("clearToken").addEventListener("click", function () { setToken(""); refreshSettings(); state.library = null; route(); });
+  refreshSettings();
+  if (!getToken()) $("settings").hidden = false;
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function () {});
+  window.addEventListener("hashchange", route);
 
-  // Share target arrives as ?title=…&text=…&url=…
-  var q = new URLSearchParams(location.search);
-  var shared = [q.get("url"), q.get("text"), q.get("title")].filter(Boolean).join(" ");
+  /* ---------- share target: ?title=&text=&url= ---------- */
+  var qs = new URLSearchParams(location.search);
+  var shared = [qs.get("url"), qs.get("text"), qs.get("title")].filter(Boolean).join(" ");
   if (shared) {
     var p = findLink(shared);
-    history.replaceState(null, "", location.pathname);
-    if (p) queue(p); else { say("No Instagram or YouTube link found in what was shared.", "err"); loadRecent(); }
-  } else loadRecent();
+    history.replaceState(null, "", location.pathname + "#/queue");
+    if (!p) { state.flash = { msg: "No Instagram or YouTube link found in what was shared.", ok: false }; route(); }
+    else if (!getToken()) { state.flash = { msg: "Add your GitHub token in Settings, then share the link again.", ok: false }; route(); }
+    else { $("title").textContent = "Queue"; view.textContent = "Queuing " + p.url + " …"; queueLink(p).then(function (r) { state.flash = r; route(); }); }
+  } else route();
 })();
 </script>
 </body>

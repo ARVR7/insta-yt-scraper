@@ -4,6 +4,21 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### Library: front matter is the source of truth; index and lists are generated
+- **Decision:** each note carries `title`, `topics`, `tools`, `usefulness` and `key_info` in its front matter. `scripts/build_index.py` generates `data/library.json` plus `library/` lists by usefulness and by topic. The claim-level files in `registry/` stay hand-curated.
+- **Why:** the user expects this to grow a lot. One place to edit (the note) keeps lists consistent, and generated per-topic and per-usefulness files avoid hand-maintained tables that rot. The two granularities answer different questions: `library/` says which videos were helpful, `registry/` says which individual claims are true or false.
+- **Usefulness scale:** helpful / mixed / misleading / noise, separate from `verdict` (the fact-check outcome). A video can be a verified tool with deceptive framing (mixed).
+- **Validation:** the build fails loudly on missing fields so a note can never silently drop out of the app.
+
+### App reads the repo through the GitHub API with the user's token, not from the public Pages site
+- **Decision:** the app fetches `data/library.json`, notes and registries via the contents API (needs Contents: Read-only added to the token). Only the app shell is in `docs/`.
+- **Why:** GitHub Pages is public. Notes and the library may be private (the repo may be private), so they are not placed under `docs/`. Cached copies in localStorage give offline reading.
+- **Rendering:** a small markdown renderer builds DOM nodes (no `innerHTML`) and only allows http(s) links and in-app note links, because notes contain text scraped from third parties.
+
+### Queue progress uses issue labels
+- **Decision:** `process-queue` adds `processing` while working and `needs-input` when blocked; closed means done. The app shows a three-step track and joins finished issues to the library by `platform + id`.
+- **Why:** it needs no server and works with the existing token. Progress is only as live as the last time Claude ran, because nothing can push to the app.
+
 ### Reel DegLPFbTBpi (issue #1): partly-verified, "free" filed as misleading
 - **Decision:** Higgsfield MCP/Katana is `verified-with-caveats`; the "free" claim is `misleading` (subscription and credits required per Higgsfield's own blog); the one-prompt result is `unverified` and listed as pending.
 - **Why:** primary sources (Higgsfield blog and MCP page) confirm the product and that it is paid; neither shows prompt-only motion graphics, and the reel shows playback only. The sponsorship is noted as inference, not stated as fact.

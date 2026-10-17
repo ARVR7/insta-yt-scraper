@@ -13,8 +13,9 @@ Run these steps in order. Each step is its own skill; read it before running it.
 4. **Write the note** - `write-link-note` creates `notes/<platform>/<id>.md`.
 5. **Fact-check** - `fact-check-claims` researches every checkable claim in the video and returns verdicts.
 6. **Registries** - `update-registries` files each verdict in `registry/verified.md`, `registry/hoax.md` or `registry/sidequests.md`, and links back to the note.
-7. **Docs** - append a dated entry to `decision.md` for every non-obvious choice made in this run (including workarounds for blocked fetches). Update `flow.md` if a script, skill or folder was added or changed.
-8. **Ship** - commit and push straight to `main` (the user's standing instruction). Commit message: `Add note for <platform> <id>`.
+7. **Library** - `update-library` rebuilds `data/library.json` and the `library/` lists from the notes.
+8. **Docs** - append a dated entry to `decision.md` for every non-obvious choice made in this run (including workarounds for blocked fetches). Update `flow.md` if a script, skill or folder was added or changed.
+9. **Ship** - commit and push straight to `main` (the user's standing instruction). Commit the note, registry entries, `data/` and `library/` together. Commit message: `Add note for <platform> <id>`.
 
 Finish by telling the user: what the post is, the verdicts, what could not be fetched, and anything you need from them.
 
