@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Everything mechanical about one link, in one command.
 
-Usage: prepare_link.py <url> <outdir> [--force] [--queued-via "GitHub issue #3"]
+Usage: prepare_link.py <url> <outdir> [--force] [--queued-via "GitHub issue #3"] [--manual textfile]
+
+--manual skips fetching and uses text the user pasted (caption, description, transcript) when the
+platform blocks anonymous access. The note then records that the metadata was user-provided.
 
 Does, with no model involved: normalise the URL, skip if a note already exists, fetch metadata
 and media, extract frames/contact sheet, transcribe (translating non-English), OCR on-screen
@@ -172,6 +175,9 @@ def pypi_facts(pkg):
 def main():
     args = sys.argv[1:]
     force = "--force" in args
+    manual = None
+    if "--manual" in args:
+        i = args.index("--manual"); manual = Path(args[i + 1]).read_text(encoding="utf8"); del args[i:i + 2]
     qv = ""
     if "--queued-via" in args:
         i = args.index("--queued-via"); qv = args[i + 1]; del args[i:i + 2]
@@ -187,17 +193,21 @@ def main():
     out = Path(outdir)
     out.mkdir(parents=True, exist_ok=True)
 
-    # 1. fetch
+    # 1. fetch (or use what the user pasted)
     clean = f"https://www.instagram.com/{'reel' if kind == 'reel' else 'p'}/{vid}/" if platform == "instagram" else url
-    fetcher = "fetch_instagram.py" if platform == "instagram" else "fetch_youtube.py"
-    extra = ["--comments", "50"] if platform == "youtube" else []
-    code = run([sys.executable, str(HERE / fetcher), clean, str(out), *extra], out / "fetch.log")
-    meta = json.loads((out / "meta.json").read_text()) if (out / "meta.json").exists() else None
-    if code != 0 or not meta:
-        reason = (out / "fetch.log").read_text().strip().splitlines()[-1][:200] if (out / "fetch.log").exists() else "unknown"
-        (out / "brief.md").write_text(f"# BLOCKED\n\nFetch failed for {url}: {reason}\n")
-        print(f"BLOCKED fetch failed: {reason}")
-        sys.exit(2)
+    if manual is not None:
+        meta = {"caption": manual.strip(), "author": "", "platform": platform, "url": clean, "manual": True}
+        (out / "meta.json").write_text(json.dumps(meta))
+    else:
+        fetcher = "fetch_instagram.py" if platform == "instagram" else "fetch_youtube.py"
+        extra = ["--comments", "50"] if platform == "youtube" else []
+        code = run([sys.executable, str(HERE / fetcher), clean, str(out), *extra], out / "fetch.log")
+        meta = json.loads((out / "meta.json").read_text()) if (out / "meta.json").exists() else None
+        if code != 0 or not meta:
+            reason = (out / "fetch.log").read_text().strip().splitlines()[-1][:200] if (out / "fetch.log").exists() else "unknown"
+            (out / "brief.md").write_text(f"# BLOCKED\n\nFetch failed for {url}: {reason}\n")
+            print(f"BLOCKED fetch failed: {reason}")
+            sys.exit(2)
 
     video = out / "video.mp4"
     gaps = []
@@ -223,7 +233,7 @@ def main():
         caps = sorted(out.glob("captions*.vtt"))
         if caps:
             transcript = "language: n/a (YouTube captions)\n" + vtt_to_text(caps[0])
-        gaps.append("video: " + (meta.get("video_error") or "not downloaded"))
+        gaps.append("video: " + ("not fetched, text supplied by the user" if meta.get("manual") else (meta.get("video_error") or "not downloaded")))
         if not transcript:
             gaps.append("transcript: none (no video, no captions)")
 
@@ -290,7 +300,7 @@ def main():
     (out / "brief.md").write_text("\n".join(b))
 
     # 5. draft note with the mechanical parts filled in
-    fs = ["  metadata: ok" + (" (instaloader, anonymous)" if platform == "instagram" else " (yt-dlp)"),
+    fs = ["  metadata: " + ("user-provided text only (platform blocked anonymous access)" if meta.get("manual") else "ok" + (" (instaloader, anonymous)" if platform == "instagram" else " (yt-dlp)")),
           f"  caption: {'ok' if caption else 'not returned'}",
           "  video: " + ("downloaded" if video.exists() else "blocked (" + (meta.get("video_error") or "not downloaded")[:80] + ")"),
           "  transcript: " + (("ok (faster-whisper" + (", translated" if lang not in ("en", "n/a") else "") + ", auto-generated, may contain errors)") if video.exists() and transcript else "YouTube captions" if transcript else "none"),
@@ -321,7 +331,7 @@ def main():
              "## Notes / caveats", "- TODO"]
     (out / "draft_note.md").write_text("\n".join(fm + body) + "\n")
 
-    print(f"OK {platform} {kind} {vid} | author {author} | {duration}s | lang {lang} | screen-text lines {len(screen)} | "
+    print(f"OK {platform} {kind} {vid} | author {author} | {duration or "?"}s | lang {lang} | screen-text lines {len(screen)} | "
           f"candidates {sum(len(v) for v in cand.values())} | facts {sum(1 for f in facts if f.get('found'))}/{len(facts)}")
     print(f"needs_visual_review: {'yes' if needs_visual else 'no'}")
     print(f"read: {out / 'brief.md'}   edit: {out / 'draft_note.md'}")

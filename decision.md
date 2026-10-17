@@ -4,6 +4,13 @@ Every non-obvious decision, with the reason. Newest first. Add an entry whenever
 
 ## 2026-10-17
 
+### The hourly scheduled task could not reach GitHub, so a standing session replaced it
+- **Finding:** the first scheduled task started a fresh session each hour with no GitHub tools and no repository (the task API has no way to attach a repo or connectors, and the creating session had none to pass). Its runs "succeeded" in 25 seconds without reading the queue, so issue #3 sat open for over an hour. A run reports success even when it did nothing, so the run status alone does not show that it works.
+- **Decision:** a standing session ("Link Inbox processor") was created with the repository as its source, which gives it the GitHub tools (confirmed: list_issues, issue_write, add_issue_comment). A new hourly task wakes that session instead of starting fresh ones, and the old task is disabled.
+- **Trade-offs:** the session keeps its conversation across wakeups, so its context grows slowly (cached, and compacted automatically); empty checks stay one-line replies. If the session is ever archived, the hourly message has nowhere to go and processing stops until it is recreated.
+- **Blocked links are not retried on a schedule:** an issue labelled `needs-input` is skipped until the owner comments; the owner's comment is then used as the content (`prepare_link.py --manual`). This stops an inaccessible link being fetched every hour.
+- **Issue #3:** Instagram redirected the post to a login page (other public reels still fetched fine), so it is marked `needs-input` and waits for a pasted caption.
+
 ### Mechanical front and back halves; the model only judges
 - **Decision:** two scripts now carry everything that needs no judgment. `prepare_link.py` does the fetch, frames, transcript (with translation), OCR, candidate extraction and source lookups, and writes a compact `brief.md` plus a draft note. `finish_link.py` takes one small `verdict.json`, writes the note from the draft, files registry entries, rebuilds the library, regenerates the `flow.md` notes table, produces the issue comment and pushes with retries. Claude reads one file, researches, and writes one JSON.
 - **Why:** the user asked to make as much mechanical as possible without hurting quality. The model previously retyped boilerplate (metadata, caption, transcript, registry markdown, git commands) and read several large tool outputs; those steps need no judgment.
