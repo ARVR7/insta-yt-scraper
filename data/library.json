@@ -1,5 +1,29 @@
 [
   {
+    "id": "Demp5EUT6GV",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Demp5EUT6GV/",
+    "title": "OpenShorts video clipper",
+    "author": "umarmullaai",
+    "posted": "2026-10-17 17:34:24+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "openshorts"
+    ],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "OpenShorts is a real MIT-licensed, self-hosted tool that turns long videos into 9:16 shorts with captions; it runs on 8 GB RAM but needs Docker and your own Gemini, ElevenLabs and fal.ai keys, which cost money per video.",
+    "note_path": "notes/instagram/Demp5EUT6GV.md"
+  },
+  {
     "id": "DemHB0GhG_R",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DemHB0GhG_R/",

@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### OpenShorts (self-hosted AI video clipper)  (2026-10-17)
+- **Verdict:** verified-with-caveats
+- **What it is:** An MIT-licensed tool that turns long videos into vertical 9:16 shorts with face-tracked cropping, captions and optional AI features; includes an MCP endpoint for agents.
+- **How to use / why it matters:** Clone github.com/mutonby/openshorts and run it with Docker on a machine with 8 GB RAM or more; add your own Gemini, ElevenLabs and fal.ai API keys for the AI features.
+- **Caveats:** Self-hosting is free but needs your own API keys (README: about $0.65 per video low-cost, about $2 premium); roughly 5 to 8 minutes per 8-minute video on CPU. The hosted version has a free plan with a watermark and 20 minutes a month, paid from $12 a month.
+- **Evidence:** [GitHub: mutonby/openshorts](https://github.com/mutonby/openshorts)
+- **Source note:** [notes/instagram/Demp5EUT6GV.md](../notes/instagram/Demp5EUT6GV.md)
+
 ### Google AI Pro includes premium Colab (A100 80GB)  (2026-10-17)
 - **Verdict:** verified-with-caveats
 - **What it is:** Google AI Pro plans now include premium Colab benefits with A100 80GB GPU access (Ultra adds H100s), announced by Google's Gemma account on 9-10 October 2026.

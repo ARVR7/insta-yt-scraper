@@ -84,6 +84,7 @@ Downloaded videos, frames and transcripts stay in a scratch directory outside th
 ## Current notes
 | Note | Category · usefulness · verdict |
 |---|---|
+| [notes/instagram/Demp5EUT6GV.md](notes/instagram/Demp5EUT6GV.md) | AI · helpful · verified |
 | [notes/instagram/DemHB0GhG_R.md](notes/instagram/DemHB0GhG_R.md) | AI · mixed · partly-verified |
 | [notes/instagram/DelxZzcvW49.md](notes/instagram/DelxZzcvW49.md) | AI · mixed · partly-verified |
 | [notes/instagram/DegLPFbTBpi.md](notes/instagram/DegLPFbTBpi.md) | AI · mixed · partly-verified |
