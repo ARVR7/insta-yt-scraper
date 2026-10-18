@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### AI influencers in India earn 1 to 6 lakh rupees a month (Telegram funnel)  (2026-10-18)
+- **Verdict:** misleading
+- **What it is:** Reel uses a Google AI Overview to claim a typical income range and sells a free workflow via Telegram.
+- **Why it is misleading:** The range is an AI-generated summary with weak sourcing; only isolated cases are reported, and the creator shows no earnings of his own.
+- **Evidence:** [NewsBytes on Vrutika Patel](https://www.newsbytesapp.com/news/business/ai-instagram-influencer-vrutika-patel-tops-100000-followers-earns-rs119700/tldr)
+- **Source note:** [notes/instagram/DdtdmRetwB3.md](../notes/instagram/DdtdmRetwB3.md)
+
 ### $49k AI-girl Fanvue earnings screenshots  (2026-10-18)
 - **Verdict:** misleading
 - **What it is:** Viral videos claim an AI-generated persona made about $49k on Fanvue.
