@@ -2,6 +2,11 @@
 
 Every non-obvious decision, with the reason. Newest first. Add an entry whenever you choose between options, work around a limit, or change a rule.
 
+## 2026-10-18
+
+### Add entertainment/film subcategory
+Movie trailers had no fitting entertainment subcategory (humour, music, sports). Added film (Film & TV) with aliases movies, trailers, tv, documentaries.
+
 ## 2026-10-17
 
 ### Recipes get calculated macros and a recipe card

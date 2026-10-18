@@ -181,6 +181,10 @@
         {
           "key": "sports",
           "label": "Sports"
+        },
+        {
+          "key": "film",
+          "label": "Film & TV"
         }
       ]
     },

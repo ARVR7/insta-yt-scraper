@@ -85,6 +85,7 @@ categories:
       humour: { label: Humour, aliases: [comedy, memes, skits] }
       music:  { label: Music,  aliases: [songs, dance] }
       sports: { label: Sports, aliases: [cricket, football, f1] }
+      film:   { label: Film & TV, aliases: [movies, trailers, tv, documentaries] }
   other:
     label: Other
     icon: dots
