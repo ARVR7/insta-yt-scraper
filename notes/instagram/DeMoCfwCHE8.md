@@ -17,17 +17,17 @@ fetch_status:
   transcript: "none"
   on_screen_text: "n/a"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
+title: "Content creation camp promo"
+category: money
+subcategory: business
+usefulness: mixed
 tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+key_info: "A creator's carousel promoting her paid 2026 content-creation system, with the caption claiming 59,000 followers and a 4-million-view post. The slides were not captured, so the carousel items themselves are unchecked."
+verdict: pending
+registry: registry/verified.md
 ---
 
-# TODO
+# Content creation camp promo
 
 ## Caption / hashtags
 > Overall, thanks to Reels and carousels, I’ve attracted over 59,000 followers. I have several Reels that have reached over a million views, as well as high-performing carousels, with my record-breaking post reaching 4 million views.
@@ -92,30 +92,40 @@ registry: TODO
 > How to attract clients
 
 ## Hook (on-screen text)
-TODO
+Opening the doors to my 2026 content creation system
 
 ## Call to action
-TODO
+Follow the account and comment "CAMP" to receive access by DM
 
 ## Transcript (auto)
 None available.
 
 ## What is shown on screen
-TODO
+Not reviewed: carousel slides were not captured, only the caption.
 
 ## Summary
-TODO
+The caption advertises a training camp: 7 days of practice, personal-brand work, Reels and carousel promotion tips including Instagram Trial Mode, simple funnels, and AI prompts with a 'PRODUCER agent'. The post is a comment-for-DM funnel.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 593 against 6698 likes (comments/likes 0.09; a ratio near or above 1 usually means a prompt to comment, an inference).
+
+## Your instruction
+
+> Extract all the posts from this , there are multiple items in the carousel. And check validness of all.
+
+Not done. Only the caption could be fetched; Instagram does not give the carousel slides to the anonymous scraper (no login or cookies are used), so the individual slides could not be read or checked. What was checkable is in the research table (caption claims only). To get the slides checked, paste the slide text or attach screenshots in a follow-up comment on the issue.
 
 ## Research (checked 2026-10-18)
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| Account has over 59,000 followers and a 4-million-view post | unverified | Self-reported in the caption; the account page was not opened. The post itself shows 6,698 likes and 593 comments. |
+| Instagram Trial Mode and carousels boost reach | unverified | Slides not read; no evidence given in the caption. |
+| The carousel's individual claims | unverified | Slides were not captured, so no item in the carousel could be extracted or checked. |
 
-Overall: TODO
+Overall: Promotional post; only caption claims were available and none were independently confirmed.
 
 ## Notes / caveats
-- TODO
+- Carousel slides not captured, so the instruction to check each item could not be completed.
+- Course sales funnel: access is sent by DM after commenting, and price is not shown.
+- Follower and view figures are self-reported.

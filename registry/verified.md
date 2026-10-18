@@ -131,6 +131,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Content creation camp carousel claims  (2026-10-18)
+- **Verdict:** unverified
+- **What it is:** Carousel and caption promoting a 2026 content creation system with Reels and Trial Mode promotion tips.
+- **Why pending:** Slides were not captured; caption claims are self-reported.
+- **To resolve:** Provide slide screenshots or text, then check each item.
+- **Source note:** [notes/instagram/DeMoCfwCHE8.md](../notes/instagram/DeMoCfwCHE8.md)
+
 ### 5 free AI video generators incl. a tool with Seedance, Veo 3.1 and Kling  (2026-10-18)
 - **Verdict:** unverified
 - **What it is:** Reel teases five free AI video generators, one said to give access to premium models.
