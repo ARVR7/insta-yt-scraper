@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### Doctor's salary from AI podcast clipping  (2026-10-18)
+- **Verdict:** misleading
+- **What it is:** Reel headline implies a doctor's salary from a minute of clipping work.
+- **Why it is misleading:** No earnings evidence; the shown method reposts third-party podcasts, and real clipping income is per-view and variable.
+- **Evidence:** [OpenClip podcast clipping rates](https://openclip.app/clipping/podcast-clipping), [Loeb on clipping](https://www.loeb.com/en/insights/passle/2025/10/what-is-clipping-and-how-is-it-changing-social-media)
+- **Source note:** [notes/instagram/DenEaIdxmZk.md](../notes/instagram/DenEaIdxmZk.md)
+
 ### "Paid my rent in 5 minutes" by clipping podcasts  (2026-10-17)
 - **Verdict:** misleading
 - **What it is:** The reel's headline claim that copying a viral podcast link earns rent money almost instantly.

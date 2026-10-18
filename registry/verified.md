@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Ssemble AI clipping tool  (2026-10-18)
+- **Verdict:** verified-with-caveats
+- **What it is:** Web tool that cuts a long YouTube video into short clips.
+- **How to use / why it matters:** Paste a YouTube link, pick clip length and captions, generate and schedule.
+- **Caveats:** Free plan unconfirmed; paid from about $7.50 per month.
+- **Evidence:** [Ssemble blog](https://www.ssemble.com/da/blog/best-ai-clipping-tools-2026)
+- **Source note:** [notes/instagram/DenEaIdxmZk.md](../notes/instagram/DenEaIdxmZk.md)
+
 ### Free AI tool tiers (Gemini, FishAudio, ArtFlow)  (2026-10-18)
 - **Verdict:** verified-with-caveats
 - **What it is:** Free plans exist for all three tools shown in the reel.
