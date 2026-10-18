@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Gemini Omni free video generation in Google Vids  (2026-10-18)
+- **Verdict:** verified-with-caveats
+- **What it is:** Free AI video generation with Gemini Omni for personal Google accounts via vids.new.
+- **How to use / why it matters:** Go to vids.new and choose Create AI videos.
+- **Caveats:** 1080p on the free tier is disputed (one test saw 720p); SynthID watermark; limits not stated.
+- **Evidence:** [Android Authority](https://androidauthority.com/free-gemini-omni-videos-3695658), [Cryptopolitan](https://www.cryptopolitan.com/gemini-omni-paywall-google-vids-free-1080p/)
+- **Source note:** [notes/instagram/Ddvk-Dxgc8z.md](../notes/instagram/Ddvk-Dxgc8z.md)
+
 ### HyperFrames (HTML to video for AI agents)  (2026-10-18)
 - **Verdict:** verified-with-caveats
 - **What it is:** Open-source renderer from HeyGen that turns HTML/CSS/GSAP compositions into video, driven by coding agents.

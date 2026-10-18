@@ -440,6 +440,31 @@
     "note_path": "notes/instagram/Dd1_GC-sJVz.md"
   },
   {
+    "id": "Ddvk-Dxgc8z",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/Ddvk-Dxgc8z/",
+    "title": "Free Gemini Omni video generation",
+    "author": "futurewalt.ai",
+    "posted": "2026-09-26 08:12:29+00:00",
+    "type": "post",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "gemini",
+      "google-vids"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Google did open Gemini Omni video generation to anyone with a Google account through Google Vids (vids.new), but one test reported only 720p output, so the free 1080p claim is unconfirmed. Only the caption was captured, not the post images.",
+    "note_path": "notes/instagram/Ddvk-Dxgc8z.md"
+  },
+  {
     "id": "DdtdmRetwB3",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DdtdmRetwB3/",
