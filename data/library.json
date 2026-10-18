@@ -96,6 +96,31 @@
     "note_path": "notes/instagram/DemUJJRJjM1.md"
   },
   {
+    "id": "DemQhAjSIEH",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DemQhAjSIEH/",
+    "title": "Local uncensored model meme",
+    "author": "progressolabs",
+    "posted": "2026-10-17 13:55:05+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "ollama",
+      "qwen"
+    ],
+    "usefulness": "mixed",
+    "verdict": "sidequest",
+    "key_info": "A meme comparing a refused request to a hosted model against a 6 GB local 'uncensored' model that complied. It names no specific model; the follow-up research covers Qwen abliterated variants, their rough hardware needs and the caveats.",
+    "note_path": "notes/instagram/DemQhAjSIEH.md"
+  },
+  {
     "id": "DemHB0GhG_R",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DemHB0GhG_R/",
