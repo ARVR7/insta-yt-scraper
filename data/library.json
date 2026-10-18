@@ -292,6 +292,32 @@
     "note_path": "notes/instagram/DeSArmKIhid.md"
   },
   {
+    "id": "DeGKrmWh89C",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DeGKrmWh89C/",
+    "title": "Claude makes a clinic ad video",
+    "author": "logam.academy",
+    "posted": "2026-10-05 02:58:40+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "claude",
+      "hyperframes",
+      "remotion"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "An Indian marketing agency owner shows Claude (with Hyperframes and Remotion) writing a script and producing a 2.5-minute clinic ad in about 1.5 hours. The tools are real; the claimed saving from about 2 lakh rupees is self-reported.",
+    "note_path": "notes/instagram/DeGKrmWh89C.md"
+  },
+  {
     "id": "DeCH_lVqG-k",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DeCH_lVqG-k/",

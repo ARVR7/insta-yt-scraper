@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### HyperFrames (HTML to video for AI agents)  (2026-10-18)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-source renderer from HeyGen that turns HTML/CSS/GSAP compositions into video, driven by coding agents.
+- **How to use / why it matters:** Add the skill with npx skills add heygen-com/hyperframes and let an agent build scenes as HTML.
+- **Caveats:** Renders on a single machine; details from secondary sources.
+- **Evidence:** [MindStudio explainer](https://www.mindstudio.ai/blog/what-is-hyperframes-html-video-renderer-ai-agents)
+- **Source note:** [notes/instagram/DeGKrmWh89C.md](../notes/instagram/DeGKrmWh89C.md)
+
 ### Krea MCP connector for Claude  (2026-10-18)
 - **Verdict:** verified-with-caveats
 - **What it is:** Hosted MCP server for image and video generation inside Claude.
@@ -122,6 +130,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Ad cost drops from 2 lakh rupees to 1-2 hours with Claude  (2026-10-18)
+- **Verdict:** unverified
+- **What it is:** Creator's claim of a large cost and time saving on a 2.5-minute ad.
+- **Why pending:** Self-reported, no finished video or invoices shown.
+- **To resolve:** Request the finished ad and results, or reproduce the workflow on a small test.
+- **Source note:** [notes/instagram/DeGKrmWh89C.md](../notes/instagram/DeGKrmWh89C.md)
 
 ### Rieseberg 'How to be more ambitious' article  (2026-10-18)
 - **Verdict:** unverified
