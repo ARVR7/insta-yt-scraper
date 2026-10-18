@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### $49k AI-girl Fanvue earnings screenshots  (2026-10-18)
+- **Verdict:** misleading
+- **What it is:** Viral videos claim an AI-generated persona made about $49k on Fanvue.
+- **Why it is misleading:** Two accounts use identical screenshots, and the claimants are paid via referral links; no independent verification.
+- **Evidence:** [Fanvue referral policy](https://fanvue.notion.site/Referral-policy-f20b3caf9baf4164a01e16cf86ca156b), [Domus on Fanvue AI creators](https://domusweb.it/en/news/2025/01/20/what-is-fanvue-onlyfans-artificial-intelligence.html)
+- **Source note:** [notes/instagram/DdgmWeIt1AE.md](../notes/instagram/DdgmWeIt1AE.md)
+
 ### $10k/month from Krea plus Claude faceless YouTube channel  (2026-10-18)
 - **Verdict:** misleading
 - **What it is:** Caption and voiceover imply a repeatable $10k/month side hustle using Krea's MCP in Claude.
