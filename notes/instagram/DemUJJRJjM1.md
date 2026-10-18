@@ -102,5 +102,5 @@ Oracle says this is a temporary shortage of Always Free shapes in your home regi
 **Things to know before relying on it**
 - Idle A1 instances can be stopped or reclaimed (very low CPU, network and memory use over about 7 days).
 - One blog reports Oracle cut the A1 allowance to 2 OCPUs and 12 GB from June 2026; I could not confirm that on Oracle's own pages, so check what the shape picker lets you set.
-- Creating a smaller instance first (for example 1 OCPU and 6 GB) is often easier to get than the full 24 GB, and you can try the full size later.
+- Some community guides suggest starting with a smaller A1 instance (for example 1 OCPU and 6 GB) if the full size is unavailable; I did not verify this here.
 - Do not pay anyone for a PDF of these steps.
