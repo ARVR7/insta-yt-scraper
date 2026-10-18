@@ -17,17 +17,17 @@ fetch_status:
   transcript: "none"
   on_screen_text: "n/a"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
-tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+title: "Top 10 fastest-growing Claude Skills"
+category: ai
+subcategory: tools
+usefulness: mixed
+tools: ["claude-skills"]
+key_info: "A newsletter account's carousel ranking the 10 Claude Skills that gained the most GitHub stars in September 2026. Only the caption was available, so the individual skills are not named in this note."
+verdict: pending
+registry: registry/verified.md
 ---
 
-# TODO
+# Top 10 fastest-growing Claude Skills
 
 ## Caption / hashtags
 > These are the 10 fastest-growing Claude Skills on GitHub in September 2026, ranked by the number of stars gained that month.
@@ -43,19 +43,19 @@ registry: TODO
 > Comment “ESD” for the link
 
 ## Hook (on-screen text)
-TODO
+10 fastest-growing Claude Skills on GitHub in September 2026
 
 ## Call to action
-TODO
+Comment "ESD" for the link; join the free newsletter
 
 ## Transcript (auto)
 None available.
 
 ## What is shown on screen
-TODO
+Not reviewed: post images were not captured, only the caption.
 
 ## Summary
-TODO
+The caption says the ranking is by stars gained in September 2026 and mentions skills for cleaner code, more natural writing, better frontend design and security audits. The post has 3 likes and 57 comments, consistent with comment-for-link gating.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 57 against 3 likes (comments/likes 19.00; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -64,9 +64,11 @@ Not read: Instagram requires a login to list comments. The count is 57 against 3
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| Ranking of the 10 fastest-growing Claude Skills by September 2026 stars | unverified | Slide contents and the repos behind them were not available, so the ranking could not be checked against GitHub star history. |
 
-Overall: TODO
+Overall: Could not verify; only the caption was read.
 
 ## Notes / caveats
-- TODO
+- Only the caption was captured; the ten skills are unknown.
+- Star growth is a popularity signal, not a quality or safety signal; review any skill's code before installing.
+- Comment-for-link is newsletter lead generation.

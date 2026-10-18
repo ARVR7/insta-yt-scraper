@@ -107,6 +107,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### September 2026 top-10 growing Claude Skills  (2026-10-18)
+- **Verdict:** unverified
+- **What it is:** Carousel ranking Claude Skills repos by stars gained in September 2026.
+- **Why pending:** Slides not captured, so the repos were never read.
+- **To resolve:** Paste the slide text or the linked list, then check each repo's star history.
+- **Source note:** [notes/instagram/DeVyGbyJGcl.md](../notes/instagram/DeVyGbyJGcl.md)
+
 ### 46 free alternatives list  (2026-10-18)
 - **Verdict:** unverified
 - **What it is:** Creator promises 46 free alternatives to paid AI tools via comment.
