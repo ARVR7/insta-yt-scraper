@@ -72,7 +72,7 @@ Claude posts the printed comment on the issue and closes it
 | `scripts/build_index.py` | Validates notes against the taxonomy and builds `data/library.json`, `data/taxonomy.json` and `library/`. |
 | `data/library.json`, `data/taxonomy.json` | Generated index and vocabulary the app reads. |
 | `library/README.md`, `library/by-category/`, `library/by-location/`, `library/by-usefulness/` | Generated lists of every link with key info, grouped for reading on GitHub. |
-| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `prepare-link`, `finish-link`, `recipe-card`, `categorize-link`, `update-library`, `analyze-comments`, `process-queue`. |
+| `.claude/skills/*/SKILL.md` | One skill per operation: `process-link`, `fetch-instagram-post`, `fetch-youtube-video`, `analyze-video`, `analyze-comments`, `write-link-note`, `fact-check-claims`, `update-registries`, `prepare-link`, `finish-link`, `recipe-card`, `categorize-link`, `update-library`, `analyze-comments`, `process-queue`, `shorts-trend-script-approval`, `shorts-visible-stakes-video` (original Shorts workflow, separate from link processing). |
 | Link Inbox artifact | https://claude.ai/artifact/FLi1JREBRUV493gipCS5AG (source is not in the repo; it lives on claude.ai). |
 | `notes/instagram/<shortcode>.md` | One note per Instagram link. |
 | `notes/youtube/<video-id>.md` | One note per YouTube link. |

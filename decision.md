@@ -205,3 +205,7 @@ Movie trailers had no fitting entertainment subcategory (humour, music, sports).
 - **Decision:** a follow-up reads the saved note and researches the question; `scripts/followup_link.py` appends a "Follow-up" section. The video is re-processed only when the follow-up explicitly asks.
 - **Why:** the transcript, OCR and research are already in the note, so re-running the pipeline costs tokens and time for no new information.
 
+
+### Shorts skills added (script approval + visible-stakes renderer)
+- **Decision:** added `shorts-trend-script-approval` and `shorts-visible-stakes-video` (with its `scripts/` renderer) under `.claude/skills/`, unchanged from the user's upload.
+- **Why:** user supplied them. They are a content-creation flow, so they stay independent of `process-link`. Rendered media goes to the scratchpad, never the repo.
