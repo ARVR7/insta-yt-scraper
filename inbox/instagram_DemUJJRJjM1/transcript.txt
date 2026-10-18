@@ -1,0 +1,26 @@
+language: hi (0.99)
+## English translation
+[0s] If you are a developer or a cloud storage layer, then stop crying today.
+[4s] Because Oracle is such a big company and it gives you free forever.
+[8s] As long as you are alive, it gives you a lifetime free server in which you have 8V CBO plus 24GB RAM.
+[13s] Look, it also gives you 200GB free tier storage.
+[16s] Let me show you more.
+[18s] What is game changer?
+[20s] You can run Coolify, multiple projects and databases.
+[23s] You can run a heavy Minecraft server in it.
+[26s] From 3-4 WordPress websites to medium heavy traffic.
+[29s] You can run static websites, you can deploy a Kubernetes cluster.
+[32s] You can host your own media server for your own content.
+[36s] How to claim it?
+[38s] What is the process?
+[40s] It will be difficult.
+[42s] How to claim it?
+[44s] There is only one thing to do with this step.
+[47s] How to take it?
+[49s] Give it a hand.
+[51s] Comment that I have reached your DM immediately.
+[54s] Like and follow this video.
+[57s] Thank you and bye.
+## Original (hi)
+[0s] आब आप रो ख्लाव्ड श्वट्रेक लेर और ना जिन्दिगे बर आज रोना बन्द कराते तुमारा
+[4s] क्योंकी औरेकल भाई इतनी बडी कमपनी है और तुमको फ्री फ्रेवर जब तक भाई जिन्दा हो लाइव्टम फ्री सरवर देता
