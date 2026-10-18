@@ -121,6 +121,30 @@
     "note_path": "notes/instagram/DelxZzcvW49.md"
   },
   {
+    "id": "Dek6wBjJgnA",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dek6wBjJgnA/",
+    "title": "Prompt for more ambitious AI work",
+    "author": "chase.h.ai",
+    "posted": "2026-10-17 01:25:10+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "ideas",
+    "subcategory_label": "Ideas",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "claude"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Summarises Felix Rieseberg's post on being more ambitious with AI (speed, altitude, depth, range) and a four-part prompt to append to any task. The prompt matches the on-screen article text; the source page itself was not independently confirmed.",
+    "note_path": "notes/instagram/Dek6wBjJgnA.md"
+  },
+  {
     "id": "DegLPFbTBpi",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DegLPFbTBpi/",

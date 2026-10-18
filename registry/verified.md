@@ -107,6 +107,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Rieseberg 'How to be more ambitious' article  (2026-10-18)
+- **Verdict:** unverified
+- **What it is:** Tutorial on speed, altitude, depth and range ambition with models, plus a four-part prompt.
+- **Why pending:** Web search did not locate the original page; only the reel's on-screen capture was read.
+- **To resolve:** Open felixrieseberg.com and confirm the article and prompt wording.
+- **Source note:** [notes/instagram/Dek6wBjJgnA.md](../notes/instagram/Dek6wBjJgnA.md)
+
 ### September 2026 top-10 growing Claude Skills  (2026-10-18)
 - **Verdict:** unverified
 - **What it is:** Carousel ranking Claude Skills repos by stars gained in September 2026.
