@@ -131,6 +131,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Animation Claude skills carousel (okaashish)  (2026-10-18)
+- **Verdict:** unverified
+- **What it is:** Carousel and caption promoting Claude skills for animation, links sent by DM.
+- **Why pending:** Slides were not captured, so the listed skills were never read.
+- **To resolve:** Provide slide screenshots or text, then check each skill and link.
+- **Source note:** [notes/instagram/DeOxisYD6ap.md](../notes/instagram/DeOxisYD6ap.md)
+
 ### Content creation camp carousel claims  (2026-10-18)
 - **Verdict:** unverified
 - **What it is:** Carousel and caption promoting a 2026 content creation system with Reels and Trial Mode promotion tips.
