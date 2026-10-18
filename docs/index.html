@@ -214,6 +214,21 @@
   .steps li.done { opacity: .45; text-decoration: line-through; }
   .rnote { font-size: 12px; color: var(--ink-3); line-height: 1.5; }
   .rclaim { font-size: 13px; font-weight: 600; padding: 10px 12px; border-radius: 12px; background: var(--glass-strong); border: 1px solid var(--glass-line); }
+  textarea.ta { width: 100%; min-height: 86px; resize: vertical; padding: 14px 16px; font: 500 15px/1.45 var(--font); color: var(--ink); background: var(--glass); border: 1px solid var(--glass-line); border-radius: 18px; }
+  .added { padding: 16px; display: flex; flex-direction: column; gap: 10px; cursor: default; }
+  .added .row { justify-content: space-between; }
+  .added h3 { margin: 0; font-size: 17px; letter-spacing: -.02em; }
+  .ok-dot { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--helpful); color: #fff; font-size: 13px; margin-right: 8px; }
+  .linkbtn { background: none; border: 0; padding: 4px 0; font: 700 13px var(--font); color: var(--accent); cursor: pointer; }
+  .iline { font-size: 13px; color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .iline b { color: var(--ink); font-weight: 800; }
+  .editor { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+  .editor .row { gap: 8px; }
+  .count { font-size: 13px; color: var(--ink-3); margin: 0 4px 4px; }
+  .snips { display: flex; flex-direction: column; gap: 6px; margin-top: 2px; }
+  .snip { font-size: 13px; line-height: 1.45; color: var(--ink-2); }
+  .snip .ft { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); background: var(--hairline); border-radius: 6px; padding: 1px 6px; margin-right: 6px; vertical-align: 1px; }
+  mark { background: color-mix(in srgb, var(--mixed) 38%, transparent); color: inherit; border-radius: 3px; padding: 0 1px; }
   .md { overflow-wrap: anywhere; font-size: 15px; color: var(--ink); }
   .md h1 { font-size: 19px; margin: 4px 0 8px; } .md h2 { font-size: 16px; margin: 18px 0 6px; } .md h3 { font-size: 15px; margin: 12px 0 4px; }
   .md p, .md ul, .md blockquote, .md pre { margin: 0 0 10px; } .md ul { padding-left: 20px; }
@@ -273,7 +288,7 @@
   var ORDER = ["helpful", "mixed", "misleading", "noise"];
   var $ = function (id) { return document.getElementById(id); };
   var view = $("view"), sheet = $("sheet"), scrim = $("scrim");
-  var state = { library: null, filter: { q: "", usefulness: "", category: "", sub: "", loc: "", platform: "", author: "", tool: "", since: "", sort: "new" }, tax: null, flash: null, timer: null, refresh: false, tab: null };
+  var state = { library: null, filter: { q: "", usefulness: "", category: "", sub: "", loc: "", platform: "", author: "", tool: "", since: "", sort: "new" }, tax: null, flash: null, justAdded: null, searchDocs: null, searchLoading: false, timer: null, refresh: false, tab: null };
   var SVGNS = "http://www.w3.org/2000/svg";
 
   /* ---------- storage and API ---------- */
@@ -378,13 +393,23 @@
     for (var i = 0; i < urls.length; i++) { var p = parse(urls[i]); if (p) return p; }
     return null;
   }
-  function queueLink(p) {
+  // The issue body is the link; an optional instruction follows a blank line and "Instruction:".
+  function instrOf(body) { var m = (body || "").match(/\n\s*Instruction:\s*([\s\S]*)$/i); return m ? m[1].trim() : ""; }
+  function bodyWith(body, instr) {
+    var base = (body || "").replace(/\n\s*Instruction:[\s\S]*$/i, "").trim();
+    return instr && instr.trim() ? base + "\n\nInstruction: " + instr.trim() : base;
+  }
+  function saveInstruction(number, body, instr) {
+    return api("/issues/" + number, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ body: bodyWith(body, instr) }) });
+  }
+  function queueLink(p, instr) {
     var title = "Link: " + p.platform + " " + p.key;
     return api("/issues?labels=" + LABEL + "&state=all&per_page=100").then(function (issues) {
       var dup = issues.filter(function (i) { return i.title === title && !i.pull_request; })[0];
-      if (dup) return { msg: "Already in the queue.", ok: true };
-      return api("/issues", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ title: title, body: p.url, labels: [LABEL] }) })
-        .then(function () { return { msg: "Added to the queue.", ok: true }; });
+      if (dup) return { msg: "Already in the queue.", ok: true, number: dup.number, url: p.url, body: dup.body, dup: true };
+      var body = bodyWith(p.url, instr);
+      return api("/issues", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ title: title, body: body, labels: [LABEL] }) })
+        .then(function (i) { return { msg: "Added to the queue.", ok: true, number: i.number, url: p.url, body: body }; });
     }).catch(function (e) {
       return { msg: e.status === 401 || e.status === 403 || e.status === 404 ? "GitHub refused the token." : "Couldn't add it: " + e.message, ok: false };
     });
@@ -456,7 +481,7 @@
 
   /* ---------- Library ---------- */
   function openNote(it) { location.hash = "#/note/" + it.platform + "/" + it.id; }
-  function itemCard(it) {
+  function itemCard(it, q) {
     var c = el("article", "card glass u-" + it.usefulness); c.tabIndex = 0;
     c.appendChild(tile(it.usefulness, it.usefulness));
     var b = el("div", "body");
@@ -465,6 +490,12 @@
       var mc = el("div", "macro");
       [Math.round(it.recipe.kcal) + " kcal", Math.round(it.recipe.protein) + " g protein", Math.round(it.recipe.carbs) + " g carbs", Math.round(it.recipe.fat) + " g fat"].forEach(function (x) { mc.appendChild(el("span", "", x)); });
       b.appendChild(mc);
+    }
+    var sc = q && q.trim() ? scoreItem(it, q) : null;
+    if (sc && sc.snips.length) {
+      var ts = terms(q), sn = el("div", "snips");
+      sc.snips.forEach(function (x) { var r = el("div", "snip"); r.appendChild(el("span", "ft", x.k)); r.appendChild(snippetEl(x.html, ts)); sn.appendChild(r); });
+      b.appendChild(sn);
     }
     c.appendChild(b);
     c.addEventListener("click", function () { openNote(it); });
@@ -503,8 +534,54 @@
     if (f.author && i.author !== f.author) return false;
     if (f.tool && (i.tools || []).indexOf(f.tool) < 0) return false;
     if (f.since) { var t = Date.parse(i.posted); if (!isNaN(t) && Date.now() - t > Number(f.since) * 86400000) return false; }
-    var needle = f.q.trim().toLowerCase();
-    return !needle || [i.title, i.author, i.key_info, i.category_label, i.subcategory_label, i.location_label, (i.tools || []).join(" ")].join(" ").toLowerCase().indexOf(needle) >= 0;
+    return !f.q.trim() || !!scoreItem(i, f.q);
+  }
+  /* full-text search over data/search.json (loaded lazily); falls back to card fields until it arrives */
+  var FIELD_NAME = { title: "Title", author: "Author", key_info: "Key info", tools: "Tools", where: "Category", summary: "Summary", caption: "Caption", transcript: "Transcript", screen: "On screen", hook: "Hook", cta: "Call to action", recipe: "Recipe", research: "Research", caveats: "Caveats", instruction: "Your instruction" };
+  var FIELD_W = { title: 8, author: 4, key_info: 5, tools: 4, where: 3, hook: 3, summary: 3, recipe: 3, instruction: 3, caption: 2, cta: 1.5, research: 1.5, screen: 1.5, caveats: 1, transcript: 1 };
+  function terms(q) { return q.toLowerCase().split(/\s+/).filter(Boolean); }
+  function docFields(i) {
+    var d = state.searchDocs && state.searchDocs[i.platform + "/" + i.id], out = {};
+    out.title = i.title; out.author = i.author; out.key_info = i.key_info;
+    out.tools = (i.tools || []).join(" "); out.where = [i.category_label, i.subcategory_label, i.location_label].filter(Boolean).join(" ");
+    if (d) Object.keys(d.fields).forEach(function (k) { out[k] = d.fields[k]; });
+    return out;
+  }
+  /* AND of all terms across all fields; returns { score, snips } or null */
+  function scoreItem(i, q) {
+    var ts = terms(q); if (!ts.length) return { score: 0, snips: [] };
+    var fields = docFields(i), score = 0, found = {}, snips = [];
+    Object.keys(fields).forEach(function (k) {
+      var low = String(fields[k] || "").toLowerCase();
+      ts.forEach(function (t) { var at = low.indexOf(t); if (at >= 0) { found[t] = 1; score += (FIELD_W[k] || 1) * (at === 0 ? 1.3 : 1); if (!(("f:" + k) in found)) found["f:" + k] = at; } });
+    });
+    for (var n = 0; n < ts.length; n++) if (!found[ts[n]]) return null;
+    Object.keys(fields).forEach(function (k) {
+      if (k === "title" || k === "key_info" || typeof found["f:" + k] !== "number") return;
+      snips.push({ k: k, text: String(fields[k]), w: FIELD_W[k] || 1 });
+    });
+    snips.sort(function (a, b) { return b.w - a.w; });
+    return { score: score, snips: snips.slice(0, 3).map(function (x) { return { k: FIELD_NAME[x.k] || x.k, html: x.text }; }) };
+  }
+  function snippetEl(text, ts) {
+    var low = text.toLowerCase(), at = -1;
+    ts.forEach(function (t) { var j = low.indexOf(t); if (j >= 0 && (at < 0 || j < at)) at = j; });
+    var start = Math.max(0, at - 50), end = Math.min(text.length, at + 110);
+    if (start > 0) { var sp = text.indexOf(" ", start); if (sp > 0 && sp < at) start = sp + 1; }
+    var piece = text.slice(start, end), p = el("span");
+    if (start > 0) p.appendChild(document.createTextNode("\u2026"));
+    var re = new RegExp("(" + ts.map(function (t) { return t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|") + ")", "ig");
+    piece.split(re).forEach(function (part, idx) { if (idx % 2) p.appendChild(el("mark", "", part)); else if (part) p.appendChild(document.createTextNode(part)); });
+    if (end < text.length) p.appendChild(document.createTextNode("\u2026"));
+    return p;
+  }
+  function loadSearch(done) {
+    if (state.searchDocs || state.searchLoading) return;
+    state.searchLoading = true;
+    file("data/search.json").then(function (t) {
+      var m = {}; JSON.parse(t).forEach(function (d) { m[d.platform + "/" + d.id] = d; });
+      state.searchDocs = m; state.searchLoading = false; done();
+    }).catch(function () { state.searchLoading = false; });
   }
   function sortItems(arr, mode) {
     var by = function (a, b) { return String(b.posted).localeCompare(String(a.posted)); };
@@ -630,10 +707,17 @@
         activeRow.textContent = "";
         act.forEach(function (a) { var c = el("button", "chip", a[0] + "  \u2715"); c.type = "button"; c.setAttribute("aria-pressed", "true"); c.addEventListener("click", function () { resetFilter(f, a[1]); draw(); }); activeRow.appendChild(c); });
         activeRow.hidden = !act.length;
-        var hit = sortItems(lib.filter(function (i) { return matches(i, f); }), f.sort);
+        var hit, qq = f.q.trim();
+        if (qq) {
+          loadSearch(draw);
+          hit = lib.filter(function (i) { return matches(i, f); }).map(function (i) { return [i, scoreItem(i, qq).score]; });
+          hit.sort(function (a, b) { return b[1] - a[1]; });
+          hit = hit.map(function (x) { return x[0]; });
+        } else hit = sortItems(lib.filter(function (i) { return matches(i, f); }), f.sort);
         results.textContent = "";
+        if (qq && hit.length) results.appendChild(el("p", "count", hit.length + (hit.length === 1 ? " result" : " results") + (state.searchDocs ? " \u00b7 searched transcripts, captions and notes" : " \u00b7 loading full text\u2026")));
         if (!hit.length) results.appendChild(el("p", "empty", lib.length ? "Nothing matches." : "Nothing here yet. Share a link to this app."));
-        hit.forEach(function (it) { results.appendChild(itemCard(it)); });
+        hit.forEach(function (it) { results.appendChild(itemCard(it, qq)); });
         if (state.refresh) results.classList.add("still"); stagger(results);
       }
       q.addEventListener("input", function () { f.q = q.value; results.classList.add("still"); draw(); });
@@ -799,6 +883,23 @@
     for (var k = 1; k <= 3; k++) tr.appendChild(el("span", (k <= step ? "on" : "") + (k === step && step === 2 && !warn ? " live" : "")));
     return { node: tr, step: step, warn: warn, word: warn ? "Needs your input" : ["", "Waiting", "Working", "Done"][step] };
   }
+  function instructionEditor(number, body, onDone, opts) {
+    opts = opts || {};
+    var box = el("div", "editor"), ta = el("textarea", "ta"), st = el("span", "msg"), row = el("div", "row");
+    ta.value = instrOf(body); ta.placeholder = opts.placeholder || "What should I do with this? For example: summarise the recipe in grams, or check whether the pricing is real.";
+    ta.setAttribute("aria-label", "Instruction");
+    var save = el("button", "cta", "Save"), cancel = el("button", "chip", "Cancel"); save.type = cancel.type = "button";
+    save.addEventListener("click", function () {
+      save.disabled = true; st.textContent = "Saving…";
+      (opts.save ? opts.save(ta.value) : saveInstruction(number, body, ta.value)).then(function () { onDone(ta.value, true); })
+        .catch(function (e) { save.disabled = false; st.className = "msg err"; st.textContent = "Couldn't save: " + e.message; });
+    });
+    cancel.addEventListener("click", function () { onDone(null, false); });
+    row.appendChild(save); row.appendChild(cancel); row.appendChild(st);
+    box.appendChild(ta); box.appendChild(row); setTimeout(function () { ta.focus(); }, 30);
+    return box;
+  }
+
   function viewQueue() {
     var refresh = state.refresh; state.refresh = false;
     $("title").textContent = "Queue"; clearInterval(state.timer); view.textContent = "";
@@ -807,14 +908,35 @@
     var form = el("form", "row"); form.autocomplete = "off";
     var w = el("div", "grow"), inp = el("input"); inp.type = "url"; inp.placeholder = "Paste a link"; inp.setAttribute("aria-label", "Link to add"); w.appendChild(inp);
     var btn = el("button", "cta", "Add"); btn.type = "submit";
-    form.appendChild(w); form.appendChild(btn); box.appendChild(form);
-    var note = msg(flash ? flash.msg : "", flash && !flash.ok); if (!flash) note.hidden = true; box.appendChild(note);
+    form.appendChild(w); form.appendChild(btn);
+    var more = el("button", "linkbtn", "+ Add an instruction"), ta2 = el("textarea", "ta"); more.type = "button";
+    ta2.hidden = true; ta2.placeholder = "Optional: tell me what to do with this link"; ta2.setAttribute("aria-label", "Instruction");
+    more.addEventListener("click", function () { ta2.hidden = !ta2.hidden; more.textContent = ta2.hidden ? "+ Add an instruction" : "Hide instruction"; if (!ta2.hidden) ta2.focus(); });
+    box.appendChild(form); box.appendChild(more); box.appendChild(ta2);
+    var added = state.justAdded; state.justAdded = null;
+    if (added && added.number) {
+      var ac = el("div", "card glass added"), top = el("div", "row"), hd = el("h3");
+      var dot = el("span", "ok-dot", "\u2713"); hd.appendChild(dot); hd.appendChild(document.createTextNode(added.dup ? "Already in the queue" : "Added to the queue"));
+      top.appendChild(hd); ac.appendChild(top);
+      ac.appendChild(el("p", "msg", added.url));
+      var holder = el("div"), open = el("button", "linkbtn", instrOf(added.body) ? "Edit instruction" : "Add an instruction"); open.type = "button";
+      if (instrOf(added.body)) { var il = el("div", "iline"); il.appendChild(el("b", "", "Instruction: ")); il.appendChild(document.createTextNode(instrOf(added.body))); ac.appendChild(il); }
+      open.addEventListener("click", function () {
+        open.hidden = true;
+        holder.appendChild(instructionEditor(added.number, added.body, function (val, saved) {
+          holder.textContent = ""; open.hidden = false;
+          if (saved) { added.body = bodyWith(added.body, val); state.justAdded = added; state.refresh = true; viewQueue(); }
+        }));
+      });
+      ac.appendChild(open); ac.appendChild(holder); box.appendChild(ac);
+    }
+    var note = msg(flash && !added ? flash.msg : "", flash && !flash.ok); if (!flash || added) note.hidden = true; box.appendChild(note);
     var list = el("div", "list"); box.appendChild(list);
     if (!getToken()) { view.textContent = ""; view.appendChild(needsToken()); return; }
     form.addEventListener("submit", function (e) {
       e.preventDefault(); var p = findLink(inp.value);
       if (!p) { note.hidden = false; note.className = "msg err"; note.textContent = "Not an Instagram or YouTube link."; return; }
-      btn.disabled = true; queueLink(p).then(function (r) { state.flash = r; viewQueue(); });
+      btn.disabled = true; queueLink(p, ta2.value).then(function (r) { state.flash = r; if (r.ok) state.justAdded = r; viewQueue(); });
     });
     state.timer = setInterval(function () {
       if (document.visibilityState === "visible" && !inp.value && document.activeElement !== inp) { state.refresh = true; viewQueue(); }
@@ -830,7 +952,25 @@
           c.appendChild(done ? tile(done.usefulness, done.usefulness) : tk.warn ? tile("alert", "misleading") : tk.step === 2 ? tile("", "noise", true) : tile("wait", "noise"));
           var b = el("div", "body");
           b.appendChild(el("h3", "", done ? done.title : (m ? plat(m[1]) + " link · " + m[2].slice(0, 6) + "…" : iss.title)));
-          b.appendChild(el("div", "sub", (done ? done.usefulness + " · " : "") + tk.word)); b.appendChild(tk.node); c.appendChild(b);
+          b.appendChild(el("div", "sub", (done ? done.usefulness + " · " : "") + tk.word)); b.appendChild(tk.node);
+          var ins = instrOf(iss.body), insBox = el("div"), isOpen = iss.state === "open";
+          if (ins) { var il2 = el("div", "iline"); il2.appendChild(el("b", "", "Instruction: ")); il2.appendChild(document.createTextNode(ins)); b.appendChild(il2); }
+          var eb = el("button", "linkbtn", isOpen ? (ins ? "Edit instruction" : "Add instruction") : "Ask a follow-up"); eb.type = "button";
+          eb.addEventListener("click", function (ev) {
+            ev.stopPropagation(); eb.hidden = true;
+            insBox.appendChild(instructionEditor(iss.number, iss.body, function (val, saved) {
+              insBox.textContent = ""; eb.hidden = false;
+              if (saved) { state.refresh = true; viewQueue(); }
+            }, isOpen ? {} : {
+              placeholder: "What else should I add to this note? For example: also work out the macros per 100 g.",
+              save: function (text) {
+                if (!text.trim()) return Promise.reject(new Error("write the follow-up first"));
+                return api("/issues/" + iss.number + "/comments", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ body: "Follow-up instruction: " + text.trim() }) })
+                  .then(function () { return api("/issues/" + iss.number, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ state: "open", labels: [LABEL, "followup"] }) }); });
+              } }));
+          });
+          insBox.addEventListener("click", function (ev) { ev.stopPropagation(); });
+          b.appendChild(eb); b.appendChild(insBox); c.appendChild(b);
           var go = function () { if (done) openNote(done); else window.open(iss.html_url, "_blank", "noopener"); };
           c.addEventListener("click", go); c.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
           list.appendChild(c);
@@ -924,7 +1064,7 @@
     history.replaceState(null, "", location.pathname + "#/queue");
     if (!p) { state.flash = { msg: "No Instagram or YouTube link found.", ok: false }; route(); }
     else if (!getToken()) { state.flash = { msg: "Add your token in settings, then share again.", ok: false }; route(); }
-    else { $("title").textContent = "Queue"; view.textContent = ""; view.appendChild(el("p", "empty", "Adding…")); queueLink(p).then(function (r) { state.flash = r; route(); }); }
+    else { $("title").textContent = "Queue"; view.textContent = ""; view.appendChild(el("p", "empty", "Adding…")); queueLink(p).then(function (r) { state.flash = r; if (r.ok) state.justAdded = r; route(); }); }
   } else route();
 })();
 </script>

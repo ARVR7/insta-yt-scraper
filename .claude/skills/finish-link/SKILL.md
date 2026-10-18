@@ -28,6 +28,8 @@ Use the commit attribution lines from the session's instructions as `--trailer` 
     "on_screen": "What the video shows", "summary": "2-4 sentences",
     "research": [["claim", "verdict", "evidence with [links](https://...)"]],
     "overall": "One sentence.",
+    "instruction": "(only if the issue had one) the owner's instruction, verbatim",
+    "instruction_result": "what you did and found for it",
     "caveats": ["...", "..."]
   },
   "entries": [

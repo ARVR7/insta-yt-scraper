@@ -13,7 +13,9 @@ verdict.json (written by Claude; short):
     "tools": ["name"], "usefulness": "helpful", "verdict": "verified",
     "key_info": "What it is and the main caveat.", "hook": "...", "cta": "...", "on_screen": "...",
     "summary": "...", "research": [["claim", "verdict", "evidence with [links](https://...)"]],
-    "overall": "...", "caveats": ["...", "..."]
+    "overall": "...", "caveats": ["...", "..."],
+    "instruction": "the owner's instruction from the issue, verbatim",   # only when one was given
+    "instruction_result": "what you did and found for it"
   },
   "recipe": {                                     # REQUIRED for food/recipes: input for scripts/recipe_card.py
     "title": "...", "servings": 2, "time": {"prep": 10, "cook": 15},
@@ -203,6 +205,9 @@ def write_note(v):
         out = re.sub(pat, lambda m, val=val: val, out, count=1, flags=re.M)
     for head, key in (("## Hook (on-screen text)", "hook"), ("## Call to action", "cta"), ("## What is shown on screen", "on_screen"), ("## Summary", "summary")):
         out = out.replace(f"{head}\nTODO", f"{head}\n{f.get(key) or 'None.'}", 1)
+    if f.get("instruction"):
+        block = "## Your instruction\n\n> " + str(f["instruction"]).strip().replace("\n", "\n> ") + "\n\n" + str(f.get("instruction_result") or "Not carried out: " + "no result was written.").strip() + "\n\n"
+        out = out.replace("## Research (checked", block + "## Research (checked", 1)
     if recipe_md:
         out = out.replace("## Research (checked", recipe_md + "\n## Research (checked", 1)
     rows = "\n".join("| " + " | ".join(str(c).replace("|", "/") for c in r) + " |" for r in f["research"])

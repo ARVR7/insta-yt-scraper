@@ -58,6 +58,7 @@ Claude posts the printed comment on the issue and closes it
 | `scripts/fetch_youtube.py` | `<url> <outdir> [--comments N]` -> `meta.json`, `comments.json`, `captions.*.vtt`, `video.mp4`; metadata survives a blocked download. |
 | `scripts/analyze_video.py` | `<video> <outdir> [--every N]` -> `frames/`, `sheet.jpg`, `transcript.txt`. |
 | `docs/` | Installable web app (GitHub Pages) with a Web Share Target. Three tabs: **Library** (usefulness ring, a shelf of category tiles that drill into subcategories and locations, search and a filter sheet for sort, usefulness, platform, date, creator and tool; tap a card for a note with summary and what checks out), **Queue** (add a link; each link shows a Waiting / Working / Done track), **Claims** (verified, hoax, side quests as collapsible cards). Settings holds a System / Light / Dark theme switch. Reads the repo through the GitHub API with a fine-grained token stored on the phone (Issues read/write, Contents read-only). |
+| `data/search.json` | Generated full-text index (see `build_index.py`); loaded lazily by the app's search, which shows field-labelled snippets. |
 | `taxonomy.yml` | Closed vocabulary: categories with subcategories, aliases, icons and colours; locations (country, city). Single source of truth. |
 | `scripts/taxonomy.py` | Shared lookup code plus `check`, `merge-sub`, `merge-cat` and `rename-city` for keeping the taxonomy tidy as it grows. |
 | `.github/workflows/prepare.yml` | Runs the scraping on a GitHub runner when a link is queued; commits to `inbox/`. |

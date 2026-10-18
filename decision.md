@@ -192,3 +192,12 @@ Movie trailers had no fitting entertainment subcategory (humour, music, sports).
 ### Reel DeToMLxtdSV: verdict "partly-verified"
 - **Decision:** tool components `verified-with-caveats`, the specific repo `unverified`, the income claim `misleading`.
 - **Why:** see `notes/instagram/DeToMLxtdSV.md`. The repo name could not be found in two searches and the owner is not legible on screen.
+
+### Optional instruction saved with a queued link
+- **Decision:** the issue body is the URL, optionally followed by a blank line and `Instruction: <text>`. The app adds the link first and offers "Add an instruction" on the confirmation card (PATCH on the issue body); finished links get "Ask a follow-up" (comment + reopen with `followup`). Claude acts on it only for owner-authored issues, only about that link, and records it in the note's "Your instruction" section.
+- **Why:** sharing must stay instant, so the instruction never blocks queueing. Putting it in the body keeps one source of truth, and a note section makes it searchable. Limiting scope stops the text from being used to run arbitrary commands.
+
+### In-app search reads note content
+- **Decision:** `build_index.py` writes `data/search.json` (summary, caption, transcript, screen text, research, recipe, instruction; 4000 chars per field). The app loads it lazily, ANDs the terms across all fields, ranks by field weight and shows highlighted snippets labelled by field.
+- **Why:** card fields alone missed most of what a note knows. A separate file keeps `library.json` small and the first paint fast; until it loads, search falls back to card fields.
+

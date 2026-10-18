@@ -5,6 +5,7 @@ Usage: build_index.py
 Reads front matter of notes/*/*.md and writes:
   data/library.json               machine index (the web app reads this)
   data/taxonomy.json              categories, subcategories, locations for the app
+  data/search.json                full text of each note (summary, caption, transcript, screen text, research, recipe) for search
   library/README.md               every link, newest first
   library/by-category/<cat>.md    grouped by subcategory
   library/by-location/<loc>.md    one file per country or country-city
@@ -104,6 +105,31 @@ def read_note(path, tax):
     }
 
 
+SEARCH_FIELDS = {  # note heading -> search field
+    "Summary": "summary", "Caption / hashtags": "caption", "Transcript (auto)": "transcript",
+    "What is shown on screen": "screen", "Hook (on-screen text)": "hook", "Call to action": "cta",
+    "Recipe card": "recipe", "Your instruction": "instruction", "Notes / caveats": "caveats",
+}
+
+
+def search_doc(path, item):
+    """Plain-text fields of one note for the app's full-text search (capped so the index stays small)."""
+    body = re.sub(r"\A---\n.*?\n---\n", "", path.read_text(encoding="utf8"), flags=re.S)
+    fields = {}
+    for part in re.split(r"^## ", body, flags=re.M)[1:]:
+        head, _, text = part.partition("\n")
+        key = "research" if head.startswith("Research") else SEARCH_FIELDS.get(head.strip())
+        if key:
+            text = re.sub(r"[#>*`|]|\[([^\]]*)\]\([^)]*\)", lambda m: m.group(1) or " ", text)
+            fields[key] = re.sub(r"\s+", " ", text).strip()[:4000]
+    return {
+        "id": item["id"], "platform": item["platform"], "title": item["title"], "author": item["author"],
+        "key_info": item["key_info"], "tools": " ".join(item["tools"]),
+        "where": " ".join(filter(None, [item["category_label"], item["subcategory_label"], item["location_label"]])),
+        "fields": fields,
+    }
+
+
 def row(i, up):
     t = i["title"].replace("|", "/")
     k = i["key_info"].replace("|", "/")
@@ -137,6 +163,8 @@ def main():
 
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "library.json").write_text(json.dumps(items, indent=2, ensure_ascii=False) + "\n")
+    docs = [search_doc(ROOT / i["note_path"], i) for i in items]
+    (ROOT / "data" / "search.json").write_text(json.dumps(docs, ensure_ascii=False, separators=(",", ":")) + "\n")
     (ROOT / "data" / "taxonomy.json").write_text(json.dumps(taxonomy_json(tax), indent=2, ensure_ascii=False) + "\n")
 
     lib = ROOT / "library"
