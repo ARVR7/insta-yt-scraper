@@ -82,3 +82,25 @@ Overall: The core offer is real and documented, but 'lifetime free' comes with i
 - Instances with low CPU, network and memory use can be stopped.
 - Comment-for-PDF is lead generation; the sign-up process is on Oracle's site and does not need a paid guide.
 - 3 likes against 4,294 comments on the post suggests the comment gate is driving engagement.
+
+## Follow-up: How can I get this. Mainly the 24gigs version
+
+_2026-10-18_
+
+**Short answer:** sign up for Oracle Cloud Free Tier, then create one Ampere A1 Flex virtual machine and set it to 4 OCPUs and 24 GB of memory. No paid guide is needed.
+
+**Steps**
+1. Create an Oracle Cloud account. Oracle says most people need a mobile phone number and a credit card for identity checks; the card is not charged unless you upgrade ([Oracle free tier guide](https://docs.oracle.com/en/learn/cloud_free_tier/it)).
+2. Pick your home region carefully. It cannot be changed afterwards, and Always Free resources are created there.
+3. In the console, go to Compute, Instances, Create instance. Under Image and shape, choose Change shape, Ampere, and VM.Standard.A1.Flex. Set OCPUs to 4 and memory to 24 GB. That is the full Always Free A1 allowance ([Oracle Always Free resources](https://docs.oracle.com/en-us/iaas/Content/FreeTier/resourceref.htm)).
+4. Pick an Ubuntu or Oracle Linux ARM image, add your SSH public key, and use a boot volume of 50 GB or more. Total Always Free block storage is 200 GB, shared across all volumes.
+5. Create it, then connect with SSH. Open ports you need in the VCN security list as well as in the OS firewall.
+
+**If you get "Out of host capacity"**
+Oracle says this is a temporary shortage of Always Free shapes in your home region. Its suggestions are to try a different availability domain or to wait and retry ([Oracle docs](https://docs.oracle.com/en-us/iaas/Content/FreeTier/resourceref.htm)). Oracle also lists upgrading to Pay As You Go, which unlocks more compute capacity and still bills nothing within the Always Free limits. Community posts say the upgrade can itself get stuck when capacity is short, so treat that as anecdote, and check your billing page after creating the instance.
+
+**Things to know before relying on it**
+- Idle A1 instances can be stopped or reclaimed (very low CPU, network and memory use over about 7 days).
+- One blog reports Oracle cut the A1 allowance to 2 OCPUs and 12 GB from June 2026; I could not confirm that on Oracle's own pages, so check what the shape picker lets you set.
+- Creating a smaller instance first (for example 1 OCPU and 6 GB) is often easier to get than the full 24 GB, and you can try the full size later.
+- Do not pay anyone for a PDF of these steps.
