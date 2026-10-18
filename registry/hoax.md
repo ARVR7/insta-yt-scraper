@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### $10k/month from Krea plus Claude faceless YouTube channel  (2026-10-18)
+- **Verdict:** misleading
+- **What it is:** Caption and voiceover imply a repeatable $10k/month side hustle using Krea's MCP in Claude.
+- **Why it is misleading:** No earnings evidence; sponsored by Krea as a partner; the workflow is an AI-generated content plan.
+- **Evidence:** [Krea MCP docs](https://www.krea.ai/docs/developers/mcp.md)
+- **Source note:** [notes/instagram/Dc36DK9zjdV.md](../notes/instagram/Dc36DK9zjdV.md)
+
 ### Doctor's salary from AI podcast clipping  (2026-10-18)
 - **Verdict:** misleading
 - **What it is:** Reel headline implies a doctor's salary from a minute of clipping work.

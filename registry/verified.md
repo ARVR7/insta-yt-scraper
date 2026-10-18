@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Krea MCP connector for Claude  (2026-10-18)
+- **Verdict:** verified-with-caveats
+- **What it is:** Hosted MCP server for image and video generation inside Claude.
+- **How to use / why it matters:** Claude Settings, Connectors, add custom connector, paste https://api.krea.ai/mcp, sign in to Krea.
+- **Caveats:** Uses Krea compute allowance; sign-in required.
+- **Evidence:** [Krea MCP docs](https://www.krea.ai/docs/developers/mcp.md)
+- **Source note:** [notes/instagram/Dc36DK9zjdV.md](../notes/instagram/Dc36DK9zjdV.md)
+
 ### Oracle Cloud Always Free Ampere A1 instance  (2026-10-18)
 - **Verdict:** verified-with-caveats
 - **What it is:** Free VM.Standard.A1.Flex allowance equal to 4 OCPUs and 24 GB RAM, plus 200 GB block storage.
