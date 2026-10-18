@@ -59,7 +59,7 @@ Not read: Instagram requires a login to list comments. The count is 1246 against
 |---|---|---|
 | Krea MCP can be added to Claude as a custom connector | verified | Krea's [developer docs](https://www.krea.ai/docs/developers/mcp.md) describe the hosted server at api.krea.ai/mcp, added via Claude's connectors with OAuth. |
 | This workflow earns $10k a month | unverified | No revenue, analytics or payouts are shown; the plan Claude generates is a prompt output, not income evidence. |
-| Faceless history channels with 50M subscribers print millions | unverified | The channel shown has far fewer subscribers than claimed (OCR shows a channel with a few thousand to millions range and is unclear); no revenue data given. |
+| Faceless history channels with 50M subscribers print millions | unverified | The subscriber count of the example channel shown on screen is not legible, and no revenue data is given for it or for any faceless channel. |
 
 Overall: The tool setup is real; the income claim is promotional and unsupported.
 
