@@ -118,10 +118,10 @@ def search_doc(path, item):
     fields = {}
     for part in re.split(r"^## ", body, flags=re.M)[1:]:
         head, _, text = part.partition("\n")
-        key = "research" if head.startswith("Research") else SEARCH_FIELDS.get(head.strip())
+        key = "research" if head.startswith("Research") else "followup" if head.startswith("Follow-up") else SEARCH_FIELDS.get(head.strip())
         if key:
             text = re.sub(r"[#>*`|]|\[([^\]]*)\]\([^)]*\)", lambda m: m.group(1) or " ", text)
-            fields[key] = re.sub(r"\s+", " ", text).strip()[:4000]
+            fields[key] = (fields.get(key, "") + " " + re.sub(r"\s+", " ", text).strip())[:4000].strip()
     return {
         "id": item["id"], "platform": item["platform"], "title": item["title"], "author": item["author"],
         "key_info": item["key_info"], "tools": " ".join(item["tools"]),

@@ -537,8 +537,8 @@
     return !f.q.trim() || !!scoreItem(i, f.q);
   }
   /* full-text search over data/search.json (loaded lazily); falls back to card fields until it arrives */
-  var FIELD_NAME = { title: "Title", author: "Author", key_info: "Key info", tools: "Tools", where: "Category", summary: "Summary", caption: "Caption", transcript: "Transcript", screen: "On screen", hook: "Hook", cta: "Call to action", recipe: "Recipe", research: "Research", caveats: "Caveats", instruction: "Your instruction" };
-  var FIELD_W = { title: 8, author: 4, key_info: 5, tools: 4, where: 3, hook: 3, summary: 3, recipe: 3, instruction: 3, caption: 2, cta: 1.5, research: 1.5, screen: 1.5, caveats: 1, transcript: 1 };
+  var FIELD_NAME = { title: "Title", author: "Author", key_info: "Key info", tools: "Tools", where: "Category", summary: "Summary", caption: "Caption", transcript: "Transcript", screen: "On screen", hook: "Hook", cta: "Call to action", recipe: "Recipe", research: "Research", caveats: "Caveats", instruction: "Your instruction", followup: "Follow-up" };
+  var FIELD_W = { title: 8, author: 4, key_info: 5, tools: 4, where: 3, hook: 3, summary: 3, recipe: 3, instruction: 3, followup: 3, caption: 2, cta: 1.5, research: 1.5, screen: 1.5, caveats: 1, transcript: 1 };
   function terms(q) { return q.toLowerCase().split(/\s+/).filter(Boolean); }
   function docFields(i) {
     var d = state.searchDocs && state.searchDocs[i.platform + "/" + i.id], out = {};

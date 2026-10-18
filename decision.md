@@ -201,3 +201,7 @@ Movie trailers had no fitting entertainment subcategory (humour, music, sports).
 - **Decision:** `build_index.py` writes `data/search.json` (summary, caption, transcript, screen text, research, recipe, instruction; 4000 chars per field). The app loads it lazily, ANDs the terms across all fields, ranks by field weight and shows highlighted snippets labelled by field.
 - **Why:** card fields alone missed most of what a note knows. A separate file keeps `library.json` small and the first paint fast; until it loads, search falls back to card fields.
 
+### Follow-ups answer from the existing note, no reprocessing
+- **Decision:** a follow-up reads the saved note and researches the question; `scripts/followup_link.py` appends a "Follow-up" section. The video is re-processed only when the follow-up explicitly asks.
+- **Why:** the transcript, OCR and research are already in the note, so re-running the pipeline costs tokens and time for no new information.
+
