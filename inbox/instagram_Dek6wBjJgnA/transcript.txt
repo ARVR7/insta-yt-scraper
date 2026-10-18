@@ -1,0 +1,28 @@
+language: en (1.00)
+[0s] So the lead engineer of Claude made this really cool post on X,
+[5s] talking about how to be more ambitious with AI,
+[8s] including giving us an actual prompt we can use.
+[11s] Now, we talked about ambition in four different parts.
+[13s] Speed, altitude, depth, and range.
+[17s] And he considers these four things,
+[19s] sort of the different knobs we can tune when it comes to asking our AI
+[23s] to create more ambitious projects.
+[25s] And to help us out, he gave us this simple prompt
+[27s] that you can append to any prompt you're already using.
+[30s] Pretty much it's just asking Claude to do four things.
+[33s] One, you're asking Claude to say what a top professional
+[35s] in this field would do that you're not asking for.
+[38s] Two, name the Ross material they would start from
+[41s] instead of what has already been digested.
+[43s] Three, name the specific methods and tools
+[46s] said expert would use.
+[48s] And then four, say what other than you or me
+[52s] would show the result is right.
+[54s] Then rewrite the prompt to ask for exactly that.
+[56s] So I highly suggest you take the time to check out this article
+[59s] and only takes a few minutes to read.
+[60s] And I think if you are someone who uses AI at time,
+[63s] you definitely know that you can fall into the trap.
+[66s] I've just sending it off to complete these one-off tasks
+[68s] when they have gotten so powerful
+[71s] they really can bite off a lot more.
