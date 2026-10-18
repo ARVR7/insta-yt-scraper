@@ -247,6 +247,32 @@
     "note_path": "notes/instagram/Dd1_GC-sJVz.md"
   },
   {
+    "id": "DafrdobMFBG",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DafrdobMFBG/",
+    "title": "Free alternatives to paid AI tools",
+    "author": "max_v.v",
+    "posted": "2026-07-07 14:27:47+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "artflow",
+      "fishaudio",
+      "gemini"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Two presenters pair paid AI tools with free ones (video: ArtFlow, voice cloning: FishAudio vs ElevenLabs, brainstorming: Gemini). All three free tiers exist but are limited, and the full list of 46 is behind a comment-for-DM gate.",
+    "note_path": "notes/instagram/DafrdobMFBG.md"
+  },
+  {
     "id": "R4yihx8sEO8",
     "platform": "youtube",
     "url": "https://www.youtube.com/shorts/R4yihx8sEO8",

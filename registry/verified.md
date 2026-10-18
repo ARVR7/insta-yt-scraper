@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Free AI tool tiers (Gemini, FishAudio, ArtFlow)  (2026-10-18)
+- **Verdict:** verified-with-caveats
+- **What it is:** Free plans exist for all three tools shown in the reel.
+- **How to use / why it matters:** Sign up on each vendor's site; free usage is credit-limited.
+- **Caveats:** FishAudio free plan is personal use only per the vendor; limits change often.
+- **Evidence:** [Fish Audio voice cloning](https://fish.audio/voice-clone), [ArtFlow listing](https://similarlabs.com/de/p/artflow-ai)
+- **Source note:** [notes/instagram/DafrdobMFBG.md](../notes/instagram/DafrdobMFBG.md)
+
 ### Whop clipping: pay per 1,000 verified views  (2026-10-17)
 - **Verdict:** verified-with-caveats
 - **What it is:** On Whop's Content Rewards, brands set a rate per 1,000 views and a total budget; clippers post short clips of the brand's or creator's content and are paid for verified views.
@@ -90,6 +98,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### 46 free alternatives list  (2026-10-18)
+- **Verdict:** unverified
+- **What it is:** Creator promises 46 free alternatives to paid AI tools via comment.
+- **Why pending:** Only sent after commenting; contents not seen.
+- **To resolve:** Paste the list received, or check the creator's profile for it.
+- **Source note:** [notes/instagram/DafrdobMFBG.md](../notes/instagram/DafrdobMFBG.md)
 
 ### chinaai.app gives free Seedance, Kling and Wan video generation  (2026-10-17)
 - **Verdict:** unverified
