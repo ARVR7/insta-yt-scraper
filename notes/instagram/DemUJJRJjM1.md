@@ -17,17 +17,17 @@ fetch_status:
   transcript: "ok (faster-whisper, translated, auto-generated, may contain errors)"
   on_screen_text: "OCR + contact sheet"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
-tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+title: "Oracle free cloud server"
+category: tech
+subcategory: coding
+usefulness: mixed
+tools: ["oracle-cloud"]
+key_info: "Oracle Cloud's Always Free tier really includes an Ampere A1 instance with up to 4 OCPUs, 24 GB RAM and 200 GB block storage, but idle instances can be reclaimed, capacity is often unavailable, and one source reports a 2026 cut that was not confirmed. The reel wrongly says 8 vCPU in the voiceover."
+verdict: partly-verified
+registry: registry/verified.md
 ---
 
-# TODO
+# Oracle free cloud server
 
 ## Caption / hashtags
 > 🤯 FREE CLOUD SERVER FOR A LIFETIME?! ☁️🔥
@@ -49,19 +49,19 @@ registry: TODO
 Hashtags: #oraclecloud #freevps #cloudhosting #freeserver #cloudcomputing #aitools #techhacks #developertools #techieronniee #elonmusk.
 
 ## Hook (on-screen text)
-TODO
+Free cloud server for a lifetime: 4 OCPUs, 24GB RAM, up to 200GB storage
 
 ## Call to action
-TODO
+Comment "CLOUD" to get a step-by-step PDF guide by DM
 
 ## Transcript (auto)
 > If you are a developer or a cloud storage layer, then stop crying today. Because Oracle is such a big company and it gives you free forever. As long as you are alive, it gives you a lifetime free server in which you have 8V CBO plus 24GB RAM. Look, it also gives you 200GB free tier storage. Let me show you more. What is game changer? You can run Coolify, multiple projects and databases. You can run a heavy Minecraft server in it. From 3-4 WordPress websites to medium heavy traffic. You can run static websites, you can deploy a Kubernetes cluster. You can host your own media server for your own content. How to claim it? What is the process? It will be difficult. How to claim it? There is only one thing to do with this step. How to take it? Give it a hand. Comment that I have reached your DM immediately. Like and follow this video. Thank you and bye.
 
 ## What is shown on screen
-TODO
+Screen recordings of a blog-style post about Oracle's Always Free cloud server and an email inbox.
 
 ## Summary
-TODO
+The creator promotes Oracle Cloud's free Ampere A1 instance for hosting projects, WordPress, Minecraft, Coolify or Kubernetes. The caption says 4 OCPUs and 24 GB RAM; the voiceover says 8 vCPU. The step-by-step guide is behind a comment-for-DM gate.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 4294 against 3 likes (comments/likes 1431.33; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -70,9 +70,15 @@ Not read: Instagram requires a login to list comments. The count is 4294 against
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| Oracle offers 4 OCPUs, 24 GB RAM and 200 GB storage free | verified | [Oracle's Always Free docs](https://docs.oracle.com/en-us/iaas/Content/FreeTier/resourceref.htm) list the A1 Flex allowance equal to 4 OCPUs and 24 GB RAM, and 200 GB of block volume. |
+| It is free for a lifetime | partly verified | Always Free has no time limit, but idle A1 instances can be stopped or reclaimed, and one blog reports Oracle cutting the A1 allowance to 2 OCPUs/12 GB from June 2026; that was not confirmed on Oracle's own pages. |
+| 8 vCPU | unverified | The voiceover and a slide say 8 vCPU while the caption says 4 OCPUs; Oracle's docs say 4 OCPUs. |
+| Anyone can claim it easily | unverified | Capacity availability and account sign-up requirements vary; the guide behind the comment gate was not seen. |
 
-Overall: TODO
+Overall: The core offer is real and documented, but 'lifetime free' comes with idle-reclaim and availability caveats.
 
 ## Notes / caveats
-- TODO
+- Check Oracle's current Always Free page before relying on the numbers.
+- Instances with low CPU, network and memory use can be stopped.
+- Comment-for-PDF is lead generation; the sign-up process is on Oracle's site and does not need a paid guide.
+- 3 likes against 4,294 comments on the post suggests the comment gate is driving engagement.

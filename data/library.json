@@ -72,6 +72,30 @@
     "note_path": "notes/instagram/DemnycCjEYg.md"
   },
   {
+    "id": "DemUJJRJjM1",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DemUJJRJjM1/",
+    "title": "Oracle free cloud server",
+    "author": "techie.ronniee",
+    "posted": "2026-10-17 14:26:28+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "coding",
+    "subcategory_label": "Coding",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "oracle-cloud"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Oracle Cloud's Always Free tier really includes an Ampere A1 instance with up to 4 OCPUs, 24 GB RAM and 200 GB block storage, but idle instances can be reclaimed, capacity is often unavailable, and one source reports a 2026 cut that was not confirmed. The reel wrongly says 8 vCPU in the voiceover.",
+    "note_path": "notes/instagram/DemUJJRJjM1.md"
+  },
+  {
     "id": "DemHB0GhG_R",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DemHB0GhG_R/",

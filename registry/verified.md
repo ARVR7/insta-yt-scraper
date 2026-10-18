@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Oracle Cloud Always Free Ampere A1 instance  (2026-10-18)
+- **Verdict:** verified-with-caveats
+- **What it is:** Free VM.Standard.A1.Flex allowance equal to 4 OCPUs and 24 GB RAM, plus 200 GB block storage.
+- **How to use / why it matters:** Sign up for Oracle Cloud and create an A1 Flex instance in the home region.
+- **Caveats:** Idle instances can be reclaimed; capacity can be unavailable; a reported 2026 reduction to 2 OCPUs/12 GB is unconfirmed.
+- **Evidence:** [Oracle Always Free resources](https://docs.oracle.com/en-us/iaas/Content/FreeTier/resourceref.htm)
+- **Source note:** [notes/instagram/DemUJJRJjM1.md](../notes/instagram/DemUJJRJjM1.md)
+
 ### Ssemble AI clipping tool  (2026-10-18)
 - **Verdict:** verified-with-caveats
 - **What it is:** Web tool that cuts a long YouTube video into short clips.
