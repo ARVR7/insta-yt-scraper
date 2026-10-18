@@ -131,6 +131,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### 5 free AI video generators incl. a tool with Seedance, Veo 3.1 and Kling  (2026-10-18)
+- **Verdict:** unverified
+- **What it is:** Reel teases five free AI video generators, one said to give access to premium models.
+- **Why pending:** Reel names no tools; the list is in a separate YouTube video.
+- **To resolve:** Watch the linked YouTube video or paste its list, then check each tool's free limits.
+- **Source note:** [notes/instagram/Db-83ucolWr.md](../notes/instagram/Db-83ucolWr.md)
+
 ### Ad cost drops from 2 lakh rupees to 1-2 hours with Claude  (2026-10-18)
 - **Verdict:** unverified
 - **What it is:** Creator's claim of a large cost and time saving on a 2.5-minute ad.
