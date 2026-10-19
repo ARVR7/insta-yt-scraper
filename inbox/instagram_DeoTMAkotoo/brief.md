@@ -1,0 +1,69 @@
+# Brief: instagram reel DeoTMAkotoo
+
+- url: https://www.instagram.com/reel/DeoTMAkotoo/
+- author: itshotfix
+- posted: 2026-10-18T08:59:42Z
+- duration_s: 44
+- likes: 6521  comments: 139  comments/likes: 0.02
+- audio language: hi
+- needs_visual_review: yes  (view /home/runner/work/_temp/prep_instagram_DeoTMAkotoo/sheet.jpg)
+- recipe_hint: no
+- gaps: none
+
+## Caption / description
+Thank you Tanmay Bhai ♥️ 
+
+@tanmaybhat 🫂
+
+## Transcript
+language: hi (0.94)
+## English translation
+[0s] Tanmay Bhai, thank you so, so, so much.
+[2s] Because of you, I finally bought this house for my parents.
+[5s] I am running a business.
+[6s] I have helped my wife grow from 500 to 140K followers.
+[9s] In one of your podcasts, you recommended me this thing
+[12s] which completely changed my life.
+[14s] Anyone who thinks deeply about their craft
+[16s] will find similarities and patterns
+[18s] about someone else's craft or what someone else is pursuing.
+[21s] And if you can find patterns, you're able to predict.
+[24s] I'm not saying that that's how I'm able to say
+[26s] find ahead of the trends or whatever.
+[28s] I think I'm very okay with just following my curiosity
+[31s] and okay to look stupid.
+[32s] I would recommend Atomic Habit.
+[34s] It played a huge role in how I think.
+[35s] I've read all these books.
+[37s] So, I just genuinely wanted to say thank you.
+[39s] If this video reaches you,
+[40s] you have been a huge influence in my life.
+[42s] Thank you so much, Bhai.
+[43s] Keep rocking. Love you, Bhai.
+## Original (hi)
+[0s] तन मेंभाई गिस दोग
+[4s] कि थी का that's how i'm able to say but ahead of the trends or whatever, I think i'm very ok with just
+[30s] क gambling my curiosity and ok to look stupid.
+[32s] I would recommend atomic habits played a great role in how I think
+[35s] एक पहली बवके जो में हुए पुरी पशुखां
+[37s] So I just genuinely wanted to say thank you.
+[39s] अग तो आजनिड़ वीटेग जब जास्ती मैं
+[40s] आप बहिए जी भी वहुज आपाने पाछाचा, विंग भी शार्ग, बहिए विभिविज.
+
+## On-screen text (OCR, noisy: words may run together)
+[0s] Tanmay Bhat has no idea
+[0s] what he did for me..
+[3s] CRYTAL SCANS
+[6s] MH14
+[6s] CR6900
+[6s] manasii_music
+[6s] Ready for...
+[6s] Manasi
+[6s] posts
+[6s] followers
+[6s] following
+[12s] HOTPIR
+[15s] Random Musings - Ep 02
+
+## Candidates found in the text (not yet verified)
+- handles: tanmaybhat
