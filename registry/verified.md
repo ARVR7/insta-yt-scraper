@@ -171,6 +171,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### 'Darkest uncensored ChatGPT' (hitansh.exee)  (2026-10-19)
+- **Verdict:** unverified
+- **What it is:** Unnamed uncensored chatbot pitched with a money-laundering example, link by DM.
+- **Why pending:** No tool named, nothing demonstrated, link only by DM.
+- **To resolve:** Ask for the tool's name and a public URL; do not follow DM links.
+- **Source note:** [notes/instagram/DeqVUsUz1cT.md](../notes/instagram/DeqVUsUz1cT.md)
+
 ### 20 free sites list (anurag.builds)  (2026-10-19)
 - **Verdict:** unverified
 - **What it is:** Carousel promising 20 free sites for students and developers.

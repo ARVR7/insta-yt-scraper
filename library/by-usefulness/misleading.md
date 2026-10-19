@@ -6,5 +6,6 @@ Mostly hoax, hype or unsupported claims.
 
 | Link | Usefulness | Category | Key info | Note |
 |---|---|---|---|---|
+| [Dark uncensored ChatGPT lure](https://www.instagram.com/reel/DeqVUsUz1cT/) | misleading | AI › Ideas | A reel pitching an unnamed 'darkest uncensored ChatGPT' as day 1 of a 100-day AI side-income series, demoed with a question about converting black money to white money (laundering). The tool is never named and the link is given only by DM, so it is unverified and the framing is risky. | [note](../../notes/instagram/DeqVUsUz1cT.md) |
 | [AI influencer income pitch](https://www.instagram.com/reel/DdtdmRetwB3/) | misleading | AI › Ideas | A Telegram funnel pitching AI influencers, backed by a Google AI Overview screenshot saying Indian AI influencers earn 1 to 6 lakh rupees a month. Individual cases exist (one reported at about 1.2 lakh), but the range is an AI-generated summary and the real workflow is behind a link. | [note](../../notes/instagram/DdtdmRetwB3.md) |
 | [Krea MCP faceless YouTube side hustle](https://www.instagram.com/reel/Dc36DK9zjdV/) | misleading | AI › Ideas | The Krea connector setup in Claude is real, but the $10k/month claim is unsupported and the post is a paid Krea partner promotion. The advice is to copy a big channel's niche and let an AI make videos. | [note](../../notes/instagram/Dc36DK9zjdV.md) |
