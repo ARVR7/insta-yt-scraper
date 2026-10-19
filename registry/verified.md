@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### RAG-Anything (HKUDS)  (2026-10-19)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-source multimodal document RAG framework built on LightRAG, using a multimodal knowledge graph.
+- **How to use / why it matters:** pip install raganything; configure a parser and models.
+- **Caveats:** Needs MinerU and LibreOffice for some formats; results are the authors' benchmarks.
+- **Evidence:** [RAG-Anything paper](https://arxiv.org/html/2510.12323v1)
+- **Source note:** [notes/instagram/DegUW7YG_O1.md](../notes/instagram/DegUW7YG_O1.md)
+
 ### Claude Code sub-agents for review pipelines  (2026-10-19)
 - **Verdict:** verified-with-caveats
 - **What it is:** Custom sub-agents with separate context and tool permissions, usable for reviewers like security and code quality.

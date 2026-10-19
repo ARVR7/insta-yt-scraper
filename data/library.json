@@ -411,6 +411,31 @@
     "note_path": "notes/instagram/Dek6wBjJgnA.md"
   },
   {
+    "id": "DegUW7YG_O1",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/DegUW7YG_O1/",
+    "title": "RAG-Anything multimodal RAG",
+    "author": "dailydoseofds_",
+    "posted": "2026-10-15 06:30:07+00:00",
+    "type": "post",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "rag-anything",
+      "lightrag"
+    ],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "RAG-Anything is a real open-source multimodal RAG framework from the HKUDS team behind LightRAG. It parses text, images, tables and equations into a knowledge graph and retrieves across them. The post's description matches the project; the GitHub link was in the comments, which were not fetched.",
+    "note_path": "notes/instagram/DegUW7YG_O1.md"
+  },
+  {
     "id": "DegLPFbTBpi",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DegLPFbTBpi/",
