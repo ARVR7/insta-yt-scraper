@@ -171,6 +171,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### 20 free sites list (anurag.builds)  (2026-10-19)
+- **Verdict:** unverified
+- **What it is:** Carousel promising 20 free sites for students and developers.
+- **Why pending:** Slides not captured, so no site was read.
+- **To resolve:** Provide slide screenshots or text, then check each site.
+- **Source note:** [notes/instagram/Deo0IRdNC-S.md](../notes/instagram/Deo0IRdNC-S.md)
+
 ### AI tools carousel (power.ai)  (2026-10-19)
 - **Verdict:** unverified
 - **What it is:** Carousel of AI tools credited to Linus Ekenstam, links sent by DM.
