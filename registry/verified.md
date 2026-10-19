@@ -171,6 +171,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### AI tools carousel (power.ai)  (2026-10-19)
+- **Verdict:** unverified
+- **What it is:** Carousel of AI tools credited to Linus Ekenstam, links sent by DM.
+- **Why pending:** Slides not captured.
+- **To resolve:** Provide slide screenshots or text, then check each tool.
+- **Source note:** [notes/instagram/DedHV-3lel2.md](../notes/instagram/DedHV-3lel2.md)
+
 ### Free tiers of MiniMax Hailuo and Tencent Hunyuan video  (2026-10-19)
 - **Verdict:** unverified
 - **What it is:** Reel claims three AI video generators are free.
