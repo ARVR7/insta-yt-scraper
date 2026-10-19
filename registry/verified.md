@@ -155,6 +155,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Free tiers of MiniMax Hailuo and Tencent Hunyuan video  (2026-10-19)
+- **Verdict:** unverified
+- **What it is:** Reel claims three AI video generators are free.
+- **Why pending:** Free limits conflict across third-party sources and official pages were not checked.
+- **To resolve:** Check each vendor's current pricing and free-plan page.
+- **Source note:** [notes/instagram/Deqmd98M2vB.md](../notes/instagram/Deqmd98M2vB.md)
+
 ### Other swaps in the 14-tool list  (2026-10-19)
 - **Verdict:** unverified
 - **What it is:** Eleven further paid-to-cheaper swaps listed in the caption.
