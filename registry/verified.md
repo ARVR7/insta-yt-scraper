@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Claude Code sub-agents for review pipelines  (2026-10-19)
+- **Verdict:** verified-with-caveats
+- **What it is:** Custom sub-agents with separate context and tool permissions, usable for reviewers like security and code quality.
+- **How to use / why it matters:** Define agents as Markdown files in .claude/agents or via the /agents command.
+- **Caveats:** The 'factory' orchestration shown is the creator's own build; sponsored demo.
+- **Evidence:** [Claude Code sub-agent docs](https://code.claude.com/docs/en/sub-agents)
+- **Source note:** [notes/instagram/Derra61CUhb.md](../notes/instagram/Derra61CUhb.md)
+
 ### ComfyUI local generation engine  (2026-10-19)
 - **Verdict:** verified-with-caveats
 - **What it is:** Open-source node-based engine for image, video and audio generation on local hardware.

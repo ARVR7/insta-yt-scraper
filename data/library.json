@@ -1,5 +1,29 @@
 [
   {
+    "id": "Derra61CUhb",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Derra61CUhb/",
+    "title": "Claude Code software factory demo",
+    "author": "zazencodes",
+    "posted": "2026-10-19 16:24:41+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "automation",
+    "subcategory_label": "Automation",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "claude-code"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "A sponsored demo (by Anthropic) of a Claude Code 'software factory': a loop of spec writer, builder, review sub-agents (UX, UI, security, code quality) and an approver that merges or escalates to a human. The building blocks are real Claude Code features; the shown result is one demo and was not independently checked.",
+    "note_path": "notes/instagram/Derra61CUhb.md"
+  },
+  {
     "id": "Derp4yJoTmP",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Derp4yJoTmP/",
