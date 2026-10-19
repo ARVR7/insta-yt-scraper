@@ -1,0 +1,21 @@
+{
+  "url": "https://www.instagram.com/p/DegUW7YG_O1/",
+  "platform": "instagram",
+  "shortcode": "DegUW7YG_O1",
+  "author": "dailydoseofds_",
+  "posted_utc": "2026-10-15T06:30:07",
+  "is_video": false,
+  "duration_s": null,
+  "views": null,
+  "likes": 3080,
+  "comments": 74,
+  "caption": "A graph-powered all-in-one RAG system! \ud83c\udfaf\n\nFully open-source and multimodal.\n\nModern documents increasingly contain diverse multimodal content like text, images, tables, equations, charts, and multimedia.\n\nNaive RAG cannot handle it.\n\nRAG-Anything is a graph-driven, all-in-one multimodal document processing RAG system built on LightRAG.\n\nIt supports all content modalities within a single integrated framework that is built through four stages:\n\n1\ufe0f\u20e3 Document parsing\n2\ufe0f\u20e3 Content understanding and analysis\n3\ufe0f\u20e3 Multimodal Knowledge Graph Index construction\n4\ufe0f\u20e3 Modality-aware retrieval\n\nBuilt by the team behind LightRAG!\n\nGitHub repo in the comments!\n\n\ud83d\udc49 Over to you: What types of multimodal documents do you work with most?\n\n#opensource #multimodal #rag",
+  "hashtags": [
+    "opensource",
+    "multimodal",
+    "rag"
+  ],
+  "mentions": [],
+  "location": null,
+  "fetched_via": "instaloader"
+}
