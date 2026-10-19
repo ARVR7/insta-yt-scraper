@@ -438,6 +438,34 @@
     "note_path": "notes/instagram/DeCH_lVqG-k.md"
   },
   {
+    "id": "Dd4PDA1xYuc",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/Dd4PDA1xYuc/",
+    "title": "Cheaper alternatives to paid AI tools",
+    "author": "alexxmarketing",
+    "posted": "2026-09-29 16:54:08+00:00",
+    "type": "post",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "cline",
+      "n8n",
+      "hedra",
+      "obsidian",
+      "opencode"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "A caption-only list swapping 14 paid tools for cheaper or free ones. The three swaps I checked (Cline for Cursor, n8n for Zapier, Hedra for HeyGen) have real free options, but each is an alternative with trade-offs rather than a like-for-like replacement. Most of the other pairs were not checked.",
+    "note_path": "notes/instagram/Dd4PDA1xYuc.md"
+  },
+  {
     "id": "Dd1_GC-sJVz",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/Dd1_GC-sJVz/",

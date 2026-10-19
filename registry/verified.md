@@ -4,6 +4,22 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### n8n as a free Zapier alternative  (2026-10-19)
+- **Verdict:** verified-with-caveats
+- **What it is:** Workflow automation that is free to self-host.
+- **How to use / why it matters:** Self-host n8n on a server or VPS.
+- **Caveats:** Server costs and setup effort; fewer prebuilt integrations than Zapier.
+- **Evidence:** [Hostinger comparison](https://www.hostinger.com/uk/tutorials/n8n-vs-zapier/)
+- **Source note:** [notes/instagram/Dd4PDA1xYuc.md](../notes/instagram/Dd4PDA1xYuc.md)
+
+### Cline as a free Cursor alternative  (2026-10-19)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-source VS Code extension for AI coding; bring your own model API key.
+- **How to use / why it matters:** Install the Cline extension in VS Code and add an API key.
+- **Caveats:** You pay for model usage; Cursor is more polished for inline completion.
+- **Evidence:** [Fast.io on Cline](https://fast.io/resources/open-source-cursor-alternative/)
+- **Source note:** [notes/instagram/Dd4PDA1xYuc.md](../notes/instagram/Dd4PDA1xYuc.md)
+
 ### Gemini Omni free video generation in Google Vids  (2026-10-18)
 - **Verdict:** verified-with-caveats
 - **What it is:** Free AI video generation with Gemini Omni for personal Google accounts via vids.new.
@@ -138,6 +154,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Other swaps in the 14-tool list  (2026-10-19)
+- **Verdict:** unverified
+- **What it is:** Eleven further paid-to-cheaper swaps listed in the caption.
+- **Why pending:** Not checked, and post images were not captured.
+- **To resolve:** Check each tool's current free plan and compare features.
+- **Source note:** [notes/instagram/Dd4PDA1xYuc.md](../notes/instagram/Dd4PDA1xYuc.md)
 
 ### Animation Claude skills carousel (okaashish)  (2026-10-18)
 - **Verdict:** unverified
