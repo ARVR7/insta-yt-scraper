@@ -1,0 +1,37 @@
+language: en (1.00)
+[0s] the factory works in this loop, a feature comes through the spec
+[3s] writer, which goes into the builder, which then gets verified by
+[7s] various review agents. And once those are done, if we need changes,
+[12s] this happens in a loop. And then we go to the approver, which
+[15s] either merges to main the feature, or we get a human review. And
+[19s] this is a system we can use repeatedly every time we want to
+[22s] build a new feature for our project. And we could imagine in the
+[25s] future, we want, you know, we can bring in data sources from the
+[28s] outside world. Let's see if our factory can handle this feature
+[31s] inside my actual website. This is my production site that we're
+[34s] working in right now. And now we can see we're starting to use
+[37s] our sub agents. Here's the first one, we're creating a spec using
+[40s] the spec writer background agent. And I can see our builder has
+[43s] just started working on this. Okay, sweet, we just went to review
+[47s] and we just kicked off all of our review sub agents. So these
+[50s] guys are representing our review, they're doing it. K, the UX
+[54s] round finished, the UI round finished. And they passed, but we're
+[58s] doing the security over here, considering, okay, that's done
+[61s] code review. This is, this is epic. Oh, look at this, you guys, we
+[64s] can even see the little icons, it's deciding if this feature should
+[68s] be pulled in or not. I'm actually blown away. This is the, this
+[72s] is how I want to develop features now. Why have I not done this
+[76s] yet? So what's hope is deciding, it's escalating. So I think it'll
+[79s] go to the human review. There it is. So it's sitting in the
+[82s] human review phase. And now I need to approve this, click on
+[86s] this. Okay, I can get all sorts of information from the dashboard
+[91s] escalate. Why the build is clean, every acceptance criteria for
+[95s] the human, if both, so here's how I would approve it, I would
+[100s] need to know the ID of this feature. And then I can run factory
+[104s] approve. Let me do that in a new session. So I'm going to clear
+[107s] this. And I'm going to say factory approve. And then this
+[113s] and we're done. It has merged it into my actual code. This is
+[117s] what it did. So it went off onto a branch. It did a few
+[120s] different commits. It kind of built out our feature. And then
+[123s] it merged it back. And that merge was done when I approved it.
+[126s] Very cool.
