@@ -17,17 +17,17 @@ fetch_status:
   transcript: "ok (faster-whisper, auto-generated, may contain errors)"
   on_screen_text: "OCR + contact sheet"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
+title: "Niche page growth strategy"
+category: money
+subcategory: business
+usefulness: helpful
 tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+key_info: "Strategy advice for growing a niche short-video page: pick one niche, study the top channels' best videos, then build each video for average view duration and for shareability. It is opinion and method, with no numbers to verify."
+verdict: sidequest
+registry: registry/sidequests.md
 ---
 
-# TODO
+# Niche page growth strategy
 
 ## Caption / hashtags
 > Want to grow a viral page from zero? Pick one niche and go deep.
@@ -58,19 +58,19 @@ registry: TODO
 Hashtags: #indiafounder #creatoreconomy #instagramgrowth #contentstrategy #socialmedia.
 
 ## Hook (on-screen text)
-TODO
+Want to grow a viral page from zero? Pick one niche and go deep.
 
 ## Call to action
-TODO
+None; brand content from India Founder.
 
 ## Transcript (auto)
 > I would start a Instagram page, a short video page and YouTube, I would start a page called Hairwolf. Then I would go on all the top beauty grooming channels. And make a list of the top 10 videos to scale the water all the hair related videos. Beat, shaving, designing, removal, whatever. There's 5 or 6 things. So this will give me an idea of what do people actually, what are the titles that people already want. Then I'll start making videos about all things hair on this page. Okay, and I would optimize for these 3 or 4 minutes. One, I'll let it. One is content that culminates at the end to increase AVD. The average view duration. Second, the question I would ask is, when I make, when I post this video, the share button, the share button, the number in which I can increase. For example, people often share in two ways. They share to Fred, or Holly, or any other person who shares the similarity to you. Or people share to their profile. People share to their profile to build their own brand. Okay, so then I would ask myself saying, which form of these 2 would be most likely with this subject.
 
 ## What is shown on screen
-TODO
+Talking-head clip with captions; example niche is a hair and grooming page called Hair Wolf.
 
 ## Summary
-TODO
+The method: launch on Instagram and YouTube together, list the ten best-performing videos of the top channels in the niche, cover the recurring subtopics, structure each video so it pays off at the end to raise average view duration, and design for one of two kinds of share (to a friend, or to one's own profile).
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 5 against 3381 likes (comments/likes 0.00; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -79,9 +79,11 @@ Not read: Instagram requires a login to list comments. The count is 5 against 33
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| Copying proven topics and optimising view duration and shares grows a page | unverified | A reasoned strategy, widely repeated, but no data or results are given in the reel. |
 
-Overall: TODO
+Overall: Sensible, low-risk creator advice; no checkable claims.
 
 ## Notes / caveats
-- TODO
+- No results or evidence are shown.
+- Copying others' topics is fine; copying their content is not.
+- Platform algorithms change, so treat it as a starting heuristic.

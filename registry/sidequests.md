@@ -4,3 +4,4 @@ Videos with nothing checkable or no informative value (humour, motivation, news 
 - You Can See Everything (A24 documentary trailer) (2026-10-18): Nathan Fielder and Lance Oppenheim documentary featuring Elizabeth Holmes; theatrical release October 16, 2026. [notes/instagram/DdoVuGLR0BP.md](../notes/instagram/DdoVuGLR0BP.md)
 - Local uncensored model vs hosted AI meme (2026-10-18): Meme claiming a 6 GB uncensored local model did what a hosted model refused. [notes/instagram/DemQhAjSIEH.md](../notes/instagram/DemQhAjSIEH.md)
 - Thank-you video to Tanmay Bhat (itshotfix) (2026-10-19): Personal testimonial crediting a podcast recommendation (Atomic Habits) for life changes. [notes/instagram/DeoTMAkotoo.md](../notes/instagram/DeoTMAkotoo.md)
+- Niche page growth strategy (India Founder) (2026-10-19): Pick one niche, copy proven topics, optimise view duration and shareability. [notes/instagram/DepP3GEy6F3.md](../notes/instagram/DepP3GEy6F3.md)
