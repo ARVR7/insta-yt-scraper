@@ -2,6 +2,11 @@
 
 Every non-obvious decision, with the reason. Newest first. Add an entry whenever you choose between options, work around a limit, or change a rule.
 
+## 2026-10-19
+
+### Approximate fajita seasoning with the generic spice mix
+data/nutrition.json has no fajita or taco seasoning row. The USDA SR Legacy taco seasoning entry (FDC 172243) lists 322 kcal and 0 g fat per 100 g, which is internally inconsistent, so it was not added. The generic spice mix row (330 kcal) was used for the 40 g seasoning across four servings; the effect on per-serving values is under 1 g protein and 35 kcal.
+
 ## 2026-10-18
 
 ### Add entertainment/film subcategory

@@ -50,6 +50,36 @@
     "note_path": "notes/instagram/Deqmd98M2vB.md"
   },
   {
+    "id": "DeqjfBoRhjA",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DeqjfBoRhjA/",
+    "title": "Air fryer chicken fajitas",
+    "author": "coach_brettcarrington",
+    "posted": "2026-10-19 05:56:39+00:00",
+    "type": "reel",
+    "category": "food",
+    "category_label": "Food",
+    "subcategory": "recipes",
+    "subcategory_label": "Recipes",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": {
+      "path": "recipes/instagram_DeqjfBoRhjA.json",
+      "servings": 4.0,
+      "kcal": 340.8,
+      "protein": 47.6,
+      "carbs": 14.8,
+      "fat": 9.4,
+      "diet": "non-vegetarian"
+    },
+    "tools": [],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "A high-protein air fryer chicken fajita tray for four. The caption's macros (320 kcal, 51 g protein per serving) match the calculated values within about 7%, though they exclude rice, wraps or potatoes.",
+    "note_path": "notes/instagram/DeqjfBoRhjA.md"
+  },
+  {
     "id": "DepP3GEy6F3",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DepP3GEy6F3/",

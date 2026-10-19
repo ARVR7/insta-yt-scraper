@@ -5,3 +5,4 @@ Videos with nothing checkable or no informative value (humour, motivation, news 
 - Local uncensored model vs hosted AI meme (2026-10-18): Meme claiming a 6 GB uncensored local model did what a hosted model refused. [notes/instagram/DemQhAjSIEH.md](../notes/instagram/DemQhAjSIEH.md)
 - Thank-you video to Tanmay Bhat (itshotfix) (2026-10-19): Personal testimonial crediting a podcast recommendation (Atomic Habits) for life changes. [notes/instagram/DeoTMAkotoo.md](../notes/instagram/DeoTMAkotoo.md)
 - Niche page growth strategy (India Founder) (2026-10-19): Pick one niche, copy proven topics, optimise view duration and shareability. [notes/instagram/DepP3GEy6F3.md](../notes/instagram/DepP3GEy6F3.md)
+- Air fryer chicken fajitas (coach_brettcarrington) (2026-10-19): High-protein air fryer chicken fajita tray, about 320 kcal and 50 g protein per serving. [notes/instagram/DeqjfBoRhjA.md](../notes/instagram/DeqjfBoRhjA.md)

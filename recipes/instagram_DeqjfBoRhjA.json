@@ -1,0 +1,257 @@
+{
+ "id": "instagram_DeqjfBoRhjA",
+ "title": "Air fryer chicken fajitas",
+ "servings": 4.0,
+ "serving_note": "one quarter of the tray; the caption's macros exclude rice, wraps or potatoes",
+ "time": {
+  "prep": 10,
+  "cook": 20
+ },
+ "cuisine": "Tex-Mex",
+ "diet": "non-vegetarian",
+ "vegan": false,
+ "ingredients": [
+  {
+   "name": "chicken breast",
+   "matched": "chicken breast",
+   "qty": 800,
+   "unit": "g",
+   "grams": 800.0,
+   "how": "weight",
+   "note": "raw, diced",
+   "group": null,
+   "estimated": false,
+   "category": "meat",
+   "macros": {
+    "kcal": 960.0,
+    "protein": 180.0,
+    "carbs": 0.0,
+    "fat": 20.8,
+    "fibre": 0.0
+   }
+  },
+  {
+   "name": "red bell pepper",
+   "matched": "bell pepper",
+   "qty": 150,
+   "unit": "g",
+   "grams": 150.0,
+   "how": "weight",
+   "note": "capsicum",
+   "group": null,
+   "estimated": false,
+   "category": "veg",
+   "macros": {
+    "kcal": 46.5,
+    "protein": 1.5,
+    "carbs": 9.0,
+    "fat": 0.5,
+    "fibre": 3.1
+   }
+  },
+  {
+   "name": "yellow bell pepper",
+   "matched": "bell pepper",
+   "qty": 150,
+   "unit": "g",
+   "grams": 150.0,
+   "how": "weight",
+   "note": "capsicum",
+   "group": null,
+   "estimated": false,
+   "category": "veg",
+   "macros": {
+    "kcal": 46.5,
+    "protein": 1.5,
+    "carbs": 9.0,
+    "fat": 0.5,
+    "fibre": 3.1
+   }
+  },
+  {
+   "name": "green bell pepper",
+   "matched": "bell pepper",
+   "qty": 150,
+   "unit": "g",
+   "grams": 150.0,
+   "how": "weight",
+   "note": "capsicum",
+   "group": null,
+   "estimated": false,
+   "category": "veg",
+   "macros": {
+    "kcal": 46.5,
+    "protein": 1.5,
+    "carbs": 9.0,
+    "fat": 0.5,
+    "fibre": 3.1
+   }
+  },
+  {
+   "name": "red onion",
+   "matched": "onion",
+   "qty": 100,
+   "unit": "g",
+   "grams": 100.0,
+   "how": "weight",
+   "note": null,
+   "group": null,
+   "estimated": false,
+   "category": "veg",
+   "macros": {
+    "kcal": 40.0,
+    "protein": 1.1,
+    "carbs": 9.3,
+    "fat": 0.1,
+    "fibre": 1.7
+   }
+  },
+  {
+   "name": "spice mix",
+   "matched": "garam masala",
+   "qty": 40,
+   "unit": "g",
+   "grams": 40.0,
+   "how": "weight",
+   "note": "fajita seasoning, approximated with the generic spice mix row",
+   "group": null,
+   "estimated": false,
+   "category": "spice",
+   "macros": {
+    "kcal": 132.0,
+    "protein": 4.8,
+    "carbs": 22.0,
+    "fat": 5.2,
+    "fibre": 12.0
+   }
+  },
+  {
+   "name": "lime juice",
+   "matched": "lemon juice",
+   "qty": 15,
+   "unit": "ml",
+   "grams": 15.5,
+   "how": "volume x density 1.03",
+   "note": null,
+   "group": null,
+   "estimated": false,
+   "category": "liquid",
+   "macros": {
+    "kcal": 3.4,
+    "protein": 0.1,
+    "carbs": 1.1,
+    "fat": 0.0,
+    "fibre": 0.0
+   }
+  },
+  {
+   "name": "olive oil",
+   "matched": "olive oil",
+   "qty": 10,
+   "unit": "g",
+   "grams": 10.0,
+   "how": "weight",
+   "note": "or cooking spray",
+   "group": null,
+   "estimated": false,
+   "category": "fat",
+   "macros": {
+    "kcal": 88.4,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 10.0,
+    "fibre": 0.0
+   }
+  },
+  {
+   "name": "salt",
+   "matched": "salt",
+   "qty": null,
+   "unit": "to taste",
+   "grams": null,
+   "how": "to taste",
+   "note": null,
+   "group": null,
+   "estimated": false,
+   "category": "spice",
+   "macros": null
+  },
+  {
+   "name": "black pepper",
+   "matched": "black pepper",
+   "qty": null,
+   "unit": "to taste",
+   "grams": null,
+   "how": "to taste",
+   "note": null,
+   "group": null,
+   "estimated": false,
+   "category": "spice",
+   "macros": null
+  }
+ ],
+ "steps": [
+  "Dice the chicken, capsicums and red onion.",
+  "Put everything in the air fryer basket or an air-fryer-safe tray.",
+  "Add the fajita seasoning, lime juice and olive oil and mix until evenly coated.",
+  "Air fry at 190°C for about 15 to 20 minutes, tossing halfway, until the chicken reaches 75°C inside.",
+  "Divide into four servings; optionally serve with rice, wraps or potatoes."
+ ],
+ "tips": [
+  "Serve with rice, wraps or potatoes for extra carbohydrates; they are not in the macros."
+ ],
+ "macros": {
+  "per_serving": {
+   "kcal": 340.8,
+   "protein": 47.6,
+   "carbs": 14.8,
+   "fat": 9.4,
+   "fibre": 5.8
+  },
+  "total": {
+   "kcal": 1363.3,
+   "protein": 190.5,
+   "carbs": 59.4,
+   "fat": 37.6,
+   "fibre": 23.0
+  },
+  "per_100g": {
+   "kcal": 96.3,
+   "protein": 13.5,
+   "carbs": 4.2,
+   "fat": 2.7,
+   "fibre": 1.6
+  },
+  "energy_split_pct": {
+   "protein": 57,
+   "carbs": 18,
+   "fat": 25
+  },
+  "basis_grams": 1416,
+  "coverage_pct": 80
+ },
+ "claim_check": [
+  {
+   "field": "kcal",
+   "claimed": 320,
+   "calculated": 340.8,
+   "diff_pct": 7,
+   "verdict": "consistent"
+  },
+  {
+   "field": "protein",
+   "claimed": 51,
+   "calculated": 47.6,
+   "diff_pct": -7,
+   "verdict": "consistent"
+  }
+ ],
+ "notes": [
+  "Calculated from raw ingredient weights with data/nutrition.json (USDA FoodData Central and IFCT based); accurate to about 10%. Cooking, water loss and oil absorption change the real values.",
+  "Not counted (to taste): salt, black pepper."
+ ],
+ "source": {
+  "url": "https://www.instagram.com/reel/DeqjfBoRhjA/",
+  "author": "coach_brettcarrington"
+ }
+}
