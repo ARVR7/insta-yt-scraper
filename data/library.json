@@ -1,5 +1,29 @@
 [
   {
+    "id": "Derp4yJoTmP",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Derp4yJoTmP/",
+    "title": "ComfyUI for local AI media",
+    "author": "justinmendez.ai",
+    "posted": "2026-10-19 16:11:31+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "comfyui"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "ComfyUI is a real, free, open-source node-based engine for image, video and audio generation that runs on your own hardware, so there are no per-generation credits. The '5.6 million downloads' figure could not be confirmed, and you need a capable GPU for the heavy models.",
+    "note_path": "notes/instagram/Derp4yJoTmP.md"
+  },
+  {
     "id": "Deqmd98M2vB",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Deqmd98M2vB/",

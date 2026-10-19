@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### ComfyUI local generation engine  (2026-10-19)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-source node-based engine for image, video and audio generation on local hardware.
+- **How to use / why it matters:** Install ComfyUI from the Comfy-Org GitHub repository and load a model.
+- **Caveats:** Needs a capable GPU; model licences vary.
+- **Evidence:** [Wikipedia on ComfyUI](https://en.wikipedia.org/wiki/ComfyUI)
+- **Source note:** [notes/instagram/Derp4yJoTmP.md](../notes/instagram/Derp4yJoTmP.md)
+
 ### n8n as a free Zapier alternative  (2026-10-19)
 - **Verdict:** verified-with-caveats
 - **What it is:** Workflow automation that is free to self-host.
