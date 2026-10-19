@@ -17,17 +17,17 @@ fetch_status:
   transcript: "ok (faster-whisper, auto-generated, may contain errors)"
   on_screen_text: "OCR + contact sheet"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
-tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+title: "OpenArt Director short films for YouTube"
+category: ai
+subcategory: ideas
+usefulness: mixed
+tools: ["openart", "chatgpt"]
+key_info: "Pitches turning ChatGPT scripts into AI short films with OpenArt Director as an alternative to a part-time job. Director is a real, paid OpenArt feature, but the income angle is unproven and the caption itself says there are no guaranteed results."
+verdict: partly-verified
+registry: registry/hoax.md
 ---
 
-# TODO
+# OpenArt Director short films for YouTube
 
 ## Caption / hashtags
 > people are turning short film ideas into YouTube content 👀🎬
@@ -45,19 +45,19 @@ registry: TODO
 Hashtags: #openart #youtubecreator #shortfilms.
 
 ## Hook (on-screen text)
-TODO
+Don't get a part-time job, do this instead
 
 ## Call to action
-TODO
+Try openart.ai/director
 
 ## Transcript (auto)
 > Don't get a per-time job, do this instead. First, we're going to go to ChatGBT.com and then you're going to type in this prompt right here. We have everything that I need. I highly recommend telling it to optimize it for open or AI director and Instagram. This is the most important step. You're going to go to openart.ai-forward-slash-director and make sure that you are in director mode. This is very important too. You're going to want to screenshot through this and save it on your local laptop. So then you can plug it into open-art.ai-forward-slash. And then we're going to go in here and upload from local and then we're going to go ahead and add all these screenshots in. Now if you want this to be specific for you, you can add like a screenshot of your selfies. And basically you have to type something in so I just told it to create a vibe-directed video using the screenshots. Now I'm just going to go ahead and let this build.
 
 ## What is shown on screen
-TODO
+ChatGPT writing a prompt, then OpenArt Director being fed screenshots and a prompt to build a video; titles contrast a part-time job with short films for YouTube.
 
 ## Summary
-TODO
+The workflow: have ChatGPT write a story prompt optimised for OpenArt Director, screenshot the output, upload the screenshots (optionally with selfies) in Director mode, and ask for a vibe-directed video. The caption calls the method underground and hints at monetisation without promising results.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 2 against 5 likes (comments/likes 0.40; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -66,9 +66,14 @@ Not read: Instagram requires a login to list comments. The count is 2 against 5 
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| OpenArt Director builds multi-scene AI films | verified | OpenArt launched Director in 2026 as a conversational multi-scene video workflow, per [Kingy AI](https://kingy.ai/?p=915762); capability claims (up to five minutes, consistent characters) are vendor claims. |
+| It can replace a part-time job's income | unverified | No earnings or channel results are shown; the caption says there are no guaranteed results. |
+| It is free or cheap | partly verified | Director is included in paid plans; prices conflict between sources (about $14 to $56 a month for typical tiers) and commercial rights start at higher tiers per [a 2026 review](https://aireiter.com/blog/openart-ai-review-2026-pricing). |
 
-Overall: TODO
+Overall: The tool is real; the 'instead of a job' framing is unsupported.
 
 ## Notes / caveats
-- TODO
+- Paid plans; commercial-use rights may need a higher tier.
+- YouTube may limit monetisation of mass-produced AI content.
+- 'Keep it underground' is hype wording for a public product.
+- Very low engagement (5 likes), so no social proof.

@@ -1,5 +1,30 @@
 [
   {
+    "id": "Derq5syKEOL",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Derq5syKEOL/",
+    "title": "OpenArt Director short films for YouTube",
+    "author": "magicwithsanti",
+    "posted": "2026-10-19 16:25:51+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "ideas",
+    "subcategory_label": "Ideas",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "openart",
+      "chatgpt"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Pitches turning ChatGPT scripts into AI short films with OpenArt Director as an alternative to a part-time job. Director is a real, paid OpenArt feature, but the income angle is unproven and the caption itself says there are no guaranteed results.",
+    "note_path": "notes/instagram/Derq5syKEOL.md"
+  },
+  {
     "id": "Derra61CUhb",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Derra61CUhb/",

@@ -2,6 +2,13 @@
 
 Claims judged `hoax` or `misleading`, with the evidence. Newest first. See `.claude/skills/update-registries/SKILL.md` for the entry format.
 
+### AI short films as a part-time-job replacement (OpenArt Director)  (2026-10-19)
+- **Verdict:** misleading
+- **What it is:** Reel frames OpenArt Director short films as an alternative to a part-time job.
+- **Why it is misleading:** No earnings shown; Director is a paid tool and the caption admits no guaranteed results.
+- **Evidence:** [OpenArt pricing review](https://aireiter.com/blog/openart-ai-review-2026-pricing)
+- **Source note:** [notes/instagram/Derq5syKEOL.md](../notes/instagram/Derq5syKEOL.md)
+
 ### AI influencers in India earn 1 to 6 lakh rupees a month (Telegram funnel)  (2026-10-18)
 - **Verdict:** misleading
 - **What it is:** Reel uses a Google AI Overview to claim a typical income range and sells a free workflow via Telegram.
