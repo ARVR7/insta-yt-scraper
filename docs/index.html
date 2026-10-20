@@ -1156,9 +1156,13 @@
       return r.text().then(function (t) { lsSet("pin_cfg", t); var c = JSON.parse(t); return c && c.hash ? c : null; });
     }).catch(function () { try { return JSON.parse(lsGet("pin_cfg")); } catch (e) { return null; } });
   }
+  /* Opening the app from the share sheet skips the lock so the link is added and the confirmation (with the optional
+     instruction) shows at once. Anything else (settings, another tab, leaving the app) ends that and locks as usual. */
+  var shareMode = (function () { var q = new URLSearchParams(location.search); return !!(q.get("url") || q.get("text") || q.get("title")); })();
+  function endShare() { if (shareMode) { shareMode = false; ensureUnlocked(); } }
   var locking = false;
   function ensureUnlocked() {
-    if (locking || !pinCfg) return;
+    if (locking || !pinCfg || shareMode) return;
     var t = Number(lsGet("pin_ok"));
     if (t && Date.now() - t < AWAY_MS) { touchUnlock(); return; }
     locking = true;
@@ -1168,8 +1172,8 @@
   try { var cached = JSON.parse(lsGet("pin_cfg")); if (cached && cached.hash) { pinCfg = cached; ensureUnlocked(); } } catch (e) {}
   readPinCfg().then(function (c) { var was = pinCfg; pinCfg = c; refreshPinUi(); if (!was) ensureUnlocked(); });
   document.addEventListener("visibilitychange", function () {
-    if (document.hidden) { if (!locking && pinCfg) lsSet("pin_away", String(Date.now())); }
-    else { var a = Number(lsGet("pin_away")); if (pinCfg && a && Date.now() - a > AWAY_MS) { lsSet("pin_ok", null); ensureUnlocked(); } }
+    if (document.hidden) { if (shareMode) { shareMode = false; lsSet("pin_ok", null); } if (!locking && pinCfg) lsSet("pin_away", String(Date.now())); }
+    else { var a = Number(lsGet("pin_away")); if (pinCfg && a && Date.now() - a > AWAY_MS) lsSet("pin_ok", null); ensureUnlocked(); }
   });
   /* set / change / remove: the browser hashes the new PIN and queues an issue; a workflow commits docs/pin.json */
   function submitPin(cfgOrNull) {
@@ -1209,13 +1213,13 @@
   /* ---------- settings ---------- */
   $("repoName").textContent = OWNER + "/" + REPO;
   function refreshSettings() { var has = !!getToken(); $("clearToken").hidden = !has; $("token").placeholder = has ? "Saved. Paste to replace." : "github_pat_…"; }
-  $("gear").addEventListener("click", function () { $("settings").hidden = !$("settings").hidden; });
+  $("gear").addEventListener("click", function () { if (shareMode) { endShare(); if (!lsGet("pin_ok") && pinCfg) return; } $("settings").hidden = !$("settings").hidden; });
   $("tokenForm").addEventListener("submit", function (e) { e.preventDefault(); var v = $("token").value.trim(); if (!v) return; setToken(v); $("token").value = ""; $("settings").hidden = true; refreshSettings(); state.library = null; state.tab = null; route(); });
   $("clearToken").addEventListener("click", function () { setToken(""); refreshSettings(); state.library = null; state.tab = null; route(); });
   refreshSettings();
   if (!getToken()) $("settings").hidden = false;
   if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function () {});
-  window.addEventListener("hashchange", route);
+  window.addEventListener("hashchange", function () { endShare(); route(); });
 
   /* ---------- share target: ?title=&text=&url= ---------- */
   var qs = new URLSearchParams(location.search);

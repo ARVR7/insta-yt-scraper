@@ -225,3 +225,7 @@ Movie trailers had no fitting entertainment subcategory (humour, music, sports).
 - **Why:** the browser never sees the fingerprint, only the phone's yes/no, so nothing biometric is stored anywhere. It is per phone, needs no server, and survives PIN changes.
 - **Limit:** like the PIN it is a screen lock: the page trusts the phone's user-verification result and does not verify a signature, so it adds convenience, not stronger protection.
 
+### Sharing to the app skips the PIN and fingerprint
+- **Decision:** when the app opens from the share sheet (`?url=` / `?text=`), the lock is not shown, so the link is queued and the confirmation (with the optional instruction) appears straight away. Opening settings, changing tab or leaving the app ends that and the lock applies as normal.
+- **Why:** sharing must stay instant. The confirmation only shows the link you just shared, and queueing needs the saved token, not the PIN, so nothing private is exposed by skipping it.
+
