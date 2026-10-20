@@ -220,3 +220,8 @@ Movie trailers had no fitting entertainment subcategory (humour, music, sports).
 - **Why:** the user wanted a simple PIN stored in the repo, no accounts. It lives in `docs/` so it can be read before a token exists, and the PIN itself never leaves the phone.
 - **Limit, stated plainly:** this only covers a phone someone picks up. The hash is public and 6 digits is 1,000,000 guesses, so anyone who reads the repo can recover it offline, and a public repo's notes are readable without the app anyway. Real privacy needs a private repo.
 
+### Fingerprint unlock through the phone's passkey prompt, alongside the PIN
+- **Decision:** after a PIN exists, Settings offers "Use fingerprint too". It creates a WebAuthn platform credential (user verification required) on that phone and keeps only its id in localStorage. The lock screen then prompts for the fingerprint automatically, with the keypad as fallback. Turning it off just forgets the id.
+- **Why:** the browser never sees the fingerprint, only the phone's yes/no, so nothing biometric is stored anywhere. It is per phone, needs no server, and survives PIN changes.
+- **Limit:** like the PIN it is a screen lock: the page trusts the phone's user-verification result and does not verify a signature, so it adds convenience, not stronger protection.
+

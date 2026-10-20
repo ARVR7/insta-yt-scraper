@@ -284,6 +284,7 @@
     <div class="row" id="pinBtns" style="gap:8px; flex-wrap:wrap">
       <button class="chip" id="pinSet" type="button"></button>
       <button class="chip" id="pinOff" type="button" hidden>Remove PIN</button>
+      <button class="chip" id="bioBtn" type="button" hidden></button>
     </div>
   </section>
 
@@ -1082,7 +1083,7 @@
   function touchUnlock() { lsSet("pin_ok", String(Date.now())); }
   /* Full-screen keypad. check(pin) returns a Promise of "" (accepted) or an error message (shown, pad resets).
      Resolves with the accepted pin, or null if cancelled. */
-  function pinPad(title, note, cancelable, check) {
+  function pinPad(title, note, cancelable, check, bio) {
     var lock = $("lock"); lock.textContent = ""; lock.hidden = false;
     return new Promise(function (resolve) {
       var box = el("div", "box"), digits = "", busy = false, dots = el("div", "dots"), err = el("p", "err"), pad = el("div", "pad");
@@ -1108,10 +1109,33 @@
       key(cancelable ? "Cancel" : "", "ghost", function () { if (cancelable) close(null); });
       key("0", "", function () { press("0"); });
       key("\u232b", "ghost", function () { press("del"); }).setAttribute("aria-label", "Delete");
-      box.appendChild(pad); lock.appendChild(box);
+      box.appendChild(pad);
+      if (bio) {
+        var fb = el("button", "chip", "Use fingerprint"); fb.type = "button";
+        var tryBio = function () { bio().then(function (ok) { if (ok) close("bio"); }); };
+        fb.addEventListener("click", tryBio); box.appendChild(fb); setTimeout(tryBio, 250);
+      }
+      lock.appendChild(box);
       function onKey(e) { if (/^\d$/.test(e.key)) press(e.key); else if (e.key === "Backspace") press("del"); }
       document.addEventListener("keydown", onKey);
     });
+  }
+  /* Fingerprint / face / screen lock through the phone's own passkey prompt (WebAuthn, platform authenticator).
+     The credential is created on this phone only and never leaves it; the PIN stays the fallback. As with the PIN,
+     this is a screen lock: the page does not verify a signature, it trusts the phone's user-verification result. */
+  function bioSupported() { return !!(window.PublicKeyCredential && navigator.credentials && window.isSecureContext); }
+  function bioReady() { return bioSupported() && !!lsGet("fp_id"); }
+  function randBytes(n) { return crypto.getRandomValues(new Uint8Array(n)); }
+  function bioEnable() {
+    return navigator.credentials.create({ publicKey: {
+      challenge: randBytes(32), rp: { name: "Link Library" }, user: { id: randBytes(16), name: "owner", displayName: "Owner" },
+      pubKeyCredParams: [{ type: "public-key", alg: -7 }, { type: "public-key", alg: -257 }],
+      authenticatorSelection: { authenticatorAttachment: "platform", userVerification: "required", residentKey: "discouraged" }, timeout: 60000
+    } }).then(function (c) { lsSet("fp_id", hex(c.rawId)); });
+  }
+  function bioUnlock() {
+    return navigator.credentials.get({ publicKey: { challenge: randBytes(32), allowCredentials: [{ type: "public-key", id: unhex(lsGet("fp_id")) }], userVerification: "required", timeout: 60000 } })
+      .then(function () { return true; }, function () { return false; });
   }
   /* wrong PIN shakes; 5 wrong in a row waits 30 s */
   function pinChecker(cfg) {
@@ -1138,7 +1162,7 @@
     var t = Number(lsGet("pin_ok"));
     if (t && Date.now() - t < AWAY_MS) { touchUnlock(); return; }
     locking = true;
-    pinPad("Enter PIN", "", false, pinChecker(pinCfg)).then(function () { locking = false; touchUnlock(); });
+    pinPad("Enter PIN", "", false, pinChecker(pinCfg), bioReady() ? bioUnlock : null).then(function () { locking = false; touchUnlock(); });
   }
   /* lock at once from the cached copy, so a slow network never flashes the library; the fresh file then replaces it */
   try { var cached = JSON.parse(lsGet("pin_cfg")); if (cached && cached.hash) { pinCfg = cached; ensureUnlocked(); } } catch (e) {}
@@ -1155,6 +1179,7 @@
   function refreshPinUi() {
     $("pinInfo").textContent = pinCfg ? "PIN lock is on. It locks after 5 minutes away." : "No PIN set. A PIN hides the app behind a keypad on this phone.";
     $("pinSet").textContent = pinCfg ? "Change PIN" : "Set a PIN"; $("pinOff").hidden = !pinCfg;
+    $("bioBtn").hidden = !(pinCfg && bioSupported()); $("bioBtn").textContent = lsGet("fp_id") ? "Turn off fingerprint" : "Use fingerprint too";
   }
   function pinFlow(removing) {
     if (!getToken()) { $("pinInfo").textContent = "Add your GitHub token first: the PIN is saved through it."; return; }
@@ -1173,6 +1198,11 @@
     }).catch(function (e) { $("pinInfo").textContent = "Could not save: " + (e && e.message || e); });
     function done(msg) { $("pinInfo").textContent = msg; }
   }
+  $("bioBtn").addEventListener("click", function () {
+    if (lsGet("fp_id")) { lsSet("fp_id", null); refreshPinUi(); $("pinInfo").textContent = "Fingerprint unlock is off on this phone."; return; }
+    bioEnable().then(function () { refreshPinUi(); $("pinInfo").textContent = "Fingerprint unlock is on for this phone. The PIN still works."; })
+      .catch(function () { $("pinInfo").textContent = "Could not set up fingerprint. Check that a fingerprint or screen lock is set on the phone."; });
+  });
   $("pinSet").addEventListener("click", function () { pinFlow(false); });
   $("pinOff").addEventListener("click", function () { pinFlow(true); });
 
