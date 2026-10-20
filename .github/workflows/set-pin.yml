@@ -1,0 +1,34 @@
+name: set-pin
+# The app hashes a new PIN in the browser and queues an issue labelled `pin` (body: salt/iter/hash JSON,
+# or {"remove": true}). This commits it to docs/pin.json, which the app reads before showing anything.
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: set-pin
+  cancel-in-progress: false
+jobs:
+  pin:
+    if: github.event.issue.user.login == github.repository_owner && contains(github.event.issue.labels.*.name, 'pin')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Write docs/pin.json
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: python3 scripts/set_pin.py
+      - name: Commit and close
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A docs/pin.json
+          git diff --cached --quiet || git commit -m "Update PIN"
+          for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin HEAD:main && break || sleep $((i*3)); done
+          gh issue edit "$ISSUE_NUMBER" --body "(PIN request processed)"
+          gh issue close "$ISSUE_NUMBER" --reason completed

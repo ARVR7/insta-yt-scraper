@@ -214,3 +214,9 @@ Movie trailers had no fitting entertainment subcategory (humour, music, sports).
 ### Shorts skills added (script approval + visible-stakes renderer)
 - **Decision:** added `shorts-trend-script-approval` and `shorts-visible-stakes-video` (with its `scripts/` renderer) under `.claude/skills/`, unchanged from the user's upload.
 - **Why:** user supplied them. They are a content-creation flow, so they stay independent of `process-link`. Rendered media goes to the scratchpad, never the repo.
+
+### PIN lock: a screen lock stored as a hash in `docs/pin.json`
+- **Decision:** a 6-digit PIN, set or changed in Settings. The browser hashes it (PBKDF2-SHA256, random salt, 600k rounds) and queues an issue labelled `pin`; `.github/workflows/set-pin.yml` (owner-authored issues only) validates it with `scripts/set_pin.py`, commits `docs/pin.json`, blanks and closes the issue. The app reads `pin.json` before showing anything, locks after 5 minutes away, and waits 30 s after 5 wrong tries. A forgotten PIN is reset by deleting `docs/pin.json` (ask Claude, or delete it on GitHub).
+- **Why:** the user wanted a simple PIN stored in the repo, no accounts. It lives in `docs/` so it can be read before a token exists, and the PIN itself never leaves the phone.
+- **Limit, stated plainly:** this only covers a phone someone picks up. The hash is public and 6 digits is 1,000,000 guesses, so anyone who reads the repo can recover it offline, and a public repo's notes are readable without the app anyway. Real privacy needs a private repo.
+
