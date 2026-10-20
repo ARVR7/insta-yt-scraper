@@ -1,0 +1,15 @@
+language: hi (0.99)
+## English translation
+[0s] You will get a chance and then you will think that you can grab this opportunity on time.
+[5s] When Meta ads came, it made a lot of millionaires and some of them made billionaires too.
+[10s] Now Meta has launched Meta Muse.
+[12s] Welcome to day 6 of helping you gain financial independence with AI and I will do that.
+[17s] Using Meta Muse, you can use your AI agent on multiple apps.
+[22s] You can automate things.
+[23s] How to earn money from this?
+[25s] How to learn from this?
+[27s] This is a detailed guide for free.
+[30s] If you want a link to this then comment on this video and I will send you that guide in your DMs.
+## Original (hi)
+[0s] मोग का हाच से निकल जाहेगा और फिर तुम सोचते रोगे की यार याईंप पही अपर्चुनेटी गर लेते जब मेटा आट जाए ते कोसने देर सारे मिल्लेनेर्स वनाई कुछ कुछ तो बिलेनेर्स भी वनाडा ले अम मेटा ने मेटा मूँस लाँँज लाँँज कर दी �
+[30s] तुम इसका लिए तो बस कोमेंट कर तो इस्टील के और मैं तुमे तुमारे दीमज में वो गाएट गेज दूँँगा
