@@ -187,6 +187,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Faceless channel on trending Netflix shows ($3,078 in a month)  (2026-10-20)
+- **Verdict:** unverified
+- **What it is:** Creator claims an unnamed small channel earned $3,078 in one month by posting faceless videos about a new Netflix show.
+- **Why pending:** No channel is named or shown, so the earnings cannot be checked; the viewership of the show itself is roughly correct (about 12.2M views in three days).
+- **To resolve:** A named channel with public view counts or an independent report of its earnings.
+- **Evidence:** [TheWrap on the show's debut viewership](https://www.thewrap.com/monster-the-ed-gein-story-menendez-netflix-ratings/)
+- **Source note:** [notes/instagram/DeuNjnMEVux.md](../notes/instagram/DeuNjnMEVux.md)
+
 ### 'Darkest uncensored ChatGPT' (hitansh.exee)  (2026-10-19)
 - **Verdict:** unverified
 - **What it is:** Unnamed uncensored chatbot pitched with a money-laundering example, link by DM.
