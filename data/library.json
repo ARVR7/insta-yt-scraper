@@ -73,6 +73,32 @@
     "note_path": "notes/instagram/Derp4yJoTmP.md"
   },
   {
+    "id": "Deqni2Tic2N",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/Deqni2Tic2N/",
+    "title": "Understand Anything codebase knowledge graph",
+    "author": "dailydoseofds_",
+    "posted": "2026-10-19 06:30:11+00:00",
+    "type": "post",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "coding",
+    "subcategory_label": "Coding",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "understand-anything",
+      "claude-code",
+      "tree-sitter"
+    ],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "Understand Anything is a real open-source (MIT) plugin that builds an interactive knowledge graph of a codebase with a multi-agent pipeline, with commands such as /understand and /understand-dashboard. The repo showed about 87k GitHub stars when checked, consistent with the post's 86k+. The repo link was in the comments, which were not fetched; install steps are in the repo README.",
+    "note_path": "notes/instagram/Deqni2Tic2N.md"
+  },
+  {
     "id": "Deqmd98M2vB",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Deqmd98M2vB/",

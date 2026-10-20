@@ -17,17 +17,17 @@ fetch_status:
   transcript: "none"
   on_screen_text: "n/a"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
-tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+title: "Understand Anything codebase knowledge graph"
+category: tech
+subcategory: coding
+usefulness: helpful
+tools: ["understand-anything", "claude-code", "tree-sitter"]
+key_info: "Understand Anything is a real open-source (MIT) plugin that builds an interactive knowledge graph of a codebase with a multi-agent pipeline, with commands such as /understand and /understand-dashboard. The repo showed about 87k GitHub stars when checked, consistent with the post's 86k+. The repo link was in the comments, which were not fetched; install steps are in the repo README."
+verdict: verified
+registry: registry/verified.md
 ---
 
-# TODO
+# Understand Anything codebase knowledge graph
 
 ## Caption / hashtags
 > Turn any codebase, knowledge base, or docs into an interactive knowledge graph 🦀
@@ -68,19 +68,19 @@ registry: TODO
 Hashtags: #opensource #claude #developer.
 
 ## Hook (on-screen text)
-TODO
+Turn any codebase into an interactive knowledge graph
 
 ## Call to action
-TODO
+Asks how long you take to get comfortable in a new codebase; repo link is in the comments
 
 ## Transcript (auto)
 None available.
 
 ## What is shown on screen
-TODO
+Not reviewed: only the caption was captured (no video or slides).
 
 ## Summary
-TODO
+The caption presents Understand Anything, a Claude Code plugin that also works with Codex, Cursor, Copilot and Gemini CLI. It combines Tree-sitter parsing with LLMs, re-analyses only changed files, outputs a JSON graph that can be committed, and adds chat, change-impact, domain view and onboarding-guide features.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 41 against 1577 likes (comments/likes 0.03; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -89,9 +89,14 @@ Not read: Instagram requires a login to list comments. The count is 41 against 1
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| Open-source plugin that turns a codebase into a knowledge graph, works with Claude Code and other tools | verified | Repo README on [GitHub](https://github.com/Lum1104/Understand-Anything) (MIT licence) lists Claude Code natively plus Codex, Cursor, Copilot and Gemini CLI; the graph is saved as JSON under .understand-anything/. |
+| 86k+ stars | verified | The repo page showed about 87.2k stars when checked. Third-party aggregators list much lower, older counts. |
+| Chat, change-impact, explain and onboarding features | verified | README documents /understand-chat, /understand-diff, /understand-explain and /understand-onboard. |
+| Tree-sitter plus LLM, incremental runs | unverified | Stated in the caption and consistent with the README description, but not checked against the source code. |
 
-Overall: TODO
+Overall: Accurate description of a real, popular open-source project.
 
 ## Notes / caveats
-- TODO
+- Only the caption was captured; the repo link was in the comments, which were not fetched.
+- The repo appears under more than one GitHub owner (original Lum1104 and an Egonex-AI org); check the owner before installing.
+- Needs LLM calls to build the graph, so large repos cost tokens; the post gives no cost figures.

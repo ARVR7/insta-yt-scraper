@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Understand Anything (Lum1104)  (2026-10-20)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-source plugin that builds an interactive knowledge graph of a codebase.
+- **How to use / why it matters:** In Claude Code: /plugin marketplace add <owner>/Understand-Anything, /plugin install understand-anything, then /understand.
+- **Caveats:** Repo is hosted under more than one owner; LLM cost on large repos is not stated.
+- **Evidence:** [Understand Anything repo](https://github.com/Lum1104/Understand-Anything)
+- **Source note:** [notes/instagram/Deqni2Tic2N.md](../notes/instagram/Deqni2Tic2N.md)
+
 ### RAG-Anything (HKUDS)  (2026-10-19)
 - **Verdict:** verified-with-caveats
 - **What it is:** Open-source multimodal document RAG framework built on LightRAG, using a multimodal knowledge graph.
