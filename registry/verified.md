@@ -187,6 +187,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Meta Muse will create 1000+ millionaires  (2026-10-20)
+- **Verdict:** unverified
+- **What it is:** A quoted prediction (attributed to Greg Isenberg) that Meta's Muse AI will make 1000+ millionaires, used to promote a free guide on earning with it.
+- **Why pending:** The product exists, but a prediction is not evidence of earnings, and the guide is only available via comment-for-DM.
+- **To resolve:** Independent reports of people earning from Meta Muse, or the guide's contents.
+- **Evidence:** [Muse Spark launch coverage](https://pureai.com/articles/2026/04/09/meta-launches-muse-spark.aspx)
+- **Source note:** [notes/instagram/DesCGsjTQcy.md](../notes/instagram/DesCGsjTQcy.md)
+
 ### Faceless channel on trending Netflix shows ($3,078 in a month)  (2026-10-20)
 - **Verdict:** unverified
 - **What it is:** Creator claims an unnamed small channel earned $3,078 in one month by posting faceless videos about a new Netflix show.
