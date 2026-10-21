@@ -211,6 +211,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### AI influencer face-swap and motion-control workflow (RunningHub)  (2026-10-21)
+- **Verdict:** unverified
+- **What it is:** Demo of generating face-swapped AI portraits and animating them with a motion-control node graph in about 16 minutes.
+- **Why pending:** The reel shows results but no method; the full workflow is behind a link or Telegram group and could not be checked.
+- **To resolve:** The actual workflow files and models used, from a source that explains them.
+- **Source note:** [notes/instagram/Dewv1q7tvKg.md](../notes/instagram/Dewv1q7tvKg.md)
+
 ### Clipping other creators with credit is copyright-safe  (2026-10-21)
 - **Verdict:** unverified
 - **What it is:** Claim that tagging the original creator makes clipping their content safe, and that copyright has never been a problem.

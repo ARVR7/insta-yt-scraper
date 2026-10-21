@@ -1,5 +1,32 @@
 [
   {
+    "id": "Dewv1q7tvKg",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dewv1q7tvKg/",
+    "title": "AI influencer motion control workflow demo",
+    "author": "tech_new_trends",
+    "posted": "2026-10-21 15:38:52+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "comfyui",
+      "runninghub",
+      "kling",
+      "wan"
+    ],
+    "usefulness": "mixed",
+    "verdict": "pending",
+    "key_info": "A screen demo of an AI-influencer workflow: a node-graph (ComfyUI-style, shown on RunningHub AI) swaps a model's face into generated portraits and then runs a 'Motion Control' job that animated one image into a dance video in about 16 minutes. No steps, settings or models are explained, and the 'full workflow with guides' is behind a link or Telegram group. Nothing here could be checked beyond what is on screen. Note the content is photoreal AI personas built by face-swapping.",
+    "note_path": "notes/instagram/Dewv1q7tvKg.md"
+  },
+  {
     "id": "DewXLi2vVWR",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DewXLi2vVWR/",
