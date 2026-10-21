@@ -25,6 +25,33 @@
     "note_path": "notes/instagram/DeuNjnMEVux.md"
   },
   {
+    "id": "DeuDQgFtzzX",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DeuDQgFtzzX/",
+    "title": "Open-source Higgsfield AI alternative",
+    "author": "futureproof_hacks",
+    "posted": "2026-10-20 14:31:47+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "open-generative-ai",
+      "open-higgsfield-ai",
+      "muapi",
+      "kie-ai"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "The repo is real: an MIT-licensed open-source image and video generation studio (Open Generative AI by Anil-matcha, about 31k stars when checked), and the reel shows a fork (Autom8AI/Open-Higgsfield-AI) rebranded as a Higgsfield alternative. The software is free, but 'unlimited videos for free' is misleading: cloud generation goes through a third-party API (Muapi in the original, kie.ai in the fork's commit messages) that needs an API key and has its own pricing, and local generation needs a capable GPU. Link was only given via bio or DM.",
+    "note_path": "notes/instagram/DeuDQgFtzzX.md"
+  },
+  {
     "id": "DetqEejBwMz",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DetqEejBwMz/",

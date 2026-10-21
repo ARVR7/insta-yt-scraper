@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Open Generative AI (Open-Higgsfield-AI fork)  (2026-10-21)
+- **Verdict:** verified-with-caveats
+- **What it is:** MIT-licensed open-source image and video generation studio positioned as a Higgsfield AI alternative; desktop and web app.
+- **How to use / why it matters:** Install a desktop build or run from source with Node.js 18+ and an API key for the cloud backend; local models need a capable GPU.
+- **Caveats:** Not free to run at scale via cloud APIs; fork may differ from the original.
+- **Evidence:** [Open Generative AI repo](https://github.com/Anil-matcha/Open-Generative-AI)
+- **Source note:** [notes/instagram/DeuDQgFtzzX.md](../notes/instagram/DeuDQgFtzzX.md)
+
 ### Cloudflare Code Mode MCP  (2026-10-21)
 - **Verdict:** verified-with-caveats
 - **What it is:** Cloudflare MCP server that exposes its entire API through two tools (search, execute) where the model writes code in a sandbox, cutting token use.
