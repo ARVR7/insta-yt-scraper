@@ -211,6 +211,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Clipping other creators with credit is copyright-safe  (2026-10-21)
+- **Verdict:** unverified
+- **What it is:** Claim that tagging the original creator makes clipping their content safe, and that copyright has never been a problem.
+- **Why pending:** Credit is not a licence and YouTube's reused-content rules apply regardless; only authorised campaign clipping is clearly safe.
+- **To resolve:** The rights holder's explicit permission or the campaign's terms for each source.
+- **Evidence:** [YouTube channel monetization policies (reused content)](https://support.google.com/youtube/answer/1311392?hl=en)
+- **Source note:** [notes/instagram/DbB8h50urJb.md](../notes/instagram/DbB8h50urJb.md)
+
 ### Selling Emergent-built custom apps to small businesses  (2026-10-21)
 - **Verdict:** unverified
 - **What it is:** Claim that learning to prompt Emergent lets individuals build and sell custom software to SMBs, as WordPress and Shopify freelancers did.
