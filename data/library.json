@@ -25,6 +25,32 @@
     "note_path": "notes/instagram/DeuNjnMEVux.md"
   },
   {
+    "id": "DetqEejBwMz",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DetqEejBwMz/",
+    "title": "Cloudflare Code Mode MCP explained",
+    "author": "decoding_tech_",
+    "posted": "2026-10-20 10:51:54+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "coding",
+    "subcategory_label": "Coding",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "mcp",
+      "cloudflare",
+      "typescript"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Cloudflare's Code Mode is real: its MCP server exposes the whole Cloudflare API through two tools (search and execute), where the model writes code instead of calling many tool definitions, which Cloudflare says takes about 1,000 tokens against about 1.17 million for an equivalent standard MCP server. The 'companies are moving away from MCP' headline is overstated: Code Mode still runs as an MCP server, so it optimises MCP rather than replacing it. 'Other companies are following' was not checked.",
+    "note_path": "notes/instagram/DetqEejBwMz.md"
+  },
+  {
     "id": "DesCGsjTQcy",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DesCGsjTQcy/",

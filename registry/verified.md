@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Cloudflare Code Mode MCP  (2026-10-21)
+- **Verdict:** verified-with-caveats
+- **What it is:** Cloudflare MCP server that exposes its entire API through two tools (search, execute) where the model writes code in a sandbox, cutting token use.
+- **How to use / why it matters:** Connect an MCP client to https://mcp.cloudflare.com/mcp with a Cloudflare account or API token.
+- **Caveats:** Token savings are the vendor's own figures; it extends MCP rather than replacing it.
+- **Evidence:** [Cloudflare MCP servers docs](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/)
+- **Source note:** [notes/instagram/DetqEejBwMz.md](../notes/instagram/DetqEejBwMz.md)
+
 ### Understand Anything (Lum1104)  (2026-10-20)
 - **Verdict:** verified-with-caveats
 - **What it is:** Open-source plugin that builds an interactive knowledge graph of a codebase.
