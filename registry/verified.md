@@ -211,6 +211,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Selling Emergent-built custom apps to small businesses  (2026-10-21)
+- **Verdict:** unverified
+- **What it is:** Claim that learning to prompt Emergent lets individuals build and sell custom software to SMBs, as WordPress and Shopify freelancers did.
+- **Why pending:** The company's funding is real, but no earnings or customer evidence is given and the video is a #collab promotion.
+- **To resolve:** Independent reports of freelancers earning from Emergent-built apps.
+- **Evidence:** [Emergent funding coverage](https://thenextweb.com/news/emergent-130m-series-c-vibe-coding-unicorn)
+- **Source note:** [notes/instagram/Da0PIzmv5RG.md](../notes/instagram/Da0PIzmv5RG.md)
+
 ### Rumble monetization via view-exchange app (PBX SM Automation)  (2026-10-21)
 - **Verdict:** unverified
 - **What it is:** Claim that Rumble pays from the first video and that an automation app that swaps views between users boosts reach.
