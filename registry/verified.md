@@ -211,6 +211,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Four 'illegal websites' (NumLookup, SMS24, YOPmail, call bomber)  (2026-10-21)
+- **Verdict:** unverified
+- **What it is:** A list of four sites claimed to hide your caller ID, provide OTP numbers, send SMS/call floods and make disposable emails.
+- **Why pending:** One description is wrong (NumLookup is reverse lookup), two are public throwaway inboxes with account-takeover risk, and one is a harassment tool.
+- **To resolve:** Each site's own terms and function, tested by the user on their own devices only.
+- **Source note:** [notes/instagram/DeuaI4ItktU.md](../notes/instagram/DeuaI4ItktU.md)
+
 ### AI influencer face-swap and motion-control workflow (RunningHub)  (2026-10-21)
 - **Verdict:** unverified
 - **What it is:** Demo of generating face-swapped AI portraits and animating them with a motion-control node graph in about 16 minutes.

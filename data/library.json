@@ -76,6 +76,32 @@
     "note_path": "notes/instagram/DevhsdCt6KH.md"
   },
   {
+    "id": "DeuaI4ItktU",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DeuaI4ItktU/",
+    "title": "Four risky websites for phones and OTPs",
+    "author": "briefonlive",
+    "posted": "2026-10-20 17:50:38+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "security",
+    "subcategory_label": "Security",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "numlookup",
+      "sms24",
+      "yopmail"
+    ],
+    "usefulness": "misleading",
+    "verdict": "partly-verified",
+    "key_info": "The reel misdescribes the sites. NumLookup is a reverse phone lookup service, not a way to call people without showing your number. SMS24 and YOPmail are public disposable number and email inboxes: real, but anyone can read the messages, and many apps block them. The fourth site is a call and SMS bombing tool, which is harassment and should not be used on anyone's phone. The caption itself adds safety disclaimers the voiceover lacks. Do not use these for banking, sensitive accounts or anything you need to recover.",
+    "note_path": "notes/instagram/DeuaI4ItktU.md"
+  },
+  {
     "id": "DeuNjnMEVux",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/DeuNjnMEVux/",
