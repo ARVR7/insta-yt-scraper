@@ -1,0 +1,15 @@
+language: hi (0.99)
+## English translation
+[0s] If you don't want to use it wrong, then I'll tell you 4 illegal websites.
+[3s] And yes, you don't have to comment anything, I'll tell you straight away.
+[6s] That's why save the reel and follow me.
+[8s] First is numlookup.com. You can go there and call anyone without revealing your number.
+[13s] Second is sms24.me. You get a lot of numbers and OTPs to log in to any app.
+[19s] Third is callbombers.in. You can send calls and SMS to your friend's phone.
+[24s] Fourth is yopemail.com. It will make temporary emails for you for any app or website.
+[29s] Login clear.
+## Original (hi)
+[0s] बाई अगर गलत यूँज ना करो तो चार इलीगल वेप्षाइट बतातों
+[3s] और हाँ कुछ कमेंट करने की जरवत नहीं सीडा वताँवग
+[6s] इस लिए रील को सेव करती मुझे फालो कर लोग
+[8s] फुस्ट इस नम लुक अप दोट कों
