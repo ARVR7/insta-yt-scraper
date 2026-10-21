@@ -1,0 +1,20 @@
+language: hi (1.00)
+## English translation
+[0s] If you are not online, you can use it for free
+[3s] Open Source 6-Fill is also available
+[6s] You can use it for unlimited videos
+[10s] All the details are available here
+[12s] You can install it and use it
+[14s] I have also added its link in bio
+[16s] If you want its link in DM, then share it in my account
+[19s] I will send you its link
+## Original (hi)
+[0s] बहुत तुम लन्ग नेई आई विडियूज जन मरहें साते लहने रही है
+[2s] तो लेगे अपनिए षोट शिक्स्पिल लेएगा
+[4s] पर वोगे यवाले लेबल है
+[6s] च्छ्त्य अप विडियूज जन में रहांखे
+[8s] बिलकुल बिनागे सी लिएमट्के
+[10s] उजो मैं you may have available these details of how to use it
+[13s] अपने अपने लिए श़ादे उन्यासै लिए ताफाट एमने लिए थादे.
+[14s] इस निक मैं अपनी बायो में भी डाल ग़ नहींद.
+[16s] और अपने निक का लिए लिए था होंगे निक फोग आपको निक बाट यह कुई.
