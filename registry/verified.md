@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### VoiceStudio (debpalash)  (2026-10-21)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-source (AGPL-3.0) app for voice cloning, voice design, video dubbing, dictation, transcription and audiobooks, running locally.
+- **How to use / why it matters:** Install from the repo; an NVIDIA GPU or Apple Silicon speeds it up, CPU works but is slower.
+- **Caveats:** Model weights have separate licences; the 10-second clone claim is unverified; misuse risk for voice cloning.
+- **Evidence:** [VoiceStudio repo](https://github.com/debpalash/VoiceStudio)
+- **Source note:** [notes/instagram/DewXLi2vVWR.md](../notes/instagram/DewXLi2vVWR.md)
+
 ### Open Generative AI (Open-Higgsfield-AI fork)  (2026-10-21)
 - **Verdict:** verified-with-caveats
 - **What it is:** MIT-licensed open-source image and video generation studio positioned as a Higgsfield AI alternative; desktop and web app.

@@ -1,5 +1,29 @@
 [
   {
+    "id": "DewXLi2vVWR",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DewXLi2vVWR/",
+    "title": "VoiceStudio open-source voice cloning",
+    "author": "aiwithdivyam",
+    "posted": "2026-10-21 12:19:14+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "voicestudio"
+    ],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "VoiceStudio (debpalash/VoiceStudio) is a real open-source (AGPL-3.0) app for voice cloning, voice design, video dubbing, dictation, transcription and audiobooks, with 646 languages claimed. The repo showed about 80k stars (the reel says 79k). It runs locally on your machine (GPU or slower CPU); remote services are optional. Not confirmed: the '10 seconds of audio' for cloning and a flat 'no data ever leaves' claim. Link is only given by DM.",
+    "note_path": "notes/instagram/DewXLi2vVWR.md"
+  },
+  {
     "id": "DevhsdCt6KH",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DevhsdCt6KH/",
