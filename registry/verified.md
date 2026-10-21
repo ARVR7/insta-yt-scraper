@@ -203,6 +203,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Rumble monetization via view-exchange app (PBX SM Automation)  (2026-10-21)
+- **Verdict:** unverified
+- **What it is:** Claim that Rumble pays from the first video and that an automation app that swaps views between users boosts reach.
+- **Why pending:** Only $7.90 and self-described non-organic views are shown; the app and guide are behind a comment-for-DM funnel and compliance with Rumble's rules was not confirmed.
+- **To resolve:** Rumble's current terms on artificial views and monetization, and an independent look at the app.
+- **Source note:** [notes/instagram/DevhsdCt6KH.md](../notes/instagram/DevhsdCt6KH.md)
+
 ### Meta Muse will create 1000+ millionaires  (2026-10-20)
 - **Verdict:** unverified
 - **What it is:** A quoted prediction (attributed to Greg Isenberg) that Meta's Muse AI will make 1000+ millionaires, used to promote a free guide on earning with it.
