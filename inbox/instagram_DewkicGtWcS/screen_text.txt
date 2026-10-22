@@ -1,0 +1,59 @@
+[0s] THE SHIFT
+[0s] Al agents·a new architecture
+[3s] what everyone used
+[9s] HOWMCPWORKS
+[9s] the standard·discover tools→call them
+[9s] Al Agent
+[12s] uses
+[15s] THEPROBLEM
+[15s] every result goes back through the model
+[18s] MODEL
+[21s] ①find_customer()
+[21s] result→model
+[21s] fetch_orders()
+[21s] TOOLS
+[27s] OLDMCP
+[27s] 100s of tool schemas·context bloat
+[30s] MCPServer1
+[30s] MCPServer2
+[30s] Agent
+[30s] MCPServer3
+[30s] MCPServer4
+[30s] MODELCONTEXT WINDOW
+[33s] ×1000
+[36s] cloudflare·tools →typescript api
+[39s] CODEMODE
+[39s] search_db
+[39s] get_order
+[39s] send_email
+[39s] +997more
+[42s] interface API
+[42s] findCustomer(id)
+[42s] getorders(cid)
+[42s] sendEmail(to)
+[42s] seesonly
+[42s] /.alltools
+[42s] TypeScript API
+[45s] LOCKED SANDBOX
+[45s] in-between data never touches the model
+[45s] script.ts
+[48s] SANDBOX
+[48s] orders[]
+[48s] customer
+[48s] filter()
+[51s] raw data staysinside
+[51s] onlythefinalanswer
+[54s] WHYITWORKS
+[54s] what models are actually good at
+[54s] Models write code better than they call tools.
+[54s] Writingcode
+[57s] ANTHROPIC·SAME PATTERN
+[57s] tokens used foronetask
+[60s] 150,000
+[66s] blog.cloudflare.com/code-mode
+[66s] SEPTEMBER 26,2025
+[66s] Code Mode:the better
+[66s] way to use MCP
+[66s] KentonVarda and Sunil Pai
+[66s] 12MINUTEREAD
+[66s] COPYURL
