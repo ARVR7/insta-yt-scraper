@@ -1058,6 +1058,32 @@
     "note_path": "notes/instagram/DdgmWeIt1AE.md"
   },
   {
+    "id": "DdBGaAgnQyL",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DdBGaAgnQyL/",
+    "title": "Locally Uncensored local AI studio",
+    "author": "gittrend.io",
+    "posted": "2026-09-08 07:00:43+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "locally-uncensored",
+      "ollama",
+      "lm-studio"
+    ],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "Locally Uncensored (PurpleDoubleD/locally-uncensored) is a real free, open-source (AGPL-3.0) desktop app that bundles local chat, image and video generation and a coding agent, for Windows and Linux (macOS beta). The repo lookup matches the reel: about 2.5k stars, actively updated, no cloud required. Results depend on your hardware and the models you pick, and the 'uncensored' models are your responsibility. The repo link is only sent by DM.",
+    "note_path": "notes/instagram/DdBGaAgnQyL.md"
+  },
+  {
     "id": "Dc36DK9zjdV",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Dc36DK9zjdV/",

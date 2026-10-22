@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Locally Uncensored (PurpleDoubleD)  (2026-10-22)
+- **Verdict:** verified-with-caveats
+- **What it is:** Free, open-source (AGPL-3.0) all-in-one local AI desktop app: chat, image and video generation and a coding agent.
+- **How to use / why it matters:** Download the Windows or Linux build from the repo's Releases, pick a model in the built-in manager.
+- **Caveats:** Needs capable hardware; uncensored models are the user's responsibility; agent mode runs commands.
+- **Evidence:** [Locally Uncensored repo](https://github.com/PurpleDoubleD/locally-uncensored)
+- **Source note:** [notes/instagram/DdBGaAgnQyL.md](../notes/instagram/DdBGaAgnQyL.md)
+
 ### VoiceStudio (debpalash)  (2026-10-21)
 - **Verdict:** verified-with-caveats
 - **What it is:** Open-source (AGPL-3.0) app for voice cloning, voice design, video dubbing, dictation, transcription and audiobooks, running locally.
