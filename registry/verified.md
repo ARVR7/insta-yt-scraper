@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Harness2 (google-research)  (2026-10-22)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-source (Apache 2.0) framework from Google Cloud AI Research that has a stronger model rewrite an agent's prompts, guardrails, memory and scripts without retraining it.
+- **How to use / why it matters:** Use the repo to run the improvement loop against your agent and task; or just copy the idea: have the agent reopen and cross-check every output file before finishing.
+- **Caveats:** Best-case numbers are shown in the reel; not officially supported by Google; results vary by agent and task.
+- **Evidence:** [i-scoop coverage of Harness2](https://www.i-scoop.eu/harness2-google/)
+- **Source note:** [notes/instagram/DeztS_8iSzv.md](../notes/instagram/DeztS_8iSzv.md)
+
 ### NVIDIA Nemotron 3 Diarization  (2026-10-22)
 - **Verdict:** verified-with-caveats
 - **What it is:** Open-weight (~100M parameter) speaker diarization model that tracks up to 8 speakers, offline or streaming.

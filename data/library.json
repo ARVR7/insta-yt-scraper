@@ -1,5 +1,31 @@
 [
   {
+    "id": "DeztS_8iSzv",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DeztS_8iSzv/",
+    "title": "Harness2 reopen-your-files rule for agents",
+    "author": "simplyaishow",
+    "posted": "2026-10-22 19:15:14+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "harness2",
+      "gemini-3-5-flash",
+      "claude-opus-4-8"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Harness2 (google-research/harness2) is a real open-source framework from Google Cloud AI Research that has a stronger model rewrite the prompts, guardrails and scripts around an agent without retraining it; coverage names Gemini 3.5 Flash as an agent and Claude Opus 4.8 as the editor. The reel's 43 to 78 score is described by the creator as one of the best examples, and the average gain is smaller (coverage reports up to about 11 points per step on benchmarks). The tip itself is practical and free: tell your agent to reopen every file it made and check that numbers match before it says it is done.",
+    "note_path": "notes/instagram/DeztS_8iSzv.md"
+  },
+  {
     "id": "Dezg3-ElDAH",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Dezg3-ElDAH/",
