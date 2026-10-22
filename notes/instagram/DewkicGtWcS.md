@@ -81,7 +81,7 @@ What to use instead of (or alongside) classic MCP tool-calling:
 3. Small, curated tool sets: expose only the handful of tools a given agent really needs.
 4. Direct APIs, SDKs or CLIs called from a sandbox, without an MCP server in between, when you control both sides.
 Rule of thumb: with a few tools and small results, plain MCP is fine; move to code execution when context bloat or many round trips become the problem.
-(Options 2 to 4 are general engineering alternatives, not claims from the reel; only options 1 is sourced from the post and the linked articles.)
+(Options 2 to 4 are general engineering alternatives, not claims from the reel; only option 1 is sourced from the post and the linked articles.)
 
 ## Research (checked 2026-10-22)
 
