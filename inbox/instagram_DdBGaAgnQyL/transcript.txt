@@ -1,0 +1,19 @@
+language: en (1.00)
+[0s] Want to run chat GPT-like AI, generate images,
+[4s] and make videos locally for free?
+[6s] It's a desktop app that does all the big AI tasks in one window.
+[10s] You can chat with any local model that answers directly,
+[13s] generate images and video with a single click,
+[15s] and use a coding agent that edits your code
+[17s] and shows the diff first.
+[19s] There's an agent mode that searches the web, reads files,
+[22s] runs commands, and even makes images,
+[24s] all through a permission gate you control.
+[26s] You install it just like any other program,
+[28s] pick a model that fits your hardware from the built-in manager,
+[31s] and start typing.
+[32s] It works with engines you already have, like Alama or LM Studio,
+[36s] or it can set everything up for you automatically.
+[38s] It's for anyone who wants a private, uncensored AI studio
+[42s] without paying for cloud subscriptions or using a terminal.
+[45s] Comment studio, and I'll send you the repo link.
