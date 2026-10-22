@@ -858,6 +858,32 @@
     "note_path": "notes/instagram/DeMoCfwCHE8.md"
   },
   {
+    "id": "DeHt0APsh-e",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/DeHt0APsh-e/",
+    "title": "SEBI PaRRVA and Univest stock tips claim",
+    "author": "univest.in",
+    "posted": "2026-10-05 17:11:31+00:00",
+    "type": "post",
+    "category": "money",
+    "category_label": "Money",
+    "subcategory": "investing",
+    "subcategory_label": "Investing",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "parrva",
+      "univest",
+      "claude"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "SEBI's PaRRVA (Past Risk and Return Verification Agency, run by CARE Ratings with NSE as data centre) is real and was meant to curb unverified past-return claims. But the reel is posted by univest.in itself and presents the adviser's own numbers (191 trades, 92% success, 2.85% average profit, 100% success in a segment) as independent 'research' and says its recommendations are free in its app. I did not verify those numbers or the firm's registration. A research-screening prompt for Claude is included below as requested.",
+    "note_path": "notes/instagram/DeHt0APsh-e.md"
+  },
+  {
     "id": "DeGKrmWh89C",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DeGKrmWh89C/",

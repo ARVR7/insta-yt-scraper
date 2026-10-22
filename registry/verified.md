@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### SEBI PaRRVA (past performance verification)  (2026-10-22)
+- **Verdict:** verified-with-caveats
+- **What it is:** SEBI-recognised verification framework (CARE Ratings with NSE) for past risk and return claims by advisers, research analysts and algo providers.
+- **How to use / why it matters:** Ask any adviser whether their claimed returns are PaRRVA-verified before relying on them.
+- **Caveats:** Verifies past data only; adviser enrolment and coverage details were not checked here.
+- **Evidence:** [Outlook Money on PaRRVA](https://www.outlookmoney.com/news/sebi-operationalises-parrva-framework-sets-deadline-for-advisers-to-verify-data-on-past-performance)
+- **Source note:** [notes/instagram/DeHt0APsh-e.md](../notes/instagram/DeHt0APsh-e.md)
+
 ### Locally Uncensored (PurpleDoubleD)  (2026-10-22)
 - **Verdict:** verified-with-caveats
 - **What it is:** Free, open-source (AGPL-3.0) all-in-one local AI desktop app: chat, image and video generation and a coding agent.
@@ -218,6 +226,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Univest Research performance claims (92% success)  (2026-10-22)
+- **Verdict:** unverified
+- **What it is:** Adviser's own claim of 191 trades, 92% success rate and 2.85% average profit, promoted in a reel by the adviser itself.
+- **Why pending:** No independent or PaRRVA certification was shown, and the post is an advertisement.
+- **To resolve:** A PaRRVA-verified track record and the firm's SEBI registration check.
+- **Source note:** [notes/instagram/DeHt0APsh-e.md](../notes/instagram/DeHt0APsh-e.md)
 
 ### Four 'illegal websites' (NumLookup, SMS24, YOPmail, call bomber)  (2026-10-21)
 - **Verdict:** unverified
