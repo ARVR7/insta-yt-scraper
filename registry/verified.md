@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### claude-video watch skill (bradautomates)  (2026-10-22)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-source (MIT) skill that lets Claude Code watch a video link as timestamped frames plus a transcript, optionally using Gemini for YouTube links.
+- **How to use / why it matters:** Install the plugin from the repo's marketplace, set a Gemini API key if you want Gemini analysis, then run /watch <url>.
+- **Caveats:** Needs FFmpeg and yt-dlp; free Gemini YouTube input is a preview; video content is sent to Google when Gemini is used.
+- **Evidence:** [claude-video repo](https://github.com/bradautomates/claude-video)
+- **Source note:** [notes/instagram/Dezg3-ElDAH.md](../notes/instagram/Dezg3-ElDAH.md)
+
 ### Code execution with MCP (Anthropic)  (2026-10-22)
 - **Verdict:** verified-with-caveats
 - **What it is:** Pattern where an agent writes code that calls MCP tools as functions in a sandbox, loading tool definitions on demand and returning only results, to cut token use.
