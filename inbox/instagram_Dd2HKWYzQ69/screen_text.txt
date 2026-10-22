@@ -1,0 +1,92 @@
+[0s] NVIDlA quietlyreleased
+[0s] this few days ago
+[3s] OPEN-SOURCE
+[3s] OPEN-WEIGHT
+[9s] abgc2
+[18s] abgca
+[21s] gnildiis
+[54s] nvidia-releases-nemotron-3-dlarization/
+[54s] VoiceAl
+[54s] Tutorials
+[54s] AlAgents
+[54s] Open Source/Weights
+[54s] Home
+[54s] Language Model
+[54s] AI Shorts
+[54s] Artificlal Intelligence
+[54s] Technology
+[54s] Editors PlckAgenticAl
+[54s] Machine LearningNew Releases
+[54s] srimiiage ModelFor DevsLarge Language Model
+[54s] neter
+[54s] oW1.1
+[54s] -NVIDIA
+[54s] /Blackwo
+[54s] Open-Weight Model That Track
+[54s] Speakers in Real Time
+[54s] xProSDK
+[54s] By Asif Razzaq
+[54s] September23.2026
+[54s] vedemo
+[54s] NVIDIA has released Nemotron 3 Dlarization,an open-welght speaker diarl
+[54s] model on Hugging Face, It answers one questlon about any conversation:
+[54s] spoke when.The 10oM-parameter model tracks up to 8 speakers,Including
+[54s] volces overlap.One checkpoint handles both offlne recordings and real-tin
+[54s] oyment
+[54s] streaming.
+[54s] Is It deployable? Yes. The welghts are released under the OpenMDW Lice
+[54s] odel API
+[54s] whichpermito
+[54s] mmerclal use.Itruns on Linux through NVIDIA NeMo,usi
+[54s] velace,Hopper,orBlackwell GPus.
+[54s] hpont
+[54s] Speaker Diarization?
+[54s] Automatlcspeech recognition (AsR) gives you the words.It does not telly
+[54s] sald them.Without attribution,a summarizer cannot tell who made a comr
+[54s] or who ralsed an objection.
+[54s] Dlarization outputs the time Intervais where each speaker is actlve. Those
+[54s] Meeting tools,call analytics, podcast plpelines,and volce-agent memory a
+[57s] Histo
+[57s] post.com/2026/09
+[57s] Artificial lntellgence
+[57s] Appllcations
+[57s] Edtors PIck
+[57s] AgenticAlTechnologyAi Shorts
+[57s] Machine Learring
+[57s] NewR
+[57s] Audio Language ModelFor Devs
+[57s] Large Language Model
+[57s] TechNews
+[57s] VolceAI
+[57s] THIS MODEL
+[57s] NVIDIA Releases Nemot
+[57s] IDIA Nemotron 3
+[57s] Diarization
+[57s] YES-TODAY
+[57s] OpenMDW1.1
+[57s] Diarization: A 100M-Par
+[57s] Snlf-hoat-nemocheckpoint-NVDA
+[57s] Neo-Ampere/Ada/Hoppar/Blnclwell
+[57s] Open-Weight Model Tha
+[57s] API-Bassten Modal Lbrary:
+[57s] DigitalOcean ncaie hosting
+[57s] maxPro SDK
+[57s] NVIDIA has released Nemotron 3 Diarization,an open-we
+[57s] model on Hugging Face. It answers one question about ar
+[57s] Batchsming& dinrized
+[57s] tnaciptiont preanta
+[57s] voices overlap. One checkpoint handles both offline recon
+[57s] DigitalOcean
+[57s] Production-scale dopioyment
+[57s] pariner
+[57s] NVIDIA NeMo
+[57s] Is It deployable? Yes. The welghts are released under t
+[57s] SorttomerEnctaeModel APl
+[57s] which permits commerclal use.It runs on Linux through
+[57s] Ampere,Ada Lovelace, Hopper, or Blackwell GPUs.
+[57s] Why Speaker Diarization?
+[57s] Automatic speech recognition (ASR) gives you the words
+[57s] said them.Without attributlon,a summarlzer cannot tell
+[57s] or who ralsed an objectlon.
+[57s] Diarization outputs the time Intervals where each speake
+[57s] timestamps combine with AsR output
