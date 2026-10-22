@@ -235,6 +235,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### 100 faceless YouTube niches in 2026  (2026-10-22)
+- **Verdict:** unverified
+- **What it is:** A carousel claiming to list 100 niches for faceless YouTube channels.
+- **Why pending:** Only the caption was captured, so the list and any claims in it were not seen.
+- **To resolve:** Screenshots of the carousel slides.
+- **Source note:** [notes/instagram/Deep2H2yNsr.md](../notes/instagram/Deep2H2yNsr.md)
+
 ### Univest Research performance claims (92% success)  (2026-10-22)
 - **Verdict:** unverified
 - **What it is:** Adviser's own claim of 191 trades, 92% success rate and 2.85% average profit, promoted in a reel by the adviser itself.
