@@ -1,0 +1,59 @@
+language: hi (1.00)
+## English translation
+[0s] Guys, today I have brought a lot of useful things for you
+[3s] Means, Care Perva, now you will say, what is this?
+[6s] I will tell you, this is Retailers Verification Agency
+[9s] All the people, you would give recommendations that buy this, sell this
+[12s] And they would show that we have given 100% return
+[15s] We have given 20% return, now nothing will happen
+[17s] Because what is Sebi doing? Sebi has launched Risk Verification Agency Perva
+[22s] Now what is the scenario in this?
+[23s] I will tell you, what happens on Perva
+[26s] Now all the people who would give recommendations, search for this
+[29s] And now all the companies would come here, all the recommendations
+[32s] Guys, I have downloaded them, simply put it on the Cloud
+[35s] And there is a name in front, I have done some uni research
+[37s] Okay, now I have researched about uni research, I will tell you
+[40s] Now you first look at its returns
+[42s] Okay, guys, I am shocked by seeing it
+[46s] 191 trades, 92% success rate
+[49s] Okay, and look at this
+[53s] 2.85 average profit, everything is cut
+[57s] If it comes, 2.85 private profit
+[60s] Multiply and see, it is not the last 3 months, what returns are being made
+[63s] What returns are being made, they have done amazing
+[66s] Okay, and if I talk about them, look at the success rate of 100%
+[71s] I mean, their report is so great
+[73s] I have done all the research on the cloud, I had so much hard work to do
+[76s] I am downloading their app, they are giving recommendations free
+[79s] They have such a big ARA team, they are doing all this
+[81s] I don't understand how to give it free
+[84s] Bro, you go, you can see the university dot in
+[86s] And you can download the app, they are giving recommendations for free
+[89s] Grab it
+[90s] You will get well researched, equity, futures and options recommendations
+[95s] Timely entry and exit alerts
+[97s] Access to exclusive screeners
+[99s] Download the university app
+[100s] And get your trial subscription at 0 rupees
+[103s] Investments in securities market are subject to market risks
+[106s] Read all the related documents carefully before investing
+[109s] For further disclosure, visit our website
+## Original (hi)
+[0s] गईज़ आद तुम आर लिए ना मैं बहुत जाड़ काम के चील लिका हूँ
+[3s] मतब केर परवा अब तुम के अई लिए क्या आईज़
+[5s] तिक आई बही तुम आब बताताद, रिट तर्वास वेर्वेशन जजज्ज्ची आईगे
+[9s] जितने भी लोग, तुमे रिक्मटेशन देखते थे, ये बाई कर लोग, ये सलकर दो
+[12s] और वो दिखाते देखते थे, हमने 100% लिए दिए, 2% लिए दिए दिए
+[16s] अब कुछ नहीं बाईगा बाईगा बाईगी
+[18s] सेभी ने ने लिए लिए रिए चीरंची परवा लोज कर दीए, अब इसके नद भी आयरूए, तुमे बताते होँ, विपरवा पे होता गे, आब जितने भी आईगे, जो रिक्मटेशन देखते थे तुमे इसको सचकर लोग, अब यह लोग भी आईगे जीदने पी रिक्म
+[78s] organisations free the rate.
+[79s] इतने बडिन के आरे के team atne badi inki aare ke team
+[81s] ये सब कुच अगर रहा नहीं
+[82s] मधल पने को समझ नहीं आरा
+[83s] कि कह यह afir aare ke thin aare keth aare keth aare
+[84s] बआई आप जाो
+[84s] दे जाओ
+[85s] इनजदोद ये डवेखतिन तेप सकतेवो
+[86s] और आप आप आप वी ड़ा लोगर सढथा
+[88s] तो फ्रीं में रिक्वन्टेशन देरे अभी गराब कर लोग जा क्यों
