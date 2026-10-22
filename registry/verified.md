@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Code execution with MCP (Anthropic)  (2026-10-22)
+- **Verdict:** verified-with-caveats
+- **What it is:** Pattern where an agent writes code that calls MCP tools as functions in a sandbox, loading tool definitions on demand and returning only results, to cut token use.
+- **How to use / why it matters:** Expose MCP servers as a code API in a sandboxed runtime and give the agent a code-execution tool.
+- **Caveats:** Savings vary (98.7% in Anthropic's example, about 77% in one independent test); needs a safe sandbox.
+- **Evidence:** [Anthropic: Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp)
+- **Source note:** [notes/instagram/DewkicGtWcS.md](../notes/instagram/DewkicGtWcS.md)
+
 ### SEBI PaRRVA (past performance verification)  (2026-10-22)
 - **Verdict:** verified-with-caveats
 - **What it is:** SEBI-recognised verification framework (CARE Ratings with NSE) for past risk and return claims by advisers, research analysts and algo providers.

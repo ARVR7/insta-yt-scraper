@@ -27,6 +27,32 @@
     "note_path": "notes/instagram/Dewv1q7tvKg.md"
   },
   {
+    "id": "DewkicGtWcS",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DewkicGtWcS/",
+    "title": "Code Mode instead of classic MCP",
+    "author": "saurabhs.builds",
+    "posted": "2026-10-21 14:01:20+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "coding",
+    "subcategory_label": "Coding",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "mcp",
+      "cloudflare",
+      "typescript"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Same story as an earlier reel (see the Cloudflare Code Mode note): Cloudflare's Code Mode and Anthropic's code-execution-with-MCP pattern are real. Anthropic's post reports 150,000 tokens down to 2,000 (98.7%) for one example, but that is a single scenario and one independent test found about 77%. The 'companies are moving away from MCP' framing is overstated, since the code still calls MCP servers. A TL;DR and alternatives are in 'Your instruction'.",
+    "note_path": "notes/instagram/DewkicGtWcS.md"
+  },
+  {
     "id": "DewXLi2vVWR",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DewXLi2vVWR/",
