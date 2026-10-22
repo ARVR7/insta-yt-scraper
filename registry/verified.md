@@ -4,6 +4,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### NVIDIA Nemotron 3 Diarization  (2026-10-22)
+- **Verdict:** verified-with-caveats
+- **What it is:** Open-weight (~100M parameter) speaker diarization model that tracks up to 8 speakers, offline or streaming.
+- **How to use / why it matters:** Use nvidia/Nemotron-3-Diarization from Hugging Face with NVIDIA NeMo on a supported GPU, and merge its time intervals with ASR output.
+- **Caveats:** Check the licence of the exact checkpoint for commercial use; needs an NVIDIA GPU stack; speakers are anonymous.
+- **Evidence:** [Unite.AI coverage](https://www.unite.ai/nvidia-releases-nemotron-3-diarization-open-weight-speaker-model/)
+- **Source note:** [notes/instagram/Dd2HKWYzQ69.md](../notes/instagram/Dd2HKWYzQ69.md)
+
 ### claude-video watch skill (bradautomates)  (2026-10-22)
 - **Verdict:** verified-with-caveats
 - **What it is:** Open-source (MIT) skill that lets Claude Code watch a video link as timestamped frames plus a transcript, optionally using Gemini for YouTube links.

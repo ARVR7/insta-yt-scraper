@@ -1041,6 +1041,32 @@
     "note_path": "notes/instagram/Dd4PDA1xYuc.md"
   },
   {
+    "id": "Dd2HKWYzQ69",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dd2HKWYzQ69/",
+    "title": "NVIDIA Nemotron 3 Diarization explained",
+    "author": "aiwithdivyam",
+    "posted": "2026-09-28 21:08:58+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "nemotron-3-diarization",
+      "nvidia-nemo",
+      "hugging-face"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "NVIDIA's Nemotron 3 Diarization is real: a roughly 100M-parameter open-weight speaker diarization model (who spoke when) that tracks up to 8 speakers with overlapping voices, released in September 2026 under the OpenMDW licence on Hugging Face. The 'commercial use allowed' claim needs a check: one report says the preview checkpoint on Hugging Face is limited to evaluation, so read the model card licence for the version you use. It needs an NVIDIA GPU stack (NeMo on Linux).",
+    "note_path": "notes/instagram/Dd2HKWYzQ69.md"
+  },
+  {
     "id": "Dd1_GC-sJVz",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/Dd1_GC-sJVz/",
