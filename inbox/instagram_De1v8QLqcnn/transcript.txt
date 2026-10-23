@@ -1,0 +1,24 @@
+language: en (1.00)
+[0s] Someone just built an entire YouTube team inside Claude
+[3s] and made it completely free.
+[5s] It's called YouTube Aiden's skill
+[6s] and it comes with 11 different AI skills
+[9s] each handling a different part of running a YouTube channel.
+[11s] One takes your video idea
+[12s] and writes a script using 21 different hook formulas.
+[16s] Another creates titles and thumbnail concepts.
+[18s] There's one that tells you exactly what to cut from your video
+[20s] and another that drafts replies to your comments.
+[23s] It can even plan your entire week's content
+[25s] but the craziest one is the virality skill.
+[28s] It finds videos in your niche
+[29s] that performed way better than those channels usually do.
+[32s] Then it analyzes their titles, hooks, and formats
+[35s] to help you create a similar concept
+[36s] for your own audience in your own voice.
+[38s] There's even a retention skill
+[40s] that shows exactly where people stopped watching your videos.
+[42s] You still have to record, edit, and upload yourself
+[45s] but Claude can handle a huge part of the planning.
+[47s] To get all 11 skills and the setup guide,
+[49s] follow Bid With AI and comment YouTube.

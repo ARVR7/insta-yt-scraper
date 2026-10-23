@@ -1,0 +1,96 @@
+[0s] YouTube team
+[0s] YouTube
+[3s] Claude
+[3s] FREE
+[3s] MIT·no signup·noAPI key
+[6s] / youtube-agent-skill
+[6s] 11skills
+[9s] / youtube-agent-skil
+[9s] Viral
+[9s] Audit
+[9s] Plan
+[9s] Retention
+[9s] Script
+[9s] Comment
+[9s] Package
+[9s] Edit
+[9s] Chapters
+[9s] Shorts
+[12s] 目 /yt-script
+[12s] EXAMPLE
+[12s] Your idea
+[12s] HOOK
+[12s] 20 hook formulas
+[12s] On screen
+[12s] The Origin
+[12s] TheDeadline
+[12s] The Direct Address
+[12s] The Statistic
+[12s] Someone Else's Result
+[12s] using
+[15s] /yt-package
+[15s] TITLEOPTIONS
+[15s] titles
+[18s] % /yt-edit
+[18s] EDITDECISION LIST
+[18s] Deadair
+[18s] Filler
+[18s] Retake
+[18s] to cut
+[21s] /yt-comment
+[21s] Questions
+[21s] Corrections
+[21s] Praise
+[21s] Bait
+[21s] x No reply
+[21s] comments.
+[24s] This week
+[24s] Sized tothe hours you actually have
+[24s] Day1
+[24s] Day2
+[24s] Day3
+[24s] Day4
+[24s] Day5
+[24s] Day6
+[24s] Day7
+[24s] Anchor
+[24s] Short
+[24s] Cheap one
+[24s] the craziest
+[27s] /yt-viral
+[27s] EXAMPLE·FROMTHESETUPGUIDE
+[27s] videos
+[30s] 100Kviews
+[30s] YOUR NICHE
+[30s] ChannelAusually1oKviews
+[30s] 1M·about its usual
+[30s] Channel Busuallymillions
+[30s] 1block=thatchannel'susual views
+[30s] Rankedbyhowfareachbeatitsown channel,
+[30s] not by channel size
+[33s] TITLE
+[33s] HOOKFORMULA
+[33s] FORMAT
+[33s] Channel A·10ok views
+[33s] The formula is a read of the title'swords,
+[33s] not a claim aboutwhy thevideogotitsviews
+[33s] formats
+[36s] YOURVIDEO
+[36s] Same format
+[36s] 8 Your audience
+[39s] /yt-retention
+[39s] AUDIENCE RETENTION
+[39s] Retention export· CsV
+[39s] Hook·first30s
+[39s] Peoplelefthere
+[39s] What youwere saying
+[39s] Video time→
+[39s] exactly
+[42s] Record
+[42s] Edlit
+[45s] Planning·Claude
+[45s] Upload
+[45s] "These skills write.You upload."·README
+[45s] of the
+[48s] buildwithai.club
+[48s] Follew
