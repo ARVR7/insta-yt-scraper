@@ -271,6 +271,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### 100 AI videos a week for 25 dollars  (2026-10-23)
+- **Verdict:** unverified
+- **What it is:** Claude + ChatGPT free + Google AI Plus stack for about 100 videos a week
+- **Why pending:** Based on the creator's own usage numbers; sources disagree on Omni limits
+- **To resolve:** Test the real quota on your own AI Plus account
+- **Source note:** [notes/instagram/De0sKBEz_6w.md](../notes/instagram/De0sKBEz_6w.md)
+
 ### VoiceLink Indian number for Rs 9  (2026-10-23)
 - **Verdict:** unverified
 - **What it is:** Reel says an Indian mobile number with 3 channels costs Rs 9 on VoiceLink
