@@ -1,0 +1,88 @@
+[0s] TODAYSSTARTUPRECIPE
+[0s] IIElevenLabs
+[0s] VOICE
+[0s] harkoi ElevenLabs
+[3s] IElevenLabs
+[3s] humnebana diya
+[6s] socha hai ki
+[9s] INCOMING CALL
+[9s] +9194XXXXXXXX
+[9s] Al Voice Agent
+[9s] Decline
+[9s] Accept
+[9s] call aa raha
+[12s] THESE INDIAN NUMBERS
+[12s] WHEREFROM?
+[12s] kya koi unke
+[15s] isliye main tumhe
+[18s] COMMUNICATIONS PLATFORM AS A SERVICE
+[18s] CPAAS
+[18s] jaise ki VoiceLink
+[18s] OAATMI
+[21s] VOICELINK.CO.IN
+[21s] Indian Number is Must!
+[21s] Enterprise Customer Facing NumbersforVoicebots
+[21s] Implementation via SIP&WebSocket
+[21s] Mobile Series
+[21s] Landine Series
+[21s] Promotional Series
+[21s] Transactional Series
+[21s] XXXXXXXXX6
+[21s] 079XXXXXXX
+[21s] 140XXXXXXX
+[21s] 1600XXXXXX
+[21s] Standard 10-dgitmoblenumers for
+[21s] City-speciic landinenambers for regional
+[21s] TRAI-comoliantpromoonal numbers for
+[21s] Dedicated tansactional numbersfor OTP,
+[21s] natalcnverational Alinteractins
+[21s] Integrated with50+Leading VoicebotProviders
+[21s] Indian mobile
+[24s] se connect karta
+[27s] GUESSTHEPRICE
+[27s] INDIANMOBILENUMBER
+[27s] Hazaar rupaye 500
+[30s] ONVOICELINK
+[30s] ONLY
+[30s] VoiceLink pe sirf
+[33s] ON VOICELINK ·ONLY
+[33s] Itne saste mein
+[36s] VOICELINK DASHBOARD·KYC
+[36s] itna aasaan hai
+[39s] YOUR AI AGENT
+[39s] LLM + Voice
+[39s] WebSocket
+[39s] VoiceLink
+[42s] CALL AUDIO QUALITY
+[42s] na wo 8
+[45s] 8 kHz
+[45s] NORMAL PHONE CALL
+[45s] Keeps sound up to 4kHz→muffled
+[45s] 16 kHz
+[45s] VOICELINK HD AUDIO
+[45s] Up to 8kHz→crisp s,f,th sounds
+[45s] Toh awaaz kaafi
+[48s] HOW THE AI HEARS YOU
+[48s] Aa STT
+[48s] CLEAR VOICE
+[48s] SPEECH→TEXT
+[48s] TRANSCRIPT
+[48s] Mujhe ek Indian
+[48s] number
+[48s] chahiye
+[48s] jo words hai
+[51s] aur user ka
+[54s] INTEGRATED WITH
+[54s] VAPI· RETELL AI
+[54s] ELEVENLABS·LIVEKIT
+[54s] Al voice platform
+[57s] gayi aur tumhe
+[60s] THOUSANDS OF CALLS?
+[60s] SCALABLE
+[60s] aur Indian telecd
+[63s] tumne bhi kabhi
+[66s] toh kuch bhi?
+[69s] COMMENT ANYTHING
+[69s] LINK
+[69s] +COMPLETE SETUP GUIDE
+[69s] dunga
