@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Voice bots get Indian numbers via CPaaS over SIP/WebSocket  (2026-10-23)
+- **Verdict:** verified
+- **What it is:** Indian telephony providers such as VoiceLink connect voice AI platforms to Indian numbers using SIP or WebSocket
+- **Why it is verified:** Matches provider listings and integration lists
+- **Source note:** [notes/instagram/De12Kb6P4wG.md](../notes/instagram/De12Kb6P4wG.md)
+
 ### Qwen-Image-2.1 uncensored text encoder GGUF  (2026-10-23)
 - **Verdict:** partly-verified
 - **What it is:** Community refusal-ablated text encoder for Qwen-Image-2.1 runs in ComfyUI (4.68 GB Q4_K_M)
@@ -264,6 +270,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### VoiceLink Indian number for Rs 9  (2026-10-23)
+- **Verdict:** unverified
+- **What it is:** Reel says an Indian mobile number with 3 channels costs Rs 9 on VoiceLink
+- **Why pending:** No public pricing found; listings say quote-based
+- **To resolve:** Check voicelink.co.in or ask for a quote and what the Rs 9 covers
+- **Source note:** [notes/instagram/De12Kb6P4wG.md](../notes/instagram/De12Kb6P4wG.md)
 
 ### Nano Banana 2 open sourced and uncensored  (2026-10-23)
 - **Verdict:** unverified

@@ -1,5 +1,32 @@
 [
   {
+    "id": "De12Kb6P4wG",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De12Kb6P4wG/",
+    "title": "VoiceLink Indian numbers for AI voice agents",
+    "author": "aiwithdivyam",
+    "posted": "2026-10-23 15:16:48+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "automation",
+    "subcategory_label": "Automation",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "VoiceLink",
+      "ElevenLabs",
+      "WebSocket",
+      "SIP"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "AI voice agents calling from Indian numbers usually run on a CPaaS/telephony provider. The creator pitches VoiceLink: a real Indian mobile number plus 3 channels for Rs 9, eKYC, SIP or WebSocket hookup, go live in about 5 minutes, 16 kHz audio instead of 8 kHz narrowband. Comment-for-link funnel, likely promotional.",
+    "note_path": "notes/instagram/De12Kb6P4wG.md"
+  },
+  {
     "id": "De0Aoqixw-y",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De0Aoqixw-y/",
