@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### September 2026 US CPI 3.7% vs 3.6% expected  (2026-10-23)
+- **Verdict:** verified
+- **What it is:** Hot CPI print with energy as main driver; dollar up, stocks, gold and crypto down
+- **Why it is verified:** Consistent across several secondary reports
+- **Source note:** [notes/instagram/DesWw43N0he.md](../notes/instagram/DesWw43N0he.md)
+
 ### Voice bots get Indian numbers via CPaaS over SIP/WebSocket  (2026-10-23)
 - **Verdict:** verified
 - **What it is:** Indian telephony providers such as VoiceLink connect voice AI platforms to Indian numbers using SIP or WebSocket
