@@ -259,6 +259,14 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Auto-clipping viral YouTube videos with Ssemble  (2026-10-23)
+- **Verdict:** unverified
+- **What it is:** Demo of pasting a viral YouTube video link into an AI clipper and scheduling the generated short to your own account.
+- **Why pending:** The workflow is shown working, but the reel ignores permission and copyright for the source video, and no results or earnings are shown.
+- **To resolve:** The rights holder's permission or a paid clipping campaign's terms for each source.
+- **Evidence:** [YouTube channel monetization policies (reused content)](https://support.google.com/youtube/answer/1311392?hl=en)
+- **Source note:** [notes/instagram/De0Aoqixw-y.md](../notes/instagram/De0Aoqixw-y.md)
+
 ### 100 faceless YouTube niches in 2026  (2026-10-22)
 - **Verdict:** unverified
 - **What it is:** A carousel claiming to list 100 niches for faceless YouTube channels.
