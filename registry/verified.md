@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### youtube-agent-skill: 11 free Claude skills for YouTube  (2026-10-23)
+- **Verdict:** verified
+- **What it is:** MIT-licensed repo with eleven Claude skills for scripts, packaging, editing, comments, planning, viral research and retention
+- **Why it is verified:** Repo found at github.com/Jakeschincariol/youtube-agent-skill; matches the reel's description
+- **Source note:** [notes/instagram/De1v8QLqcnn.md](../notes/instagram/De1v8QLqcnn.md)
+
 ### September 2026 US CPI 3.7% vs 3.6% expected  (2026-10-23)
 - **Verdict:** verified
 - **What it is:** Hot CPI print with energy as main driver; dollar up, stocks, gold and crypto down

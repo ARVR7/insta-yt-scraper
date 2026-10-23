@@ -27,6 +27,32 @@
     "note_path": "notes/instagram/De12Kb6P4wG.md"
   },
   {
+    "id": "De1v8QLqcnn",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De1v8QLqcnn/",
+    "title": "YouTube Agent Skill for Claude",
+    "author": "buildwithai.club",
+    "posted": "2026-10-23 14:16:56+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude",
+      "Claude Code",
+      "youtube-agent-skill"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Open-source pack of 11 Claude skills for running a YouTube channel (scripts from 21 hook formulas, titles and thumbnails, edit decision list, comment replies, weekly plan, virality finder, retention reader, Shorts). Repo: https://github.com/Jakeschincariol/youtube-agent-skill (MIT).",
+    "note_path": "notes/instagram/De1v8QLqcnn.md"
+  },
+  {
     "id": "De0sKBEz_6w",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De0sKBEz_6w/",
