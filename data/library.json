@@ -1213,6 +1213,32 @@
     "note_path": "notes/instagram/DdoVuGLR0BP.md"
   },
   {
+    "id": "DdmtlwqBPJ-",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DdmtlwqBPJ-/",
+    "title": "Uncensored Qwen Image 2.1 on a laptop",
+    "author": "wassimyounes_",
+    "posted": "2026-09-22 21:35:22+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Qwen-Image-2.1",
+      "ComfyUI",
+      "GGUF"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Creator says Nano Banana 2 went open source and uncensored, and that Qwen Image 2.1 beats it and runs in about 5 GB. What the screenshots actually show: Qwen-Image-2.1 open weights, plus a community refusal-ablated ('Heretic') text encoder in GGUF (Q4_K_M, 4.68 GB) for ComfyUI. Nano Banana 2 is not open source.",
+    "note_path": "notes/instagram/DdmtlwqBPJ-.md"
+  },
+  {
     "id": "DdgmWeIt1AE",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DdgmWeIt1AE/",

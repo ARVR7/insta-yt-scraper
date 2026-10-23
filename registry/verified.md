@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Qwen-Image-2.1 uncensored text encoder GGUF  (2026-10-23)
+- **Verdict:** partly-verified
+- **What it is:** Community refusal-ablated text encoder for Qwen-Image-2.1 runs in ComfyUI (4.68 GB Q4_K_M)
+- **Why it is partly-verified:** Reported by secondary sources; repo not opened directly
+- **Source note:** [notes/instagram/DdmtlwqBPJ-.md](../notes/instagram/DdmtlwqBPJ-.md)
+
 ### Harness2 (google-research)  (2026-10-22)
 - **Verdict:** verified-with-caveats
 - **What it is:** Open-source (Apache 2.0) framework from Google Cloud AI Research that has a stronger model rewrite an agent's prompts, guardrails, memory and scripts without retraining it.
@@ -258,6 +264,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Nano Banana 2 open sourced and uncensored  (2026-10-23)
+- **Verdict:** unverified
+- **What it is:** Reel headline says Nano Banana 2 went open source
+- **Why pending:** Sources shown are about Qwen-Image-2.1; Nano Banana is a hosted Google model
+- **To resolve:** Check Google's announcements; none found
+- **Source note:** [notes/instagram/DdmtlwqBPJ-.md](../notes/instagram/DdmtlwqBPJ-.md)
 
 ### Auto-clipping viral YouTube videos with Ssemble  (2026-10-23)
 - **Verdict:** unverified
