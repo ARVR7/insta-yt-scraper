@@ -1,0 +1,20 @@
+language: en (1.00)
+[0s] Oh, sorry, I was taking a nap.
+[3s] How's AI content form?
+[4s] How are the girls?
+[5s] You've generated 500 AI baddies
+[8s] posting 20 videos a day each.
+[10s] Better than yesterday.
+[11s] If you don't want to show your face,
+[12s] but you still want to blow up on social media
+[14s] and you want an AI content form to do the work for you,
+[16s] you've probably already used it.
+[18s] It'll take like two minutes to set up.
+[19s] Go to cloud, customize, then go to connectors,
+[21s] and press add connective.
+[22s] Then go to openart.ai slashmcp and press copy link.
+[26s] Then paste the link you're in called content slid.
+[28s] Because that's exactly what it is.
+[29s] You just prompt cloud and say, make me 500 ads with pretty girls.
+[32s] I just sit back and the girls would get you used
+[34s] without you having to show your face.
