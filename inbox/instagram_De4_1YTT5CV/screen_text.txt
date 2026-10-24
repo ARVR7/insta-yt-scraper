@@ -1,0 +1,115 @@
+[0s] your app is
+[0s] "HACKABLE"
+[0s] Al vibe coded applications
+[3s] COMMON ATTACKS
+[3s] VULNERABILITIES
+[3s] my-vibe-app.dev
+[3s] VIBE-CODEDAPP
+[3s] Shipped
+[3s] jaise ki
+[6s] 01 JWTattack
+[6s] HIGH
+[6s] Remote code execution
+[6s] CRITICAL
+[6s] JWT attack
+[6s] 03 XSS
+[6s] HEDIUN
+[9s] ship karne ki
+[12s] dena log bhool jaate
+[15s] OPEN SOURCE ·GITHUB
+[15s] ThisGitHubrepo
+[15s] Enterprise ·Pricing
+[15s] ource
+[15s] Projects
+[15s] Securityandquality
+[15s] Insights
+[15s] Noti
+[15s] Go to file
+[15s] Code
+[15s] s,not the word
+[15s] dc40345·1hourago
+[15s] 949Commits
+[15s] s):enforce a 5-day release cooldown for uv and ..
+[15s] 3 days ago
+[15s] EADMEwith full details section
+[15s] 9 months ago
+[15s] http, graphql-core,vite and trufflehog past know...
+[15s] 2 days ago
+[15s] is pe already 65,000
+[18s] OPEN-SOURCE REPO·README
+[18s] die autonoinous Aipenetiaton lesting agents that act just like real hackers-they rur
+[18s] findvulnerabilities,andvalidate them through actual proofs-of-concept.Builtfordevelope
+[18s] whoneedfast,accuratesecuritytestingwithouttheoverheadofmanualpentestingorthe
+[18s] analysistools.
+[18s] KeyCapabilities:
+[18s] Fullpentestingtoolkit-reconnaissance,exploitation,andvalidationoutofthebox
+[18s] Multi-agentorchestration-teams ofAl pentesters that collaborate and scale
+[18s] Realexploitvalidation-workingPoCs,notfalsepositiveslikelegacyvulnerabilitysca
+[18s] Developer-firstCLI-actionable findingswithremediationguidance
+[18s] ·Auto-fix&reporting-generatepatches and compliance-readypentestreports
+[18s] Al agents that attacks
+[21s] Overview
+[21s] are autonomous Al penetration testing agents that act just likereal hackers-they
+[21s] findvulnerabilities,andvalidate them through actual proofs-of-concept.Builtfordevel
+[21s] whoneedfast,accuratesecuritytestingwithouttheoverhead ofmanual pentestingor
+[21s] Fullpentesting toolkit-reconnaissance,exploitation,andvalidationoutof thebo
+[21s] ·Realexploitvalidation-workingPoCs,notfalsepositiveslikelegacyvulnerability
+[21s] Autn-fiy&renortina-aeneratenatchesandcomnliance-readvnentestrenorts
+[21s] vulnerabilityproveseach
+[24s] abgca
+[24s] Toh ye tumhe koi
+[27s] README.TIP
+[27s] integratesseamlesslywith GitHubActions and Cl/CDpipelines.Automaticallyscan for
+[27s] ilitieson everypull request andblock insecure codebefore it reachesproduction-Getstarted
+[27s] quired.
+[27s] /erview
+[27s] abilities,andvalidatethemthrough actualproofs-of-concept.Builtfordevelopers andsecurityt
+[27s] ast,accuratesecuritytestingwithouttheoverheadofmanualpentestingorthefalsepositiveso
+[27s] abgc2
+[27s] jo bhi tum use
+[30s] EVERYPULLREQUEST
+[30s] feat:add login APl #214
+[30s] wants to merge into main
+[30s] const email = req.body.email;
+[30s] const q=SELECT * FROM users WHERE email='${emaiL}'；
+[30s] 43 + await db.query(q);
+[30s] build
+[30s] passed
+[30s] tests
+[30s] ai-pentest / security-scan
+[30s] queued
+[30s] Merge pull request
+[30s] har pull request pe
+[33s] Ab ye
+[36s] WAYSTORUNIT
+[36s] Ways to Run
+[36s] OpenSource
+[36s] free,runslocallywithDockerandyourownLLMkey.QuickStart
+[36s] Cloud-nosetup,validatedfindings,one-clickautofix,andPRreviews.Run
+[36s] Enterprise-sO,compliance-readyreports,VPCorself-hosted deployment.Tr
+[36s] Cloud
+[36s] Try the
+[36s] full-stackpenetration testing platform at app.
+[36s] ai-sign up for free,c
+[36s] domains,and launch a pentest in minutes.
+[36s] Validated findinaswithPoCs-evervvulnerabilitv includesaworkinanroof-of-r
+[36s] tumheDockersechalana
+[39s] abgce
+[39s] OpenSource-free,runslocallywithDockerandyourownLLMkey.Quick
+[39s] nosetup,validatedfindings,one-clickautofix,andPRreviews
+[39s] Enterprise-SsO,compliance-readyreports,VPCorself-hosteddeployme
+[39s] ai-sign up forf
+[39s] Validated findinaswithPoCs-evervvulnerabilitv includesaworkina nror
+[39s] jismein tumhe zyada setup
+[42s] OpenSource-free,runslocallywithDockerandyourownLLMkey.QuickStart
+[42s] Cloudosetup,validated findings,ne-clickautofix,andreviews.Runa
+[42s] Enterprise
+[42s] SSO,compliance-ready reports,VPC or self-hosted deployment.Try
+[42s] .ai-signup forfree,connt
+[42s] Validated findingswithPoCs-everyvulnerability includesa workingproof-of-conce
+[42s] jismeinssocomplianceaur
+[45s] YEREVAN
+[45s] Jao aur apni vibe
+[48s] COMMENT ANYTHING
+[48s] LINK+SETUPGUIDE
+[48s] iska link aur setup
