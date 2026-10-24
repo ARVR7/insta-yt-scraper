@@ -1,0 +1,18 @@
+language: en (1.00)
+[0s] Would you recommend Hicksville Open AI?
+[2s] No need.
+[3s] No need.
+[4s] Once you've got Kai, KIE, don't need Hicksville, you're not even going to, there's not even you
+[10s] logging into an app to create images or video.
+[14s] That is a thing is not even going to be a thing.
+[16s] I go to cloud for all my images and videos using Kai as the API.
+[21s] Because then you can cancel Hicksville, free pick, open art, whatever you're using.
+[27s] But the goal I want you guys to learn is ask for the API.
+[31s] You should be asking every website, does this have an API?
+[34s] And if it doesn't have an API, you cancel that.
+[37s] You cancel that monthly subscription, don't buy the annual and then every like, why did you
+[41s] cancel it?
+[42s] Like, you don't have an API.
+[43s] You're like, why is that important?
+[44s] And you're like, because that means me or some other human being has a log in this app and
+[49s] manage it forever.
