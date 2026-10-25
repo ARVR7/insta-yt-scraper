@@ -1194,6 +1194,35 @@
     "note_path": "notes/instagram/DeCH_lVqG-k.md"
   },
   {
+    "id": "DeB_xCxDT_F",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/DeB_xCxDT_F/",
+    "title": "awesome-freellm-apis free LLM directory",
+    "author": "fullstackparody",
+    "posted": "2026-10-03 11:52:57+00:00",
+    "type": "post",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "awesome-freellm-apis",
+      "NVIDIA NIM",
+      "Gemini",
+      "Groq",
+      "Cloudflare",
+      "OpenRouter"
+    ],
+    "usefulness": "mixed",
+    "verdict": "pending",
+    "key_info": "Caption promotes a GitHub list called awesome-freellm-apis: 452+ free LLM APIs from 31 providers with base URL, model ID and config, one-click setup for Claude Code, Cursor, Codex and Aider, MIT. The slides themselves could not be read, so the specific items listed in them were not extracted or checked.",
+    "note_path": "notes/instagram/DeB_xCxDT_F.md"
+  },
+  {
     "id": "Dd4PDA1xYuc",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/Dd4PDA1xYuc/",

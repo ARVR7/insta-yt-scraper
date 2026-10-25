@@ -289,6 +289,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### awesome-freellm-apis 452 free LLM APIs from 31 providers  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Instagram post claims a directory of 452+ free LLM APIs from 31 providers
+- **Why pending:** Forks report 134+ and 537+ with different provider counts; slides unreadable
+- **To resolve:** Open the source repo README and count, or send slide screenshots
+- **Source note:** [notes/instagram/DeB_xCxDT_F.md](../notes/instagram/DeB_xCxDT_F.md)
+
 ### AI content farm earnings via OpenArt MCP  (2026-10-25)
 - **Verdict:** unverified
 - **What it is:** Reel implies hundreds of AI videos a day made with Claude and OpenArt earn revenue
