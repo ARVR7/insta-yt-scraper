@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Colibri runs 744B MoE model on a laptop via disk streaming  (2026-10-25)
+- **Verdict:** partly-verified
+- **What it is:** Pure-C engine streams GLM-5.2 expert weights from disk so it runs with about 25GB RAM and no GPU
+- **Why it is partly-verified:** Matches repo and write-ups; speed very low
+- **Source note:** [notes/instagram/DehErZxDfkE.md](../notes/instagram/DehErZxDfkE.md)
+
 ### Strix: open-source AI pentest agents with PoC validation and CI  (2026-10-25)
 - **Verdict:** verified
 - **What it is:** Autonomous AI agents that attack an app, validate findings with working exploits and block risky pull requests in CI
@@ -294,6 +300,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Colibri 40K GitHub stars and usable speed  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Post claims 40K+ stars
+- **Why pending:** Another source says about 14.7K; speed claims conflict (0.05 vs 5 tok/s)
+- **To resolve:** Check the live repo and benchmark
+- **Source note:** [notes/instagram/DehErZxDfkE.md](../notes/instagram/DehErZxDfkE.md)
 
 ### Make 1000 dollars fast by AI-clipping viral podcasts  (2026-10-25)
 - **Verdict:** unverified

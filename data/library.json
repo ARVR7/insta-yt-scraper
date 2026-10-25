@@ -925,6 +925,32 @@
     "note_path": "notes/instagram/Dek6wBjJgnA.md"
   },
   {
+    "id": "DehErZxDfkE",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/DehErZxDfkE/",
+    "title": "Colibri runs 744B model without a GPU",
+    "author": "bestapps.ai",
+    "posted": "2026-10-15 13:32:20+00:00",
+    "type": "post",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Colibri",
+      "GLM-5.2",
+      "llama-style local inference"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Caption says a 744B model runs on a laptop with no graphics card: only about 11GB of the mixture-of-experts model is active at once, Colibri keeps that in RAM and streams the rest from disk, with one setup script, offline use or a local API endpoint, and a '40K+ stars' repo. Free 'Offline AI Kit' is gated behind commenting GPU.",
+    "note_path": "notes/instagram/DehErZxDfkE.md"
+  },
+  {
     "id": "DegUW7YG_O1",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/DegUW7YG_O1/",
