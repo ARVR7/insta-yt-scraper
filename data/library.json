@@ -1,5 +1,31 @@
 [
   {
+    "id": "De4_1YTT5CV",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De4_1YTT5CV/",
+    "title": "Strix AI pentest agents for vibe coded apps",
+    "author": "aiwithdivyam",
+    "posted": "2026-10-24 20:33:45+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "security",
+    "subcategory_label": "Security",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Strix",
+      "GitHub Actions",
+      "LLM API"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Pitch: AI-coded apps ship with JWT, RCE, XSS, auth bypass and SQL injection bugs, so run an open-source team of AI pentest agents that attacks your app, proves each bug with a working exploit, suggests a fix and blocks risky pull requests in CI. Three options: open source (bring your own LLM API), cloud, enterprise (SSO, compliance, self-hosted/VPC). The repo is not named in the reel; it matches Strix (usestrix/strix, Apache-2.0).",
+    "note_path": "notes/instagram/De4_1YTT5CV.md"
+  },
+  {
     "id": "De4rnuLEWb_",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De4rnuLEWb_/",

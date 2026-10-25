@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Strix: open-source AI pentest agents with PoC validation and CI  (2026-10-25)
+- **Verdict:** verified
+- **What it is:** Autonomous AI agents that attack an app, validate findings with working exploits and block risky pull requests in CI
+- **Why it is verified:** Matches Strix README and reviews
+- **Source note:** [notes/instagram/De4_1YTT5CV.md](../notes/instagram/De4_1YTT5CV.md)
+
 ### OpenArt MCP connector works with Claude  (2026-10-25)
 - **Verdict:** verified
 - **What it is:** OpenArt provides an MCP server (mcp.openart.ai/mcp) usable as a Claude custom connector for image and video generation
@@ -288,6 +294,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Strix 65,000 GitHub stars  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Reel says the repo has 65k stars
+- **Why pending:** Reviews report 33k to 42k
+- **To resolve:** Check the live repo
+- **Source note:** [notes/instagram/De4_1YTT5CV.md](../notes/instagram/De4_1YTT5CV.md)
 
 ### awesome-freellm-apis 452 free LLM APIs from 31 providers  (2026-10-25)
 - **Verdict:** unverified
