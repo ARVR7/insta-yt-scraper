@@ -301,6 +301,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Higgsfield, Freepik and OpenArt have no API  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Creator cancelled them because they lack an API
+- **Why pending:** OpenArt has an MCP connector; Higgsfield is reported to offer MCP/CLI only; Freepik not checked
+- **To resolve:** Check each provider's developer docs
+- **Source note:** [notes/instagram/DecpuNXDoYj.md](../notes/instagram/DecpuNXDoYj.md)
+
 ### Colibri 40K GitHub stars and usable speed  (2026-10-25)
 - **Verdict:** unverified
 - **What it is:** Post claims 40K+ stars

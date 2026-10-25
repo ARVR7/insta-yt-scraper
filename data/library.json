@@ -1047,6 +1047,35 @@
     "note_path": "notes/instagram/DedHV-3lel2.md"
   },
   {
+    "id": "DecpuNXDoYj",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DecpuNXDoYj/",
+    "title": "Cancel AI subscriptions that have no API",
+    "author": "imjonathanacuna",
+    "posted": "2026-10-13 20:20:14+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Kling",
+      "Kie.ai",
+      "Higgsfield",
+      "Freepik",
+      "OpenArt",
+      "Claude"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Creator says he cancelled Higgsfield, Freepik and OpenArt and now generates images and video with Kling through a pay-per-use API (heard as 'Kai/KIE', probably Kie.ai) driven from Claude. His rule: ask every AI tool whether it has an API, cancel the monthly plan if not, and never buy the annual plan first.",
+    "note_path": "notes/instagram/DecpuNXDoYj.md"
+  },
+  {
     "id": "DeVyGbyJGcl",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/DeVyGbyJGcl/",
