@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Oracle Always Free ARM server with 12GB RAM  (2026-10-25)
+- **Verdict:** verified
+- **What it is:** Always Free Arm Ampere A1 allowance of 2 OCPU and 12GB memory, reduced from 4 OCPU and 24GB
+- **Why it is verified:** Oracle documentation and news reports; cut date disputed
+- **Source note:** [notes/instagram/De4Lndsh9UB.md](../notes/instagram/De4Lndsh9UB.md)
+
 ### Amazon KDP requires disclosure of AI-generated content  (2026-10-25)
 - **Verdict:** verified
 - **What it is:** Publishers must tell Amazon about AI-generated text, covers and interior images; AI-assisted needs no disclosure
@@ -306,6 +312,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Oracle free tier 10TB monthly outbound bandwidth  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Caption claims 10TB monthly outbound data
+- **Why pending:** Not found in sources checked
+- **To resolve:** Check Oracle's Always Free Resources page
+- **Source note:** [notes/instagram/De4Lndsh9UB.md](../notes/instagram/De4Lndsh9UB.md)
 
 ### Faceless USA channel earns about 2,900 dollars a month  (2026-10-25)
 - **Verdict:** unverified

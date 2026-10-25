@@ -101,6 +101,31 @@
     "note_path": "notes/instagram/De4rnuLEWb_.md"
   },
   {
+    "id": "De4Lndsh9UB",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De4Lndsh9UB/",
+    "title": "Oracle Cloud Always Free 12GB ARM server",
+    "author": "theautomationguy.ai",
+    "posted": "2026-10-24 12:56:53+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "coding",
+    "subcategory_label": "Coding",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Oracle Cloud Free Tier",
+      "OpenClaw"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Caption says Oracle Cloud's Always Free tier gives up to 12GB RAM on an ARM server, 200GB block storage, 10TB monthly outbound bandwidth and 2 free databases, plus a 300 dollar trial credit for up to 30 days, to host AI agents and automations; it warns ARM capacity can be limited. Audio could not be analysed, so only the caption and on-screen card were read.",
+    "note_path": "notes/instagram/De4Lndsh9UB.md"
+  },
+  {
     "id": "De4LWBAPeeI",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De4LWBAPeeI/",
