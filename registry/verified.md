@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Amazon KDP requires disclosure of AI-generated content  (2026-10-25)
+- **Verdict:** verified
+- **What it is:** Publishers must tell Amazon about AI-generated text, covers and interior images; AI-assisted needs no disclosure
+- **Why it is verified:** Reported across KDP policy coverage
+- **Source note:** [notes/instagram/De5Q_FgjpZN.md](../notes/instagram/De5Q_FgjpZN.md)
+
 ### Colibri runs 744B MoE model on a laptop via disk streaming  (2026-10-25)
 - **Verdict:** partly-verified
 - **What it is:** Pure-C engine streams GLM-5.2 expert weights from disk so it runs with about 25GB RAM and no GPU
@@ -300,6 +306,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### AI coloring books on KDP as easy side hustle  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Reel says generating coloring books with AI and publishing on Amazon KDP is easy money
+- **Why pending:** Single bestseller as proof; disclosure and copyright issues not mentioned
+- **To resolve:** Check KDP AI disclosure and low-content rules and real royalty data
+- **Source note:** [notes/instagram/De5Q_FgjpZN.md](../notes/instagram/De5Q_FgjpZN.md)
 
 ### AI clipping business earning 10 to 20 lakh from podcast clips  (2026-10-25)
 - **Verdict:** unverified
