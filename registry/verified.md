@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### OpenArt MCP connector works with Claude  (2026-10-25)
+- **Verdict:** verified
+- **What it is:** OpenArt provides an MCP server (mcp.openart.ai/mcp) usable as a Claude custom connector for image and video generation
+- **Why it is verified:** Vendor documentation describes the setup
+- **Source note:** [notes/instagram/De4rnuLEWb_.md](../notes/instagram/De4rnuLEWb_.md)
+
 ### youtube-agent-skill: 11 free Claude skills for YouTube  (2026-10-23)
 - **Verdict:** verified
 - **What it is:** MIT-licensed repo with eleven Claude skills for scripts, packaging, editing, comments, planning, viral research and retention
@@ -282,6 +288,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### AI content farm earnings via OpenArt MCP  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Reel implies hundreds of AI videos a day made with Claude and OpenArt earn revenue
+- **Why pending:** Dashboard unsourced; platform policies target mass-produced content
+- **To resolve:** Check YouTube YPP policy and real creator payouts
+- **Source note:** [notes/instagram/De4rnuLEWb_.md](../notes/instagram/De4rnuLEWb_.md)
 
 ### 100 AI videos a week for 25 dollars  (2026-10-23)
 - **Verdict:** unverified

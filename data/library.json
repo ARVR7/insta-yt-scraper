@@ -1,5 +1,31 @@
 [
   {
+    "id": "De4rnuLEWb_",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De4rnuLEWb_/",
+    "title": "OpenArt MCP for Claude AI content farm",
+    "author": "alexhustleshard",
+    "posted": "2026-10-24 17:35:52+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "OpenArt",
+      "Claude",
+      "MCP"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Setup shown: in Claude go to Customize, Connectors, Add connector, paste the OpenArt MCP URL (openart.ai/mcp, server https://mcp.openart.ai/mcp), then prompt Claude to generate images and videos. The framing is an AI content farm of 'AI baddies' posting 20 videos a day without showing a face, with a revenue dashboard as bait.",
+    "note_path": "notes/instagram/De4rnuLEWb_.md"
+  },
+  {
     "id": "De12Kb6P4wG",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De12Kb6P4wG/",
