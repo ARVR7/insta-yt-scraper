@@ -301,6 +301,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### AI clipping business earning 10 to 20 lakh from podcast clips  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Reel claims podcast teams pay 10 to 20 lakh for clipping, and ScaleReach lets you do it
+- **Why pending:** No source; only a 40.59 dollar payout shown
+- **To resolve:** Look for real campaign payout data and clipping permissions
+- **Source note:** [notes/instagram/De4LWBAPeeI.md](../notes/instagram/De4LWBAPeeI.md)
+
 ### Higgsfield, Freepik and OpenArt have no API  (2026-10-25)
 - **Verdict:** unverified
 - **What it is:** Creator cancelled them because they lack an API
