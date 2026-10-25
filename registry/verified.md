@@ -295,6 +295,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Make 1000 dollars fast by AI-clipping viral podcasts  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Reel claims pasting a viral podcast URL into an AI clipper and reposting clips earns monetization income
+- **Why pending:** No earnings shown; reposting others' content risks copyright and reused-content rules
+- **To resolve:** Check YouTube's reused-content policy and the source's clipping permissions
+- **Source note:** [notes/instagram/De5C72nPV5Y.md](../notes/instagram/De5C72nPV5Y.md)
+
 ### Strix 65,000 GitHub stars  (2026-10-25)
 - **Verdict:** unverified
 - **What it is:** Reel says the repo has 65k stars
