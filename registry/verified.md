@@ -307,6 +307,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Faceless USA channel earns about 2,900 dollars a month  (2026-10-25)
+- **Verdict:** unverified
+- **What it is:** Creator shows a Studio screenshot and says following his roadmap earns thousands per month
+- **Why pending:** Screenshot unverifiable; stated figures conflict; comment-bait funnel
+- **To resolve:** Ask for the channel link and check public view counts
+- **Source note:** [notes/instagram/De4JTo0h0fr.md](../notes/instagram/De4JTo0h0fr.md)
+
 ### AI coloring books on KDP as easy side hustle  (2026-10-25)
 - **Verdict:** unverified
 - **What it is:** Reel says generating coloring books with AI and publishing on Amazon KDP is easy money
