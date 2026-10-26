@@ -325,6 +325,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Free 37-minute Anthropic engineers agent walkthrough  (2026-10-26)
+- **Verdict:** unverified
+- **What it is:** Post says Anthropic engineers walk you through shipping an autonomous agent in 37 free minutes
+- **Why pending:** No matching 37-minute video found; slides unreadable
+- **To resolve:** Send slide screenshots or check Anthropic's Code with Claude sessions
+- **Source note:** [notes/instagram/DeET_LNFrz5.md](../notes/instagram/DeET_LNFrz5.md)
+
 ### Claude trader skill pack replaces day traders and Bloomberg  (2026-10-26)
 - **Verdict:** unverified
 - **What it is:** Reel claims a free Claude skill pack with trade simulation beats day traders and Bloomberg-level software

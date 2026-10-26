@@ -1498,6 +1498,31 @@
     "note_path": "notes/instagram/DeGKrmWh89C.md"
   },
   {
+    "id": "DeET_LNFrz5",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/DeET_LNFrz5/",
+    "title": "Anthropic engineers 37 minute agent guide",
+    "author": "quentin_aimarketing",
+    "posted": "2026-10-04 09:28:12+00:00",
+    "type": "post",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude",
+      "Claude Managed Agents"
+    ],
+    "usefulness": "mixed",
+    "verdict": "pending",
+    "key_info": "Caption claims Anthropic's own engineers walk through shipping a self-running AI agent in 37 free minutes, with the full guide sent after commenting TEACH. The slides could not be read, so what the post actually shows is unknown.",
+    "note_path": "notes/instagram/DeET_LNFrz5.md"
+  },
+  {
     "id": "DeCH_lVqG-k",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DeCH_lVqG-k/",
