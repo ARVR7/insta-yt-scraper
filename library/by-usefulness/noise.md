@@ -6,5 +6,6 @@ Nothing informative (side quests).
 
 | Link | Usefulness | Category | Key info | Note |
 |---|---|---|---|---|
+| [Cara Delevingne on Blind Date rapid questions](https://www.instagram.com/reel/De7FvKcFJKl/) | noise | Entertainment › Film & TV | Promo clip from Cosmopolitan's Blind Date with Will Bennett, with Cara Delevingne as guest, a quick-fire round of light personal questions. No factual or tool claims. | [note](../../notes/instagram/De7FvKcFJKl.md) |
 | [Thank-you message to Tanmay Bhat](https://www.instagram.com/reel/DeoTMAkotoo/) | noise | Entertainment › Humour | A creator's personal thank-you video to comedian Tanmay Bhat, crediting a podcast recommendation (Atomic Habits) for helping him buy a house for his parents and grow his wife's account from 500 to 140K followers. These are personal claims with no checkable evidence. | [note](../../notes/instagram/DeoTMAkotoo.md) |
 | [You Can See Everything trailer](https://www.instagram.com/reel/DdoVuGLR0BP/) | noise | Entertainment › Film & TV | Official A24 trailer for the documentary You Can See Everything by Nathan Fielder and Lance Oppenheim, featuring Elizabeth Holmes. In theaters October 16, 2026. No claims to check. | [note](../../notes/instagram/DdoVuGLR0BP.md) |
