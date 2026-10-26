@@ -1550,6 +1550,34 @@
     "note_path": "notes/instagram/DeCH_lVqG-k.md"
   },
   {
+    "id": "DeCDNPzJkfN",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DeCDNPzJkfN/",
+    "title": "Three internet tricks ChatCut Agent Reach MIT OCW",
+    "author": "harshhhgautam",
+    "posted": "2026-10-03 12:24:39+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "ChatCut",
+      "ChatGPT",
+      "Agent Reach",
+      "Claude Code",
+      "MIT OpenCourseWare"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Three bookmarkable resources: 1) ChatCut, an AI video editor shown as a ChatGPT plugin (chatcut.io); 2) Agent Reach, an open-source (MIT) Python CLI that gives AI agents internet access to sites like Reddit, YouTube and Bilibili without paid APIs (repo Panniantong/agent-reach, installed from a raw GitHub install.md); 3) MIT OpenCourseWare (ocw.mit.edu) for free courses on any topic.",
+    "note_path": "notes/instagram/DeCDNPzJkfN.md"
+  },
+  {
     "id": "DeB_xCxDT_F",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/DeB_xCxDT_F/",

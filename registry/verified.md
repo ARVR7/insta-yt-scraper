@@ -4,6 +4,18 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### MIT OpenCourseWare free courses  (2026-10-26)
+- **Verdict:** verified
+- **What it is:** ocw.mit.edu offers free course materials on many topics
+- **Why it is verified:** Well-known free MIT resource, shown on screen
+- **Source note:** [notes/instagram/DeCDNPzJkfN.md](../notes/instagram/DeCDNPzJkfN.md)
+
+### Agent Reach: MIT CLI giving AI agents free internet access  (2026-10-26)
+- **Verdict:** verified
+- **What it is:** Open-source MIT Python CLI (Panniantong/agent-reach) that installs free backends so AI agents can read Reddit, YouTube, X and more without paid APIs
+- **Why it is verified:** Repo, README and reviews found
+- **Source note:** [notes/instagram/DeCDNPzJkfN.md](../notes/instagram/DeCDNPzJkfN.md)
+
 ### lemo-opuscar: 59 film styles for Claude Code (MIT)  (2026-10-26)
 - **Verdict:** verified
 - **What it is:** Public MIT plugin repo lemomo-ai/lemo-opuscar with 59 style prompts and demos that Claude Code turns into short films with music and narration
