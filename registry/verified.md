@@ -319,6 +319,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Earn commission by remaking top Trybe ads with Higgsfield  (2026-10-26)
+- **Verdict:** unverified
+- **What it is:** Reel claims remaking top ads with AI and submitting to brands earns commission
+- **Why pending:** No earnings shown; partner promotion; copying ads risks rejection
+- **To resolve:** Check Trybe terms and brand approval rules
+- **Source note:** [notes/instagram/De7_2tUS54h.md](../notes/instagram/De7_2tUS54h.md)
+
 ### AI Pro plan at 30 to 45 percent off for 1.5 years  (2026-10-26)
 - **Verdict:** unverified
 - **What it is:** Audio claims a heavy discount for 1.5 years
