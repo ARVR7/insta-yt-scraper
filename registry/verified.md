@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### lemo-opuscar: 59 film styles for Claude Code (MIT)  (2026-10-26)
+- **Verdict:** verified
+- **What it is:** Public MIT plugin repo lemomo-ai/lemo-opuscar with 59 style prompts and demos that Claude Code turns into short films with music and narration
+- **Why it is verified:** Repo looked up directly on GitHub; matches the reel
+- **Source note:** [notes/instagram/De62WbvxkZB.md](../notes/instagram/De62WbvxkZB.md)
+
 ### Google AI Pro includes Colab A100 80GB access  (2026-10-26)
 - **Verdict:** verified
 - **What it is:** Google AI Pro plans package premium Colab with A100 80GB (Ultra: H100)
@@ -318,6 +324,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Daily AI films with lemo-opuscar make a page go viral and earn money  (2026-10-26)
+- **Verdict:** unverified
+- **What it is:** Reel implies posting one style daily leads to virality and income
+- **Why pending:** No evidence shown
+- **To resolve:** Test with a real page and track results
+- **Source note:** [notes/instagram/De62WbvxkZB.md](../notes/instagram/De62WbvxkZB.md)
 
 ### Earn commission by remaking top Trybe ads with Higgsfield  (2026-10-26)
 - **Verdict:** unverified
