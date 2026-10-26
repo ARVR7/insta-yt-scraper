@@ -1,0 +1,54 @@
+language: en (0.98)
+[0s] Claude! I'm starting a new Instagram page!
+[2s] I want to go viral and make money!
+[5s] With what videos?
+[6s] There's a free toolbox, 59 kinds of videos.
+[9s] Watch.
+[10s] Step 1. Lima Opuscar.
+[12s] Paste two lines into Claude code.
+[14s] Just two lines?
+[15s] Two. I counted for you.
+[17s] Step 2.
+[18s] Pick the look that fits your page.
+[19s] Watercolor.
+[20s] Calm stories.
+[21s] Travel.
+[22s] Crayon picture book.
+[23s] Kids stories.
+[24s] Parents share these.
+[25s] Pixel game.
+[26s] Gaming pages.
+[27s] Life recaps.
+[28s] Japanese woodblock.
+[29s] History.
+[29s] Myths.
+[30s] Fifties cartoon.
+[31s] How-to guides.
+[32s] Tiny toy city.
+[33s] Satisfying city scenes.
+[35s] Which one goes viral?
+[36s] The one you post every day.
+[38s] Not the one you post once.
+[40s] Step 3.
+[40s] Give me a style and a story.
+[42s] I draw it, add music, and narrate it.
+[44s] How long does it take?
+[45s] About an hour.
+[46s] Go eat.
+[47s] You're good at that.
+[48s] Step 4.
+[49s] One style.
+[49s] One topic.
+[50s] Post every day.
+[51s] That's your page.
+[52s] Can I use all 59 on one page?
+[55s] Nobody knows what your page is.
+[56s] Pick one.
+[57s] Commit.
+[58s] I know.
+[58s] New for you.
+[59s] So which style is me?
+[61s] Crayon book.
+[62s] Simple.
+[62s] Colorful.
+[63s] A little confused.
