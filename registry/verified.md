@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Google AI Pro includes Colab A100 80GB access  (2026-10-26)
+- **Verdict:** verified
+- **What it is:** Google AI Pro plans package premium Colab with A100 80GB (Ultra: H100)
+- **Why it is verified:** Google Gemma post and write-ups
+- **Source note:** [notes/instagram/DesmCd0P_-g.md](../notes/instagram/DesmCd0P_-g.md)
+
 ### Oracle Always Free ARM server with 12GB RAM  (2026-10-25)
 - **Verdict:** verified
 - **What it is:** Always Free Arm Ampere A1 allowance of 2 OCPU and 12GB memory, reduced from 4 OCPU and 24GB
@@ -312,6 +318,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### AI Pro plan at 30 to 45 percent off for 1.5 years  (2026-10-26)
+- **Verdict:** unverified
+- **What it is:** Audio claims a heavy discount for 1.5 years
+- **Why pending:** No source found
+- **To resolve:** Check Google AI plans page for current offers
+- **Source note:** [notes/instagram/DesmCd0P_-g.md](../notes/instagram/DesmCd0P_-g.md)
 
 ### Oracle free tier 10TB monthly outbound bandwidth  (2026-10-25)
 - **Verdict:** unverified

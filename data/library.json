@@ -539,6 +539,33 @@
     "note_path": "notes/instagram/DetqEejBwMz.md"
   },
   {
+    "id": "DesmCd0P_-g",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DesmCd0P_-g/",
+    "title": "80GB A100 GPU via Google AI Pro Colab",
+    "author": "microtech.india",
+    "posted": "2026-10-20 00:55:05+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Google Colab",
+      "Google AI Pro",
+      "Gemma 4",
+      "A100"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "The reel (a repost of @baljeet.ai) says you can get an 80GB-VRAM GPU 'for free'. Its own screenshot shows what is real: a Google Gemma post saying Google AI Pro plans now include premium Colab benefits with A100 80GB GPUs (Ultra even H100s), enough to run Gemma 4 31B in bf16, fine-tune Gemma 4 E4B in bf16, and LoRA/QLoRA the 26B and 31B models. It is a paid plan, not free; the narration adds a 30 to 45 percent discount for 1.5 years that was not verified.",
+    "note_path": "notes/instagram/DesmCd0P_-g.md"
+  },
+  {
     "id": "DesWw43N0he",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DesWw43N0he/",
