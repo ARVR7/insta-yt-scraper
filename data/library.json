@@ -26,6 +26,31 @@
     "note_path": "notes/instagram/De7_2tUS54h.md"
   },
   {
+    "id": "De63EgSxsXo",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De63EgSxsXo/",
+    "title": "Claude trader skills and trade simulator",
+    "author": "swapsays_wtf",
+    "posted": "2026-10-25 13:55:01+00:00",
+    "type": "reel",
+    "category": "money",
+    "category_label": "Money",
+    "subcategory": "investing",
+    "subcategory_label": "Investing",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "day-trader-skill"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Claims Claude 'killed day traders': a free pack of 11 skills (chart scanner, news monitor, entry timer, exit evaluator and a 'time machine' that replays a trade 10,000 times to show outcome statistics) to use before risking money, compared to Bloomberg software costing thousands. The repo is not named; it most likely matches Jakeschincariol/day-trader-skill (an open-source 11-skill day-trading pack), but the exact skill names were not confirmed there.",
+    "note_path": "notes/instagram/De63EgSxsXo.md"
+  },
+  {
     "id": "De62WbvxkZB",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De62WbvxkZB/",

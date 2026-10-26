@@ -325,6 +325,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Claude trader skill pack replaces day traders and Bloomberg  (2026-10-26)
+- **Verdict:** unverified
+- **What it is:** Reel claims a free Claude skill pack with trade simulation beats day traders and Bloomberg-level software
+- **Why pending:** No performance evidence; repo not named; simulations do not predict returns
+- **To resolve:** Find the repo from the reel's link and test on paper trades
+- **Source note:** [notes/instagram/De63EgSxsXo.md](../notes/instagram/De63EgSxsXo.md)
+
 ### Daily AI films with lemo-opuscar make a page go viral and earn money  (2026-10-26)
 - **Verdict:** unverified
 - **What it is:** Reel implies posting one style daily leads to virality and income
