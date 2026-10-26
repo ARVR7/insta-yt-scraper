@@ -1,0 +1,7 @@
+language: si (0.26)
+## English translation
+[30s] Thank you for watching this video.
+[32s] Please subscribe to my channel.
+[34s] See you in the next video.
+## Original (si)
+[30s] මිල්න දින්න්වේයි අපිකයක්න්වේ්න්න්න්නේයිසෙිවේයික්විවේ මැනුශ්ුසි කස්නීියිට්නූජියික්නෙනේෙහැක්න්නුශ්නියිවේ්ිවේ්නැන්න්නු�
