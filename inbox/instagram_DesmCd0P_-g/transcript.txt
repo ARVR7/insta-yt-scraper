@@ -1,0 +1,9 @@
+language: hi (0.99)
+## English translation
+[0s] You can get 80GB VRAM GPU for free, but you should have an AI pro plan which will be available for 30-45% charge for 1.5 years, and you will get A100 GPU for which you can get 80GB VRAM and you can run a lot of motors, so you don't have to worry about running a local motor, go and apply its direct link in the comment section, and write AI
+## Original (hi)
+[0s] अपल तुम अस्चीजबी वीरेम वाली जीपीो फ्री में देरा है
+[2s] बआई बस शर्टी है तुमार पास आईए का प्रो प्लैन हूना चीए
+[5s] जो के जीो के साथे जींसो की ती चार्च में मिलता है देड साल के लिए
+[8s] प्रवाई आईए हनर जीपीो मिलेगा तुमे जिसके आज़्ीजबी वीरेम है, इस में तुम गेमा आईज़े बोछ़ से मोडर रन कर सकते हो।
+[14s] तो लोकल मोडर रन करने की तैंशनी गतम अप, इसे जागे आपलाई करने इसका direct link चाएगी नहीं तो comment section में a.i लिए लिक देना
