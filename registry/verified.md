@@ -367,6 +367,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Home of Creators app gave 1 lakh followers in a month  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Claims a comment-reply tool plus follow feature produced 1 lakh followers in a month and brand deals
+- **Why pending:** No proof or independent coverage checked
+- **To resolve:** Check the app's terms and independent reviews before connecting an account
+- **Source note:** [notes/instagram/Dbk7in3JzR1.md](../notes/instagram/Dbk7in3JzR1.md)
+
 ### Creator's 200k earnings and 40/40/20 funnel split  (2026-10-27)
 - **Verdict:** unverified
 - **What it is:** Claims brands pay most for BOFU content and suggests a 40/40/20 mix, citing 200k earned
