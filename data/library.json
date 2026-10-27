@@ -1,5 +1,32 @@
 [
   {
+    "id": "De95N60JYG2",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De95N60JYG2/",
+    "title": "BASE second brain for Claude Code vs Graphify",
+    "author": "charlieautomates",
+    "posted": "2026-10-26 18:16:08+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "BASE",
+      "Graphify",
+      "Obsidian"
+    ],
+    "usefulness": "mixed",
+    "verdict": "pending",
+    "key_info": "Pitch for BASE, a Claude Code second-brain setup: SessionStart hooks load your projects at the start of each session, keyword-matched knowledge domains pull in relevant files per prompt, and a local dashboard (localhost:3741) shows domains, rules and decisions. The creator says Graphify burns tokens and Obsidian is view-only. Playbook and links are behind a comment-BASE lead magnet.",
+    "note_path": "notes/instagram/De95N60JYG2.md"
+  },
+  {
     "id": "De7_2tUS54h",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De7_2tUS54h/",

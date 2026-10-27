@@ -337,6 +337,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### BASE: Claude Code second brain with hooks and domains  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Creator's tool that injects project context via SessionStart hooks and keyword-matched domains, with a local dashboard
+- **Why pending:** Not found in public search; only the creator's demo and claims
+- **To resolve:** Find the public repo or playbook, or ask the creator
+- **Source note:** [notes/instagram/De95N60JYG2.md](../notes/instagram/De95N60JYG2.md)
+
 ### Free 37-minute Anthropic engineers agent walkthrough  (2026-10-26)
 - **Verdict:** unverified
 - **What it is:** Post says Anthropic engineers walk you through shipping an autonomous agent in 37 free minutes
