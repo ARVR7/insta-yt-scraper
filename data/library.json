@@ -1,5 +1,31 @@
 [
   {
+    "id": "DfA1ccrSE_4",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfA1ccrSE_4/",
+    "title": "Claude plus Everygen coloring books for Amazon KDP",
+    "author": "ericacreates_",
+    "posted": "2026-10-27 21:35:55+00:00",
+    "type": "reel",
+    "category": "money",
+    "category_label": "Money",
+    "subcategory": "business",
+    "subcategory_label": "Business",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude",
+      "Everygen MCP",
+      "Amazon KDP"
+    ],
+    "usefulness": "misleading",
+    "verdict": "partly-verified",
+    "key_info": "Pitch: find a popular Amazon coloring book, screenshot it, add the Everygen MCP connector to Claude, prompt for similar coloring pages, then publish through Amazon KDP, making two a day for 30 days. Claims one book made over $100,000 from 12,000 copies at $9.99. Guide is behind a comment-Claude funnel and the post carries an #everygenpartner tag.",
+    "note_path": "notes/instagram/DfA1ccrSE_4.md"
+  },
+  {
     "id": "DfAujDfBAbO",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfAujDfBAbO/",

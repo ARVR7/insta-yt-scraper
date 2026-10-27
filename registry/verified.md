@@ -355,6 +355,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### 12,000 copies sold means over $100,000 from one coloring book  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Reel multiplies 12,115 ratings by $9.99 to claim $119,880 of revenue
+- **Why pending:** Ratings are not sales and royalties are after print cost; no sales data shown
+- **To resolve:** Use independent sales estimators and KDP royalty calculator
+- **Source note:** [notes/instagram/DfA1ccrSE_4.md](../notes/instagram/DfA1ccrSE_4.md)
+
 ### Making rent from a Claude idea built by Polsia  (2026-10-27)
 - **Verdict:** unverified
 - **What it is:** Claims Claude ideas plus Polsia agents produce a working business that pays rent
