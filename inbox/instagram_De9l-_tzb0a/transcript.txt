@@ -1,0 +1,25 @@
+language: hi (0.94)
+## English translation
+[0s] Ajay, what will you do if you want a brand collab today?
+[3s] I will DM all the friends and tell them what to do.
+[6s] This is the mistake of all the creators.
+[8s] If you want a brand collab today, then go to the app and add your profile.
+[12s] You will see a brand collab ahead of you.
+[14s] Apply whatever collab you like.
+[17s] If the brand selects you, then you will also get two brand collabs like me.
+[22s] Will I get one?
+[23s] Yes, you will also get one.
+[25s] I will not keep a secret.
+[27s] I will not leave a comment or a follow.
+[29s] I will put the link in the bio.
+[31s] Go and check out the brand collab.
+## Original (hi)
+[0s] और बगर सिर्ईढ।
+[3s] रब फोर बभबर बबबबबबब
+[5s] पूँख़र्ण कोलाप मिल जाइंगे
+[7s] और दूछियोंगे ऑफ सीसे आप अतना लग़ा परागेंए
+[10s] ब्राँगे से नब प्रजाएव अपने प्रुफाइट डालो
+[12s] वहापे तुम का अगे से ब्राँन्खोलाप दिखेंगे
+[14s] जोवी कोलाप पसंदार है उस पे अप्लाई कर दो
+[16s] ब्राअन्ग़ अगर तुम को सलिक करेगी
+[18s] ब्राँन्खोलाप दिखेंगे
