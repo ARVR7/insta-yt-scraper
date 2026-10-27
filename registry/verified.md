@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Clipping pays little per 1,000 views, so big income needs huge reach  (2026-10-27)
+- **Verdict:** verified
+- **What it is:** Pay-per-view clipping at about $1 per 1,000 views needs millions of views for large income
+- **Why it is verified:** Matches independent rate samples
+- **Source note:** [notes/instagram/DX_0DQIyplz.md](../notes/instagram/DX_0DQIyplz.md)
+
 ### earshot: open-source audio toolkit for coding agents  (2026-10-27)
 - **Verdict:** verified
 - **What it is:** MIT, CPU-only toolkit (Leonxlnx/earshot) with CLI, Python API and MCP server to describe, match and critique audio
@@ -354,6 +360,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Cloovy clipping platform  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** New platform paying per 1,000 views for influencer campaigns
+- **Why pending:** Only shown in the reel; not independently checked
+- **To resolve:** Check campaign terms, payout proof and reviews
+- **Source note:** [notes/instagram/DX_0DQIyplz.md](../notes/instagram/DX_0DQIyplz.md)
 
 ### 12,000 copies sold means over $100,000 from one coloring book  (2026-10-27)
 - **Verdict:** unverified
