@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Recordly: free open-source Screen Studio-style recorder  (2026-10-27)
+- **Verdict:** verified
+- **What it is:** AGPL screen recorder with auto-zoom, cursor effects and a timeline editor for Mac, Windows and Linux
+- **Why it is verified:** Several reviews and descriptions found; reel's tool very likely this one
+- **Source note:** [notes/instagram/DdL_g4yT7R_.md](../notes/instagram/DdL_g4yT7R_.md)
+
 ### Clipping pays little per 1,000 views, so big income needs huge reach  (2026-10-27)
 - **Verdict:** verified
 - **What it is:** Pay-per-view clipping at about $1 per 1,000 views needs millions of views for large income
