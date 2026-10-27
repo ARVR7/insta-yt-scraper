@@ -343,6 +343,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Higgsfield Katana: one-prompt animation in Claude  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Katana skill via Higgsfield MCP connector in Claude, promoted as replacing After Effects keyframing
+- **Why pending:** Connector and skill exist, but Katana is described as rebuilding edits with your own assets; the one-prompt cinematic claim is demo-only and sponsored
+- **To resolve:** Test a Katana preset on the free trial and compare to the demo
+- **Source note:** [notes/instagram/DfAujDfBAbO.md](../notes/instagram/DfAujDfBAbO.md)
+
 ### Clipping payouts of $1 to $5 per 1,000 views  (2026-10-27)
 - **Verdict:** unverified
 - **What it is:** Reel claims $1 to $5 per 1,000 views and a $126.53 payout

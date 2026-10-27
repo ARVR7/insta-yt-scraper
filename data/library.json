@@ -1,5 +1,32 @@
 [
   {
+    "id": "DfAujDfBAbO",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfAujDfBAbO/",
+    "title": "Higgsfield Katana animation through Claude",
+    "author": "techwithjulianne",
+    "posted": "2026-10-27 20:35:50+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Higgsfield MCP",
+      "Katana",
+      "Claude",
+      "After Effects"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Creator promotes Higgsfield's Katana skill: add the Higgsfield MCP link as a custom connector in Claude, then type /Katana, pick a preset and prompt a 15-second animation. Claims one prompt replaces keyframing in After Effects. Link and a 3-day free trial are behind a comment-KATANA funnel; the caption is tagged as a Higgsfield partner post.",
+    "note_path": "notes/instagram/DfAujDfBAbO.md"
+  },
+  {
     "id": "De_9XCHixR2",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De_9XCHixR2/",
