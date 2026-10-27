@@ -1,0 +1,78 @@
+[0s] Looks pro.
+[0s] Sounds like this:
+[0s] edit.mp4
+[0s] 00:00:01:12
+[0s] look pro
+[3s] Claude
+[3s] audio
+[3s] Claude can'thear
+[3s] can'thear
+[3s] WHOIWSION
+[6s] your edit.timeline
+[6s] VIDEO
+[6s] beep.wav ·synthesized
+[6s] FREE
+[6s] FIRST
+[9s] free stocklibra
+[9s] 619,535
+[9s] whoosh
+[9s] rain
+[9s] click
+[9s] OF OVER 5
+[12s] Openverse
+[12s] But here's
+[15s] timeline
+[15s] OUTOFSYNC
+[15s] can'ttell
+[15s] TELL
+[15s] WHEREEACH
+[18s] clipwing.pro/skills/real-sfx
+[18s] Real sound effects
+[18s] On the exact frame
+[18s] Claude finds the moments
+[18s] nyourvideo andputsa real recording
+[18s] from your library on each one.Your music and voice stay
+[18s] Download.skill
+[18s] View source
+[18s] Real SFX ·free Claude Code skill
+[21s] EXAMPLE
+[24s] Real
+[24s] thehonestpart
+[27s] 5,220,123freesounds
+[27s] foley
+[27s] viaOpenverse
+[27s] bringyourown
+[27s] OPENVERSE COMES
+[30s] github.com/Leonxlnx/earshot
+[30s] andquality
+[30s] Insights
+[30s] Notifications
+[30s] Fork175
+[30s] Star2.9k
+[30s] About
+[30s] Earsforcoding agents:letAl hear,
+[30s] review and make sound.CPU-only,
+[30s] nmits
+[30s] 2,877
+[30s] Leonxlnx/earshot
+[30s] GITHUB
+[33s] earshot_launch.mp4 · analysis sheet
+[33s] hot_launch.mp4 0:00.00-0:22.02
+[33s] UFSTP-2.2dBTPLRA12.3LU~120BPM（clear)41eVents
+[33s] cuts:100%onsetwithin1frame(chance20%),0%ona strong accent（c
+[33s] Bcues:86%onsetwithin1frame(chance6%),19%onastrongaccent（c
+[33s] (vcue,diamondcut):green=anonsetwithin1frame,amber=within100 ms,blue=awhoosh
+[33s] els:kind+CLAP tag,hintsonly;pale+'？'=under12 dBover thebed（mostlybed Inthe excerpt
+[33s] canAlhear?l
+[33s] lukulele music?,marimba |also:plop (AST)
+[33s] earshot critique film.mp4
+[33s] YOUREDIT AGAINST
+[36s] If you
+[39s] SOUND
+[39s] RealSFX
+[39s] earshot
+[39s] freesound library
+[39s] ClaudeCode skill
+[39s] MIT·opensource
+[39s] all free
+[39s] workswith Claude

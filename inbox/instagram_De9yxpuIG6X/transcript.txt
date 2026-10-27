@@ -1,0 +1,11 @@
+language: en (1.00)
+[0s] Why do your Claude edits look pro but sound like a silent movie?
+[3s] Here's the thing. Claude can't hear, so it fakes the sound.
+[6s] And these three free tools fix that. First, openverse.
+[9s] Think of it like a free stock library of over 5 million sounds Claude can search without
+[13s] an API key. But here's where it gets good. A library is useless if Claude can't tell where each sound
+[17s] goes. Second, real SFX. A free Claude code skill that finds every moment that needs a sound
+[22s] and puts a real recording on that exact frame. The honest part, it only ships 78 UI sounds,
+[27s] which is why openverse comes first. And finally, earshot with nearly 3,000 GitHub stars.
+[32s] It gives Claude ears, so it scores your edit against pro launch films and makes its own
+[36s] wishes in code. If you or a friend make videos with Claude, comment sound and I'll send you all three links.
