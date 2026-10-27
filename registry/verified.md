@@ -355,6 +355,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Making rent from a Claude idea built by Polsia  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Claims Claude ideas plus Polsia agents produce a working business that pays rent
+- **Why pending:** Polsia is real but no income or customer proof is shown; reports say few of its companies earn revenue
+- **To resolve:** Ask for revenue screenshots or customer data; check Polsia's own revenue stats
+- **Source note:** [notes/instagram/Dex05t6RrB9.md](../notes/instagram/Dex05t6RrB9.md)
+
 ### Real SFX Claude Code skill with 78 UI sounds  (2026-10-27)
 - **Verdict:** unverified
 - **What it is:** Free skill at clipwing.pro that places recordings on exact frames
