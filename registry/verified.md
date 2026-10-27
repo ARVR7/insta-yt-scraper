@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Content Rewards: pay-per-view clipping marketplace  (2026-10-27)
+- **Verdict:** verified
+- **What it is:** Whop Content Rewards pays creators per verified view for clips of brand-provided content; typical rate near $1 per 1,000 views
+- **Why it is verified:** Whop docs plus independent guides and a 50-campaign rate sample
+- **Source note:** [notes/instagram/De_9XCHixR2.md](../notes/instagram/De_9XCHixR2.md)
+
 ### MIT OpenCourseWare free courses  (2026-10-26)
 - **Verdict:** verified
 - **What it is:** ocw.mit.edu offers free course materials on many topics
@@ -336,6 +342,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Clipping payouts of $1 to $5 per 1,000 views  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Reel claims $1 to $5 per 1,000 views and a $126.53 payout
+- **Why pending:** Samples show a lower median; payout is one screenshot
+- **To resolve:** Check each campaign's rate and remaining budget before investing time
+- **Source note:** [notes/instagram/De_9XCHixR2.md](../notes/instagram/De_9XCHixR2.md)
 
 ### Free AI video generator: 100 videos a day, sign-in required  (2026-10-27)
 - **Verdict:** unverified
