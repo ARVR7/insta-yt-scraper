@@ -1,0 +1,23 @@
+language: en (1.00)
+[0s] If you're using cloud code and want to set up a second brain, watch this video first.
+[5s] 99% of you are rushing to set up obsidian and graphify.
+[9s] And on the outside, it looks great, but here's why you should reconsider this stack.
+[13s] First off, graphify takes a ton of tokens to work through all the files in your workspace.
+[18s] It also requires you to manually carry data in that second brain instead of automatically
+[23s] integrating with your daily cloud use.
+[26s] Plus, in this stack, obsidian is just used to visually show you the brain.
+[30s] Instead of it actually being a core function of the brain.
+[33s] So here's what you should be doing instead.
+[35s] Set up something called base.
+[36s] It creates the knowledge graph, aka second brain, you want directly inside of cloud, and
+[42s] it uses something called hooks to automatically pull all your projects into awareness at session
+[48s] start.
+[49s] Then it selectively uses knowledge domains via keyword matching to connect file paths to all
+[54s] of your other relevant files depending on the conversation you're having.
+[58s] So unlike graphify, it's super cost effective on token use.
+[62s] Only pulling contacts on what's presently being discussed without having to ask.
+[67s] And it self-learns every session, so no blasting your whole subscription in one go.
+[72s] And base comes with a local host second brain viewer and dashboard to track all of your
+[77s] knowledge domains, rules, decisions, and accumulated knowledge over time.
+[81s] So if you're somebody looking to cut through the noise on what a second brain should actually
+[85s] do for their cloud, common base, and I'll send you over the playbook and all links.
