@@ -337,6 +337,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Free AI video generator: 100 videos a day, sign-in required  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Unnamed third-party web tool shown as a TAAFT listing, branded 'Google Flow' in the overlay, with a claimed 100 free videos per day
+- **Why pending:** Tool not named in the reel and not tested; limits come from a directory listing
+- **To resolve:** Find the tool on theresanaiforthat.com and read its own terms and limits
+- **Source note:** [notes/instagram/De3i_K1vg2l.md](../notes/instagram/De3i_K1vg2l.md)
+
 ### BASE: Claude Code second brain with hooks and domains  (2026-10-27)
 - **Verdict:** unverified
 - **What it is:** Creator's tool that injects project context via SessionStart hooks and keyword-matched domains, with a local dashboard
