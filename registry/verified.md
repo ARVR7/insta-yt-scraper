@@ -4,6 +4,18 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### earshot: open-source audio toolkit for coding agents  (2026-10-27)
+- **Verdict:** verified
+- **What it is:** MIT, CPU-only toolkit (Leonxlnx/earshot) with CLI, Python API and MCP server to describe, match and critique audio
+- **Why it is verified:** Repo and several write-ups found; star count disputed
+- **Source note:** [notes/instagram/De9yxpuIG6X.md](../notes/instagram/De9yxpuIG6X.md)
+
+### Openverse: openly licensed sound library with free API  (2026-10-27)
+- **Verdict:** verified
+- **What it is:** Searchable library of millions of openly licensed sounds, usable by Claude via API without a key; licences vary per item
+- **Why it is verified:** Real Creative Commons media search, shown on screen
+- **Source note:** [notes/instagram/De9yxpuIG6X.md](../notes/instagram/De9yxpuIG6X.md)
+
 ### Content Rewards: pay-per-view clipping marketplace  (2026-10-27)
 - **Verdict:** verified
 - **What it is:** Whop Content Rewards pays creators per verified view for clips of brand-provided content; typical rate near $1 per 1,000 views
@@ -342,6 +354,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Real SFX Claude Code skill with 78 UI sounds  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Free skill at clipwing.pro that places recordings on exact frames
+- **Why pending:** Only seen on screen in the reel
+- **To resolve:** Open clipwing.pro/skills/real-sfx and check source and licence
+- **Source note:** [notes/instagram/De9yxpuIG6X.md](../notes/instagram/De9yxpuIG6X.md)
 
 ### Higgsfield Katana: one-prompt animation in Claude  (2026-10-27)
 - **Verdict:** unverified
