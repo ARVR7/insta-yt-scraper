@@ -367,6 +367,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Creator's 200k earnings and 40/40/20 funnel split  (2026-10-27)
+- **Verdict:** unverified
+- **What it is:** Claims brands pay most for BOFU content and suggests a 40/40/20 mix, citing 200k earned
+- **Why pending:** No evidence shown; framework itself is standard
+- **To resolve:** Look for rate data or proof of deals
+- **Source note:** [notes/instagram/DdjLCONTvnG.md](../notes/instagram/DdjLCONTvnG.md)
+
 ### Cloovy clipping platform  (2026-10-27)
 - **Verdict:** unverified
 - **What it is:** New platform paying per 1,000 views for influencer campaigns
