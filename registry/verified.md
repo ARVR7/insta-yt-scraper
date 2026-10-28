@@ -379,6 +379,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Zack D. Films earns $7.8M a year; copy it with ChatGPT and Gemini  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Reel ties a ChatGPT-plus-Gemini Shorts workflow to a third-party earnings estimate of $7.8M to $125M a year
+- **Why pending:** Estimates for the channel vary hugely and none are creator-reported; no evidence the workflow earns anything similar
+- **To resolve:** Look for real earnings from channels that use this workflow
+- **Source note:** [notes/instagram/DZVxhkDTBAK.md](../notes/instagram/DZVxhkDTBAK.md)
+
 ### YouTube pays $40,000 per million views for AI story videos  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Claims a million views pays $40,000 and AI explainers can earn that posting three a day
