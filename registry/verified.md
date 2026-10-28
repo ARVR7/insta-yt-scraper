@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### free-for-dev: list of free developer services  (2026-10-28)
+- **Verdict:** verified
+- **What it is:** Public GitHub list (ripienaar/free-for-dev, free-for.dev) of free tiers for SaaS, PaaS and IaaS, about 138k stars
+- **Why it is verified:** Matches on-screen title; star counts found
+- **Source note:** [notes/instagram/Ddq8NW4S-Wn.md](../notes/instagram/Ddq8NW4S-Wn.md)
+
 ### Google Vids free AI video with Omni 1.1 Flash  (2026-10-28)
 - **Verdict:** verified
 - **What it is:** Free 1080p AI video generation in Google Vids using Gemini Omni 1.1 Flash, with a monthly cap
