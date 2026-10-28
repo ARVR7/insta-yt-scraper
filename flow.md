@@ -148,6 +148,7 @@ Downloaded videos, frames and transcripts stay in a scratch directory outside th
 | [notes/instagram/Deep2H2yNsr.md](notes/instagram/Deep2H2yNsr.md) | Money · mixed · pending |
 | [notes/instagram/DedHV-3lel2.md](notes/instagram/DedHV-3lel2.md) | AI · mixed · pending |
 | [notes/instagram/DecpuNXDoYj.md](notes/instagram/DecpuNXDoYj.md) | AI · mixed · partly-verified |
+| [notes/instagram/DeZ0mMDxj6d.md](notes/instagram/DeZ0mMDxj6d.md) | Money · mixed · pending |
 | [notes/instagram/DeVyGbyJGcl.md](notes/instagram/DeVyGbyJGcl.md) | AI · mixed · pending |
 | [notes/instagram/DeUK2NZS3Ig.md](notes/instagram/DeUK2NZS3Ig.md) | AI · mixed · pending |
 | [notes/instagram/DeToMLxtdSV.md](notes/instagram/DeToMLxtdSV.md) | AI · mixed · partly-verified |

@@ -373,6 +373,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Megasheet UGC campaigns and 62K a month earnings  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Platform promoted for scripted on-camera brand videos with view-based pay
+- **Why pending:** Not found in public search; earnings shown are calculator output
+- **To resolve:** Check the site's terms and independent payout reports
+- **Source note:** [notes/instagram/DeZ0mMDxj6d.md](../notes/instagram/DeZ0mMDxj6d.md)
+
 ### Influish: 1.7M creators and brand collabs for any creator  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Claims 1.7 million creators, 90,000 brands, and that applying to collabs gets you deals
