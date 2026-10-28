@@ -391,6 +391,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### 1 crore job screened only on Claude Code workflow  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Screenshot job ad: two engineers in India, 1 crore cash, no resume or LeetCode, send AI coding logs
+- **Why pending:** Exact listing not found; similar roles and a 2025 Rs 1 crore Bengaluru hire exist
+- **To resolve:** Find the original post and company
+- **Source note:** [notes/instagram/DfCfnF6yALm.md](../notes/instagram/DfCfnF6yALm.md)
+
 ### Google AI Pro free for 18 months, valid till 29 October  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Claims anyone in India can claim 18 months of Google AI Pro (5 TB, Nano Banana Pro, Flow credits) free until 29 October
