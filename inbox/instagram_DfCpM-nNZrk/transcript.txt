@@ -1,0 +1,5 @@
+language: en (0.99)
+[0s] Open this tool, click on MCP, copy this MCP key, open Clawed, click Customize, like Connectors,
+[10s] Add Custom Connector, name it a Romify PC or L and click Add.
+[14s] Connect, type a simple problem to make your AI influencer.
+[17s] Look at these views, connect the view and get payouts like this.
