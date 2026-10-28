@@ -132,6 +132,30 @@
     "note_path": "notes/instagram/De9yxpuIG6X.md"
   },
   {
+    "id": "De9l-_tzb0a",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De9l-_tzb0a/",
+    "title": "Influish creator app for brand collabs",
+    "author": "with.sangini",
+    "posted": "2026-10-26 15:23:47+00:00",
+    "type": "reel",
+    "category": "money",
+    "category_label": "Money",
+    "subcategory": "business",
+    "subcategory_label": "Business",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Influish"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Creator promotes Influish, a creator app where you add your profile, browse paid brand collaborations and apply. The caption claims 1.7 million creators, 90,000 brands, features in The Economic Times and The Quint, and an Instagram auto-DM tool for Rs 499 a year. Link is in the bio, and the post looks like a paid promotion.",
+    "note_path": "notes/instagram/De9l-_tzb0a.md"
+  },
+  {
     "id": "De7_2tUS54h",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De7_2tUS54h/",
@@ -665,6 +689,28 @@
     "verdict": "partly-verified",
     "key_info": "Same story as an earlier reel (see the Cloudflare Code Mode note): Cloudflare's Code Mode and Anthropic's code-execution-with-MCP pattern are real. Anthropic's post reports 150,000 tokens down to 2,000 (98.7%) for one example, but that is a single scenario and one independent test found about 77%. The 'companies are moving away from MCP' framing is overstated, since the code still calls MCP servers. A TL;DR and alternatives are in 'Your instruction'.",
     "note_path": "notes/instagram/DewkicGtWcS.md"
+  },
+  {
+    "id": "DewguD7pH9n",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DewguD7pH9n/",
+    "title": "Tanmay Bhat on building a viral content page",
+    "author": "foundersindia",
+    "posted": "2026-10-21 13:27:24+00:00",
+    "type": "reel",
+    "category": "money",
+    "category_label": "Money",
+    "subcategory": "business",
+    "subcategory_label": "Business",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Tanmay Bhat's strategy, from The Barbershop with Shantanu: pick a niche page, list the top videos from the biggest channels in it to see what titles people already want, then optimise each video for average view duration (a payoff at the end) and for shares (to a friend with a shared identity, or to a profile to build the sharer's brand).",
+    "note_path": "notes/instagram/DewguD7pH9n.md"
   },
   {
     "id": "DewXLi2vVWR",

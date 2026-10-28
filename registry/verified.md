@@ -373,6 +373,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Influish: 1.7M creators and brand collabs for any creator  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Claims 1.7 million creators, 90,000 brands, and that applying to collabs gets you deals
+- **Why pending:** Platform is real but figures conflict with other reports and results are unproven
+- **To resolve:** Check independent reviews and the refund policy before paying
+- **Source note:** [notes/instagram/De9l-_tzb0a.md](../notes/instagram/De9l-_tzb0a.md)
+
 ### Google Vids has no limit on free videos  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Creator claims unlimited free generation

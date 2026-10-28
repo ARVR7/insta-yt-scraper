@@ -92,6 +92,7 @@ Downloaded videos, frames and transcripts stay in a scratch directory outside th
 | [notes/instagram/De_9XCHixR2.md](notes/instagram/De_9XCHixR2.md) | Money · mixed · partly-verified |
 | [notes/instagram/De95N60JYG2.md](notes/instagram/De95N60JYG2.md) | AI · mixed · pending |
 | [notes/instagram/De9yxpuIG6X.md](notes/instagram/De9yxpuIG6X.md) | AI · helpful · partly-verified |
+| [notes/instagram/De9l-_tzb0a.md](notes/instagram/De9l-_tzb0a.md) | Money · mixed · partly-verified |
 | [notes/instagram/De7_2tUS54h.md](notes/instagram/De7_2tUS54h.md) | Money · mixed · partly-verified |
 | [notes/instagram/De7FvKcFJKl.md](notes/instagram/De7FvKcFJKl.md) | Entertainment · noise · sidequest |
 | [notes/instagram/De63EgSxsXo.md](notes/instagram/De63EgSxsXo.md) | Money · mixed · partly-verified |
@@ -113,6 +114,7 @@ Downloaded videos, frames and transcripts stay in a scratch directory outside th
 | [notes/instagram/Dex05t6RrB9.md](notes/instagram/Dex05t6RrB9.md) | Money · misleading · partly-verified |
 | [notes/instagram/Dewv1q7tvKg.md](notes/instagram/Dewv1q7tvKg.md) | AI · mixed · pending |
 | [notes/instagram/DewkicGtWcS.md](notes/instagram/DewkicGtWcS.md) | Tech & dev · helpful · partly-verified |
+| [notes/instagram/DewguD7pH9n.md](notes/instagram/DewguD7pH9n.md) | Money · helpful · partly-verified |
 | [notes/instagram/DewXLi2vVWR.md](notes/instagram/DewXLi2vVWR.md) | AI · helpful · verified |
 | [notes/instagram/DevhsdCt6KH.md](notes/instagram/DevhsdCt6KH.md) | Money · misleading · partly-verified |
 | [notes/instagram/DeuaI4ItktU.md](notes/instagram/DeuaI4ItktU.md) | Tech & dev · misleading · partly-verified |
