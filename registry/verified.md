@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Oracle Cloud Always Free: Arm VM with up to 24 GB RAM  (2026-10-28)
+- **Verdict:** verified
+- **What it is:** Always Free includes Ampere A1 compute up to 4 OCPUs and 24 GB RAM, 200 GB block storage and 10 TB monthly egress, with a separate $300 trial credit
+- **Why it is verified:** Oracle documentation and several guides
+- **Source note:** [notes/instagram/De97-ilxu5M.md](../notes/instagram/De97-ilxu5M.md)
+
 ### Free GPU: Kaggle 30 hours a week, Colab T4, Modal $30 a month  (2026-10-28)
 - **Verdict:** verified
 - **What it is:** Kaggle gives about 30 GPU hours weekly, Colab a free T4 with unpublished limits, and Modal $30 of monthly credits (about 7.5 hours H100)

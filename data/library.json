@@ -127,6 +127,30 @@
     "note_path": "notes/instagram/De_9XCHixR2.md"
   },
   {
+    "id": "De97-ilxu5M",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De97-ilxu5M/",
+    "title": "Oracle Cloud Always Free server for AI hosting",
+    "author": "omkar.docs",
+    "posted": "2026-10-26 18:35:51+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "coding",
+    "subcategory_label": "Coding",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Oracle Cloud Free Tier"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Creator says Oracle gives a free-forever server with 12 GB RAM, 200 GB storage a month, 10 GB of bandwidth, two free databases and a $300 credit, usable to host local LLMs and AI agents. The setup guide and links are on his WhatsApp channel and sent by DM after a comment.",
+    "note_path": "notes/instagram/De97-ilxu5M.md"
+  },
+  {
     "id": "De95N60JYG2",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De95N60JYG2/",
