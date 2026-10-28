@@ -373,6 +373,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### YouTube pays $40,000 per million views for AI story videos  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Claims a million views pays $40,000 and AI explainers can earn that posting three a day
+- **Why pending:** Independent figures put typical payouts at $1,000 to $5,000 per million; $40,000 is a rare outlier
+- **To resolve:** Check YouTube RPM for the chosen niche and the reused-content policy
+- **Source note:** [notes/instagram/De5NPnBqVqV.md](../notes/instagram/De5NPnBqVqV.md)
+
 ### Megasheet UGC campaigns and 62K a month earnings  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Platform promoted for scripted on-camera brand videos with view-based pay
