@@ -1,0 +1,14 @@
+language: hi (1.00)
+## English translation
+[0s] Bro, this company was giving 1 crore package and only after this, what is the workflow of your cloud code?
+[5s] So if you are still only prompting and writing the code from AI, then the game of prompting is over.
+[9s] If you want a job and want to be a 10x engineer, then make a proper workflow setup of cloud code or codex.
+[14s] And for how to make it, I have made a great setup guide which is inspired by my own setup.
+[18s] So share this reel with me and I will send it to you.
+[20s] The rest of the content is relevant, so follow it.
+## Original (hi)
+[0s] बाई ये कंपनी एक करोड का पैकेज देरे थी और सिर्फ इस बाद पे की तुमारे क्लोड कोड कोड का वर्क्फ्लो क्या है
+[5s] तो अगर तुम अभी भी सर्फ प्रोम्टिंग करके A.I से कोड लिए कोड लिए तो बाई प्रोम्टिंग का खेल खतम है
+[9s] अगर जेन्विनली जोब चेव यो थेनेक्स अंजीन्यर बनना है तो क्लोड कोड या कोड एक प्रोपर वर्ख्फ्लो सेट्ब बना अपने
+[14s] और बनाना कैसे है, उसके ले मैं एक मुस्ट सेट्ब गाइड बनाई हुए जो मैं हुद्के सेटब सेटब से अंपाआद है
+[18s] तो ये लील मुझे शेटब सेटब और मैं बहिच तो मुझे बाखी कोंटेंट रेलेवेंट लग रहे है तो फोलोगर डो

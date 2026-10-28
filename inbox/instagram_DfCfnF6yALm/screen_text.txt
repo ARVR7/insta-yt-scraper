@@ -1,0 +1,75 @@
+[0s] HOWYOUUSEAIFOR
+[0s] CODING DEFINESTHEKIND
+[0s] OFENGINEERYOUARE
+[0s] TheWoRsTonesJUsTpromptAI
+[0s] MemO isHiring
+[0s] 2EngineersinIndia.1 Crorecashsalary.
+[0s] 1Backend.1Frontend.
+[0s] 7to10yearsofexperience.
+[0s] Workfromanywhere.
+[0s] Butthereisa catch.Donotsenda genericresume.
+[0s] Wehavezero lITfiltersandzeroLeetCoderounds.We
+[0s] onlywanttoseeyourAlworkflow.Howdoyouactually
+[0s] plan,debug,and ship codeusing Al?
+[0s] Send your Claude Code,Codex,Cursor,or Windsurf logs
+[0s] from a recentproductfeatureyou are proud of.
+[0s] Drop ithere:in
+[0s] Keepitclear.Keep it thoughtful.Removesensitive data
+[0s] beforesending.NoAltracemeansnoreview.
+[0s] This company was offering 1 cRORE CTC
+[3s] ALL theywanted to see was your
+[3s] Claude Code setup
+[6s] then you should know that PRoMPTING
+[6s] is d*ad.
+[9s] ShekharKirani
+[9s] @skirani
+[9s] 10xengineers
+[9s] Founders ifyou evercome across thisrarebreed of
+[9s] engineers,grab them.lfyou havea10xengineeraspart
+[9s] ofyourfirstfewengineers,youincreasetheoddsofyour
+[9s] startup success significantly.
+[9s] OK,here is a tough question.
+[9s] Howdoyouspota10xengineer?
+[9s] 4:02PM·Jul11,2019.TwitterWebApp
+[9s] 5.4KRetweets
+[9s] 4.6KLikes
+[9s] If you genuinely need a job and want to
+[9s] be a 10x Al Engineer
+[12s] ude Code
+[12s] 22.14.0-/0
+[12s] ts/G（tb/ai-atog-boiterplate-taodinggit:(main)
+[12s] claude
+[12s] Codev2.1.88
+[12s] nodemodles
+[12s] Tipn for gettlng started
+[12s] kelcome backJim!
+[12s] Recent actirity
+[12s] Soneet4.6withloeffort-CloudeTesm
+[12s] Alpbasignat
+[12s] -/Documents/CitMsb/al-blog-boilerptate-1a
+[12s] /plugte
+[12s] AGENTS.md
+[12s] （nocomtent)
+[12s] CHANGELOGmd
+[12s] UCENSEmd
+[12s] Explore（Exptore cocebase structure)
+[12s] READMEmd
+[12s] ned-ern.d.ts
+[12s] next.confgs
+[12s] Searched for 1pattern,read 1 file (ctrlo to expand)
+[12s] [1pockagelockjon
+[12s] Write（CLAuDE.md)
+[12s] [1pockagejson
+[12s] Create flle
+[12s] premiet.coefigjs
+[12s] CLADE.d
+[12s] Ts prsma.conig.ts
+[12s] 1CLAUDE.nd
+[12s] 3Thts rile provides guidance to Claude Cose (ctaude.al/coce）en workleg with code e
+[12s] this repository.
+[12s] Then create a proper workflow setup for
+[12s] your Claude Code/Codex
+[15s] which is inspired from my own workflow
+[18s] SHARETHISREEL
+[18s] IN DMTOGETTHE
+[18s] SETUPGUIDE
