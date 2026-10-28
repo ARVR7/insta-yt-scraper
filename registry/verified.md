@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Google Vids free AI video with Omni 1.1 Flash  (2026-10-28)
+- **Verdict:** verified
+- **What it is:** Free 1080p AI video generation in Google Vids using Gemini Omni 1.1 Flash, with a monthly cap
+- **Why it is verified:** Several news and guide sources
+- **Source note:** [notes/instagram/DeMlHQjxpnA.md](../notes/instagram/DeMlHQjxpnA.md)
+
 ### Recordly: free open-source Screen Studio-style recorder  (2026-10-27)
 - **Verdict:** verified
 - **What it is:** AGPL screen recorder with auto-zoom, cursor effects and a timeline editor for Mac, Windows and Linux
@@ -366,6 +372,13 @@ Items that checked out against primary sources. Newest first within each section
 - **Source note:** [notes/instagram/DeToMLxtdSV.md](../notes/instagram/DeToMLxtdSV.md)
 
 ## Pending verification
+
+### Google Vids has no limit on free videos  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Creator claims unlimited free generation
+- **Why pending:** Reports describe a small monthly cap; exact number differs by source
+- **To resolve:** Read the limits on Google's own Vids help page
+- **Source note:** [notes/instagram/DeMlHQjxpnA.md](../notes/instagram/DeMlHQjxpnA.md)
 
 ### Home of Creators app gave 1 lakh followers in a month  (2026-10-27)
 - **Verdict:** unverified
