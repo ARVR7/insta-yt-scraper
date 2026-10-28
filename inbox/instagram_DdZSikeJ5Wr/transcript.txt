@@ -1,2 +1,0 @@
-language: en (0.32)
-[0s] OOOB, OOOB, OOOB, OOOB, OOOB, OOOB, OOOB

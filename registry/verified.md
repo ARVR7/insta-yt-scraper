@@ -385,6 +385,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### H3 AI video generator, free with 3,000 bonus credits  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Unnamed template-based AI video site promoted as a Higgsfield rival that 'China just dropped'
+- **Why pending:** Tool never named; only a menu and a promo banner are shown
+- **To resolve:** Find the tool from the comments and read its pricing and terms
+- **Source note:** [notes/instagram/DdZSikeJ5Wr.md](../notes/instagram/DdZSikeJ5Wr.md)
+
 ### Zack D. Films earns $7.8M a year; copy it with ChatGPT and Gemini  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Reel ties a ChatGPT-plus-Gemini Shorts workflow to a third-party earnings estimate of $7.8M to $125M a year
