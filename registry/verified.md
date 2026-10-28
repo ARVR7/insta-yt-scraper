@@ -391,6 +391,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Eromify AI influencer plus Fanvue payouts that never fail  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Claims a Claude MCP workflow creates AI influencers that earn Fanvue payouts like $13,145 to $53,980
+- **Why pending:** No independent earnings evidence; top AI creators are outliers; screens unverified
+- **To resolve:** Ask for documented payouts tied to this workflow and read Fanvue's AI and content policy
+- **Source note:** [notes/instagram/DfCpM-nNZrk.md](../notes/instagram/DfCpM-nNZrk.md)
+
 ### H3 AI video generator, free with 3,000 bonus credits  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Unnamed template-based AI video site promoted as a Higgsfield rival that 'China just dropped'

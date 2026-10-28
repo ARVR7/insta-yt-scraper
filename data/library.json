@@ -1,5 +1,31 @@
 [
   {
+    "id": "DfCpM-nNZrk",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfCpM-nNZrk/",
+    "title": "Claude plus Eromify AI influencer payouts",
+    "author": "ajdoessai",
+    "posted": "2026-10-28 14:26:44+00:00",
+    "type": "reel",
+    "category": "money",
+    "category_label": "Money",
+    "subcategory": "business",
+    "subcategory_label": "Business",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude",
+      "Eromify MCP",
+      "Fanvue"
+    ],
+    "usefulness": "misleading",
+    "verdict": "pending",
+    "key_info": "20-second pitch: copy the Eromify MCP key, add it to Claude as a custom connector, prompt for an AI influencer, connect it to Fanvue and get payouts, shown as dashboards of $13,145, $4,299 and $53,980. The caption says 'Never fails'. The tool is an AI media generator aimed at AI influencers and adult-leaning creator content.",
+    "note_path": "notes/instagram/DfCpM-nNZrk.md"
+  },
+  {
     "id": "DfChs7UzB-t",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfChs7UzB-t/",
