@@ -2,6 +2,11 @@
 
 Every non-obvious decision, with the reason. Newest first. Add an entry whenever you choose between options, work around a limit, or change a rule.
 
+## 2026-10-28
+
+### Home of Creators app is Influish
+The app promoted in the Dbk7in3JzR1 note as Home of Creators is Influish, named in De9l-_tzb0a. Both stay partly-verified or pending; the earlier note was not edited.
+
 ## 2026-10-19
 
 ### Approximate fajita seasoning with the generic spice mix
