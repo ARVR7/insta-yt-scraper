@@ -391,6 +391,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Google AI Pro free for 18 months, valid till 29 October  (2026-10-28)
+- **Verdict:** unverified
+- **What it is:** Claims anyone in India can claim 18 months of Google AI Pro (5 TB, Nano Banana Pro, Flow credits) free until 29 October
+- **Why pending:** A Jio partnership offer exists, but eligibility conditions and the deadline were not confirmed
+- **To resolve:** Check the MyJio app and Google's own offer page for current terms
+- **Source note:** [notes/instagram/DfClNCINH58.md](../notes/instagram/DfClNCINH58.md)
+
 ### Eromify AI influencer plus Fanvue payouts that never fail  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Claims a Claude MCP workflow creates AI influencers that earn Fanvue payouts like $13,145 to $53,980
