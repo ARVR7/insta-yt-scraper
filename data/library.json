@@ -1,5 +1,31 @@
 [
   {
+    "id": "DfChs7UzB-t",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfChs7UzB-t/",
+    "title": "Free GPU hours on Kaggle Colab and Modal",
+    "author": "ai.mohit01",
+    "posted": "2026-10-28 13:21:41+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Kaggle",
+      "Google Colab",
+      "Modal"
+    ],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "Part 1 of a four-part series on free GPUs that refill: Kaggle gives about 30 hours of GPU a week (phone verification needed), Google Colab gives a free T4 with no fixed limit, and Modal gives $30 of free credits every month, roughly 7.5 hours of H100. The caption cites Kaggle, Modal and Colab's own pages and warns limits date from October 2026 and can change. Part 2 is promised tomorrow, with a giveaway in part 4.",
+    "note_path": "notes/instagram/DfChs7UzB-t.md"
+  },
+  {
     "id": "DfA1ccrSE_4",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfA1ccrSE_4/",

@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Free GPU: Kaggle 30 hours a week, Colab T4, Modal $30 a month  (2026-10-28)
+- **Verdict:** verified
+- **What it is:** Kaggle gives about 30 GPU hours weekly, Colab a free T4 with unpublished limits, and Modal $30 of monthly credits (about 7.5 hours H100)
+- **Why it is verified:** Kaggle doc shown on screen and Modal pricing found; Colab limits unpublished
+- **Source note:** [notes/instagram/DfChs7UzB-t.md](../notes/instagram/DfChs7UzB-t.md)
+
 ### free-for-dev: list of free developer services  (2026-10-28)
 - **Verdict:** verified
 - **What it is:** Public GitHub list (ripienaar/free-for-dev, free-for.dev) of free tiers for SaaS, PaaS and IaaS, about 138k stars
