@@ -1,0 +1,181 @@
+[0s] 12GBserver freeforever
+[0s] 200GB storage+10TB
+[0s] bandwidth +2 databases
+[0s] ORACLE
+[0s] Seaech
+[0s] Oracle Cloud Free Tier
+[0s] Build,test,and deploy appicationsonOraceCloud-forfree
+[0s] HereishowOracle Cloud Free Tierworks
+[3s] StorageX
+[3s] Dont miss this follow and
+[3s] IYSFREE
+[3s] Stor
+[3s] comment"free
+[3s] Archive Storage
+[3s] Block Volume Storage
+[3s] Unstructured storage-archive
+[3s] Boot and block volume stora
+[3s] Always Free
+[3s] Up to20GBtotal forstandard,infrequent
+[3s] Up to2blockvolumes,200
+[3s] and archive
+[3s] volumebackups.
+[3s] Storage
+[3s] Object Storage-lnfrequent Access
+[3s] Object Storage-Standard
+[3s] Unstructured storage-infrequent access
+[3s] Unstructured storage-stand
+[3s] Up to2ncptotal forstandard,infrequent
+[3s] Up to20GB total for standard
+[3s] Search
+[6s] BlockVolune Storge
+[6s] orage
+[6s] Boot and block volume storage
+[6s] Storage APlrequests
+[6s] Free
+[6s] Up to2blockvolumes,200 GB total.Plus5
+[6s] Up to50,000 Object StorageA
+[6s] per month
+[6s] TRIAL
+[6s] Up to7TBof blockvolume sto
+[6s] Unstructured storage-standard
+[6s] 11TB of Object storage.Object
+[6s] Always Fre
+[6s] storage to store and access dat
+[6s] Upto20
+[6s] ard,infrequent
+[9s] NetworkingX
+[9s] ALWAYS
+[9s] Networkincomment"free”
+[9s] king
+[9s] Flexible Network Load Balancer
+[9s] Loaa Balancer
+[9s] The Network Load Balancer service
+[9s] The Load Balancerservice alloy
+[9s] provides automated traffic distribution from
+[9s] create highly available load bal
+[9s] one entry point to multiple servers ina
+[9s] your VcN.All load balancers co
+[9s] backend set.Network load balancers ensure
+[9s] provisioned bandwidth.
+[9s] that your servicesremain available by
+[9s] directing traffic only to healthy servers
+[9s] based onLayer3/Layer 4(IPprotocol) data.
+[9s] 1instance,10 Mbps
+[9s] 1instance
+[9s] ALWA
+[9s] Networking
+[9s] Site-to-Site VPN
+[9s] Servi
+[9s] Provides a site-to-site IPSec con
+[9s] buspla
+[9s] between your on-premises netw
+[9s] glassf
+[9s] your virtual cloud network(VCN
+[9s] monito
+[9s] ving data
+[12s] Load Balancer
+[12s] The Load Balancer service allowsyo
+[12s] create highly available load balancer
+[12s] your VCN.All load balancers comey
+[12s] backend set.Net
+[12s] dwidth.
+[12s] thatyourservicesTer
+[12s] based on Layer3/Commentata.free
+[12s] Mbps
+[12s] Service Connector Hub
+[12s] Service Connector Hub is a cloud message
+[12s] Provides a site-to-site IPSec connecti
+[12s] bus platform that offers a single pane of
+[12s] betweenyour on-premisesnetwork
+[12s] glass for describing,executing,and
+[12s] monitoringin
+[12s] when moving data
+[12s] between O
+[12s] 50 IPSec connections
+[12s] services
+[12s] Alway
+[12s] 2servic
+[15s] racle DatabasesX
+[15s] Oracle Databacomment "free”
+[15s] DracleDatabases
+[15s] Autonomous Database
+[15s] HeatWave
+[15s] Oracle Autonomous Transaction
+[15s] Automated and int
+[15s] Processing,AutonomousData Warehouse,
+[15s] and machine learn
+[15s] Autonomous JSON Database,orAPEX
+[15s] for transactions an
+[15s] ApplicationDevelopment.
+[15s] analytics.
+[15s] Up to Two databasestotal
+[15s] One standalone He
+[15s] in your home regio
+[15s] GBof storage and
+[15s] Oracle Da
+[15s] Oracle Databases
+[15s] Autonomo
+[15s] buse
+[15s] Autonomous Jso
+[18s] OracleD
+[18s] NoSQL
+[18s] Automated and integrated generative Al
+[18s] NoSQLs
+[18s] and machine learning in one cloud service
+[18s] service ti
+[18s] for transactions and lakehouse-scale
+[18s] dynamic
+[18s] reliabied
+[18s] value,an
+[18s] One standalone HeatWave instance in OCl
+[18s] AlwaysF
+[18s] in your home region,alongwith up to50
+[18s] Up to 133
+[18s] GBofstorageandup to50 GBofbackup
+[18s] million w
+[18s] table,up
+[18s] Autonor
+[18s] N Database
+[21s] Here is how Oracle Cloud Free
+[21s] Start with a Us$3o0 cloud credit.*
+[21s] You'll have 30 days to use it to test your
+[21s] applications on all ocl services,in addition to
+[21s] Always Free Services in your Free Tier account.
+[21s] on Oracle Cloud Free Tier
+[21s] Filtered by:
+[21s] Oracle Datahas
+[24s] oracle.com/in/cloud/free/
+[24s] Startforfree
+[24s] Sign in to Oracle Cloud
+[24s] Atany time duringor after the 0
+[24s] Switch to a Pay As You Go accour
+[24s] services that exceed the monthly
+[24s] from Always FreeServices.
+[24s] Get cloud credits and start using Oracl
+[24s] ad Free Tier
+[24s] OrarleDatahncesX
+[24s] Mostly clear
+[27s] ALNAYSFREE
+[27s] Oradle Databases
+[27s] Orade
+[27s] cmous3SONDatabase.orAPEX
+[27s] GsonDeveicon
+[30s] Processing.A
+[30s] ltonomous Data Wareho
+[30s] SON Database.or APEX
+[30s] databasestotal
+[30s] Tier Type
+[30s] Product Category
+[30s] Aland Machine Learning
+[30s] Analytics and Bl
+[30s] Autonomous Data Warehouse
+[30s] Up to3,338hours,2TBofOracleExadata
+[30s] Cormpute
+[30s] storage.Get your data warehouse deploye
+[30s] in seconds.Fully managed,preconfigured
+[30s] and optimized.
+[30s] Data Safe
+[30s] Unlimited cloud targeis One paid targot
+[30s] Q Search
+[30s] Most
