@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Anatomy: free Claude skill for isometric explainers  (2026-10-29)
+- **Verdict:** verified
+- **What it is:** MIT-licensed skill (wheresryan22/anatomy) that builds interactive isometric SVG, WebGL and 3D figures from a one-line concept; installed with npx skills add
+- **Why it is verified:** Public repo, install command and several write-ups found
+- **Source note:** [notes/instagram/DfCQiUNBHP7.md](../notes/instagram/DfCQiUNBHP7.md)
+
 ### Oracle Cloud Always Free: Arm VM with up to 24 GB RAM  (2026-10-28)
 - **Verdict:** verified
 - **What it is:** Always Free includes Ampere A1 compute up to 4 OCPUs and 24 GB RAM, 200 GB block storage and 10 TB monthly egress, with a separate $300 trial credit

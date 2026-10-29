@@ -106,6 +106,31 @@
     "note_path": "notes/instagram/DfCfnF6yALm.md"
   },
   {
+    "id": "DfCQiUNBHP7",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfCQiUNBHP7/",
+    "title": "Anatomy Claude skill for isometric explainers",
+    "author": "nishantchahar.ai",
+    "posted": "2026-10-28 10:50:07+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Anatomy skill",
+      "Claude Code"
+    ],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "Anatomy is an open-source skill (wheresryan22/anatomy) that turns an idea into an interactive isometric figure in SVG, WebGL and 3D. Install with 'npx skills add wheresryan22/anatomy -g -a claude-code' or clone it into ~/.claude/skills/anatomy, then ask for what you want and give it references. The creator says it also works in other agents. The DM for the skill is unnecessary since the repo is public.",
+    "note_path": "notes/instagram/DfCQiUNBHP7.md"
+  },
+  {
     "id": "DfBtGcYo5yX",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfBtGcYo5yX/",
