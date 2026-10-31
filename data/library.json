@@ -2455,6 +2455,31 @@
     "note_path": "notes/instagram/Dc36DK9zjdV.md"
   },
   {
+    "id": "Dck5bFxNOsJ",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dck5bFxNOsJ/",
+    "title": "Open Higgsfield AI free generator",
+    "author": "moeeztech_ai",
+    "posted": "2026-08-28 08:09:18+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Open Higgsfield AI",
+      "Muapi.ai"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "The repo shown is Open Higgsfield AI (Anil-matcha/Open-Higgsfield-AI, MIT), an open-source image, video, lip-sync and cinema generator UI with a hosted version at muapi.ai/open-higgsfield-ai and a desktop installer. The app is free software but generation runs through Muapi.ai models with your own Muapi API key, so 'free unlimited' is not guaranteed. Several forks and copies exist; use the original repo.",
+    "note_path": "notes/instagram/Dck5bFxNOsJ.md"
+  },
+  {
     "id": "Db-83ucolWr",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Db-83ucolWr/",

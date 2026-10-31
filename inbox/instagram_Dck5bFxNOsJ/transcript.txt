@@ -1,5 +1,0 @@
-language: hi (0.24)
-## English translation
-[0s] If you like this video, please share it with your friends and family and subscribe to the channel.
-## Original (hi)
-[0s] प्रीम अगर आपको एक स्विल लिए उस कना ते भीटिव आप लिए आप आपको अपन स्विल में जब आपको कोई लिमिट नहीं आगे तिकन लिंक के लिए कमिल कर तो आप लिए लिंक आप विटिए में देख पोंजाएगा।

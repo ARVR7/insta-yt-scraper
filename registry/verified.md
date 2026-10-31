@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Open Higgsfield AI: open-source Higgsfield alternative  (2026-10-31)
+- **Verdict:** partly-verified
+- **What it is:** MIT-licensed image/video/lip-sync generator UI (Anil-matcha/Open-Higgsfield-AI) with hosted and desktop versions, powered by Muapi.ai
+- **Why it is partly-verified:** Repo and README found and match the screen; free unlimited use not confirmed
+- **Source note:** [notes/instagram/Dck5bFxNOsJ.md](../notes/instagram/Dck5bFxNOsJ.md)
+
 ### Anatomy: free Claude skill for isometric explainers  (2026-10-29)
 - **Verdict:** verified
 - **What it is:** MIT-licensed skill (wheresryan22/anatomy) that builds interactive isometric SVG, WebGL and 3D figures from a one-line concept; installed with npx skills add
