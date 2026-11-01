@@ -1,0 +1,14 @@
+language: en (1.00)
+[0s] You have about two weeks to learn clipping
+[2s] because when GTA 6 drops,
+[4s] it's gonna be a generational opportunity
+[6s] for everybody who knows this skill.
+[7s] It's about to be the most clip game ever.
+[9s] So I'm gonna show you how to start clipping before it drops.
+[11s] Go to YouTube and find any Mr. Beast video,
+[13s] copy the video link, go to voider.so,
+[15s] and download the free app.
+[17s] Once you're in, connect to Claude and then paste this prompt.
+[19s] Just 50 minute video has been cut into 10 viral clips.
+[21s] If you want the prompt,
+[22s] I use just comment the word clip.
