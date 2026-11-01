@@ -1,5 +1,30 @@
 [
   {
+    "id": "DfKTfQ9uoub",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfKTfQ9uoub/",
+    "title": "Open Higgsfield AI repo funnel",
+    "author": "krish.exploits",
+    "posted": "2026-10-31 13:55:21+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Open Higgsfield AI",
+      "Muapi.ai"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "The repo shown is the Autom8AI fork of Open-Higgsfield-AI (itself a fork of Anil-matcha/Open-Generative-AI), with a README pointing to the hosted muapi.ai/open-higgsfield-ai and desktop installers for macOS and Windows. The link is not in the caption: the creator says to comment for a DM. The two repo lookups returned not found only because OCR read 'AI' as 'Al'; the project exists under Anil-matcha/Open-Higgsfield-AI.",
+    "note_path": "notes/instagram/DfKTfQ9uoub.md"
+  },
+  {
     "id": "DfCpM-nNZrk",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfCpM-nNZrk/",

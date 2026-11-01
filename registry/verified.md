@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Open Higgsfield AI repo shown via Autom8AI fork  (2026-11-01)
+- **Verdict:** partly-verified
+- **What it is:** Fork of the Open-Higgsfield-AI generator UI with hosted and desktop versions powered by Muapi.ai
+- **Why it is partly-verified:** Same project as the earlier Open Higgsfield AI reel; fork shown, free unlimited use not confirmed
+- **Source note:** [notes/instagram/DfKTfQ9uoub.md](../notes/instagram/DfKTfQ9uoub.md)
+
 ### Open Higgsfield AI: open-source Higgsfield alternative  (2026-10-31)
 - **Verdict:** partly-verified
 - **What it is:** MIT-licensed image/video/lip-sync generator UI (Anil-matcha/Open-Higgsfield-AI) with hosted and desktop versions, powered by Muapi.ai
