@@ -25,6 +25,31 @@
     "note_path": "notes/instagram/DfKTfQ9uoub.md"
   },
   {
+    "id": "DfJGKWeN8KH",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfJGKWeN8KH/",
+    "title": "GTA 6 clipping with Voyager",
+    "author": "jacobmmsidehustle",
+    "posted": "2026-10-31 02:35:23+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Voyager",
+      "Claude"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "The creator says to paste a YouTube link into the Voyager desktop app, connect Claude, and use a prompt to cut a long video into viral clips. Voyager is real (voyager.so, an open-source creative agent app, Windows still alpha); the voice says 'voider.so', which is a mishearing or typo. The prompt is behind a comment-the-word-clip funnel. Clipping other creators' videos such as MrBeast's carries copyright risk, and the GTA 6 'generational opportunity' is hype.",
+    "note_path": "notes/instagram/DfJGKWeN8KH.md"
+  },
+  {
     "id": "DfCpM-nNZrk",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfCpM-nNZrk/",

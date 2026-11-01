@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Voyager: free creative agent app for Claude  (2026-11-01)
+- **Verdict:** partly-verified
+- **What it is:** Open-source desktop creative agent (voyager.so) that connects to Claude; promoted here for cutting long videos into clips
+- **Why it is partly-verified:** Product Hunt and a directory list it; free credits and clipping results not confirmed
+- **Source note:** [notes/instagram/DfJGKWeN8KH.md](../notes/instagram/DfJGKWeN8KH.md)
+
 ### Open Higgsfield AI repo shown via Autom8AI fork  (2026-11-01)
 - **Verdict:** partly-verified
 - **What it is:** Fork of the Open-Higgsfield-AI generator UI with hosted and desktop versions powered by Muapi.ai
