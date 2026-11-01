@@ -415,6 +415,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Viewmax MCP for Claude (GTA 6 clips)  (2026-11-01)
+- **Verdict:** pending
+- **What it is:** Claimed MCP connector that creates viral clips from a YouTube link inside Claude
+- **Why pending:** Only promoted in a sponsored reel; no independent source found
+- **To resolve:** Find Viewmax's own site or repo and check pricing
+- **Source note:** [notes/instagram/DdAY4aoNVI3.md](../notes/instagram/DdAY4aoNVI3.md)
+
 ### 1 crore job screened only on Claude Code workflow  (2026-10-28)
 - **Verdict:** unverified
 - **What it is:** Screenshot job ad: two engineers in India, 1 crore cash, no resume or LeetCode, send AI coding logs
