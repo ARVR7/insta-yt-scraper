@@ -1,9 +1,0 @@
-language: hi (1.00)
-## English translation
-[0s] So take as many screenshots as possible in this video as I am going to tell you how to get the full guide of this channel.
-[8s] We have made a channel like this and this is the result of this channel in 7 days.
-[13s] We have copied this video and made this video.
-[16s] We do all the research from Gemini, this prompt and we make videos from Claude.
-[23s] Now how to understand the whole process in detail.
-## Original (hi)
-[0s] तो इस वीडियो में जितने स्क्रीन श्क्रींट ले सक्ते हो लिलिना क्योपी पेस यूट्युप चनल चलागे अच्छर रेविनु कैसे निकालना उसके पुरी गाइड बताने अवाला हो।

@@ -415,6 +415,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Copy-a-viral-video YouTube channel funnel  (2026-11-01)
+- **Verdict:** pending
+- **What it is:** Claim that copying a viral video format with Gemini research and Claude scripts built a channel in 7 days
+- **Why pending:** Only a channel screenshot, no verified ownership or earnings
+- **To resolve:** Ask owner for screenshots of the full guide if they want it assessed
+- **Source note:** [notes/instagram/DemkVugzl1h.md](../notes/instagram/DemkVugzl1h.md)
+
 ### Viewmax MCP for Claude (GTA 6 clips)  (2026-11-01)
 - **Verdict:** pending
 - **What it is:** Claimed MCP connector that creates viral clips from a YouTube link inside Claude
