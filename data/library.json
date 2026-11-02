@@ -1,5 +1,30 @@
 [
   {
+    "id": "DfOJnByyfyz",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfOJnByyfyz/",
+    "title": "Karpathy HackerTube dev video site",
+    "author": "iharnoor",
+    "posted": "2026-11-02 01:44:31+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "coding",
+    "subcategory_label": "Coding",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "HackerTube",
+      "Claude"
+    ],
+    "usefulness": "mixed",
+    "verdict": "pending",
+    "key_info": "The reel says Andrej Karpathy built HackerTube (hackertube.org) in one weekend: Claude filtered about 43M Hacker News comments from 20 years down to 6,454 developer videos that keep being recommended, giving a better viewing experience than YouTube's recommendations, built in about 2 hours with Opus 5.5. The on-screen sources are a Karpathy post on X dated Nov 1 2026 and a Hacker News front-page item pointing to karpathy.bearblog.dev. I could not independently open the post or the site, so the details are unverified. The link is gated behind a comment-for-DM, although the URL is shown on screen.",
+    "note_path": "notes/instagram/DfOJnByyfyz.md"
+  },
+  {
     "id": "DfKTfQ9uoub",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfKTfQ9uoub/",

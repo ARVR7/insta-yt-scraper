@@ -415,6 +415,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### HackerTube (hackertube.org) by Karpathy  (2026-11-02)
+- **Verdict:** pending
+- **What it is:** Claimed curated site of 6,454 developer videos recommended on Hacker News, built in a weekend with Claude
+- **Why pending:** Shown via screenshots only; post and site not found by search
+- **To resolve:** Open hackertube.org and the karpathy.bearblog.dev post directly
+- **Source note:** [notes/instagram/DfOJnByyfyz.md](../notes/instagram/DfOJnByyfyz.md)
+
 ### Copy-a-viral-video YouTube channel funnel  (2026-11-01)
 - **Verdict:** pending
 - **What it is:** Claim that copying a viral video format with Gemini research and Claude scripts built a channel in 7 days
