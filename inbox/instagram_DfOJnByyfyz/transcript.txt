@@ -1,0 +1,8 @@
+language: en (0.96)
+[0s] We have new YouTube for developers which was built just in one weekend by Andhra Karpati.
+[5s] He was fed up of YouTube's recommendation and to solve it he went through all the best
+[11s] developer videos tutorials which were recommended on Hacker News 6500 comments and created his own
+[17s] recommendation system and it's called now HackerTube.org, where you will find videos that will make
+[23s] you top 1% developer in the world, whether it's inference engineer or forward-to-plot engineer,
+[29s] no matter what, because developer skills are still the same. Comment down and I'll send you
+[33s] the link in your DM.
