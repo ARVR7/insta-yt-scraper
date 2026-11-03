@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Pomelli: Google Labs AI marketing tool  (2026-11-03)
+- **Verdict:** partly-verified
+- **What it is:** Free Google Labs tool that analyses a website and generates a social media campaign, as shown in the reel
+- **Why it is partly-verified:** Several blogs describe it; not checked on Google's own page
+- **Source note:** [notes/instagram/DfP_oCUMi58.md](../notes/instagram/DfP_oCUMi58.md)
+
 ### Voyager: free creative agent app for Claude  (2026-11-01)
 - **Verdict:** partly-verified
 - **What it is:** Open-source desktop creative agent (voyager.so) that connects to Claude; promoted here for cutting long videos into clips
