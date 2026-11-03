@@ -1,0 +1,17 @@
+language: hi (1.00)
+## English translation
+[0s] Let me show you a guy, his name is Mads Lorenzen, he is a geophysicist, in his company he gets lay off, and anyone will get lay off, what will he do, he will be active in the job market, he will post on LinkedIn, he will search for jobs everywhere,
+[13s] No, he took the matter on Evo, he thought that I don't have to find a job manually, I have to automate the market of job search, and he made an automated Github Repo, he took the job of AI Engineian also,
+[27s] At this time, he has open sourced the Github Repo, whose name is AI Job Search, and on which there are 64.3k stars, I mean, you don't have to do anything, you just have to attach your CV, you have to tell specialization on your behalf,
+[40s] You will find all the jobs, you will find them, according to the job description, your resume will also modify, I will make you, and if you give this access,
+[49s] It will also apply on your behalf, use it for your job search, you just need the access of a cloud,
+[55s] I will comment below, so I will send all the setup guides, all the things, I will send all the commands, but use it for job search,
+## Original (hi)
+[0s] बआई तो में बनदा दिखातों एक सेकिन इस बनदे का नाम है
+[2s] मैद्स, लोरेंजें, यह जीो फिडिसिस्ट है
+[5s] इसकी कम्तनी में इसका लेवाफ होँजाता है
+[6s] अगी की भी बनदे का लेवाफ होँजाया है, वो क्या करेगा?
+[9s] भाई जोब माकेट में आख्टिब होँजायागा, लिंदिम पे पोस डालेगा, सारी जगा जोब सरच करेगा
+[13s] नहीं भाई इसने बात लेली एवगोपे, इसको भाई सोच लियाता की मेंगो किसी भी तरा से
+[17s] बाई जोब सरच के माकेट को अतोमेट करना है, असको ही नहीं अतोमेट करा, और एक गिटब रेपो बनाई, इसने A.I. Ingenian की जोब बी लेली आजके ताएम पे इसने वोली गिटब रेपो अपन सोच कर दी है, जिसका नाम है A.I. job search, और जिस पे 64.3 के स्तार्ज है, मतलप
+[47s] तुमने सैक्सर दी दी दिया, तुमहारे बिहाप पे अपलाई भी करेगा, आपनी job search के लिए यूस करो, असे तुमहें सिर्फे ख्लोड का असे चाहीं है, बात कतम नीचे कमेट कर दिन, तुमहें DM में सारे की सारी set up guide, सब चीजे बहित तुमहें सारी कमाड बहित तुमहे
