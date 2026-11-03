@@ -663,6 +663,31 @@
     "note_path": "notes/instagram/De4rnuLEWb_.md"
   },
   {
+    "id": "De4Lyf7JYqG",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/De4Lyf7JYqG/",
+    "title": "AI Job Search GitHub repo",
+    "author": "an.idiotic_soul",
+    "posted": "2026-10-24 12:58:54+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "automation",
+    "subcategory_label": "Automation",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "ai-job-search",
+      "Claude Code"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "The repo shown is ai-job-search-dev/ai-job-search (MIT, 69k stars, pushed 2026-11-02): an AI job application framework built on Claude Code that evaluates postings, tailors CVs, writes cover letters and preps interviews. It runs on your machine and needs a Claude Pro/Max/Team subscription or Anthropic API credits, not just 'cloud access'. The README says it never invents experience and only drafts follow-ups; whether it submits applications for you is not confirmed. The creator story (Mads Lorenzen, laid-off geophysicist) was not found. The setup guide is gated behind a comment and DM.",
+    "note_path": "notes/instagram/De4Lyf7JYqG.md"
+  },
+  {
     "id": "De4Lndsh9UB",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/De4Lndsh9UB/",

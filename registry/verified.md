@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### ai-job-search: Claude Code job application framework  (2026-11-03)
+- **Verdict:** partly-verified
+- **What it is:** Open-source framework that tailors CVs, writes cover letters and preps interviews
+- **Why it is partly-verified:** Repo and README confirmed; auto-apply and creator story unverified
+- **Source note:** [notes/instagram/De4Lyf7JYqG.md](../notes/instagram/De4Lyf7JYqG.md)
+
 ### Pomelli: Google Labs AI marketing tool  (2026-11-03)
 - **Verdict:** partly-verified
 - **What it is:** Free Google Labs tool that analyses a website and generates a social media campaign, as shown in the reel
