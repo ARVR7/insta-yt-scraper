@@ -427,6 +427,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Two AI tool directories from jagu.builds  (2026-11-05)
+- **Verdict:** pending
+- **What it is:** A 5,000+ tool directory and an 11-category AI map with a Chinese AI section
+- **Why pending:** Websites not named; links are in a pinned comment
+- **To resolve:** Owner to paste the pinned comment links or a screenshot
+- **Source note:** [notes/instagram/DfUh7GkBNBk.md](../notes/instagram/DfUh7GkBNBk.md)
+
 ### averageand.ai: AI clip tool for GTA 6 Shorts  (2026-11-05)
 - **Verdict:** pending
 - **What it is:** Claimed AI tool that makes viral clips from a pasted YouTube link
