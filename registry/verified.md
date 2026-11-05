@@ -427,6 +427,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### averageand.ai: AI clip tool for GTA 6 Shorts  (2026-11-05)
+- **Verdict:** pending
+- **What it is:** Claimed AI tool that makes viral clips from a pasted YouTube link
+- **Why pending:** Domain not found in search; may be misheard
+- **To resolve:** Ask for the exact tool name or a screenshot of the site
+- **Source note:** [notes/instagram/DfTOhzQjmrA.md](../notes/instagram/DfTOhzQjmrA.md)
+
 ### HackerTube (hackertube.org) by Karpathy  (2026-11-02)
 - **Verdict:** pending
 - **What it is:** Claimed curated site of 6,454 developer videos recommended on Hacker News, built in a weekend with Claude
