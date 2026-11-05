@@ -1,0 +1,15 @@
+language: hi (1.00)
+## English translation
+[0s] Bro, if you are still coding from AI to prompt, then you are not losing the race, you are not in the race at all.
+[5s] If you really want to use AI in today's time, then make a workflow setup of your coding assistant.
+[10s] In that, scale, sub-agents, MCPs, memory, integrate everything, bro.
+[13s] And how to do it, I have made a setup guide for that which is inspired from my own setup.
+[17s] You share this reel with me and I will send it to you, so that the content is relevant, so follow it.
+## Original (hi)
+[0s] बाई अगर तुम अभी बी A.I. से सर्फ प्रोम्ट लिखवाके कोड करवारे हो ना
+[3s] तो तुम रेस हार नहीं रहे हो तुम रेस में हो ही नहीं
+[5s] अगर आज के ताई में A.I सच में use करना आना तो अपने Coding Assisted का एक Workflow set up बनाउ
+[10s] उस में skills, sub agents, MCPs, मैं में में में सब कुछ इंtegrade करवाई और करना कैसे है
+[14s] उसके लिए मैंने एक set up guide बनाई है which is inspired from my own set up
+[17s] तुम ये रील मुच से शेर कर दो और में बहीचता हो तुम को
+[19s] बाखी content relevant लगे तो फुलो कर लोग
