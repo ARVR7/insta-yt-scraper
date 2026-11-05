@@ -1,0 +1,29 @@
+language: hi (0.95)
+## English translation
+[0s] China has given so many AI tools for free
+[3s] and we don't even know the name of Indians
+[5s] Today, we have found two websites where you can find more than 5,000 to 1,000 tools
+[10s] and there are very few people in India who know about it
+[12s] So, here is the first website
+[14s] where there are more than 5,000 AI tools
+[16s] video, ads, code, whatever you want, search
+[19s] and the tool will appear in front of you
+[21s] and new tools are launched every week
+[23s] and people vote and tell you which tool is the best
+[26s] Now, the second website
+[28s] There is a map of the best AI tools in the world
+[30s] There are 11 categories on this website
+[33s] and this is the section
+[34s] There are 13 AI tools in China
+[37s] There are many open source websites
+[38s] and you don't even have to log in for free
+[40s] To be honest, after watching these two
+[42s] you will stop searching for AI tools on Google
+[45s] I have put the links and Chinese tools list in the pinned comment
+[49s] Save them now
+[51s] You won't be able to find them later
+## Original (hi)
+[0s] चाईना ने दिने सारे एएी तूल्स फीग में दे रख हैं और अँ निदिन सको इनके नाम तक नहीं पदा
+[5s] आज दू वेप्साइट्स मिली हैं जाहा तुमे पाच आसार से जादा तुल्स एक जगापर मिलेंगें और अड़िन्दिया में बगत कम लोग उसके बारे हैं पता हैं
+[12s] तो सुनो, पहली येप्साइट हैं, दिस पे पाच ब आसार से याई तुल्स हैं, विटियो, आज, कोड, जो भी तुमे कामो, सुर्च करो, और तुल तुल तुमे आज आज आजगागा, और अपते नई तुल्स लोंच होते हैं, और लोग वोड कर के बताते हैं, कुन से त
+[42s] तुम आई तुल्स ना गुल पे सुर्च कर मही बंद कर दोगे, दोनोगे लिंक और सरे चाइमीश तुल्स के लिस्ट में पिंट कोमेट में डाल रो की हैं, अभी सेप कर लो, बाद में दूंते रहा जागागा जागा नी तो.
