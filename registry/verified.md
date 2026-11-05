@@ -439,6 +439,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### queues.co.in: ticket resale platform (India)  (2026-11-05)
+- **Verdict:** pending
+- **What it is:** Peer-to-peer ticket resale site promoted for Fred again.. India shows
+- **Why pending:** No independent reviews or company details found; protection claims come from the promotion
+- **To resolve:** Check the site's terms, company registration and event transfer policy
+- **Source note:** [notes/instagram/DeuPR-CKFZf.md](../notes/instagram/DeuPR-CKFZf.md)
+
 ### Two AI tool directories from jagu.builds  (2026-11-05)
 - **Verdict:** pending
 - **What it is:** A 5,000+ tool directory and an 11-category AI map with a Chinese AI section
