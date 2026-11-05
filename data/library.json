@@ -1,5 +1,33 @@
 [
   {
+    "id": "DfUiikfxHPG",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfUiikfxHPG/",
+    "title": "AI coding assistant workflow setup",
+    "author": "ai.with.etqad",
+    "posted": "2026-11-04 13:17:14+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "Codex",
+      "Cursor",
+      "MCP",
+      "sub-agents"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "The reel argues that prompting an AI coding assistant is not enough and you should build a workflow around it: project instructions the assistant always reads, skills, sub-agents, MCP servers, memory, and checks or hooks. The on-screen examples are a DECISIONS.md log of session decisions and the Claude Code permission modes (manual approval, plan, auto) plus an effort setting. The author's own 'setup guide' is gated behind sharing the reel in a DM, which is engagement bait. Whether the guide is any good is unverified.",
+    "note_path": "notes/instagram/DfUiikfxHPG.md"
+  },
+  {
     "id": "DfUh7GkBNBk",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfUh7GkBNBk/",

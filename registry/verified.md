@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### AI coding assistant workflow (CLAUDE.md, skills, sub-agents, MCP)  (2026-11-05)
+- **Verdict:** partly-verified
+- **What it is:** Building a persistent workflow around a coding assistant instead of ad hoc prompting
+- **Why it is partly-verified:** Features are documented; the author's own guide is gated and unseen
+- **Source note:** [notes/instagram/DfUiikfxHPG.md](../notes/instagram/DfUiikfxHPG.md)
+
 ### Whop Content Rewards: pay-per-view clipping marketplace  (2026-11-05)
 - **Verdict:** partly-verified
 - **What it is:** Platform where brands pay clippers per 1,000 verified views of approved clips
