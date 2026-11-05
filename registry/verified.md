@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Whop Content Rewards: pay-per-view clipping marketplace  (2026-11-05)
+- **Verdict:** partly-verified
+- **What it is:** Platform where brands pay clippers per 1,000 verified views of approved clips
+- **Why it is partly-verified:** Whop docs confirm the model; income and India eligibility in the reel are unverified
+- **Source note:** [notes/instagram/DfT2hADohfU.md](../notes/instagram/DfT2hADohfU.md)
+
 ### ai-job-search: Claude Code job application framework  (2026-11-03)
 - **Verdict:** partly-verified
 - **What it is:** Open-source framework that tailors CVs, writes cover letters and preps interviews
