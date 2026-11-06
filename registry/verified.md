@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Free health habits carousel (trainedbyyvs)  (2026-11-06)
+- **Verdict:** pending
+- **What it is:** Carousel about free habits that improve health, with advice to get the basics right before buying supplements
+- **Why pending:** Slides could not be read without a login; only the caption was available
+- **To resolve:** Owner to send screenshots of the slides
+- **Source note:** [notes/instagram/DfW5bwVkXFG.md](../notes/instagram/DfW5bwVkXFG.md)
+
 ### queues.co.in: ticket resale platform (India)  (2026-11-05)
 - **Verdict:** pending
 - **What it is:** Peer-to-peer ticket resale site promoted for Fred again.. India shows
