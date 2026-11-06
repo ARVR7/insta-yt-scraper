@@ -1,0 +1,73 @@
+[0s] FREE
+[0s] 200GB
+[0s] GB SSD
+[3s] 12GB
+[3s] mein mil
+[6s] 12GB RAM
+[9s] tumhare
+[12s] Subscription information
+[12s] Plan reference
+[12s] Plan type
+[12s] Free Tier
+[12s] Start date
+[12s] Mon, 0ct 12, 2026
+[12s] proof
+[15s] YEAWAAZ:
+[15s] ISIFREESERVERPE
+[15s] pe bani hai.
+[18s] STEP
+[18s] oracle
+[18s] Oracle Cloud Free
+[18s] Tier
+[18s] Build, test, and deploy applications
+[18s] on Oracle Cloud—for free.
+[18s] oracle.com
+[21s] oracle.com/cloud/free
+[21s] Startforfree
+[21s] Signin toOracleCloud
+[21s] account
+[21s] banao.
+[24s] docs.oracle.com · Sign Up
+[24s] Note that your credit card
+[24s] won'tbechargedunless
+[24s] you elect to upgrade your
+[24s] cloud account.
+[24s] VERIFY
+[24s] VERIFICATION ONLY
+[24s] ke liye,
+[27s] docs.oracle.com ·Creating an Instance
+[27s] Open the navigation menu  and select
+[27s] Compute.Under Compute,select
+[27s] Instances.
+[27s] Select
+[27s] Create instance
+[27s] VM.Standard.A1.Flex
+[27s] shape is an
+[27s] AlwaysFreeshape.
+[27s] AMPEREA1
+[30s] A1, A2 nahi
+[30s] thisisequivalenttol
+[30s] 2OCPUsand12GB
+[30s] of memory.
+[30s] OCPU2I12GB
+[30s] select theSpecifya customboot
+[30s] volumesizecheckbox.
+[30s] aur storage
+[33s] SSH key save > Create > Running
+[33s] READY.
+[36s] Networking: keep the
+[36s] default network and keep
+[36s] public IPv4 on. SSH keys:
+[36s] download the private key
+[36s] and keep it safe. You need
+[36s] it to log in.
+[36s] Tap Create. When the
+[36s] state turns Running, copy
+[36s] the public IP and log in:
+[36s] lekar
+[39s] 0racle docs, checked 27 0ct 2026
+[39s] GUIDE
+[39s] PINNED:GUIDE link + poora
+[39s] step by step
+[39s] FOLLOW
+[39s] kar lo.
