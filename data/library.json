@@ -260,6 +260,31 @@
     "note_path": "notes/instagram/DfClNCINH58.md"
   },
   {
+    "id": "DfCjZVGojnC",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfCjZVGojnC/",
+    "title": "Free Oracle Cloud ARM server",
+    "author": "gabrubuilds",
+    "posted": "2026-10-28 13:38:01+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "coding",
+    "subcategory_label": "Coding",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Oracle Cloud Always Free",
+      "VM.Standard.A1.Flex"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Steps shown: sign up at oracle.com/cloud/free (a credit card is needed for verification only), then Compute > Instances > Create instance, choose the Ampere VM.Standard.A1.Flex shape with 2 OCPUs and 12 GB RAM, set a custom boot volume up to 200 GB, add an SSH key and keep a public IPv4, then create. This is a real Always Free shape. Caveats: capacity errors ('out of capacity') are common, idle Always Free instances can be reclaimed, the 200 GB limit is total block storage including boot volumes, and some posts report Oracle cut the allowance to 2 OCPUs and 12 GB in June 2026 (unconfirmed on Oracle's own page). 'Lifetime' is Oracle's Always Free wording, not a guarantee.",
+    "note_path": "notes/instagram/DfCjZVGojnC.md"
+  },
+  {
     "id": "DfChs7UzB-t",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfChs7UzB-t/",

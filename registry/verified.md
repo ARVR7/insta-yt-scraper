@@ -4,6 +4,12 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Verified
 
+### Oracle Cloud Always Free Ampere A1 server  (2026-11-06)
+- **Verdict:** partly-verified
+- **What it is:** Free ARM VM (VM.Standard.A1.Flex) with up to 200 GB total block storage
+- **Why it is partly-verified:** Shape and steps confirmed in Oracle docs; lifetime availability and current quota not guaranteed
+- **Source note:** [notes/instagram/DfCjZVGojnC.md](../notes/instagram/DfCjZVGojnC.md)
+
 ### AI coding assistant workflow (CLAUDE.md, skills, sub-agents, MCP)  (2026-11-05)
 - **Verdict:** partly-verified
 - **What it is:** Building a persistent workflow around a coding assistant instead of ad hoc prompting
