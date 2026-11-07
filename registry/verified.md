@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Free tools carousel (ayusshsanghi_decodes)  (2026-11-07)
+- **Verdict:** pending
+- **What it is:** Comment-for-links carousel promising a list of free websites and AI tools
+- **Why pending:** Slides could not be read without a login and the caption names no tools
+- **To resolve:** Owner to send screenshots of the slides
+- **Source note:** [notes/instagram/DfUhbj7iLq2.md](../notes/instagram/DfUhbj7iLq2.md)
+
 ### Free health habits carousel (trainedbyyvs)  (2026-11-06)
 - **Verdict:** pending
 - **What it is:** Carousel about free habits that improve health, with advice to get the basics right before buying supplements
