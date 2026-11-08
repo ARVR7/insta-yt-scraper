@@ -17,17 +17,17 @@ fetch_status:
   transcript: "none"
   on_screen_text: "n/a"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
+title: "Instagram scroll-stopping words, list unread"
+category: money
+subcategory: business
+usefulness: noise
 tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+key_info: "This is an image carousel promising words that make people stop scrolling on Instagram. The caption argues that attention only helps if it comes from the right audience, and tells you to save the words and adapt them to your niche. The words themselves are on the slides, which could not be fetched without a login, so the keyword list you asked for is missing. The caption ends by promoting a free live masterclass with a 90-day roadmap and asks you to comment SECRET, a comment-for-link funnel. Likes 2422, comments 230."
+verdict: pending
+registry: registry/verified.md
 ---
 
-# TODO
+# Instagram scroll-stopping words, list unread
 
 ## Caption / hashtags
 > Here’s what often gets overlooked ⤵️
@@ -57,30 +57,39 @@ registry: TODO
 > Comment SECRET
 
 ## Hook (on-screen text)
-TODO
+Here is what often gets overlooked: whose attention you get
 
 ## Call to action
-TODO
+Save the words; comment SECRET for the free masterclass
 
 ## Transcript (auto)
 None available.
 
 ## What is shown on screen
-TODO
+Not available: the carousel slides could not be read without a login.
 
 ## Summary
-TODO
+A growth-advice carousel that funnels to a free masterclass. The keyword list is on unreadable slides. Send screenshots to get the list.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 230 against 2422 likes (comments/likes 0.09; a ratio near or above 1 usually means a prompt to comment, an inference).
+
+## Your instruction
+
+> Insta keywords
+
+Not done yet: the keywords are on the slides, which could not be read without a login. Send screenshots of the slides and I will list them.
 
 ## Research (checked 2026-11-08)
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| Certain words make people stop scrolling and attract buyers | unverified | Words not readable; no evidence given in the caption |
+| Free masterclass with a 90-day roadmap | unverified | Promotional claim, not checked |
 
-Overall: TODO
+Overall: Comment-for-link funnel with the keyword list unreadable; filed pending.
 
 ## Notes / caveats
-- TODO
+- Image slides not readable without a login.
+- Masterclass offer not checked.
+- Comments not fetched.

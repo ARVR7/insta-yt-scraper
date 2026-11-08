@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Instagram keywords carousel (kristina.social)  (2026-11-08)
+- **Verdict:** pending
+- **What it is:** Carousel of words that stop the scroll, funnelling to a free masterclass
+- **Why pending:** Slides could not be read without a login
+- **To resolve:** Owner to send screenshots of the slides
+- **Source note:** [notes/instagram/DeiTDK5TerF.md](../notes/instagram/DeiTDK5TerF.md)
+
 ### Colour psychology carousel (gfx.om)  (2026-11-08)
 - **Verdict:** pending
 - **What it is:** Carousel on colour psychology and pairing
