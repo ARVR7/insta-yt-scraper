@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Civ50 exact figures (ashishdecodes.in)  (2026-11-08)
+- **Verdict:** pending
+- **What it is:** 22 first-night deaths, 3.5 hour food inquiry, 13 hours on one wheat block
+- **Why pending:** Experiment is real but these numbers were not matched to the primary report
+- **To resolve:** Read the YC Labs Civ50 write-up
+- **Source note:** [notes/instagram/DfchhcqNR6M.md](../notes/instagram/DfchhcqNR6M.md)
+
 ### Free tools carousel (ayusshsanghi_decodes)  (2026-11-07)
 - **Verdict:** pending
 - **What it is:** Comment-for-links carousel promising a list of free websites and AI tools

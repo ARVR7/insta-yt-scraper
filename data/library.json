@@ -1,5 +1,30 @@
 [
   {
+    "id": "DfchhcqNR6M",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfchhcqNR6M/",
+    "title": "50 AI agents in Minecraft built red tape",
+    "author": "ashishdecodes.in",
+    "posted": "2026-11-07 15:49:09+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "ideas",
+    "subcategory_label": "Ideas",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Minecraft",
+      "YC Labs agent harness"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Civ50 is a real experiment by YC Labs and Olam Labs: 50 AI agents in a survival Minecraft world told to build a thriving civilization. Press coverage confirms the food rationing, the hierarchy and the shelters after a deadly first night. The reel's exact numbers (22 deaths, 3.5 hour inquiry, 13 hours on one wheat block, nine days) came from the reel and could not be matched to a primary source. The Minecraft agent harness is reported as open source. The creator ends with a comment-for-link funnel.",
+    "note_path": "notes/instagram/DfchhcqNR6M.md"
+  },
+  {
     "id": "DfW5bwVkXFG",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/DfW5bwVkXFG/",
