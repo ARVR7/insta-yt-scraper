@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Design carousel (graphix_vicky)  (2026-11-08)
+- **Verdict:** pending
+- **What it is:** Image carousel with no caption, probably design themes
+- **Why pending:** Slides could not be read without a login
+- **To resolve:** Owner to send screenshots of the slides
+- **Source note:** [notes/instagram/DfP2OjXk2_Q.md](../notes/instagram/DfP2OjXk2_Q.md)
+
 ### Cropus AI (cropus.ai)  (2026-11-08)
 - **Verdict:** pending
 - **What it is:** AI tool that makes GTA 6 clips videos for a YouTube channel
