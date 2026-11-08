@@ -65,6 +65,7 @@ categories:
       coding:  { label: Coding,  aliases: [programming, devtools, github, open-source] }
       gadgets: { label: Gadgets, aliases: [phones, laptops, hardware] }
       security: { label: Security, aliases: [privacy, hacking, scams] }
+      design:   { label: Web design & themes, aliases: [web-design, ui, ux, color-palettes, colors, themes, site-design] }
   learning:
     label: Learning & career
     icon: book

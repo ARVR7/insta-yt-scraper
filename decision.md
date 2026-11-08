@@ -2,6 +2,11 @@
 
 Every non-obvious decision, with the reason. Newest first. Add an entry whenever you choose between options, work around a limit, or change a rule.
 
+## 2026-11-08
+
+### Add tech/design subcategory
+Owner asked for a colour and themes category for site design. Added subcategory design (Web design & themes) under tech, with aliases web-design, ui, ux, color-palettes, colors, themes, site-design, rather than a new top-level category.
+
 ## 2026-10-28
 
 ### Home of Creators app is Influish

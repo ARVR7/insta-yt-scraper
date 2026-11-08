@@ -135,6 +135,10 @@
         {
           "key": "security",
           "label": "Security"
+        },
+        {
+          "key": "design",
+          "label": "Web design & themes"
         }
       ]
     },
