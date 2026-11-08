@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Free AI video tools (himanshhh.ai)  (2026-11-08)
+- **Verdict:** pending
+- **What it is:** MiniMax Hailuo and Tencent Hunyuan as free video generators
+- **Why pending:** Free limits and Tencent site access not confirmed from official pages
+- **To resolve:** Check official pricing pages
+- **Source note:** [notes/instagram/Devm2K1MqQp.md](../notes/instagram/Devm2K1MqQp.md)
+
 ### Civ50 exact figures (ashishdecodes.in)  (2026-11-08)
 - **Verdict:** pending
 - **What it is:** 22 first-night deaths, 3.5 hour food inquiry, 13 hours on one wheat block

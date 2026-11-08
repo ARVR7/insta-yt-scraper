@@ -137,6 +137,7 @@ Downloaded videos, frames and transcripts stay in a scratch directory outside th
 | [notes/instagram/DewkicGtWcS.md](notes/instagram/DewkicGtWcS.md) | Tech & dev · helpful · partly-verified |
 | [notes/instagram/DewguD7pH9n.md](notes/instagram/DewguD7pH9n.md) | Money · helpful · partly-verified |
 | [notes/instagram/DewXLi2vVWR.md](notes/instagram/DewXLi2vVWR.md) | AI · helpful · verified |
+| [notes/instagram/Devm2K1MqQp.md](notes/instagram/Devm2K1MqQp.md) | AI · mixed · partly-verified |
 | [notes/instagram/DevhsdCt6KH.md](notes/instagram/DevhsdCt6KH.md) | Money · misleading · partly-verified |
 | [notes/instagram/DeuaI4ItktU.md](notes/instagram/DeuaI4ItktU.md) | Tech & dev · misleading · partly-verified |
 | [notes/instagram/DeuPR-CKFZf.md](notes/instagram/DeuPR-CKFZf.md) | Entertainment · mixed · pending |
