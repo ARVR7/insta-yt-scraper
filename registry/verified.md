@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Cropus AI (cropus.ai)  (2026-11-08)
+- **Verdict:** pending
+- **What it is:** AI tool that makes GTA 6 clips videos for a YouTube channel
+- **Why pending:** No independent source found; offer restricted to US, UK, DE, AU and CA creators
+- **To resolve:** Check the official site and pricing
+- **Source note:** [notes/instagram/DfewDkbJLTS.md](../notes/instagram/DfewDkbJLTS.md)
+
 ### Free AI video tools (himanshhh.ai)  (2026-11-08)
 - **Verdict:** pending
 - **What it is:** MiniMax Hailuo and Tencent Hunyuan as free video generators
