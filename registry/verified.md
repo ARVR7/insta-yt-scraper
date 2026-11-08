@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### Colour psychology carousel (gfx.om)  (2026-11-08)
+- **Verdict:** pending
+- **What it is:** Carousel on colour psychology and pairing
+- **Why pending:** Slides could not be read without a login
+- **To resolve:** Owner to send screenshots of the slides
+- **Source note:** [notes/instagram/DemoZ0JzTeI.md](../notes/instagram/DemoZ0JzTeI.md)
+
 ### Design carousel (graphix_vicky)  (2026-11-08)
 - **Verdict:** pending
 - **What it is:** Image carousel with no caption, probably design themes
