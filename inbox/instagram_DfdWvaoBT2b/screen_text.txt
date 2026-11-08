@@ -1,0 +1,113 @@
+[0s] ButterCream
+[0s] MAIN
+[0s] Forest Green
+[0s] SECOND
+[0s] CMYK49,0,20,77
+[0s] 30,59,47
+[0s] quanovaai
+[0s] #1E3B2F
+[0s] mellowtea.co
+[0s] mellow
+[0s] Shop
+[0s] Flavors
+[0s] Our story
+[0s] Findus
+[0s] Cart
+[0s] SPARKLING TEA·ZERO SUGAR
+[0s] Calm,
+[0s] butmake
+[0s] it fizzy.
+[0s] Cold-brewed green tea withreal fruit and a soft
+[0s] sparkle.No sugar,no crash.
+[0s] Shop thebox
+[0s] Finda store
+[0s] Pickyour mood
+[0s] Viewall-
+[0s] Yuzu Mint
+[0s] Peach Oolong
+[0s] Hibiscus Lime
+[3s] HotPink
+[3s] ACCENT
+[3s] CMYK0,76,35,0
+[3s] 255,62,165
+[3s] #FF3EA5
+[3s] your eyes go
+[3s] fizzy.
+[3s] $24/12-pack
+[3s] Bestseller
+[6s] CobaltBlue
+[6s] SnowWhite
+[6s] CMYK 0,1,3,4
+[6s] 246,244,238
+[6s] #F6F4EE
+[6s] noisefest.live
+[6s] NOISE?
+[6s] LINEUP
+[6s] TICKETS
+[6s] GETTICKETS
+[6s] SUMMER
+[6s] ROTSE'26
+[6s] JULY17-19
+[6s] 3DAYS·40ARTISTS·1BEACH
+[6s] Playa Norte·All ages·Camping included
+[6s] THE LINEUP
+[6s] SEEALL40
+[6s] FRI-MAIN STAGE
+[6s] SAT·MAIN STAGE
+[6s] SUN-BEACHSTAGE
+[6s] VERA LUX
+[6s] KAI ORBIT
+[6s] PALM NOIR
+[9s] Midnight Black
+[9s] CMYK
+[9s] Electric Blue
+[9s] 12.58
+[9s] guanovaat
+[9s] echonotes.app
+[9s] echo
+[9s] Product
+[9s] Pricing
+[9s] Docs
+[9s] Changelog
+[9s] Login
+[9s] Getstarted
+[9s] Echo2.0.nowremembers overything
+[12s] Sunset Orange
+[12s] CMYK 0,52,90,0
+[12s] 255,122,26
+[12s] #FF7A1A
+[12s] now it feels
+[12s] Echo2.0nowrememberseverything-
+[12s] Notes that
+[12s] thinkwithyou.
+[12s] Echo listenstoyourcalls andnotes,then sorts outwhat
+[12s] matters.Nothing getslost.
+[12s] Try Echofree
+[12s] Watchdemo
+[12s] Q3launchcall-Echo
+[12s] AskEcho
+[12s] Q3launchcall
+[12s] Inbox
+[12s] Today·32min·4people
+[12s] Today
+[12s] +Alsummary
+[12s] 3actionitems
+[12s] Ideassaved
+[12s] Meetings
+[12s] ·LaunchmovestoOctober14
+[12s] Ideas
+[12s] ·Mia owns the landingpage
+[12s] Archive
+[12s] ·Budgetapproved:$40k
+[12s] Can we Inck the date tndav?
+[15s] NOISEO
+[15s] TICEETS
+[15s] ROISE'26
+[15s] 3DAYS-4OARTISTS
+[15s] BIDAYEABLYBUSDENOSFBIDAY·EBLYBIBD ENDSFRIDAY·EABLYBIRDEROSFBIDAY
+[15s] thirty percent second,
+[18s] loud
+[18s] EARLYBIROENOSFBIDAYEABLYBIBDENOSFBIDAYEABLYBOSOENDSFRIBAYEANL
+[18s] Follow for more
+[18s] Following
+[18s] QuanovaAl·Al tipsdaily
