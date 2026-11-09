@@ -1,0 +1,24 @@
+{
+  "url": "https://www.instagram.com/reel/DfflXfBz8WK/",
+  "platform": "instagram",
+  "shortcode": "DfflXfBz8WK",
+  "author": "rishiexplainsai",
+  "posted_utc": "2026-11-08T20:12:29",
+  "is_video": true,
+  "duration_s": null,
+  "views": null,
+  "likes": 10,
+  "comments": 2,
+  "caption": "Claude Code can now make short films in 66 different styles, and there is no video model behind it.\n\nIt\u2019s called Lemo-Opuscar, a free, open-source Claude Code plugin. You name a style, describe the film in one prompt, and Claude writes the story, draws every shot in code, scores the music, adds the sound effects and puts the whole film together.\n\nThe honest catch: it takes Claude about 30 to 60 minutes per film, and a fair amount of tokens.\n\nComment STYLE and I\u2019ll send you the link. Save this reel so you can try it later.\n\n#claudecode #claude #aitools #ai #github",
+  "hashtags": [
+    "claudecode",
+    "claude",
+    "aitools",
+    "ai",
+    "github"
+  ],
+  "mentions": [],
+  "location": null,
+  "fetched_via": "instaloader",
+  "video_file": "video.mp4"
+}
