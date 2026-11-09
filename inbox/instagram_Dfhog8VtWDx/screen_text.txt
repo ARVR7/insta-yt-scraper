@@ -1,0 +1,281 @@
+[0s] GLITCH_CAT
+[0s] File APIV BMAD
+[0s] 13:30
+[0s] APIV
+[0s] BMAD
+[0s] 01 HOW IDEVELOP
+[0s] GLITCHCATCLUB
+[0s] HOWIBUILDWITHAI
+[0s] HOWI DEVELOP
+[0s] WITH AI
+[0s] IN THIS REEL
+[0s] WHATI DO
+[0s] WHENIT'SNOT ENOUGH
+[0s] Hifriends,people
+[0s] ask me how I
+[3s] Today,I'll showyou
+[3s] whatI do and
+[6s] whatIreachfor
+[6s] when that's not
+[9s] 02THEAPIV METHOD
+[9s] THEAPIVMETHODOLOGY
+[9s] ALIGN
+[9s] PLAN
+[9s] IMPLEMENT
+[9s] VERIFY
+[9s] Ifollowwhatlcall
+[9s] the Apiv
+[12s] implement,and
+[12s] verify in a loop
+[15s] INALOOP
+[15s] Itbeginswith
+[15s] intent,right,
+[18s] 02ALIGN-INTENT
+[18s] INTHESESSION
+[18s] ROUND 1
+[18s] >what are we building?
+[18s] ROUND 2
+[18s] >and what aren't we?
+[18s] ROUND
+[18s] what does
+[18s] done look like?
+[18s] THEPICTUREIN MYHEAD
+[18s] WHERETHEWORKIS
+[18s] alignment,before
+[18s] any code,Italk
+[21s] what does done look like?
+[21s] session whatwe're
+[21s] building and
+[24s] It'sabitlikeMatt
+[24s] Pocock's grill me
+[27s] what
+[27s] does
+[27s] done
+[27s] look like?
+[27s] LIKEGRILL-ME·MATTPOCOCK
+[27s] ME-IN THE SESSION
+[27s] AUTOMATED THROUGHMYSKILLS
+[27s] happens
+[27s] because the
+[27s] aim is for
+[30s] VERIEY
+[30s] ROURD 2
+[30s] ROUHD S
+[30s] understandwhatI'm
+[30s] after
+[33s] ROUD 2
+[33s] EOLIRCE
+[33s] references,like the
+[33s] look and feel
+[36s] GLITCH CAT
+[36s] ROTND 1
+[36s] ROUHD2
+[36s] ROUHD
+[36s] WHATIACTUALLYMEANT
+[36s] OLDERPROJECT
+[36s] OPENSOURCE
+[36s] ofmaybe an older
+[36s] project or an
+[39s] Pile APIV BMAD
+[39s] open-source onethat
+[39s] already
+[42s] 02PLAN-THESKILL
+[42s] MYPLANNING SKILL·SAMESESSION
+[42s] READSTHECODEBASE
+[42s] RESEARCHES
+[42s] WhenI'mhappy,l
+[42s] trigger my
+[45s] on an existing code
+[45s] base,it would
+[48s] STRUCTURE
+[48s] CONVENTIONS
+[48s] PATTERNSTOCOPY
+[48s] conventions,and the
+[48s] patterns to
+[51s] Thenitresearches
+[51s] thelatest
+[54s] LATESTOOCS
+[54s] BESTPRACTICE KNOWNGOTCHAS
+[54s] gotchas before it
+[54s] writes a word
+[57s] LATESTDOCS
+[57s] THE PLAN
+[57s] TASK 1
+[57s] VALIDATE/
+[57s] TASK 2
+[57s] TASK 3
+[57s] VALIDATEV
+[57s] EVERYTASK-ITSOWNCHECK
+[57s] Every taskcarries
+[57s] its own
+[60s] 13:31
+[60s] TASK
+[60s] validationcommand
+[60s] and the plan
+[63s] SLEVELSOFCHECKS
+[63s] LINTINGOSTYLE
+[63s] UNIT TESTS
+[63s] INTEGRATION
+[63s] MANUALWALK-THROUGH
+[63s] OPTION
+[63s] linting, unit test
+[63s] integration, a
+[66s] BESTPRACTICE KNOWNGOTOHAS
+[69s] extra tools
+[72s] ORCHESTRATION
+[72s] BUILDERS
+[72s] REVIEWER
+[72s] GRADER
+[72s] EFFORT
+[72s] MEDIUM
+[72s] thatishow the
+[72s] build runs and the
+[75s] effortevery
+[75s] builder,reviewer,
+[81s] 02 IMPLEMENT
+[81s] sometimes review,
+[81s] but often don't
+[84s] fresh window
+[84s] /glitch-execute plan.md
+[84s] open a fresh
+[84s] window
+[87s] the plan argument
+[90s] ORCHESTRATOR
+[90s] GATES
+[90s] RUNSTHEBUILD·WRITESNO CODE
+[90s] PUSH?
+[90s] CHECKPOINT1
+[90s] CHECKPOINT2
+[90s] CHECKPOINT3
+[90s] It's Orchestrator
+[90s] writesno code,
+[93s] BRIEF
+[93s] BUILDER
+[93s] INPARALLEL
+[93s] CHICKPOINT2
+[93s] strictbrief for
+[93s] each sub-agent and
+[96s] FILES
+[96s] CHECKEDAGAINST THEFILES·NEVERTHEREPORT
+[96s] return against the
+[96s] actual files
+[99s] GATE√
+[99s] COMMIT
+[99s] BUILDERSDONE·REPORTSIN
+[99s] FILCS
+[99s] CHICKPOINT1
+[99s] CHECKPOINTS
+[99s] At the end,I verify
+[99s] the way a user
+[102s] 02VERIFY
+[102s] yourapp
+[102s] WHATTHESKILLCAPTURES
+[102s] SCREENSHOTOI
+[102s] SCREENSHOT02
+[102s] SCREENSHOT03
+[102s] DRIVENTHEWAYAUSERWOULD
+[102s] wouldthrougha
+[102s] verification skill
+[105s] SCREENSHOTO1
+[105s] SUBMIT
+[105s] SOME OFTHETOOLSIUSE
+[105s] +MORE
+[105s] PLAYWRIGHT
+[105s] CHROMEDEVTOOLS
+[105s] ANDROID
+[105s] ITSHANOS
+[105s] AREALPHONE
+[105s] set up for it
+[108s] BACKTOALIGN
+[108s] SCREENSHOT01
+[108s] RMIT
+[108s] PLAYWTUGSY
+[108s] CHROMEDEVYOOLS
+[108s] NEVER
+[108s] the align
+[111s] ITSHANDS
+[114s] 03 NOT ENOUGH?
+[114s] MOSTLYTHAT'SALLINEED
+[114s] itisn't,Ieither
+[114s] use an extended
+[117s] ENUMERATION
+[117s] DATA FIRST
+[117s] DESIGN BOARDS
+[117s] MYEXTENDEDVERSION·EXTRASTEPS
+[120s] 13:32
+[120s] by Brian Madison
+[123s] METHOD·BYBRIANMADISON
+[123s] FREE
+[123s] ★55K+ONGITHUB
+[123s] It's free,
+[126s] 03THEBMAD TEAM
+[126s] ATEAMOFAGENTS
+[126s] MARY
+[126s] JOHN
+[126s] SALLY
+[126s] WINSTON
+[126s] AMELIA
+[126s] ANALYST
+[126s] PRODUOTMANAGER
+[126s] ARCHITEOT
+[126s] DEVELOPER
+[126s] RESEARCH
+[126s] REQUIREMENTS
+[126s] DESIGN
+[126s] ARCHITECTURE
+[126s] THEBUILD
+[126s] RECORD
+[126s] development life
+[129s] NHOr
+[129s] PRODUCTMANAGER
+[129s] ARCHITECT
+[129s] PICKWHATYOUNEED
+[129s] gathering to design,
+[132s] PRODUGTMANAGER
+[132s] TEAT-AIRSY
+[132s] EXPERIENCE
+[132s] SPINE
+[132s] and thebuild itself
+[135s] 04WHEN TO REACH
+[135s] ASMALLCHANGE
+[135s] JUSTYOUR MODEL
+[135s] everything,
+[135s] certainly not small
+[138s] ABIGGERBUILD·AWHOLETEAM
+[138s] when a whole team
+[138s] has to agree
+[141s] definitely worth
+[141s] considering
+[144s] Altendsto turn
+[144s] unstated
+[147s] CODE
+[147s] UNSTATED ASSUMPTIONS
+[147s] assumptionsinto
+[147s] codeandBMAD
+[150s] DECISIONS MADEEXPLICIT
+[150s] AWRITTEN RECORD ATEACH STEP
+[150s] explicit, leaving a
+[150s] written record
+[153s] at each step like
+[153s] the brief PRD and
+[159s] 05WORTHALOOK
+[159s] THEOLDWAY·EVERYTHINGUPFRONTINORDER
+[159s] EVERYSTORY
+[159s] methodsbutBMADhas
+[159s] come a
+[162s] THE OLD WAY
+[162s] days and it's
+[162s] definitely worth a
+[165s] IT'S COMEA LONG WAY
+[165s] github.com/bmad-code-org/BMAD-METHOD
+[165s] youtube.com/@BMadCode
+[165s] More importantly,
+[165s] keep it simple,
+[168s] STUPID
+[168s] stupid,andkeep
+[168s] leveling up,
+[171s] GLITCH
+[171s] CAT CLUB
+[171s] signing out
+[171s] Kem CGlitch
+[171s] Cat Club, signing
