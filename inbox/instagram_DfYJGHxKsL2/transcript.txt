@@ -1,0 +1,10 @@
+language: en (0.99)
+[0s] Just look at these landing pages. Someone made them with AI and they don't look like AI slop at all.
+[6s] It's called AI design skills and you can set it up in just three steps.
+[9s] First go to GitHub and open the AI design skills repo.
+[13s] Second, download the landing page design file and open it in Claude codex.
+[17s] Full of your choice. And now finally in the chat say follow this file.
+[21s] Build a website for my business. Ask me questions about my business before you start.
+[25s] Tell it what you sell, who's it for and what should the call to action.
+[28s] Just comment design and I'll send you the link with a startup prompt to build a beautiful
+[32s] website for your business.
