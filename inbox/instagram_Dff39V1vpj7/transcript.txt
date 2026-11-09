@@ -1,0 +1,11 @@
+language: en (1.00)
+[0s] It is legit God mode for Cloud Code and I simply cannot use anything but this anymore.
+[5s] Throw on Opus 5.5 extra and have it orchestrate high coup 5.5 agents with verification loops
+[10s] and a goal, with auto-compaction at 40% or 60% for larger tasks with a folder system
+[16s] structured just like this and continuously self-improving skills.
+[20s] You're going to get better results and save more on your API costs at the same time.
+[24s] The engineers at Anthropic use a system like this every single day running hundreds
+[28s] of agents that want to happen for months.
+[30s] So I tweaked it a little bit and call it the Omega agent orchestration.
+[33s] If you comment prompt I'll send you the whole guide on how to set all this up.
+[36s] I promise it is going to change your work.
