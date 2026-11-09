@@ -1,0 +1,21 @@
+language: en (1.00)
+[0s] Stop paying for these nine apps.
+[2s] GitHub has a free version of every one
+[4s] with almost half a million stars between them.
+[6s] Higgsfield, comfy UI AI images and video,
+[9s] running on your own computer, 11 labs, voice studio,
+[12s] clone and design voices, fully local,
+[14s] semi-rush, open SEO, rank tracking, back links
+[17s] and site audits, and you only pay for the data you use.
+[19s] Notion, app flowy, notes, docs, and wikis,
+[22s] and your data stays yours.
+[24s] Whisper flow, open whisper, talk into any app,
+[26s] even offline, Asana, open project,
+[28s] tasks, projects, and timelines, on your own server.
+[31s] Calendar, Cal DIY, your own booking page,
+[34s] free and open source.
+[35s] Intercom, chatwood, chat, email, WhatsApp,
+[38s] and Instagram messages in one inbox.
+[40s] Loom, cap, record your screen,
+[42s] and get a share link the moment you stop.
+[43s] Comment, repo, and I'll send you all nine links.
