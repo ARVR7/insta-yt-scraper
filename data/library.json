@@ -140,6 +140,31 @@
     "note_path": "notes/instagram/Dfa860wIQn4.md"
   },
   {
+    "id": "DfYJGHxKsL2",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfYJGHxKsL2/",
+    "title": "AI design skills repo for landing pages",
+    "author": "abhijayarora_",
+    "posted": "2026-11-05 22:52:42+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "design",
+    "subcategory_label": "Web design & themes",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "ai-design-skills"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Points to the public GitHub repo elayadesign/ai-design-skills, an MIT licensed set of design skills for AI coding tools. Its landing-page-design skill asks intake questions, then builds a page with structure, conversion copy and a visual system. Steps in the reel: open the repo, download the landing page design file, open it in Claude Code or Codex, say follow this file and build a website for my business, and answer its questions about what you sell, who for and the call to action. The caption asks you to comment design for the link and a guide, but the repo is public. 4141 comments on 3412 likes marks a comment funnel.",
+    "note_path": "notes/instagram/DfYJGHxKsL2.md"
+  },
+  {
     "id": "DfW5bwVkXFG",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/DfW5bwVkXFG/",
