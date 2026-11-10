@@ -3232,6 +3232,31 @@
     "note_path": "notes/instagram/Dck5bFxNOsJ.md"
   },
   {
+    "id": "DcEBQNPNPzs",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DcEBQNPNPzs/",
+    "title": "Knowledge graph memory vs Obsidian and graphify",
+    "author": "kem_glitch",
+    "posted": "2026-08-15 13:44:10+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "graphify",
+      "Obsidian"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "A rebuttal to another creator's video. The speaker argues that a real knowledge graph is the most complex memory architecture, that it needs ontological and logical modelling, and that Obsidian-style wikis or graphify auto-generated YAML links are not a knowledge graph unless the agent has multi-hop traversal tooling, otherwise the agent just reads and greps files and eats context. He claims 15 years of experience with knowledge graphs in investment banks and offers help. The video is an opinion piece with no benchmark. Graphify (Graphify-Labs/graphify) is a real MIT licensed skill that builds a queryable graph from a folder (graph.json, GRAPH_REPORT.md) for agents to traverse; it does not claim to replace a hand-modelled ontology. I could not read comments.",
+    "note_path": "notes/instagram/DcEBQNPNPzs.md"
+  },
+  {
     "id": "Db-83ucolWr",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Db-83ucolWr/",
