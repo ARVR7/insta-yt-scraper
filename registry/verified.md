@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### GTA 6 clipping with Higgsfield (buildwith.colin)  (2026-11-10)
+- **Verdict:** pending
+- **What it is:** Clip GTA 6 reaction videos with a Higgsfield ChatGPT plugin for campaign pay
+- **Why pending:** Paid partnership; plugin and earnings not verified
+- **To resolve:** Check Higgsfield and campaign marketplaces directly
+- **Source note:** [notes/instagram/DfiZJF0hDV9.md](../notes/instagram/DfiZJF0hDV9.md)
+
 ### Instagram keywords carousel (kristina.social)  (2026-11-08)
 - **Verdict:** pending
 - **What it is:** Carousel of words that stop the scroll, funnelling to a free masterclass
