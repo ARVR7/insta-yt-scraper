@@ -1,0 +1,71 @@
+[0s] Claudecannow
+[0s] WatchYouTubeforyou
+[0s] YouTubevideos
+[3s] GitHub
+[3s] github.com/bradautomates/claude-video
+[3s] claude-video
+[3s] Give Claude the ability to watchany
+[3s] video.watchdownloads,extracts
+[3s] frames,transcribes,handsitall to
+[3s] Claude.
+[3s] Contribuors2
+[3s] bradautomates
+[3s] tool that's got
+[6s] 米/watch
+[6s] It's calledWatch and
+[9s] Chat
+[9s] Code
+[9s] What should we build?
+[9s] Install this ski
+[9s] marketing
+[9s] Opus5.5.Auto
+[9s] link
+[12s] Install it
+[12s] Type/watch + a link
+[12s] Number two
+[15s] /watch https://uaRtd we build?
+[15s] any video link
+[18s] Claude Code
+[18s] /watchhttps://youtu.be/NcD2t9qt-fM
+[18s] Pulled the.captions,with timestamps
+[18s] Grabbedtheframeswherethescreenchanges
+[18s] HCON
+[18s] 20:49
+[18s] 41:39
+[18s] 1:02:28
+[18s] the frames where something
+[21s] SALES 101
+[21s] TheBestSALESTRAININGOnTheInternet
+[21s] AlexHormozi·1.5Mviews
+[21s] what's
+[24s] you don't ask
+[27s] Turn thisvideo into a reusableskill
+[30s] BALES101
+[30s] AlexHormozi
+[30s] NatalieDawson
+[30s] best sales training
+[33s] /sales-follow-upPriya,Tuesday'scall
+[33s] To:Priya Shah
+[33s] Subject:Priya,yourMondayreports
+[33s] Hi Priya,
+[33s] You toldmeyour teamrebuilds
+[33s] Their wordsback
+[33s] the samereport everyMonday.
+[33s] That's 4 people losing 2 hours,
+[33s] Costof waiting
+[33s] every singleweek.
+[33s] PictureMondayat9am with it
+[33s] Their goal first
+[33s] already in your inbox.
+[33s] You asked about setup.It's one
+[33s] Answer theworry
+[33s] afternoon,andwe do itwithyou.
+[33s] Thursday 2pmorFriday10am
+[33s] One clear ask
+[33s] for 20minutes?
+[33s] follow-ups that way
+[36s] charliehillsPinned
+[36s] CommentWATCH andI'll sendyou the instal
+[36s] stepsandtheexactpromptthatturnsavideo
+[36s] intoa skill.
+[36s] knows
