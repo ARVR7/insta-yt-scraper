@@ -1,5 +1,31 @@
 [
   {
+    "id": "Dff39V1vpj7",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dff39V1vpj7/",
+    "title": "Omega setup: Opus plans, Haiku agents build",
+    "author": "murphmaxxing",
+    "posted": "2026-11-08 22:54:24+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "automation",
+    "subcategory_label": "Automation",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "Opus 5.5",
+      "Haiku 5.5"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "The setup: Opus 5.5 at extra effort is the orchestrator with a goal and a done-when check (for example ship the checkout flow, done when all tests pass); it runs up to 16 Haiku 5.5 agents in parallel for research, build, test and review jobs, each with its own skill folder (explore, frontend, test-runner, code-review) and a verification step. Context lives in CLAUDE.md and docs, with auto-compaction at 40 or 60 percent, and skills are meant to improve themselves. Folder layout shown: my-project with a .claude folder holding agents. The claim of a fortieth of the price matches one source (Haiku 5.5 about 0.10 per million input tokens against Opus 5.5 at 4.00) but not another, and sources say the orchestrator usually dominates the bill and Haiku needs more fix rounds on hard work. The claim that Anthropic engineers run hundreds of agents for months this way was not verified. The full guide sits behind comment PROMPT.",
+    "note_path": "notes/instagram/Dff39V1vpj7.md"
+  },
+  {
     "id": "DfflXfBz8WK",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfflXfBz8WK/",
