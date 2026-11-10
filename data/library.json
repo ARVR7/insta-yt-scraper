@@ -125,6 +125,32 @@
     "note_path": "notes/instagram/DfewDkbJLTS.md"
   },
   {
+    "id": "Dfd-YdpsDuU",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dfd-YdpsDuU/",
+    "title": "Five Claude Code tools by morningmethod",
+    "author": "morningmethod.co",
+    "posted": "2026-11-08 05:12:46+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "Graphify",
+      "Playwright"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Hindi reel listing five tools to install for Claude Code: a tool giving AI agent components so you do not build from scratch, Graphify (turns a codebase into a knowledge graph so the agent does not read all the code, saving tokens), Compound Engineering (structures the development cycle from planning), Playwright (a skill so Claude Code opens a browser and tests the whole flow), and a fifth tool for customers and sales pipeline (name unclear in the transcript). Opens with just install 5 tools and earn a fee. The setup guide is behind comment anything. Graphify and Playwright are real; the first and fifth tools could not be identified.",
+    "note_path": "notes/instagram/Dfd-YdpsDuU.md"
+  },
+  {
     "id": "DfdWvaoBT2b",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfdWvaoBT2b/",
