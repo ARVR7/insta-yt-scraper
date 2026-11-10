@@ -1,0 +1,34 @@
+language: hi (1.00)
+## English translation
+[0s] A developer made such a project that the CEO of Anthropic has also moved.
+[4s] Exploring insane GitHub Repos.
+[7s] There are more than 2.5 lakh stars on this repo.
+[10s] And inside, you get 64 AI agents,
+[13s] 261 skills and 84 commands and hooks.
+[16s] Meaning, you are not just installing Claude's tools.
+[19s] You are making your Claude a team of AI development teams.
+[23s] And the winner of Anthropic Hackathon is the one who makes it.
+[26s] Everything is free.
+[27s] And the entire setup is installed with just one command.
+[30s] The rest of the people are taking money from you to teach you this setup.
+[33s] And this brother shared it for free.
+[35s] What will be a bigger plot twist than this?
+[37s] Now comment, I will give you a GitHub link DM.
+[40s] And follow me, because I get such insane GitHub Repos and AI things every day
+[45s] that you won't get anywhere else.
+[47s] If you don't follow me, then you will miss the next episode.
+[49s] And you will get lost in the feed.
+## Original (hi)
+[0s] एक DEVELOPER ने एसा प्रोजेक बनाया की अन्त्रोपिक के C.E.O भी हिल ग़ाई
+[4s] इस्प्लोडिंग अईन्सें गित्हब रेपोज
+[6s] इस रेपो पे दोड़ अशम्ल अप पाच लाएक से जादा स्थार्स हैं
+[10s] और अन्दर मिलता है
+[11s] तुम अपने क्लोड़ को पूरी A.I. DEVELOPMENT TEAM बनारे हो
+[22s] और इस्प्लो बनाने वाला अन्त्रोपिक के HAKATHON का विनर है
+[26s] सब कुछ फ्री और पूरा सेटाब बस एक कमान्थ से अंस्थाल
+[29s] बाखी लोग ये सेटाब सिखाने के तुम से पैसे लेरे हैं
+[33s] और ये बहाई ने फ्री में बाड द दिया
+[35s] इस से बड़ा प्लोट्ट्विस्ट क्या होगा
+[37s] अप कुमेंट करो, मैं तुमें गिट़ब लिंक दीम कर दूंगा
+[40s] और फोलो करो, क्योंकि रोज असे असे एंसें गिट़ब ब्रेपोस
+[43s] अगला अपसोट मिस करोगे, और फीट में भी खोजाोगे
