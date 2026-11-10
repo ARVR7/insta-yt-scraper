@@ -487,6 +487,31 @@
     "note_path": "notes/instagram/DfP2OjXk2_Q.md"
   },
   {
+    "id": "DfPQEg_srf3",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfPQEg_srf3/",
+    "title": "Claude Code repo with agents and skills hype",
+    "author": "thetechstien",
+    "posted": "2026-11-02 12:03:01+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "everything-claude-code"
+    ],
+    "usefulness": "mixed",
+    "verdict": "partly-verified",
+    "key_info": "Hindi reel about a GitHub repo said to have over 2.5 lakh stars, 64 AI agents, 261 skills and 84 commands and hooks, made by an Anthropic hackathon winner, installable with one command and free, and noticed by Anthropic's CEO. This matches the everything-claude-code repo (affaan-m), whose README says it came from an Anthropic and Forum Ventures hackathon. The numbers differ from the sources I found (an April 2026 article says 47 agents and 181 skills and 154K stars; the repo has grown since), and I did not find any statement from Anthropic's CEO. The post has 3 likes and 15585 comments, which points to a giveaway or bot-driven comment funnel. Repo link is behind comment GITHUB.",
+    "note_path": "notes/instagram/DfPQEg_srf3.md"
+  },
+  {
     "id": "DfOJnByyfyz",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfOJnByyfyz/",
