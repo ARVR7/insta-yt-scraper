@@ -126,6 +126,35 @@
     "note_path": "notes/instagram/DfflXfBz8WK.md"
   },
   {
+    "id": "DffIuzQs1yS",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DffIuzQs1yS/",
+    "title": "Nine free open source app alternatives",
+    "author": "chiefagent.ai",
+    "posted": "2026-11-08 16:01:34+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "tools",
+    "subcategory_label": "Tools",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "ComfyUI",
+      "AppFlowy",
+      "OpenProject",
+      "Chatwoot",
+      "Cal.diy",
+      "Cap"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Nine free GitHub alternatives: Higgsfield to ComfyUI, ElevenLabs to VoiceStudio, Semrush to OpenSEO, Notion to AppFlowy, Wispr Flow to OpenWhispr, Asana to OpenProject, Calendly to Cal.diy, Intercom to Chatwoot, Loom to Cap. The caption is upfront that free means no software subscription and some need your own server or API key, and that it is not affiliated. ComfyUI, AppFlowy, OpenProject, Chatwoot and Cal.diy (Cal.com's MIT community edition) are real and well known; I found no sources for OpenSEO, OpenWhispr, Cap and VoiceStudio in this run. Links are behind comment REPO.",
+    "note_path": "notes/instagram/DffIuzQs1yS.md"
+  },
+  {
     "id": "DfewDkbJLTS",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfewDkbJLTS/",

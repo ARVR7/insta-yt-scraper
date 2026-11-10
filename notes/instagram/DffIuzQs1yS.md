@@ -17,17 +17,17 @@ fetch_status:
   transcript: "ok (faster-whisper, auto-generated, may contain errors)"
   on_screen_text: "OCR + contact sheet"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
-tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+title: "Nine free open source app alternatives"
+category: ai
+subcategory: tools
+usefulness: helpful
+tools: ["ComfyUI", "AppFlowy", "OpenProject", "Chatwoot", "Cal.diy", "Cap"]
+key_info: "Nine free GitHub alternatives: Higgsfield to ComfyUI, ElevenLabs to VoiceStudio, Semrush to OpenSEO, Notion to AppFlowy, Wispr Flow to OpenWhispr, Asana to OpenProject, Calendly to Cal.diy, Intercom to Chatwoot, Loom to Cap. The caption is upfront that free means no software subscription and some need your own server or API key, and that it is not affiliated. ComfyUI, AppFlowy, OpenProject, Chatwoot and Cal.diy (Cal.com's MIT community edition) are real and well known; I found no sources for OpenSEO, OpenWhispr, Cap and VoiceStudio in this run. Links are behind comment REPO."
+verdict: partly-verified
+registry: none
 ---
 
-# TODO
+# Nine free open source app alternatives
 
 ## Caption / hashtags
 > Stop paying for these 9 apps. GitHub has a free version of every one 👇
@@ -51,19 +51,19 @@ registry: TODO
 Hashtags: #opensource #github #aitools #productivity #saas.
 
 ## Hook (on-screen text)
-TODO
+Stop paying for these 9 apps
 
 ## Call to action
-TODO
+Comment REPO for all nine links
 
 ## Transcript (auto)
 > Stop paying for these nine apps. GitHub has a free version of every one with almost half a million stars between them. Higgsfield, comfy UI AI images and video, running on your own computer, 11 labs, voice studio, clone and design voices, fully local, semi-rush, open SEO, rank tracking, back links and site audits, and you only pay for the data you use. Notion, app flowy, notes, docs, and wikis, and your data stays yours. Whisper flow, open whisper, talk into any app, even offline, Asana, open project, tasks, projects, and timelines, on your own server. Calendar, Cal DIY, your own booking page, free and open source. Intercom, chatwood, chat, email, WhatsApp, and Instagram messages in one inbox. Loom, cap, record your screen, and get a share link the moment you stop. Comment, repo, and I'll send you all nine links.
 
 ## What is shown on screen
-TODO
+Not read.
 
 ## Summary
-TODO
+Useful list; five of nine confirmed as real open source alternatives, four not checked. The alternatives are not feature-equal to the paid products.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 238 against 1058 likes (comments/likes 0.22; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -72,9 +72,14 @@ Not read: Instagram requires a login to list comments. The count is 238 against 
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| ComfyUI, AppFlowy, OpenProject, Chatwoot are open source alternatives | partly-verified | Well-known projects; not re-checked individually |
+| Cal.diy is a free Calendly alternative | verified | Cal.com community edition, MIT, about 46K stars |
+| OpenSEO, OpenWhispr, Cap, VoiceStudio exist and replace the paid tools | unverified | No sources found in this run |
+| Almost half a million stars between them | unverified | Not summed |
 
-Overall: TODO
+Overall: Credible list with honest caveats; four tools unchecked.
 
 ## Notes / caveats
-- TODO
+- Four tools not checked.
+- Self-hosting needs effort.
+- Comments not fetched.
