@@ -50,6 +50,31 @@
     "note_path": "notes/instagram/DfhvvymIsTj.md"
   },
   {
+    "id": "Dfhog8VtWDx",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dfhog8VtWDx/",
+    "title": "APIS plan implement verify loop for AI coding",
+    "author": "kem_glitch",
+    "posted": "2026-11-09 15:18:06+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "automation",
+    "subcategory_label": "Automation",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "BMAD"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "The creator's workflow, the APIS methodology: align, plan, implement, verify in a loop. Align: talk through what to build and not build, find reference projects. Plan: a planning skill maps the codebase conventions, researches current docs and gotchas, gives every task a validation command, sets checks at five levels (lint, unit, integration, manual walkthrough, extras) and defines the orchestration. Implement: in a fresh window an execution skill runs the plan; the orchestrator writes no code, writes a strict brief for each subagent and checks what they return against the actual files. Verify: a verification skill drives the app; anything wrong goes back to align, never patched. For bigger team builds he suggests BMAD (Brian Madison), free and open source, with agents for research, requirements, design, architecture and build and a written record such as brief, PRD and architecture. The advice is process opinion with no benchmark.",
+    "note_path": "notes/instagram/Dfhog8VtWDx.md"
+  },
+  {
     "id": "Dff39V1vpj7",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Dff39V1vpj7/",
