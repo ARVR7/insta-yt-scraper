@@ -1,5 +1,31 @@
 [
   {
+    "id": "DfhvvymIsTj",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfhvvymIsTj/",
+    "title": "Meta Astryx design system for coding agents",
+    "author": "justinmendez.ai",
+    "posted": "2026-11-09 16:30:17+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "design",
+    "subcategory_label": "Web design & themes",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Astryx",
+      "React",
+      "Claude Code"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Astryx (spoken as Strix in the reel) is Meta's open source React design system, MIT licensed, released as a public beta on 28 June 2026. Press says it has powered over 13,000 internal apps. It includes an MCP server so tools such as Claude Code and Cursor can browse components, scaffold projects and generate themes. The creator suggests giving the repo link to your coding agent so it can use the components. Component count differs by source (150+ in the docs, over 90 in the repo).",
+    "note_path": "notes/instagram/DfhvvymIsTj.md"
+  },
+  {
     "id": "Dff39V1vpj7",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Dff39V1vpj7/",
