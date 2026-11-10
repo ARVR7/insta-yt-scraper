@@ -360,6 +360,30 @@
     "note_path": "notes/instagram/DfOJnByyfyz.md"
   },
   {
+    "id": "DfMMbKIlqN9",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/p/DfMMbKIlqN9/",
+    "title": "Six steps to build a better agent harness",
+    "author": "0xsojalsec",
+    "posted": "2026-11-01 07:27:23+00:00",
+    "type": "post",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "automation",
+    "subcategory_label": "Automation",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Image post. The caption carries the text: same model, different harness, up to a 6x performance gap, and a six step method: mine past sessions for rules, delete rules you cannot prove help, keep instructions to about 100 lines that point to other rules, cut your tools, back rules with scripts (hooks, linters, tests), and garden the harness by pruning stale rules. The 6x gap comes from the Stanford, MIT and KRAFTON Meta-Harness paper, which cites it from earlier work. The claim that it was built from 57+ papers was not found.",
+    "note_path": "notes/instagram/DfMMbKIlqN9.md"
+  },
+  {
     "id": "DfKxflroHj3",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfKxflroHj3/",
