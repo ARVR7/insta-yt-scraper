@@ -1,5 +1,30 @@
 [
   {
+    "id": "DfflXfBz8WK",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfflXfBz8WK/",
+    "title": "Lemo-Opuscar plugin makes films in code",
+    "author": "rishiexplainsai",
+    "posted": "2026-11-08 20:12:29+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "Lemo-Opuscar"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "Lemo-Opuscar is a real, MIT-licensed Claude Code plugin from lemomo-ai that makes short films as code (Canvas, WebGL, ffmpeg, sample music and speech), with no video model. Install: claude plugin marketplace add lemomo-ai/lemo-opuscar, then claude plugin install lemo-opuscar@lemolab, then ask for a film in a named style. The reel says 66 styles but the README says 43 (with a 98 style set announced), so the count is off or out of date. Styles are tuned for Claude Opus 5.5. The caption is honest that each film takes 30 to 60 minutes and many tokens. It ends with comment STYLE for the link, though the repo is public.",
+    "note_path": "notes/instagram/DfflXfBz8WK.md"
+  },
+  {
     "id": "DfewDkbJLTS",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfewDkbJLTS/",
