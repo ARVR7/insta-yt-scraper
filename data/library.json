@@ -518,6 +518,35 @@
     "note_path": "notes/instagram/DfScZgPSqc1.md"
   },
   {
+    "id": "DfR0DFeo9xG",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfR0DFeo9xG/",
+    "title": "AI video editor in Claude Code in three prompts",
+    "author": "arti.miller",
+    "posted": "2026-11-03 11:50:34+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "FFmpeg",
+      "faster-whisper",
+      "yt-dlp",
+      "Remotion",
+      "HyperFrames"
+    ],
+    "usefulness": "helpful",
+    "verdict": "verified",
+    "key_info": "A free, complete recipe in the caption: install the Claude desktop app and use the Code tab (needs a paid Claude plan), make an AI Editor folder with raw, references and done folders, start a Local Code chat on it, then paste three prompts. Prompt 1 installs and checks five tools: FFmpeg with libass (ffmpeg-full on Mac), faster-whisper for word-level subtitles, yt-dlp for references, Remotion and HyperFrames, using official installs only, Node.js 22 or newer and a Python virtual environment. Prompt 2 downloads three to five reels you like, studies pacing, cuts, subtitles, colour, graphics and music, and writes your own style to style.md with exact values, taking inspiration but not copying shots, text or logos. Prompt 3 edits your raw recording: Whisper transcript, cuts pauses and bad takes by audio level, word-by-word subtitles, optional quiet music, graphics only where they help, export 1080x1920 as draft-v1.mp4 with edit-notes.md, then you give plain-word edits saved as draft-v2 and later. The caption is cut off after part of prompts 1 to 3 in the brief, so some wording is missing. No funnel; the creator says follow for her own style next.",
+    "note_path": "notes/instagram/DfR0DFeo9xG.md"
+  },
+  {
     "id": "DfP_oCUMi58",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfP_oCUMi58/",

@@ -17,17 +17,17 @@ fetch_status:
   transcript: "ok (faster-whisper, auto-generated, may contain errors)"
   on_screen_text: "OCR + contact sheet"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
-tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+title: "AI video editor in Claude Code in three prompts"
+category: ai
+subcategory: creative
+usefulness: helpful
+tools: ["Claude Code", "FFmpeg", "faster-whisper", "yt-dlp", "Remotion", "HyperFrames"]
+key_info: "A free, complete recipe in the caption: install the Claude desktop app and use the Code tab (needs a paid Claude plan), make an AI Editor folder with raw, references and done folders, start a Local Code chat on it, then paste three prompts. Prompt 1 installs and checks five tools: FFmpeg with libass (ffmpeg-full on Mac), faster-whisper for word-level subtitles, yt-dlp for references, Remotion and HyperFrames, using official installs only, Node.js 22 or newer and a Python virtual environment. Prompt 2 downloads three to five reels you like, studies pacing, cuts, subtitles, colour, graphics and music, and writes your own style to style.md with exact values, taking inspiration but not copying shots, text or logos. Prompt 3 edits your raw recording: Whisper transcript, cuts pauses and bad takes by audio level, word-by-word subtitles, optional quiet music, graphics only where they help, export 1080x1920 as draft-v1.mp4 with edit-notes.md, then you give plain-word edits saved as draft-v2 and later. The caption is cut off after part of prompts 1 to 3 in the brief, so some wording is missing. No funnel; the creator says follow for her own style next."
+verdict: verified
+registry: none
 ---
 
-# TODO
+# AI video editor in Claude Code in three prompts
 
 ## Caption / hashtags
 > AI video editor in Claude Code: 3 prompts, from an empty folder to a finished reel.
@@ -57,19 +57,19 @@ registry: TODO
 > No code words. Follow for my own editing style, coming next.
 
 ## Hook (on-screen text)
-TODO
+Everybody is editing reels with Claude, but the setup is locked behind paid courses
 
 ## Call to action
-TODO
+Follow for my own editing style, coming next
 
 ## Transcript (auto)
 > Everybody's editing their reels with Claude right now. But the setup, they lock it behind paid courses. Give me one minute, and I'll show you all of it. Step one, download the Claude app and open Claude code inside it, not in the browser. Then, create a folder on your computer called AI Editor and put three folders in it. Raw, references, and done. Open a new chat in Claude code, choose local and point it at that folder. Done. Now, Claude can see your files and actually work with them. Next, Claude needs editing tools, five of them. Remotion and hyperframes build the video and the graphics. FFMpeg cuts and exports. Whisper takes care of the subtitles and YTDLP downloads your references. You don't install any of it yourself. Just paste in the first prompt. Now, Claude knows how to edit, but it doesn't know your taste. Pick three to five reels in a style you like and drop the links into the second prompt. The most important line in there, take inspiration, but don't copy. That line is what keeps your videos from looking like everyone else's. Final step. Shoot the way you always do. Drop the recording into Raw and paste in the third prompt. Claude cuts the pauses, adds subtitles, lays music under it, and hands it all back for you to review. Don't like something? Just say it in plain words like make the hook bigger and it'll fix it. That's the whole process from an empty folder to a finished reel. The tools handle the cutting, your taste handles the rest. No code words, everything's in the description. Follow, because next up I'm showing you my own editing style.
 
 ## What is shown on screen
-TODO
+Not read in detail; the caption holds the setup and prompts.
 
 ## Summary
-TODO
+A genuinely free, step-by-step setup using real tools. The only cost is a paid Claude plan. Copying style from references is framed as inspiration, not copying, which is the right caution.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 424 against 10391 likes (comments/likes 0.04; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -78,9 +78,15 @@ Not read: Instagram requires a login to list comments. The count is 424 against 
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| Claude Code desktop Code tab, Local mode on a folder, needs a paid Claude plan | verified | Official desktop docs say Code prompts a paid plan; Local runs on your files |
+| HyperFrames is an npm package that renders HTML to video for agents | verified | heygen-com/hyperframes repo and docs; needs Node 22 or newer and FFmpeg |
+| FFmpeg, faster-whisper, yt-dlp and Remotion are real tools for this workflow | verified | Well-known open source tools |
+| Everybody locks this setup behind paid courses | unverified | Marketing framing |
 
-Overall: TODO
+Overall: Accurate, usable setup with real tools; only the paid plan requirement and cut-off prompts are caveats.
 
 ## Notes / caveats
-- TODO
+- Prompt text truncated in the brief.
+- Needs a paid Claude plan, Node 22 or newer and Python 3.14 or older.
+- Downloading others' reels with yt-dlp may breach platform terms or copyright; the prompt says study only.
+- Comments not fetched.
