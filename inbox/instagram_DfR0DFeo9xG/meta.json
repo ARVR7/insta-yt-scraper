@@ -1,0 +1,18 @@
+{
+  "url": "https://www.instagram.com/reel/DfR0DFeo9xG/",
+  "platform": "instagram",
+  "shortcode": "DfR0DFeo9xG",
+  "author": "arti.miller",
+  "posted_utc": "2026-11-03T11:50:34",
+  "is_video": true,
+  "duration_s": null,
+  "views": null,
+  "likes": 10391,
+  "comments": 424,
+  "caption": "AI video editor in Claude Code: 3 prompts, from an empty folder to a finished reel.\n\nSETUP (once)\n1. Get the Claude app (claude.ai/download) and open the Code tab, not the browser.\n2. Make a folder \"AI Editor\" with 3 folders inside: raw, references, done.\n3. New chat in Code \u2192 Local \u2192 Select folder \u2192 AI Editor.\nNeeds a paid Claude plan.\n\nPROMPT 1: TOOLS\nYou're my video editor. We work in this folder: raw, references, done. Install and verify 5 tools: FFmpeg with libass (on Mac: ffmpeg-full, full path), faster-whisper for word-level subtitles, yt-dlp for references, Remotion, HyperFrames (npm package hyperframes). Check what's installed first. Official installs only (Homebrew, winget, npm/pip), Node.js 22+. Python packages go in a .venv here, Python 3.14 or older: pip install faster-whisper \"av<19\". Test each for real: burn a subtitle into a test clip, transcribe 5 seconds of audio. Show a table: tool, version, works or not.\n\nPROMPT 2: YOUR TASTE\nHere are reels whose editing I like: [link 1] [link 2] [link 3]. My format: [talking to camera / voiceover]. Download them with yt-dlp into references (for study only). Study each one frame by frame and by ear: pacing, shot length, pause cuts, subtitles, colors, graphics, transitions, music, the first 3 seconds. Take inspiration, but don't copy: no shots, text, logos or brand elements. Write my own style to style.md with exact values. Show it and ask what to change.\n\nPROMPT 3: EDIT\nMy new recording is in raw. Edit it using style.md:\n1. Transcribe with Whisper, word timestamps. Ask me about doubtful words before burning subtitles.\n2. Cut pauses, slips and bad takes, keep the last good take. Check cut points by audio level. Keep pauses that serve the meaning, breaths and word endings. Don't speed up my voice.\n3. Word-by-word subtitles in my style.\n4. If references/music.mp3 exists, put it quietly under the voice.\n5. Graphics only where they help.\n6. Export 1080\u00d71920 to done as draft-v1.mp4 plus edit-notes.md.\nCheck the file yourself, then show me. I'll give edits in plain words; save each as draft-v2, draft-v3.\n\nNo code words. Follow for my own editing style, coming next.",
+  "hashtags": [],
+  "mentions": [],
+  "location": null,
+  "fetched_via": "instaloader",
+  "video_file": "video.mp4"
+}

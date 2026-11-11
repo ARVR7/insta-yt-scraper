@@ -1,0 +1,142 @@
+[0s] 米Claude
+[0s] 米Clau
+[0s] reels with Claude right
+[3s] CHECKOUT
+[3s] PAID
+[3s] Al Editing Masterciass
+[3s] Claude setup revealed after payment
+[3s] Payfor course→
+[3s] paid courses.
+[6s] 01.App
+[6s] Claude
+[6s] Desktop app
+[6s] Chat
+[6s] Cowork
+[6s] Code
+[6s] Step
+[9s] Claude Code · new session
+[9s] Ask Claude to work with your files.
+[9s] inside it,
+[12s] 02.Folder
+[12s] Desktop
+[12s] on your computer called
+[15s] Al Editor
+[15s] three folders in it:
+[18s] 03·Local
+[18s] Claude·Code
+[18s] Newsession
+[18s] Environment
+[18s] Local
+[18s] Remote
+[18s] Folder
+[18s] Select folder..
+[18s] Open a new chat
+[21s] ~/Desktop/AI Editor
+[21s] it at that folder.
+[24s] Claude can see
+[24s] read
+[24s] write
+[24s] references
+[24s] done
+[24s] your files and actually
+[27s] 04.Tools
+[27s] editing tools
+[27s] Remotion
+[27s] vide
+[27s] HyperFrames
+[27s] graphic
+[27s] FFmpeg
+[27s] cuts& export
+[27s] Whisper
+[27s] subtitle
+[27s] yt-dlp
+[27s] downloads reference
+[27s] tools.
+[30s] video
+[30s] graphics
+[30s] build the video and
+[33s] cuts& exports
+[33s] FFmpeg cuts and exports.
+[36s] subtitles
+[36s] downloads references
+[36s] And yt-dlp downloads your
+[39s] 05·Prompt1
+[39s] PROMPT1
+[39s] of it yourself.
+[42s] You're my video editor. We work in this folder:
+[42s] raw, references, done. Install and verify 5
+[42s] FFmpeg with libass, faster-whisper, yt-dlp,
+[42s] Remotion, HyperFrames. Check what's installed
+[42s] tool
+[42s] version
+[42s] faster-whisper
+[42s] 2026.08.19
+[42s] 4.0.540
+[42s] to edit,
+[45s] 06·Taste
+[45s] CLAUDE CAN EDIT.BUT YOUR TASTE?
+[45s] reels in a style
+[48s] PROMPT2
+[48s] vour taste·3-5reels
+[48s] [link 1]
+[48s] [link2]
+[48s] [link3]
+[48s] [link 4]
+[48s] [link 5]
+[48s] second prompt.
+[51s] 07·Key line
+[51s] your taste
+[51s] Here are reels whose editing I like:
+[51s] [link 1] [link 2] [link 3]
+[51s] Download them with yt-dlp into references.
+[51s] Study each frame by frame and by ear:
+[51s] pacing, subtitles, colors, music, first 3 s.
+[51s] Take inspiration, but don't copy.
+[51s] Write my own style to style.md.
+[51s] but don't copy. That
+[54s] 08·Notlike everyone
+[54s] yours
+[54s] like everyone else's.
+[57s] 09· Shoot & drop
+[57s] FINAL STEP
+[57s] He CMOHTNpOBan
+[57s] always do,
+[60s] PROMPT3
+[60s] edit
+[60s] My new recording is in raw. Edit it using
+[60s] style.md...
+[60s] the third prompt.
+[63s] 10·Claude edits
+[63s] take.mp4
+[63s] 41.9s
+[63s] 17pauses cut
+[63s] didn't
+[63s] single
+[63s] second
+[63s] adds subtitles,
+[66s] draft-v1.mp4
+[66s] review
+[69s] 11·Notes in words
+[69s] make the hook big
+[69s] draft-v1
+[69s] like make the hook
+[72s] Claude app →Code
+[72s] Al Editor folder
+[72s] Local chat
+[72s] 5 tools·prompt 1
+[72s] Your taste·prompt 2
+[72s] Edit·prompt3
+[72s] from an empty folder
+[75s] THE TOOLS
+[75s] do the cutting
+[75s] cutting.
+[78s] Comment
+[78s] DESCRIPTION
+[78s] Setup: app, folder, Local chat
+[78s] PROMPT1·tools
+[78s] No code words.
+[81s] arti.miller
+[81s] Arti Miller | Vibe code Al
+[81s] Following
+[81s] Next:my own editing stylel
+[81s] I'm showing you my
