@@ -17,17 +17,17 @@ fetch_status:
   transcript: "none"
   on_screen_text: "n/a"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
+title: "Eight AI filmmaking repos carousel, list unread"
+category: ai
+subcategory: creative
+usefulness: noise
 tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+key_info: "Image carousel promising 8 free GitHub repos for AI filmmaking workflows (scripts, scenes, visuals, automating parts of production). The caption names none of the repos; they are on the slides, which could not be fetched without a login. Likes 3, comments 7. The caption's framing that Claude is now used in AI filmmaking is unchecked. Send screenshots of the slides to turn this into a real list."
+verdict: pending
+registry: registry/verified.md
 ---
 
-# TODO
+# Eight AI filmmaking repos carousel, list unread
 
 ## Caption / hashtags
 > 🎬 🤯 Claude is now being used in AI filmmaking.
@@ -43,19 +43,19 @@ registry: TODO
 Hashtags: #ai #artificialintelligence #aitools #aihacks #chatgpt.
 
 ## Hook (on-screen text)
-TODO
+Claude is now being used in AI filmmaking: 8 free GitHub repos
 
 ## Call to action
-TODO
+Save this for later
 
 ## Transcript (auto)
 None available.
 
 ## What is shown on screen
-TODO
+Not available: the carousel slides could not be read without a login.
 
 ## Summary
-TODO
+A repo-list carousel whose list is on unreadable slides. Nothing could be checked. Send screenshots of the slides to get the eight repos.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 7 against 3 likes (comments/likes 2.33; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -64,9 +64,11 @@ Not read: Instagram requires a login to list comments. The count is 7 against 3 
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| Eight free GitHub repos for AI filmmaking workflows | unverified | Repos not named in the caption; slides not readable without a login |
 
-Overall: TODO
+Overall: Carousel with an unreadable list; filed pending.
 
 ## Notes / caveats
-- TODO
+- Image slides not readable without a login.
+- No repos named in the caption.
+- Comments not fetched.

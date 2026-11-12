@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### AI filmmaking repos carousel (power.ai)  (2026-11-12)
+- **Verdict:** pending
+- **What it is:** Carousel listing 8 free GitHub repos for AI filmmaking
+- **Why pending:** Slides could not be read without a login and the caption names no repos
+- **To resolve:** Owner to send screenshots of the slides
+- **Source note:** [notes/instagram/DfnwoHFk4OO.md](../notes/instagram/DfnwoHFk4OO.md)
+
 ### GTA 6 clipping with Higgsfield (buildwith.colin)  (2026-11-10)
 - **Verdict:** pending
 - **What it is:** Clip GTA 6 reaction videos with a Higgsfield ChatGPT plugin for campaign pay
