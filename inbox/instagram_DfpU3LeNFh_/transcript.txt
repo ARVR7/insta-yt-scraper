@@ -1,0 +1,30 @@
+language: en (0.99)
+[0s] Hi friends I'm sure a lot of you have heard that the harness matters more than the model that you're
+[6s] using. I think that conversation conflates a couple of things. There's building a harness from scratch
+[12s] which is what some teams do when they run agents through the API and there's what most of us do which
+[17s] is scripting on top of the harness we already use. I call that a meta harness. So what we need to know
+[23s] is when those numbers matter and where the practical signal is for getting better outputs.
+[28s] So today I'm putting one model opus 5.5 inside three harnesses which are Claude code codex
+[34s] and Hermes and I'm going to challenge an idea from hugging face. They took lfm 2.5 which is a small
+[41s] 2.6 bill parameter model from liquid AI and ran it inside different harnesses. Same weights and it
+[47s] sold 62% of its tasks inside one and 33% inside Claude code. So before we begin let's talk about
+[55s] what a harness is. It's everything wrapped around the model. That's the system prompt which is
+[59s] just a set of instructions you never see. The tools it's allowed to use the loop that the program
+[64s] itself runs till the job is done and the checks it runs before it tells you it's finished. For my test
+[70s] I used opus in all three each in its own bucket container fully scripted. I give them the same
+[76s] six real bugs from sweet bench three times each and the project's own test decide what's
+[82s] a pass. Before I typed a single word Claude code had already sent the model about 11,000 tokens
+[88s] of instructions and tools and opus works completely differently in each one. Claude code gave it
+[94s] 26 tools and it used one which was the command line. In Hermes it used the tools it was given to
+[100s] search, read and edit the code and in codex it took the fewest steps and finish fastest. So what
+[106s] happened? Well even though they worked so differently the results were the same across the board.
+[111s] All three solved 16 of the 18 tasks but what did change was the speed and the bill where
+[117s] codex was the fastest and Hermes surprisingly was the cheapest. But one thing really did stand out
+[123s] is 72 runs opus reproduced the bug before changing the code twice. That's because none of the three
+[130s] harnesses told it to do so. So I wrote one page of extra instructions telling it how to work
+[136s] once more script that won't let it finish until those checks pass and on that one bug they kept
+[141s] getting wrong opus more than doubled its pass rate and that's the lesson. If you're building a harness
+[147s] from scratch to run your own agents it still really matters but for the rest of us with a model
+[152s] this good inside any of the leading harnesses what makes the difference in my test was the layer on top
+[158s] your skills your scripts and your checks that's the meta harness and it's really just files and
+[163s] folders. So let's keep leveling up friends chemicalist care club signing out.
