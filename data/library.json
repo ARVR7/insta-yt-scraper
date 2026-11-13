@@ -1,5 +1,31 @@
 [
   {
+    "id": "Dfp9OtnzVKs",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dfp9OtnzVKs/",
+    "title": "rea-video: reverse engineer any video with Claude",
+    "author": "alex2learn",
+    "posted": "2026-11-12 20:52:12+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Claude Code",
+      "rea-video",
+      "GitHub"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "The reel promotes an open-source GitHub repo that lets an AI coding agent such as Claude Code watch a video and break it down shot by shot (filmed, AI-generated or code-made) so the video can be remade. The repo shown on screen is rea-video (Apache-2.0, by JuneYaooo). Its results go into a VIDEO.md file. The creator names it 'Reverse Engineer Video' and calls it viral; the claim of copying a video 'one to one' is marketing. The link is behind a comment-the-word 'steal' funnel, but the repo is public and findable without commenting.",
+    "note_path": "notes/instagram/Dfp9OtnzVKs.md"
+  },
+  {
     "id": "DfpU3LeNFh_",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfpU3LeNFh_/",
