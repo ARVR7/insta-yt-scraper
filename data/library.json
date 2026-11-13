@@ -79,6 +79,33 @@
     "note_path": "notes/instagram/DfpU3LeNFh_.md"
   },
   {
+    "id": "DfpQGzOIlWJ",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/DfpQGzOIlWJ/",
+    "title": "MoneyPrinterTurbo: free topic-to-video generator",
+    "author": "joshualevi.ai",
+    "posted": "2026-11-12 14:19:10+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "MoneyPrinterTurbo",
+      "Ollama",
+      "Edge TTS",
+      "Pexels"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "A comedy-skit reel (creator joshualevi.ai) about MoneyPrinterTurbo (harry0703 on GitHub), a free, open-source (MIT) tool that turns a topic into a finished short video: script, voice, captions, music and edit. The caption says he measured it on his own Mac: one video in 1 minute 59, three in 3 minutes 42, one attempt failed when the free voice service timed out, $0 spent using a local model through Ollama and the free Edge voice. Honest caveats are stated: you bring your own clips or a free Pexels or Pixabay key, you need a terminal, Python and uv, and the output is a first draft that needs caption restyling and fact checks. The skit ends by saying the idea is still your job, and that a hundred videos a day of first drafts will not get watched.",
+    "note_path": "notes/instagram/DfpQGzOIlWJ.md"
+  },
+  {
     "id": "DfnwoHFk4OO",
     "platform": "instagram",
     "url": "https://www.instagram.com/p/DfnwoHFk4OO/",
