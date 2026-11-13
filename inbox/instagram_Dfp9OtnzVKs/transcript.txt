@@ -1,0 +1,9 @@
+language: en (1.00)
+[0s] Clawed can now steal any video. It's called Reverse Engineer Video, and it's a viral
+[4s] GitHub repository that allows you to give any video to Clawed Code and it'll extract
+[9s] everything it needs to be able to replicate that video completely. You can use this
+[11s] for stealing people's editing style for your own content, or if there's some viral short
+[15s] form or long form video and animation, infographic, and explainer, whatever you want, this will
+[19s] give Clawed the tools it needs to copy that video, one to one, so you can replicate someone's
+[23s] style and make your own content exactly the same way they can. If you guys want me to send
+[26s] you the link to this GitHub repository, comment the word steal and I'll send it right
