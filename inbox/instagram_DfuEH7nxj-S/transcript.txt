@@ -1,0 +1,22 @@
+language: hi (0.71)
+## English translation
+[0s] I didn't say that I will open source this video. I said that I will public it.
+[4s] Anyways, it is the time.
+[6s] Beaker is now open source. You will get it on my Githa. I will put its link in the bio too.
+[10s] You will get it in the caption of this video.
+[12s] You have to give a link to your agent and tell him to start this project and your project will start locally.
+[18s] It won't be slow because everything is going in your system.
+[20s] So, you won't have any problem and you will get any video.
+[22s] This is the most futuristic bionic art on the planet.
+## Original (hi)
+[0s] रब थे तागेड कुडने ड़ी पूड़ाइनगहै नहीं झानवार कोंगे जा अगो भास shelter
+[2s] अगो रब बाह कारब बआद पूड़़े जा रई।
+[3s] ना फोड़़।
+[4s] आप धशे ऱे रची खोने लेग कि आप लिए आपे लगेच तो लिए ज़र या,
+[6s] भी कर दिएडना अपन सोगजे में कितापे मिलज़ाएगी
+[8s] इसके लिंक मैं आपनी बाएवे भी डाल दुँगा
+[10s] और इस वी देगी कैप्चान में मिलज़ायगा
+[12s] कोसकेशे लिंक अबने एजन्गो देनी है
+[14s] अप आप प्रज़़न एक पुज़ाद करी आप प्रज़़न लोकली जाएगा
+[17s] अब इसनो को स्छलो नहीं होगा खुगे स्छल आप यह सिस्च्टम में चल लाग
+[20s] तो अब में ब्रचा दब चाहते तो अब अब आप वो के पननेत निया, और अग की थी बीटृस भूँत आगने दिया रहेंगे दिया।
