@@ -1,0 +1,65 @@
+[0s] the design
+[0s] Meta
+[3s] ofitsownapps,
+[3s] 13,000+apps
+[6s] It's called Astryx.
+[9s] 13,000
+[9s] astryx
+[9s] Star
+[9s] 24.4k
+[9s] +13.4k
+[9s] An open source design system that'sfully customizable and agentready
+[9s] REACT19+
+[9s] BETA
+[9s] GREW INSIDE META
+[9s] powering 13,000+ apps
+[9s] 8 years
+[9s] GITHUBSTARS·THIS WEEK
+[12s] Usually,
+[12s] 27.9k
+[12s] Alapp
+[15s] soyourapplooks
+[15s] Click
+[15s] Start
+[15s] Submit
+[15s] Next
+[15s] Send
+[15s] fromscratch
+[18s] Astryx is different.
+[18s] Yourapp
+[18s] Get started
+[21s] 150ready-made
+[21s] YourAl
+[21s] ready-made
+[21s] pieces
+[21s] EXAMPLE
+[24s] tables and page
+[24s] Email address
+[24s] Password
+[27s] Pick one of seven themes,
+[27s] neutral
+[27s] butter
+[27s] chocolate
+[27s] matcha
+[27s] stone
+[27s] gothic
+[27s] THEME NAMESFROM THE README·COLORSILLUSTRATIVE
+[30s] Yourbrandcolor
+[30s] #FF5A1F
+[33s] So itbuildswith
+[33s] npm run astryx
+[33s] component --list
+[33s] Button
+[33s] docs·props·examples
+[33s] TextInput
+[33s] Table
+[33s] Dialog
+[33s] Sameparts
+[36s] madefor
+[36s] FREE·OPENSOURCE(MIT)
+[36s] made forReact
+[39s] replace.so
+[39s] Repos you should know·a new one every day
+[39s] Following
+[39s] Comments
+[39s] you·now

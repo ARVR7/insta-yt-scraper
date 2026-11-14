@@ -1,0 +1,17 @@
+language: en (1.00)
+[0s] Meta just opened source the design system behind more than 13,000 of its own apps, and
+[5s] it's built for your AI to use too.
+[7s] It's called Asterix.
+[8s] Meta spent eight years building it, and it just gained 13,000 stars on GitHub in a single
+[12s] week.
+[13s] Usually, your AI invents every button from scratch, so your app looks like every other
+[17s] AI app.
+[19s] Asterix is different.
+[20s] You and your AI get the same 150 ready-made pieces, buttons, forms, tables, and page templates
+[26s] with dark mode built in.
+[28s] Click one of seven themes, add your brand colors, and every screen follows.
+[32s] Your AI can look up every piece with one command, so it builds with the same parts you
+[35s] do.
+[36s] It's free and open source, made for React and still in beta.
+[39s] Want to try it?
+[40s] Comment, Meta, and I'll send you the link.
