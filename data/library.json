@@ -1,5 +1,32 @@
 [
   {
+    "id": "Dfu3JMYAz24",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Dfu3JMYAz24/",
+    "title": "Astryx: Meta's open-source React design system",
+    "author": "replace.so",
+    "posted": "2026-11-14 18:35:57+00:00",
+    "type": "reel",
+    "category": "tech",
+    "category_label": "Tech & dev",
+    "subcategory": "design",
+    "subcategory_label": "Web design & themes",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Astryx",
+      "React",
+      "GitHub",
+      "StyleX"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "The reel (replace.so) introduces Astryx, an open-source (MIT) React 19+ design system from Meta, still in beta. Claims: it grew inside Meta for 8 years and powers 13,000+ apps; 150+ ready-made components (buttons, forms, tables, page templates); seven themes (neutral, butter, chocolate, matcha, stone, gothic and one more) you can recolor with your brand colour; built-in dark mode; and a command (npm run astryx component --list) that lets an AI agent look up every component, with docs, props and examples, so it builds with the same parts instead of inventing buttons. It says the repo gained 13,000 stars in a week (the screen shows 24.4k and 27.9k). The reel ends with a comment-META funnel for the link.",
+    "note_path": "notes/instagram/Dfu3JMYAz24.md"
+  },
+  {
     "id": "DfsCx-bt7_R",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/DfsCx-bt7_R/",
