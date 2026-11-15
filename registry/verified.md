@@ -445,6 +445,13 @@ Items that checked out against primary sources. Newest first within each section
 
 ## Pending verification
 
+### ruralbytestamil 'Try this' post  (2026-11-15)
+- **Verdict:** unverified
+- **What it is:** Instagram post captioned 'Try this'
+- **Why pending:** Slides could not be read without a login.
+- **To resolve:** Send screenshots of each slide and reopen the issue.
+- **Source note:** [notes/instagram/Dfqm5sKShUR.md](../notes/instagram/Dfqm5sKShUR.md)
+
 ### AI filmmaking repos carousel (power.ai)  (2026-11-12)
 - **Verdict:** pending
 - **What it is:** Carousel listing 8 free GitHub repos for AI filmmaking

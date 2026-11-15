@@ -17,35 +17,35 @@ fetch_status:
   transcript: "none"
   on_screen_text: "n/a"
   comments: "not fetched (Instagram requires login)"
-title: TODO
-category: TODO
-subcategory: TODO
-usefulness: TODO
+title: "Instagram post from ruralbytestamil: Try this"
+category: other
+subcategory: null
+usefulness: noise
 tools: []
-key_info: "TODO"
-verdict: TODO
-registry: TODO
+key_info: "An Instagram image post (probably a carousel) by ruralbytestamil with the caption 'Try this' and no hashtags. The slides cannot be read without a login, so what it asks you to try is unknown."
+verdict: pending
+registry: registry/verified.md
 ---
 
-# TODO
+# Instagram post from ruralbytestamil: Try this
 
 ## Caption / hashtags
 > Try this
 
 ## Hook (on-screen text)
-TODO
+Try this
 
 ## Call to action
-TODO
+None readable
 
 ## Transcript (auto)
 None available.
 
 ## What is shown on screen
-TODO
+Not reviewed: slides cannot be fetched anonymously.
 
 ## Summary
-TODO
+Nothing about the content could be read, only a two-word caption. Filed as pending until slide screenshots are supplied.
 
 ## Comments
 Not read: Instagram requires a login to list comments. The count is 4 against 3 likes (comments/likes 1.33; a ratio near or above 1 usually means a prompt to comment, an inference).
@@ -54,9 +54,10 @@ Not read: Instagram requires a login to list comments. The count is 4 against 3 
 
 | Claim | Verdict | Evidence |
 |---|---|---|
-| TODO | TODO | TODO |
+| The post's subject and any claims | unverified | Only the caption 'Try this' was available; no slides, video or transcript |
 
-Overall: TODO
+Overall: Content not readable; nothing to verify.
 
 ## Notes / caveats
-- TODO
+- Instagram requires a login to read carousel slides and comments.
+- Only 3 likes and 4 comments, so little context from engagement.
