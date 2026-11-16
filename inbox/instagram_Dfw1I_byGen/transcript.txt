@@ -1,0 +1,50 @@
+language: hi (1.00)
+## English translation
+[0s] If you just write the code by prompting, then stop.
+[2s] The game of prompting is over.
+[4s] Start learning loops.
+[5s] Because the founders of Cloud Code are also writing this.
+[6s] The problem with prompting is that it is linear.
+[8s] You type your ask, AI generates an output based on that.
+[11s] You evaluate that output and then retype.
+[13s] And it keeps going until the results match your expectations.
+[16s] But loops don't work like this.
+[17s] After the first time, they don't need you.
+[20s] That means you have given the instruction once.
+[21s] Now it will refine itself until a defined acceptance criteria doesn't meet.
+[25s] Now there are generally four parts in one loop.
+[27s] The first is a clear context.
+[29s] What does it mean?
+[30s] The second is an execution protocol.
+[31s] How does it mean?
+[33s] The third is a built-in critic.
+[34s] Which evaluates the work of AI itself.
+[36s] And the fourth is an exit condition.
+[38s] If this condition is achieved, then the loop stops.
+[40s] And this is a great example of a four-part loop.
+[43s] Loops can really help you build things independently.
+[45s] And if you need a must resource on how to get started with them.
+[48s] Then share it with me and I will send it to you.
+[50s] The rest of the content is looking good, so follow it.
+## Original (hi)
+[0s] बाई सर्व प्रोम्टिंग करके कोड लिकते हो तो रूग जाओ
+[2s] प्रोम्टिंग का खेल खातम है
+[4s] लूप सिकना शुरू करो
+[5s] कुई क्लोड कोड के फाशन्टोस भी यही लिक रहे हैं
+[6s] देगो प्रोम्टिंग कि सा दिकते है कि वो लीन्यर है
+[8s] प्रोम्टिंग करी । भी तर की लगाप से वात loops से असे काम नहीं करते हैं
+[17s] उनको पहली बार के बाज तुमहारी ज़रूरगध ही नहीं हैं
+[20s] मुछब तुमने एक बार ईंस्टक्षन देदी
+[21s] वो खुड को रिफाइन करता रहेगा
+[23s] जब तक एक दिफाँईग्स्टेँस क्राइटीरिया मीट नहीं हो जाते है.
+[25s] अब एक लूप में जैनरेली चार पार्ट्स होते हैं.
+[27s] पहला होता है, एक ख्लीर कुन्टेक्स्ट, मतलप करना क्या है.
+[30s] तुसरा होता है, अन एक्छिकुषन प्रोटोकोल, मतलप करना क्या लिए है.
+[33s] तुसरा होता है अब बिल्टिन क्रिटिक, जो एवल्टेग करता है,
+[35s] एक जो खड़ा काम, और चोथा होता है, अन एक्चिक क्नटीषन,
+[38s] मतलप ये कनटीषन अगर अचीव होग़े, तो लूभ बंद होछाता है,
+[40s] And this is a great example of a 4 part loop.
+[43s] A loops can really help you build things independently,
+[45s] अरगर तुमको एक वौरास्त वी सुछ्वर्स छही है, और हैं, भी जीडे,
+[48s] तुम ये रील मुच्से शेर कर दो, मैं भिचता हो तुमको.
+[50s] बाखी कोंटेंट अच्छा लग रहे है तो फोलो कर लो
