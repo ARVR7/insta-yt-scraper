@@ -1,0 +1,160 @@
+[0s] THEOLDWAY
+[0s] LAUNCHNIGHT
+[0s] DOWNLOADING FULL STREAM
+[0s] GTA 6 ·LAUNCH NI
+[0s] OF THE FULL STREAM
+[0s] DON'TDOWNLOADIT
+[0s] GTA 6·LAUNCH NIGHT
+[0s] 6 STREAM.
+[3s] PLAYSTATION+XBOXSTORES
+[3s] THERECORD
+[3s] PLAYSTATIONSTORE
+[3s] #1EVER
+[3s] SONYAND
+[6s] EVER
+[6s] MICROSOFTSTORE
+[6s] 9,665,471
+[6s] DIGITAL CONSOLE PRE-ORDERS
+[6s] SENSORTOWER
+[6s] THEIRSTORES
+[6s] HAVE
+[9s] NOVEMBER19
+[9s] TWOPLATFORMS
+[9s] PS5 · XBOX SERIES X|S
+[9s] NOV19
+[9s] 08:09:25
+[9s] PRE-LOAD OPEN
+[9s] CONSOLE ONLY
+[9s] NOVEMBER
+[12s] N0VEMBER19
+[12s] PS5 · XBOX SERIES XIS
+[12s] 07:45:39
+[12s] NOT A MONTH.NOT A WINDOW.
+[12s] STILL
+[15s] 07:36:31
+[15s] NO DATE
+[15s] NOTHING.
+[18s] PCPLAYERS
+[18s] THEQUEUE
+[18s] LAUNCH WEEK
+[18s] WATCHING
+[18s] OTHER
+[18s] RPEOPLE
+[21s] SHORTFORM
+[21s] 59,079 VIEWS
+[21s] THROUGH
+[21s] CLIPS.
+[24s] 96,237 VIEWS
+[24s] VERTICAL
+[24s] MINUTES OLD
+[24s] HAPPENS.
+[27s] WAIT·DOWNLOAD·SCAN
+[27s] WAITING FOR THE FULL STREAM
+[27s] STILL LIVE
+[30s] EVERY CLIPPER
+[30s] SAME QUEUE
+[30s] SAME CLIPS
+[30s] TOPOSTTHE
+[30s] FULL
+[33s] DOWNLOADING THE WHOLE NIGHT
+[33s] AI SCANNING FOR HIGHLIGHTS
+[33s] THEN LET AN
+[33s] SCAN
+[36s] EVERYFEED
+[36s] TOOLATE
+[36s] @clipper10
+[36s] @clipper11
+[36s] @clipper12
+[36s] @clipper13
+[36s] @clipper14
+[36s] @clipper15
+[36s] @clipper16
+[36s] @clipper17
+[36s] @clipper18
+[36s] @clipper19
+[36s] @clipper20
+[36s] 1,437
+[36s] CLIPS OF THE SAME MOMENT
+[36s] ALREADY
+[36s] EVERY
+[36s] FEED.
+[39s] ALREADYPOSTED
+[39s] cipper17
+[39s] @clipper21
+[39s] 2,131
+[39s] EVERYONE
+[39s] LATE.
+[42s] WHILEYOUSLEEP
+[42s] WATCHITLIVE
+[42s] STREAM CHAT
+[42s] LIVE
+[42s] bro what
+[42s] no way
+[42s] CLIP IT
+[42s] REC00:(
+[42s] CHAT ACTIVI
+[42s] RECORDING
+[45s] CLIP II
+[45s] LETS GO
+[45s] insane
+[45s] REC00:06:52
+[45s] WATCHING·GTA6
+[45s] CHAT ACTIVITY
+[45s] CUTTING
+[48s] HOLY
+[48s] he did not
+[48s] REC00:09:12
+[48s] WATCHING ·GTA
+[48s] CAPTIONS
+[51s] BUILT WITH CLAUDE CODE
+[51s] ONE FOLDER
+[51s] ~/clip-wa
+[51s] 0/5 RUNNING
+[51s] BUILT
+[51s] MINE
+[51s] WITH
+[54s] o~/clip-watcher
+[54s] 1/5 RUNNING
+[54s] records thestreamthemoment
+[54s] streamlink
+[54s] it goes live
+[54s] RECORDS
+[57s] 2/5 RUNNING
+[57s] readanonymously—no
+[57s] twitch chat
+[57s] account,no token
+[57s] OPEN
+[57s] TO READ.
+[60s] ~/clip-watcher
+[60s] spike c
+[60s] A SCRIPT
+[60s] COUNTS
+[63s] 4/5 RUNNING
+[63s] counts chat messages every
+[63s] spike counter
+[63s] ten seconds
+[63s] cuts30 seconds around every
+[63s] ffmpeg
+[63s] spike
+[63s] CUTS
+[63s] EVERYS
+[66s] 5/5 RUNNING
+[66s] whisper
+[66s] writes thecaptions
+[69s] THE CATCH
+[69s] ONLYWHILELIVE
+[69s] THE LIVE WINDOW
+[69s] 00:22LEFT
+[72s] 00:01LEFT
+[72s] NOREWINDONCEIT
+[72s] ENDS
+[72s] YOU CAN'T
+[72s] REWIND
+[72s] A STREAM
+[75s] 00:OOLEFT
+[75s] COMMENT
+[75s] CLIP
+[75s] theromanknox
+[75s] BUILD
+[75s] Here'sthewholebuild
+[75s] WHOLE

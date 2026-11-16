@@ -1,0 +1,24 @@
+{
+  "url": "https://www.instagram.com/reel/DfwuUDyRPTe/",
+  "platform": "instagram",
+  "shortcode": "DfwuUDyRPTe",
+  "author": "theromanknox",
+  "posted_utc": "2026-11-15T11:57:10",
+  "is_video": true,
+  "duration_s": null,
+  "views": null,
+  "likes": 7727,
+  "comments": 7949,
+  "caption": "Don\u2019t download the GTA 6 stream on launch night. Every clipper will, and they\u2019ll all be late.\n\nOn November 19 it launches on PlayStation and Xbox only. PC still has no date \u2014 so millions of players spend launch week watching other people play, on clips.\n\nEvery clipper will do the same thing: wait for the full stream to go up, download the whole night, then let an AI scan it. By then the same moments are on every feed.\n\nSo I built the other way with Claude Code, one folder:\n1. streamlink records the stream the moment it goes live\n2. Twitch chat is read anonymously \u2014 no account, no token\n3. a script counts messages every 10 seconds and marks the spikes\n4. ffmpeg cuts 30 seconds around each spike\n5. whisper writes the captions\n\nstreamlink, ffmpeg and whisper are free. One honest catch: it only works while they\u2019re live \u2014 you can\u2019t rewind a stream that already ended.\n\nComment CLIP and I\u2019ll send you the whole build \ud83d\udc47\n\n#gta6 #claudecode #claude #clipping #twitch streamclips contentcreator",
+  "hashtags": [
+    "gta6",
+    "claudecode",
+    "claude",
+    "clipping",
+    "twitch"
+  ],
+  "mentions": [],
+  "location": null,
+  "fetched_via": "instaloader",
+  "video_file": "video.mp4"
+}
