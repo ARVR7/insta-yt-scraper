@@ -1,0 +1,3236 @@
+{
+ "format": 1,
+ "about": "fingerprint of the old repo; verify with: python3 migration-setup/verify_manifest.py. No secret values inside: names only.",
+ "branch": "ccr-4e94c80c-rpb12o",
+ "commit": "4cbeb798d826ad246eeb76f9b67f92621da35435",
+ "tree": "a13967bf75e64d320cda2341f1d28940ffebd030",
+ "tree_without_manifest": "ec5db6368d1a7a0143bfc416cf8e4952022442a7",
+ "main_commit": "7bc26376e99ebbea9703bbbe98f7158a65e5f76f",
+ "main_ref": "origin/main",
+ "commit_count": 289,
+ "files": [
+  {
+   "path": ".claude/REQUIREMENTS.md",
+   "sha256": "81b017a6f2099e01a6e39415346093feb618b46fe9b4e98c9a88556198e1868a",
+   "size": 6037
+  },
+  {
+   "path": ".claude/scripts/autosave.sh",
+   "sha256": "673ceb8552c3adfb5062eaa2a6c30dde54108071f77849ecf6c35f2318cfb40b",
+   "size": 3135
+  },
+  {
+   "path": ".claude/settings.json",
+   "sha256": "65b4d4975e198b43e54501e4e2db33d9a1062da95f62ede717f674b5f83a729c",
+   "size": 272
+  },
+  {
+   "path": ".claude/skills/clips/CONTROLS.md",
+   "sha256": "ccadf35a6928c04318c875565f8069e818262c7e8d53e45875f9d1f1eb724c89",
+   "size": 36363
+  },
+  {
+   "path": ".claude/skills/clips/NOTICE.md",
+   "sha256": "935a80a8b73c531dd6ae3c25fbe7670a8ec75b469611f8129ea5446c1561dfc2",
+   "size": 659
+  },
+  {
+   "path": ".claude/skills/clips/PLAN.md",
+   "sha256": "966417d52f78b57d845311548509bdec7d8762d6f993bf25c6bb726444ac5bda",
+   "size": 68966
+  },
+  {
+   "path": ".claude/skills/clips/QUICKSTART.md",
+   "sha256": "586c95731aab217029522118ba5bf838b48714af107bc77945ae95a5228989ea",
+   "size": 10964
+  },
+  {
+   "path": ".claude/skills/clips/SKILL.md",
+   "sha256": "c66d8da53253aedc3df96fffc34cfceec2c86237e048218890e67eca11e14c24",
+   "size": 54925
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/_lib/gsap.min.js",
+   "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+   "size": 72927
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/callout-ring/README.md",
+   "sha256": "4ccbd9fe2b1d2fecba33680cb56c580d7f7f3a499ed2a54b5bd2bd1320a67634",
+   "size": 499
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/callout-ring/fonts/Montserrat.ttf",
+   "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+   "size": 744936
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/callout-ring/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/callout-ring/index.html",
+   "sha256": "81101fd00a2be1c63270787b1647d7d4f52501edc4a240d5ab7e853dd032c3e3",
+   "size": 3575
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/callout-ring/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-burst/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-burst/index.html",
+   "sha256": "5c11fb1f745f216710e87ede0ee7c252085bac35989bcb59285a7ab63ea2314d",
+   "size": 2834
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-burst/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-meme/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-meme/index.html",
+   "sha256": "7b10be090503c2eea4d9445378e89994b3e59c202b65aa752a16ea7de1ee0cef",
+   "size": 2256
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-meme/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-ring/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-ring/index.html",
+   "sha256": "74a05af09238f0cc636c1711a664528ffbf674d273816eb37c70764fe7266df9",
+   "size": 3644
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-ring/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-tag/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-tag/index.html",
+   "sha256": "5841526bd09185f93a70587bafd088907c1feaae1976a9353a4c1f2edf33bf27",
+   "size": 2605
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-tag/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-title/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-title/index.html",
+   "sha256": "71eea361e2d1866d75a2658f69a7620abeebce6e286e6f6ca0c4fd81fac024ea",
+   "size": 3357
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/hl-title/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/impact-burst/README.md",
+   "sha256": "7844cf9021217db321d1b32f0a23a59524bd344bf84a8c2f41072edfc88b2bc7",
+   "size": 533
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/impact-burst/filters.txt",
+   "sha256": "44229f37a3b041245436f1d985dbc009531a76de3f34a14fe84fc08d12c50fbb",
+   "size": 353
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/impact-burst/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/impact-burst/index.html",
+   "sha256": "533630ccd75fbee024ea698b4bde415c497b35e6f38cebbe2d73e35eb397666b",
+   "size": 3085
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/impact-burst/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/lower-third-tag/README.md",
+   "sha256": "89454699ba46df03bbcc43e01456b8ab1dfb9c7a1d55a9fe17b095f39371f62f",
+   "size": 397
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/lower-third-tag/fonts/Montserrat.ttf",
+   "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+   "size": 744936
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/lower-third-tag/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/lower-third-tag/index.html",
+   "sha256": "98870c63f78b02e1c3a43f8b01b421896c0e5b0bb24c3aa180b0751fbdf3c89f",
+   "size": 2138
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/lower-third-tag/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/progress-bar/README.md",
+   "sha256": "9f4ac3af8925178c9b6a214e102af6f72401d320c269dcfb076a6f4fbac08cb6",
+   "size": 333
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/progress-bar/filter.txt",
+   "sha256": "27c97da22e7d9176ce91b0047299a295feafd0f1f062b3a9c2a5f9303215a0f2",
+   "size": 209
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/title-reveal/README.md",
+   "sha256": "a1de877749a066cdf1d788611e21d53a708d3a8a54f4c94b2308654f7764b82e",
+   "size": 525
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/title-reveal/fonts/Playfair.ttf",
+   "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
+   "size": 300724
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/title-reveal/fonts/PlayfairItalic.ttf",
+   "sha256": "a5e26dc5e2e77fb2803a0bf02fd4f81ee136ec8dea863ccdb0c59a263b21378b",
+   "size": 278688
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/title-reveal/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/title-reveal/index.html",
+   "sha256": "1ac0726317dc05cb30d999f427e880fa2c131fcb673ee9453ae57617aea36329",
+   "size": 3332
+  },
+  {
+   "path": ".claude/skills/clips/assets/animations/title-reveal/params.js",
+   "sha256": "a156d5f821728a29153af7b681fd8cabaeade44dc28b390929fb119a6f26d060",
+   "size": 18
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/PROMPTS.md",
+   "sha256": "6b6baf0c464e70805f7a6da5b59e06d28bf64a54c0afdb193de7175c2d1504ae",
+   "size": 12847
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_disbelief_10s.mp4",
+   "sha256": "826017dfb120c2a93728dfc16f6ec0883c6f2aaca89fd56836508b94519a47dd",
+   "size": 2904524
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_disbelief_10s_sheet.png",
+   "sha256": "840dcb5c35dae43dcd35b4aa7bf3bb7c06d6edb04b4a2087242648927cac5619",
+   "size": 1298068
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_gemini-app_10s.mp4",
+   "sha256": "3140481fbf69243636a9ed23037c0f1717735ba89980d4b959ca5ee7d48475da",
+   "size": 3152424
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_gemini-app_10s_sheet.png",
+   "sha256": "d1dc0bcfc6dce95e28ba13da647fd8ab9356cf28cf646dd17ab4835a6a4dc827",
+   "size": 1305092
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_gemini-app_20s.mp4",
+   "sha256": "232add62a608a7c76cde69f0c3fe2bbcf3d8df4362645a9951b4600e4475fbeb",
+   "size": 4498243
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_gemini-app_20s_sheet.png",
+   "sha256": "32acce7812ba4a626eec3ba2b1cfc6a0a40da150d1f00c17711f63bdcf2dca32",
+   "size": 2419875
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_hype_10s.mp4",
+   "sha256": "71f2e5fc35a221f06b9148e6d49faaa7e9f7ea9218aa8616618687b28b35b8c3",
+   "size": 3154133
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_hype_10s_sheet.png",
+   "sha256": "15b2685f1cea9387f64b27ca3796a16e384f2b56d394cf1e2fb741566751efc8",
+   "size": 1290523
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_impressed_20s.mp4",
+   "sha256": "627714ffee61309cc80f418384e9529ccbb425533b9c2a57324b6cbb8ed0505b",
+   "size": 4520829
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_impressed_20s_sheet.png",
+   "sha256": "9c81d12fef6f936900be526f49ee7f63cd2cb2c0d04af31ad7c7c5552b834c70",
+   "size": 2463059
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_laugh_10s.mp4",
+   "sha256": "a71cc54cd5cdd9543a1f4576df6311f75aa27bc9879e838f03b67eae075bdbaa",
+   "size": 2753709
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_laugh_10s_patched.mp4",
+   "sha256": "31f47026875a8c478c0befc05ef0d90afcad93bba1b968ae86e48c44ddf09c5a",
+   "size": 1731941
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_laugh_10s_sheet.png",
+   "sha256": "eed2a81fb85987120e2a54d322c42262e8567bf5349368adbff89482fa0a565d",
+   "size": 1198326
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_reference_frame.png",
+   "sha256": "e463de4e7ccc17e349fc98209a6d69f899a5731bb449f59b4f50c55882c95ce1",
+   "size": 790209
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_surprise_10s.mp4",
+   "sha256": "8270784f4ea537223f7cb97db06880916cdae6af50c20ec78c83535f292ec5d1",
+   "size": 2752028
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_surprise_10s_sheet.png",
+   "sha256": "ca62e8668a34333336ffd22705eb09b5938a37953c3c82b0e939159c8c39dca6",
+   "size": 1220725
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_watching_10s.mp4",
+   "sha256": "a3952500df01244119d0fc1d9481800596f347aab9dac3ebcc781d00994681e7",
+   "size": 2541866
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/girl_watching_10s_sheet.png",
+   "sha256": "63e35390275c5e740b1edd2e47aca3407d76bb9464cf25012c81e108171a7778",
+   "size": 1233776
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/library.json",
+   "sha256": "e14f07f7d08f4d8749407f62ac069b8ef02dceadf9de4f3d35d24fe80274da2e",
+   "size": 5768
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/reference/girl_reference_character-sheet.png",
+   "sha256": "c0c76b52d2d1a9fc2d7d86e6305d24daa249c42d0a62ded111775f27d64d7f40",
+   "size": 2478333
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/reference/girl_reference_selfie.png",
+   "sha256": "006b08bc2179ac4af2a3d397c388a9dce13a5d1a406bf3d1f23d806af70533cf",
+   "size": 2144156
+  },
+  {
+   "path": ".claude/skills/clips/assets/facecam/reference/girl_reference_webcam-frame.jpg",
+   "sha256": "d42a5f495cc20c8ad4114b01d2d2e6835d4bc536ad9a9c87ae7073493dd44aad",
+   "size": 86881
+  },
+  {
+   "path": ".claude/skills/clips/assets/fonts/Anton-Regular.ttf",
+   "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+   "size": 170812
+  },
+  {
+   "path": ".claude/skills/clips/assets/fonts/Montserrat-ExtraBold.ttf",
+   "sha256": "d3ac6a843d3ba6d5cafd44cf39e437055c8aed7e261010f595f57d3c7b3e2c1b",
+   "size": 455468
+  },
+  {
+   "path": ".claude/skills/clips/assets/fonts/Montserrat.ttf",
+   "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7",
+   "size": 744936
+  },
+  {
+   "path": ".claude/skills/clips/assets/fonts/OFL-Anton.txt",
+   "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4",
+   "size": 4484
+  },
+  {
+   "path": ".claude/skills/clips/assets/fonts/OFL-Montserrat.txt",
+   "sha256": "8b7141c03fa4f8d44e6345d5d4931709290f0f67875e452e95ac1fd3a027802e",
+   "size": 4400
+  },
+  {
+   "path": ".claude/skills/clips/assets/fonts/OFL-Playfair.txt",
+   "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e",
+   "size": 4449
+  },
+  {
+   "path": ".claude/skills/clips/assets/fonts/Playfair.ttf",
+   "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
+   "size": 300724
+  },
+  {
+   "path": ".claude/skills/clips/assets/fonts/PlayfairItalic.ttf",
+   "sha256": "a5e26dc5e2e77fb2803a0bf02fd4f81ee136ec8dea863ccdb0c59a263b21378b",
+   "size": 278688
+  },
+  {
+   "path": ".claude/skills/clips/assets/sfx/README.md",
+   "sha256": "ed72e7ae28c03368fd23537128797b4f9245dd5d72c4e84a6b6b0c31a5e3f24b",
+   "size": 585
+  },
+  {
+   "path": ".claude/skills/clips/assets/sfx/hit.wav",
+   "sha256": "dc5fd507f86ab72831982f353a23450bd2d3c9fb85922e2b06c70c2aa7aad3ef",
+   "size": 44178
+  },
+  {
+   "path": ".claude/skills/clips/assets/sfx/pop.wav",
+   "sha256": "83dac0c82d751b696573fa1c2135a199eafe3e6892525b709c9f1111c9d6a4e0",
+   "size": 14190
+  },
+  {
+   "path": ".claude/skills/clips/assets/sfx/riser.wav",
+   "sha256": "858ee0026a3d919b6709fd09e25c42112bd5dcd8805886159ce223d746623db7",
+   "size": 176478
+  },
+  {
+   "path": ".claude/skills/clips/assets/sfx/scratch.wav",
+   "sha256": "abc8e17f831ae85c677d4866af8205af9d6e23e1a62f0543ab9bda2d11df29c1",
+   "size": 44178
+  },
+  {
+   "path": ".claude/skills/clips/assets/sfx/whoosh.wav",
+   "sha256": "4b50e27b1addc5a6c343539bfe6f821b8813c5c4804c361a362d15e8c9da4be5",
+   "size": 61818
+  },
+  {
+   "path": ".claude/skills/clips/assets/sfx/zap.wav",
+   "sha256": "c4b3cf14d2063e2c033db80348543c87e974f1919db9c04daaa216aadfca887b",
+   "size": 10662
+  },
+  {
+   "path": ".claude/skills/clips/defaults.json",
+   "sha256": "81038b6052590c62c0fcc4f6956c81947a28fd014350a1ec8a74666778cdd0f9",
+   "size": 1372
+  },
+  {
+   "path": ".claude/skills/clips/destinations/clean.json",
+   "sha256": "d5cd7b49b96c3f1a8566aaf7d50509fdb4cdf36b77cd621be3a349b7c013f841",
+   "size": 898
+  },
+  {
+   "path": ".claude/skills/clips/destinations/instagram-reels.json",
+   "sha256": "36c863e871809a9e9ca2e4026a270f2f2b18b45cdc6ad0f27882f080348c39c9",
+   "size": 773
+  },
+  {
+   "path": ".claude/skills/clips/destinations/whop-content-rewards.json",
+   "sha256": "8e6db7b2ff62dbe6039928c1446fe6ba953080ad472560549bd1e5a0d3635a72",
+   "size": 843
+  },
+  {
+   "path": ".claude/skills/clips/destinations/youtube-highlights.json",
+   "sha256": "a552298aea70a961cb8f944ec6506557cfa54e94beeb3cb29367211527068e09",
+   "size": 2445
+  },
+  {
+   "path": ".claude/skills/clips/destinations/youtube-shorts.json",
+   "sha256": "04d1dcbded2d9ed32be002861f71ea33e43235b37398d13ed979d4d96ffc5b7c",
+   "size": 853
+  },
+  {
+   "path": ".claude/skills/clips/docs/DECISIONS.md",
+   "sha256": "993ac72662bb445d8a265eaa492e940770f423b69cca11cf1b85b3c82743d2ec",
+   "size": 2330
+  },
+  {
+   "path": ".claude/skills/clips/docs/FLOW.md",
+   "sha256": "fff3f11025a661ff1abd19b901f607b4cd0d5ae45563535f2561792435ff44f0",
+   "size": 1043
+  },
+  {
+   "path": ".claude/skills/clips/docs/commentary-integration.md",
+   "sha256": "96bcda87b0491d7417ed2cac05ad20a944d9c16da2db1ac570a49f51d9dd5bf7",
+   "size": 12744
+  },
+  {
+   "path": ".claude/skills/clips/docs/commentary-schema.md",
+   "sha256": "fb598cc59b2c80de20d6be5ee216954d5527b5981d3537a99b464d84c617039c",
+   "size": 6062
+  },
+  {
+   "path": ".claude/skills/clips/docs/commentary-script-example.md",
+   "sha256": "d4ec60525046a1df484dfa7a218fa5a4bc375412f9881587f035e2abd181ab6a",
+   "size": 4848
+  },
+  {
+   "path": ".claude/skills/clips/docs/destination-rules.md",
+   "sha256": "5dc96c246d3c6e39fd53af6f4576029ecb8160c5dcfbbfcf4a93cac0dbd48356",
+   "size": 7806
+  },
+  {
+   "path": ".claude/skills/clips/docs/effects-research.md",
+   "sha256": "0b0299d85289e2affc1bb09018cffcdd1b0ea24b730817d19eb2d643646cac50",
+   "size": 32772
+  },
+  {
+   "path": ".claude/skills/clips/docs/examples/hook_card/hyperframes.json",
+   "sha256": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+   "size": 318
+  },
+  {
+   "path": ".claude/skills/clips/docs/examples/hook_card/index.html",
+   "sha256": "93b375ca5d460284f0dc2f6aed5c0b1496190bc38ee60b6cb0d3556b6c696787",
+   "size": 1677
+  },
+  {
+   "path": ".claude/skills/clips/docs/examples/visual/sheet-w05-burger-ad-reveal.jpg",
+   "sha256": "612683ad8329958295b9dff85be3c91ca731f9fe1d03a2cc08b4495cb94d7421",
+   "size": 248068
+  },
+  {
+   "path": ".claude/skills/clips/docs/examples/visual/sheet-w10-slow-motion-takedown.jpg",
+   "sha256": "96de7e5234ad7b62fe08c215d9f15fed735bd19ef1f3262546c98c8a0b8c244c",
+   "size": 168258
+  },
+  {
+   "path": ".claude/skills/clips/docs/facecam-verification.md",
+   "sha256": "a2f6c0d3cd53d494e18c1488e3840a30c6df608af9a2415560a1074c46ed4a90",
+   "size": 15007
+  },
+  {
+   "path": ".claude/skills/clips/docs/final-validation-report.md",
+   "sha256": "c33ae05eacefdc2075cff7b2013a4bd8000601972975dec7a1ec72ecedbe08c1",
+   "size": 12051
+  },
+  {
+   "path": ".claude/skills/clips/docs/highlights-report.md",
+   "sha256": "9972b941c4011484bcc9783f3a222bd072f741a23c61913c8a211dc3077d18bb",
+   "size": 8996
+  },
+  {
+   "path": ".claude/skills/clips/docs/long-mode-report.md",
+   "sha256": "6df9781465abdb4b1ac5eef6d274b15e895825957bb073c128e1c2f4d6fab35a",
+   "size": 27918
+  },
+  {
+   "path": ".claude/skills/clips/docs/model-research.md",
+   "sha256": "7e0ecf152ff5f6087e1f76219ae95bb9d773b4196f9f3fa9b89761684bf5c05b",
+   "size": 21321
+  },
+  {
+   "path": ".claude/skills/clips/docs/model-trials.md",
+   "sha256": "bebbe27f7e693c74fd4436755d8c929fe44af7187c8a21b15daff58e5cd25ac6",
+   "size": 10995
+  },
+  {
+   "path": ".claude/skills/clips/docs/moment-finder.md",
+   "sha256": "bfd52636fd924cdf3fb741f3ca8ccba596c379a7d73f41d0d8ce505cf28cc9ff",
+   "size": 4420
+  },
+  {
+   "path": ".claude/skills/clips/docs/openshorts-readme.md",
+   "sha256": "54d9d984bfe8f6c21dcd60d227b0ae6e0b1dffd30147d7094bcbc35121df76eb",
+   "size": 880
+  },
+  {
+   "path": ".claude/skills/clips/docs/openshorts-runbook.md",
+   "sha256": "03ef594bec2c7028caee5c34ae65aef311cee8b7c8982f1edfb158d9b2ce47fd",
+   "size": 1463
+  },
+  {
+   "path": ".claude/skills/clips/docs/openshorts-skill.md",
+   "sha256": "a1b726a9a13afd69c6976118ce9412bdeba3932b43c2bae5da1ace21ec86acec",
+   "size": 2972
+  },
+  {
+   "path": ".claude/skills/clips/docs/peakcut-and-reel-tools.md",
+   "sha256": "12c256a95d3d1a1f78d3346717fa917b827675a16efad5810cfb0537bb2088b1",
+   "size": 31693
+  },
+  {
+   "path": ".claude/skills/clips/docs/revalidation-report.md",
+   "sha256": "a94bb924f94cd16f646fe2a08bab5df70415914e35307d8a489b9b0976d9ebec",
+   "size": 9739
+  },
+  {
+   "path": ".claude/skills/clips/docs/rockstar-policy-and-comparison.md",
+   "sha256": "75b48fc59ef4a4b78c1f08d128808bd5831553187db40675177b55e9a080d164",
+   "size": 19956
+  },
+  {
+   "path": ".claude/skills/clips/docs/tool-research.md",
+   "sha256": "620a13fca623efa50d71e0dbfd4afb2af5c63a74a8b63a036c186b013005fcb0",
+   "size": 10080
+  },
+  {
+   "path": ".claude/skills/clips/docs/validation-brief.md",
+   "sha256": "4b0dfc203115bf6027fb5647471846014a4c6f32f0ed3e8548f4a4c0fdc23f22",
+   "size": 5060
+  },
+  {
+   "path": ".claude/skills/clips/docs/validation-report.md",
+   "sha256": "cb517154344d98315318946937c677e51e0b4f27a93cd286c1cdb8379a232a6e",
+   "size": 17231
+  },
+  {
+   "path": ".claude/skills/clips/docs/visual-moments-report.md",
+   "sha256": "5c10a5bcb13d0d6614c2df31c316186e01b96888e573cff54ccc5757c60679d1",
+   "size": 9754
+  },
+  {
+   "path": ".claude/skills/clips/docs/visual-review-prompt.md",
+   "sha256": "55328d2c9ce2885351e6d6d9a8eca4c06116a004957d347673543183f0314754",
+   "size": 5154
+  },
+  {
+   "path": ".claude/skills/clips/docs/visual-validation-report.md",
+   "sha256": "d97f6327a9f504ed3c45150da10f78fc713268dafc3d86c45ee022f942fcfbde",
+   "size": 5549
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-research.md",
+   "sha256": "33e5a46da7cfbe1d71f4c170ad706b0c6c2de6a6e2516184a5527a9edb6e6505",
+   "size": 14105
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/chatterbox_default-lively_en.mp3",
+   "sha256": "ea0102a8b0c0a1a54cdb0adc7bb26b1d789c2232981379400b06877a96227dc7",
+   "size": 118365
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/commentary-mix-demo.mp4",
+   "sha256": "7a5b2b2426c4cb61476f1d6cab14f87a834711c6e716ce0ede9cb61bd6e3b151",
+   "size": 3200995
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/demo2-notes.md",
+   "sha256": "41a90ac71fa94f16c6acfe9684ec1234683bc2f529e1f3abb2debe8705799913",
+   "size": 4866
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/demo2_A_maya1-subtle_clip01.mp4",
+   "sha256": "3e9746dedfb3724158b486ad16780eaf08222d9f87bc389d71f66af0920919c7",
+   "size": 5935845
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/demo2_B_own-reactions_clip01.mp4",
+   "sha256": "17cd7c5a4cda2148758ee5cde0117718dd5c8087163ca2d5a39e88fde98728ea",
+   "size": 5676713
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/demo_reaction-voice_clip01_first20s.mp4",
+   "sha256": "6919e6ce22914b4505caa9a6a2bc4a302dbafe721b653c728ae65adb747b987d",
+   "size": 5935307
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/demo_reaction-voice_clip01_first20s_maya1.mp4",
+   "sha256": "6174fdd0d3679211e488653a06ec7b950cdda0d823715bd111f098885eef096c",
+   "size": 5938290
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/facecam-voice-mix-demo.mp4",
+   "sha256": "93366216ac3847b60359fad0a6427c18e1751332b51d6b25ef870ebe3c3d1356",
+   "size": 1254280
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/facecam_girl20s_burst.mp3",
+   "sha256": "e1421769767c932fb4353850c59d818d7c0a3b66fdae9f4b74ce7bb958001770",
+   "size": 8778
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/facecam_girl20s_laugh.mp3",
+   "sha256": "f21f2cc6359c54205b07715a209986a76f27db52491b34eb958b67d6cd958c45",
+   "size": 42378
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/facecam_girl20s_surprised.mp3",
+   "sha256": "7d29a46f85fe18c5be70ea0222c878fd06d51deab1558a01064b044b2f9a96a8",
+   "size": 22410
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/kokoro_af-heart-slow-pauses_en.mp3",
+   "sha256": "24275dd4b19011f15baa8e63a8e80532a281e4550728442825823e8119f87b0b",
+   "size": 182925
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/kokoro_af-heart_en.mp3",
+   "sha256": "3284a3a6204f10abb5cc01ea45e76bf12ae87c53de2434fce3b2665b7fad5ee3",
+   "size": 143325
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/maya1_female-desc_en.mp3",
+   "sha256": "2a3a22a4d0801944de1c82fdc6f9827326d1d1071aaa212a09e9d8362b65a43f",
+   "size": 172365
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/maya1_female-react-tags_en.mp3",
+   "sha256": "326911a974973f5b5b61d651e4224601ecdff1acb90c90d550f884f8c5784096",
+   "size": 111885
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/piper_kristin-medium_en.mp3",
+   "sha256": "15c8623380ee34562caba242f62e429ea309e353e51d20bd98bc5c8863bb6515",
+   "size": 147885
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/qwen3-tts_voicedesign-female_en.mp3",
+   "sha256": "a34ea5d4f6070bc9fa5ee3e6d0e850f3ed66c85b316bd80cc24d819598c53ed7",
+   "size": 163965
+  },
+  {
+   "path": ".claude/skills/clips/docs/voice-samples/voxcpm2_woman-desc_en.mp3",
+   "sha256": "bd6de34d4e5fd4891568cf607df862c2d7d84b1ee652815d337d7db7c09df2e0",
+   "size": 156045
+  },
+  {
+   "path": ".claude/skills/clips/scripts/add_facecam.py",
+   "sha256": "ea259ecf27245b8e5151c287a845929289b36968771f41233da1fb93ff30eb43",
+   "size": 5793
+  },
+  {
+   "path": ".claude/skills/clips/scripts/audit_due.py",
+   "sha256": "87885359fb91c3fad70e4dc164c4ab0e27c36641d394e587c645a6003d5cd60b",
+   "size": 4655
+  },
+  {
+   "path": ".claude/skills/clips/scripts/backup_sources.py",
+   "sha256": "8dda97e2f1977364d0a4ad574e9f4fb057707e3dc47949e7b5cf84f5f64cdc9d",
+   "size": 6155
+  },
+  {
+   "path": ".claude/skills/clips/scripts/build_index.py",
+   "sha256": "fd502520a4e7cf7ebcff15af839c0c8abfd199f5a0b323df061ca99b4f099e91",
+   "size": 12201
+  },
+  {
+   "path": ".claude/skills/clips/scripts/captions/ass_from_words.py",
+   "sha256": "15ea0e25d680eb253bfadbbc44440bd717801049193e35a0a24973f9217da48d",
+   "size": 2930
+  },
+  {
+   "path": ".claude/skills/clips/scripts/captions/roman_map_hinglish.json",
+   "sha256": "b82ee02263754e63a09ae2d5be3b54df7642b40220bdcd3fc7f1236b0c2c3a6a",
+   "size": 733
+  },
+  {
+   "path": ".claude/skills/clips/scripts/check_layout.py",
+   "sha256": "121fb4591dcc51f23932be76b8893be57d569fce1fc22e94cb07ca30ff3677cb",
+   "size": 8723
+  },
+  {
+   "path": ".claude/skills/clips/scripts/checkpoint.py",
+   "sha256": "4efd677df8290d681ef912166ffff2042e2182abef442f586414cd93b406557d",
+   "size": 15835
+  },
+  {
+   "path": ".claude/skills/clips/scripts/clip_schema.py",
+   "sha256": "f6721ee8e30eec68f683b8c5859bc0b15695c52bc2ad2429414dec623b6f4604",
+   "size": 49586
+  },
+  {
+   "path": ".claude/skills/clips/scripts/commentary/audio_util.py",
+   "sha256": "974fa8ad73dd25a89faf29095aaf2d22ab3be8ce9f167d2a1d82aa4484efd082",
+   "size": 3944
+  },
+  {
+   "path": ".claude/skills/clips/scripts/commentary/demo_mix.py",
+   "sha256": "0426e9f9aab12d93d77d8b8c837976ff0a633ecd713de2095624ea1dc7306ed3",
+   "size": 3259
+  },
+  {
+   "path": ".claude/skills/clips/scripts/commentary/make_commentary.py",
+   "sha256": "f9d49e85f695f4e73355da96ec4eb9d59d6bba8d30accde3f4e50c46a7ccbcd7",
+   "size": 29222
+  },
+  {
+   "path": ".claude/skills/clips/scripts/commentary/mix.py",
+   "sha256": "434a5e14d3951549a3c31ce14b1a33abd60e8e8aef0b85a6dd64b88d41b8ed86",
+   "size": 11157
+  },
+  {
+   "path": ".claude/skills/clips/scripts/commentary/mix_commentary.py",
+   "sha256": "79f162ff776c4e91c6d32e34b220077ae047f6640be0276700242d265069fa7b",
+   "size": 14885
+  },
+  {
+   "path": ".claude/skills/clips/scripts/commentary/schema_util.py",
+   "sha256": "613849f3f3c814098452e687bb7144ebeff3db0c670403ec82a41a3954fb562b",
+   "size": 2028
+  },
+  {
+   "path": ".claude/skills/clips/scripts/commentary/test_commentary.py",
+   "sha256": "e7b3d1f9bc4398042ea9eb4c356457d2b616d8fdc13a33fa99b04560d2d94bc0",
+   "size": 11868
+  },
+  {
+   "path": ".claude/skills/clips/scripts/commentary/tts.py",
+   "sha256": "68b6956274a17f72955234a781e2641aca8d8ef47f3a0d4c1c59a27c332b5516",
+   "size": 13340
+  },
+  {
+   "path": ".claude/skills/clips/scripts/download/download_job.py",
+   "sha256": "43f321c0a6de382b6545f0b356e52d7db2f99c89f22f6d1f532ebcdb203e848a",
+   "size": 2045
+  },
+  {
+   "path": ".claude/skills/clips/scripts/download/kaggle.py",
+   "sha256": "1090364021ed86c88475f43105000d6e92e482c0ba8f87babf187e99fe3fe575",
+   "size": 31275
+  },
+  {
+   "path": ".claude/skills/clips/scripts/download/long_prepare_job.py",
+   "sha256": "e560c57ff6eafa26efbc91464e38c382574b0e05bc02ae465bf4186ae9e15d9e",
+   "size": 8510
+  },
+  {
+   "path": ".claude/skills/clips/scripts/download/long_whisper_job.py",
+   "sha256": "e08855125ed827fe0c74dd49b91c87ae821d7b772b75af75372c4c1203f8f672",
+   "size": 6054
+  },
+  {
+   "path": ".claude/skills/clips/scripts/download/long_windows_job.py",
+   "sha256": "9decf2125b461b3b2122efc01d4ffa4e29b3432ef247448898890d39d0bef7a1",
+   "size": 7128
+  },
+  {
+   "path": ".claude/skills/clips/scripts/download/stream_folder.py",
+   "sha256": "b10f283d77daea50de87df309871176e61cbb8929023a189afb38235bd6da66b",
+   "size": 1750
+  },
+  {
+   "path": ".claude/skills/clips/scripts/edit_clip.py",
+   "sha256": "6fc0ba14910521454d5ce01c31299dc8a72271567dc22b2865c7a2b56c0f6c7a",
+   "size": 12152
+  },
+  {
+   "path": ".claude/skills/clips/scripts/edit_highlights.py",
+   "sha256": "1c220929bc20d8d3c743fd9ba884fdf0db0bab9b4875f5b95149136a59f3b038",
+   "size": 16565
+  },
+  {
+   "path": ".claude/skills/clips/scripts/finalise.py",
+   "sha256": "a363df5fb1bb1a1d363320c98d789450941078435a2741c5a471f6a84515f960",
+   "size": 12628
+  },
+  {
+   "path": ".claude/skills/clips/scripts/highlights_schema.py",
+   "sha256": "d526f448df7ebf97740d7cfd56a18c92c439226607b62f5ae3c6090f77d5a292",
+   "size": 22254
+  },
+  {
+   "path": ".claude/skills/clips/scripts/jobs.py",
+   "sha256": "f4a327669c37a3c507848e72cfa5524e8b72f78ade1ce3e63f94897f63205458",
+   "size": 20780
+  },
+  {
+   "path": ".claude/skills/clips/scripts/journal.py",
+   "sha256": "135e741b55bb5ad547ca1000252d4a2b68b961f51b1bccde142b4e931a78ff66",
+   "size": 11739
+  },
+  {
+   "path": ".claude/skills/clips/scripts/long_run.py",
+   "sha256": "fff5a44fe9d0464a050f5e7af79ba198005c8cbc4719ce889ecadfbb88e77af5",
+   "size": 34225
+  },
+  {
+   "path": ".claude/skills/clips/scripts/make_clips.py",
+   "sha256": "067164a1cbacebe6682afe1a2530d81f50c3f8345817dbf843f54577380cbaf3",
+   "size": 14054
+  },
+  {
+   "path": ".claude/skills/clips/scripts/make_highlights.py",
+   "sha256": "ffcb97eb1f7ef0b316b199006bdcf49ebe107ef23650a9a252f61cb08ba4f5d2",
+   "size": 18460
+  },
+  {
+   "path": ".claude/skills/clips/scripts/make_sfx.py",
+   "sha256": "deeb328b2ba6692e6b0e69f4ad1f515ad6902ab1c658153d556a65bf5226a5d3",
+   "size": 3947
+  },
+  {
+   "path": ".claude/skills/clips/scripts/moments/find_moments.py",
+   "sha256": "1571076ac68565adb551331f1519cced03a95304908361080f42e6cff1b91c32",
+   "size": 27666
+  },
+  {
+   "path": ".claude/skills/clips/scripts/moments/merge_moments.py",
+   "sha256": "31e52884f559af2f92176ad0ff502f46dff5027e57eb1917021e0874fa5cbb07",
+   "size": 20988
+  },
+  {
+   "path": ".claude/skills/clips/scripts/moments/reaction_words.json",
+   "sha256": "3a5bdc08a6648880440a0a2e8ab39dfdfeb450ec380bb3e374b2c43829a59a19",
+   "size": 3533
+  },
+  {
+   "path": ".claude/skills/clips/scripts/moments/snap_edges.py",
+   "sha256": "1d91759c32d4d477eea8c14a8bdd81deaf6e3efae3fc754c7ca699986f65717a",
+   "size": 8471
+  },
+  {
+   "path": ".claude/skills/clips/scripts/moments/visual_review_apply.py",
+   "sha256": "b5777f64ab0fd481219bb7342ba7937ff9e0dbdd0304aca5befa9f2003ee7a9c",
+   "size": 6474
+  },
+  {
+   "path": ".claude/skills/clips/scripts/moments/visual_scan.py",
+   "sha256": "602e0bbfa006307e9bd4ee0f13f896595ce5d6c39378c8fbe3aaea721c1ab5a0",
+   "size": 31699
+  },
+  {
+   "path": ".claude/skills/clips/scripts/moments/weights.json",
+   "sha256": "86bdc2f3464669ea336854f2757ef85c3ba28550d201bb1b60d913e15d2b8f3c",
+   "size": 2778
+  },
+  {
+   "path": ".claude/skills/clips/scripts/preflight.py",
+   "sha256": "fb5357be0cc202ff5924c38b5d55b25a0200fbfefaee4311dad38f512ac18e80",
+   "size": 15557
+  },
+  {
+   "path": ".claude/skills/clips/scripts/render_clip.py",
+   "sha256": "da015ea49e23fb2eaa872bc796ecdd50696f59604b6ef52b3cbfb44c9e7cdc54",
+   "size": 53194
+  },
+  {
+   "path": ".claude/skills/clips/scripts/render_highlights.py",
+   "sha256": "7a1706aa3a9975e77b2399b0f62462647d72c6cd4d4fbbc326b8d4f3d36b7da0",
+   "size": 40207
+  },
+  {
+   "path": ".claude/skills/clips/scripts/retro.py",
+   "sha256": "a794ec1a31323fa679a3d65b25d55122d9c36877735d850dd54276bf89ced267",
+   "size": 17941
+  },
+  {
+   "path": ".claude/skills/clips/scripts/transcript/run.py",
+   "sha256": "20a799f58379bdeafe9f4ff77dae8ed1dbc092755884f64cb594583153be610e",
+   "size": 20459
+  },
+  {
+   "path": ".claude/skills/clips/scripts/transcript/vtt_to_transcript.py",
+   "sha256": "609702773355654e11b3c2eb091dd3cd63062f4cea31cc78fa09a24429e15ff4",
+   "size": 2832
+  },
+  {
+   "path": ".claude/skills/clips/scripts/trials/trial1_eval.py",
+   "sha256": "a28ebe5e2347cf55b0307dd1d46dedf4309e8110f2dabe0c512a2224a333ab9f",
+   "size": 2725
+  },
+  {
+   "path": ".claude/skills/clips/scripts/trials/trial2_scorer.py",
+   "sha256": "6e6c3a73c322717322925fd5ad360c249258913a7926a3da847e07dfd1dd547b",
+   "size": 4185
+  },
+  {
+   "path": ".claude/skills/clips/scripts/trials/trial3_asr.py",
+   "sha256": "4dff5717febf20194e4ae9b233d6c3e81e03c43f66e1c1a13b513dc2beebdc8f",
+   "size": 896
+  },
+  {
+   "path": ".claude/skills/clips/scripts/trials/voice_kokoro_humanize.py",
+   "sha256": "fcc44e2c8e390ffe82ad95eabf7e763d9d00ff4b5270be4e163a450fd6be72a6",
+   "size": 3388
+  },
+  {
+   "path": ".claude/skills/clips/scripts/trials/whisper_score.py",
+   "sha256": "ea11bbfc54ca4da26fed2908d305a1c78be6e30b28dca8ada607aae85c0d0e29",
+   "size": 6982
+  },
+  {
+   "path": ".claude/skills/clips/scripts/trials/whisper_tune.py",
+   "sha256": "1e3ee983db88ce84bc03bf37d8cbbbc4d0d0394e591bc4b37dac48487432775f",
+   "size": 1163
+  },
+  {
+   "path": ".claude/skills/clips/scripts/trials/whisper_tune_job.py",
+   "sha256": "0e0c8be6a959289c6b1d0abdeaded378d4dda3ed41c120e27d84a699bbe2f43d",
+   "size": 9087
+  },
+  {
+   "path": ".claude/skills/clips/scripts/trials/yamnet_events.py",
+   "sha256": "3428b8387a997b5b9e44aa71fdb7f3de957ba9ee5095dd5526cddb9b4b3a821a",
+   "size": 1791
+  },
+  {
+   "path": ".claude/skills/clips/scripts/zoom/plan_zooms.py",
+   "sha256": "3e20a43f5bc9d47762f9ed8e02556682384a65c723d67cbae4e89dbe4b718be5",
+   "size": 3513
+  },
+  {
+   "path": ".claude/skills/lessons/SKILL.md",
+   "sha256": "7361144637b8af1c3379fb9f6930c04f2ac586de007d0bf30bb526dfb66094bd",
+   "size": 2130
+  },
+  {
+   "path": ".claude/skills/lessons/scripts/add_lesson.py",
+   "sha256": "f0e7898288caa4eb92c101b4474a5e96c76f51aaa3a3deb26948e0d85d48d104",
+   "size": 2497
+  },
+  {
+   "path": ".claude/skills/lessons/scripts/build_graph.py",
+   "sha256": "c3bc79547a9f23ff980ddc4ef080cf35fad3b6c9b9b4bcffd3f4807070bda806",
+   "size": 2983
+  },
+  {
+   "path": ".claude/skills/lessons/scripts/lessons_lib.py",
+   "sha256": "b255e6fff67d5a69b8045fb2244eb143307ae0eb1dde99dc43f4cf28c9b4970b",
+   "size": 2359
+  },
+  {
+   "path": ".claude/skills/lessons/scripts/query.py",
+   "sha256": "51bab85a6061cae31c3f46ec48cc8699002330f559088b2196aa278cc52a0a5e",
+   "size": 3941
+  },
+  {
+   "path": ".claude/skills/yt-audit/SKILL.md",
+   "sha256": "a4d6583d9d8ef274bb589abd3c222330bcd5d731b1a05d921dd0d25b8b1ecb98",
+   "size": 2327
+  },
+  {
+   "path": ".claude/skills/yt-chapters/SKILL.md",
+   "sha256": "06d2fc094d59ec6da73d812bd7b21590f8099352922ea2e3151b45922bf315b3",
+   "size": 1380
+  },
+  {
+   "path": ".claude/skills/yt-chapters/chapters.py",
+   "sha256": "f21f17a74f0b2b6719bbf45b16bf404acb4fa639fc765df46b2aec442ab2dcbe",
+   "size": 3744
+  },
+  {
+   "path": ".claude/skills/yt-comment/SKILL.md",
+   "sha256": "5b569ef7564d9ca271fd158f0cdbd835073eacc887139c7d6d15899142d46892",
+   "size": 2304
+  },
+  {
+   "path": ".claude/skills/yt-edit/SKILL.md",
+   "sha256": "b9f83e8b972e91a4abb5e0f4f9fc4b5cde9e8727609ce1213b0e583718cd8aeb",
+   "size": 1639
+  },
+  {
+   "path": ".claude/skills/yt-edit/deadair.py",
+   "sha256": "61d13cd77e7c31e5e12b6e9e016c7d1ffb92d4a5ec5597dd69b98545c81eb9c3",
+   "size": 4244
+  },
+  {
+   "path": ".claude/skills/yt-package/SKILL.md",
+   "sha256": "0347a791664ff5d05eda87b2535e34ef8177c9e9b5e5c077c2f8113942108506",
+   "size": 2303
+  },
+  {
+   "path": ".claude/skills/yt-package/title.py",
+   "sha256": "e5f2ba4e205cc5d4bca9c8c0dd92890ea964158ee8266759e2c75c3958cef723",
+   "size": 4080
+  },
+  {
+   "path": ".claude/skills/yt-plan/SKILL.md",
+   "sha256": "c82983c91e69b1d816a978157dd1b3c37241611ad2a22463ad2c9291ca1b94cd",
+   "size": 2097
+  },
+  {
+   "path": ".claude/skills/yt-retention/SKILL.md",
+   "sha256": "2777dd1f8f9ea04174bf13c9dc0132be907fb3852380376db359bcf786ba4f8e",
+   "size": 1696
+  },
+  {
+   "path": ".claude/skills/yt-retention/retention.py",
+   "sha256": "2ed29f0bc24e7b65e9661a879692fe954b4f29e486ebf19f3c2c672e21b0a906",
+   "size": 4666
+  },
+  {
+   "path": ".claude/skills/yt-script/SKILL.md",
+   "sha256": "23fe2c4c52b4dbdae03295d71a8bdede254a94b3d6b0da83b025e8b622020366",
+   "size": 2685
+  },
+  {
+   "path": ".claude/skills/yt-script/hooks.json",
+   "sha256": "76c47b4ad410a8856c9d27aa489d7c447b3ebe30a9024f03e2d59fefe267f5cb",
+   "size": 9894
+  },
+  {
+   "path": ".claude/skills/yt-script/hookscore.py",
+   "sha256": "8205dca03de1d5d8e25614e7c0d8d40fd756a99b838320462195b342d5eb0545",
+   "size": 5703
+  },
+  {
+   "path": ".claude/skills/yt-seo/SKILL.md",
+   "sha256": "7ce49d03104f4f94698ba57a3ef7aa826b697cd01cbc95d7d18dca912287c046",
+   "size": 2176
+  },
+  {
+   "path": ".claude/skills/yt-shorts/SKILL.md",
+   "sha256": "cbaaaf907bb14491baba0ea23e3415f268f7fff21897c6eb487e7cb1113b32c8",
+   "size": 1516
+  },
+  {
+   "path": ".claude/skills/yt-templates/LICENSE",
+   "sha256": "857c8d5276809c8196b3cd7cb3300324768bfc562b2b6281b06d6865058e186c",
+   "size": 1073
+  },
+  {
+   "path": ".claude/skills/yt-templates/voice.md",
+   "sha256": "b24b25e5692e1ae27d00889e3fdda9d528d434b4a1a893f9cdd58b369c62d17d",
+   "size": 1140
+  },
+  {
+   "path": ".claude/skills/yt-viral/SKILL.md",
+   "sha256": "2dae2b23919464450e66dde15eaa0fd6d82dac4ca5c6c553d8bf2d604d38bdb4",
+   "size": 1748
+  },
+  {
+   "path": ".claude/skills/yt-viral/swipe.py",
+   "sha256": "8035c0868f66929d8b63dfa4997c8b1abc3ac29a19165ba17487242616cb0d96",
+   "size": 3573
+  },
+  {
+   "path": ".gitignore",
+   "sha256": "6fb182b8ca533a4f947929677cd5414726c22ed8522fc91f177bb45fb79ef353",
+   "size": 1071
+  },
+  {
+   "path": "CLAUDE.md",
+   "sha256": "172b368808cec0d901c68d36fa9e4e6c88616b3e0c4c93409a63507bf391739d",
+   "size": 5003
+  },
+  {
+   "path": "LATEST.md",
+   "sha256": "eea617f3c49774d48797a6e02a447072e327a61518cbe2981e9a02363947627e",
+   "size": 9147
+  },
+  {
+   "path": "README.md",
+   "sha256": "40d67c228340a3970299939ad1798c8175a09a284e1daaebd0ef0207e5e9770e",
+   "size": 5474
+  },
+  {
+   "path": "archive/cleanup-2026-11-14.md",
+   "sha256": "03bb24f579291b553e6e927e15ace9c952ec9e3b440af838fab56cd30e8f6f9b",
+   "size": 2326
+  },
+  {
+   "path": "archive/openshorts-indias-got-latent-s2e8/captions.md",
+   "sha256": "bc0c903cbfe9beb5479861bd0859cd6ffc54485c7697447c885007f415622439",
+   "size": 5751
+  },
+  {
+   "path": "archive/openshorts-jensen-gtc-2026-microduck/captions.md",
+   "sha256": "9baccbf178b5b7269df26fff6cf70d5726b69b06a751be2dc3c7aff3eef70dec",
+   "size": 1409
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/captions_ai-draft_gemini-run.md",
+   "sha256": "2d8dec683cbd3b7f7e98fc6d2681780b3ceea7140de3b3bfa8a34ad633fa18c2",
+   "size": 8039
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/captions_ai-draft_job1-local-model.md",
+   "sha256": "2c8069416e851e7f44fac4cb56fd6273f66d499a4d1efda3d21ddea1c1cbeec5",
+   "size": 6443
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/compare-runs.md",
+   "sha256": "ff266ffeaf40561d74359b48c053ce994477a8dd99c8ee08ab08ef8aa46e4d56",
+   "size": 2490
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/cpu-run_moments-picked-by-hand.json",
+   "sha256": "6daa7f9ef58726e5e6389546c02a5dd18776115d0efa49e2111382fa6261aa6a",
+   "size": 783
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/facecam-comparison.md",
+   "sha256": "0e94874f778054bef8208f587a304b7b5f1353086148951e0baff3f4daa42a91",
+   "size": 819
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/higgsfield-moment-shortlist.md",
+   "sha256": "e7963dc91867fa274907770329f0df2df404daa009ec0e01de7d499a5876702e",
+   "size": 1240
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/source.md",
+   "sha256": "8acef597747e369e729ac7d58a27453eb5fb1f884d2a26f499b40c282d8d3b97",
+   "size": 613
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/timing.md",
+   "sha256": "bce5bcdd29fcf209a14f0dfd6a6d2d35d283971f85f8bf6e3d560a4f40c17fa8",
+   "size": 2301
+  },
+  {
+   "path": "archive/openshorts-this-is-not-a-game/transcript_youtube-captions_hi.json",
+   "sha256": "743fd7619e5c98f643f159da97673145070ce98e559a0d98b418342fc0f40578",
+   "size": 166785
+  },
+  {
+   "path": "archive/ranking_2026-11-14.md",
+   "sha256": "3e7f2bc57a2477731b0ec2e7286e2755014ec9fe9122e6353b56f55a7d15b719",
+   "size": 1890
+  },
+  {
+   "path": "archive/restructure-2026-11-15.md",
+   "sha256": "f8fa625d044a4aa3d3281fd9d88849e64d2e4e145a8539a1fa6e6fbc941167bc",
+   "size": 2940
+  },
+  {
+   "path": "archive/showdown-this-is-not-a-game/cpu-run.md",
+   "sha256": "a074e321a5c14fe270403c393cc86cf87bf94afcd3be9903f00db710a5d00fb0",
+   "size": 7998
+  },
+  {
+   "path": "archive/showdown-this-is-not-a-game/gemini-gpu-run.md",
+   "sha256": "45b4ced7616aa6a66992765035bed6f73e4c607978229f27806a80f94c36027b",
+   "size": 8302
+  },
+  {
+   "path": "archive/showdown-this-is-not-a-game/gemini-gpu-run_kaggle-log.txt",
+   "sha256": "6be58c5b09dcc4479ed50e904e84f2d7a0b10496dd289a0c485afb332e695b31",
+   "size": 7707
+  },
+  {
+   "path": "archive/showdown-this-is-not-a-game/showdown-result.md",
+   "sha256": "a35b765f8ae698b670205054d6982839e05ee398abee7bbc440f54abbc101eb1",
+   "size": 1219
+  },
+  {
+   "path": "archive/vidiq-this-is-not-a-game/run.md",
+   "sha256": "2cf06a73752114dd5236b84e102f79a527469f6ab6b5da55c23603fd0b4ffa3c",
+   "size": 632
+  },
+  {
+   "path": "docs/audit-prompt.md",
+   "sha256": "845774f5d8162f4275a81eb7a4b2e4d7d3576b793de049b04470087992156462",
+   "size": 4137
+  },
+  {
+   "path": "docs/self-improvement-design.md",
+   "sha256": "aa67a4dd950b51b71ad5cb587aa079cea452da0f9536e95b972f2194f7b15e34",
+   "size": 7638
+  },
+  {
+   "path": "lessons/INDEX.md",
+   "sha256": "1d134cccea84d4c1cc4ce1af4e88211ebc694aaed6849f19f4b66cd5efed4872",
+   "size": 34713
+  },
+  {
+   "path": "lessons/README.md",
+   "sha256": "1007d51b11090cc0841815282fa68bac7701386a7734cb3d88797f26d412513c",
+   "size": 581
+  },
+  {
+   "path": "lessons/audit_state.json",
+   "sha256": "07469064d40cbae17ceaccbf8caaa28ac5b26d8b473e4765790c242396a56f40",
+   "size": 430
+  },
+  {
+   "path": "lessons/decisions/captions-on-by-default.md",
+   "sha256": "5437d9137cfc8720d34c91b0f0d70b1e9f00fc7d0676e5ae88239080eadd0f30",
+   "size": 374
+  },
+  {
+   "path": "lessons/decisions/clean-keeps-stream-webcam.md",
+   "sha256": "0696876a8d915dc35b642c7ecd8d8c38ddd47124c6df70aca40094f744855637",
+   "size": 788
+  },
+  {
+   "path": "lessons/decisions/clip-length-25-30.md",
+   "sha256": "fd55e2b0f1dbfcba3670d9111694f0eee09707634496ed6f9afa7bcc621fd698",
+   "size": 371
+  },
+  {
+   "path": "lessons/decisions/cpu-beat-gpu-showdown.md",
+   "sha256": "2906fb48e343fd1fb47e6f124d0ba89615df35307dd0b0935ee4f355340eca9c",
+   "size": 638
+  },
+  {
+   "path": "lessons/decisions/facecam-cartoon-mascots.md",
+   "sha256": "92518d70b2b9d54c6c629b1142fc6e76f0f0f6e9464cb478d9d22c5edc126ec0",
+   "size": 413
+  },
+  {
+   "path": "lessons/decisions/facecam-library-six-reactions.md",
+   "sha256": "a7db13fd42a12041a70c12886579d3534ce4742fa490947f3c4fbb2cd014c613",
+   "size": 933
+  },
+  {
+   "path": "lessons/decisions/friend-brief-what-we-take.md",
+   "sha256": "d169e34546f168158e5648f161f0e7372a8f01b75ed56ca66ab16d724475219d",
+   "size": 1662
+  },
+  {
+   "path": "lessons/decisions/highlights-commentary-lead-script-ducked.md",
+   "sha256": "cf56f5c90127809dfd85429d8fa31dc1b5f2f63b7029afb700932b45150a11a7",
+   "size": 2136
+  },
+  {
+   "path": "lessons/decisions/masters-outside-git.md",
+   "sha256": "3ad3b4a1b302eba10ec337405437f6d1ddb7993fe30beb559cef0b97faec2fc1",
+   "size": 983
+  },
+  {
+   "path": "lessons/decisions/model-trials-2026-11-14.md",
+   "sha256": "cd9d040399a89c6ec1fd6b83d176b922e47c6ef43ab8d39a7d21265016b0533e",
+   "size": 1355
+  },
+  {
+   "path": "lessons/decisions/peakcut-and-reel-tools-decisions.md",
+   "sha256": "29c3165c1897bc7d490ddf8233bdc9275d41175e914b8750dae6585b43e6d0ce",
+   "size": 1247
+  },
+  {
+   "path": "lessons/decisions/site-rules-unknown-find-later.md",
+   "sha256": "44b7650bc11a10ba6dddf6651b9b67f93339b38908a51deee0863ebb67097c63",
+   "size": 861
+  },
+  {
+   "path": "lessons/decisions/source-4k-policy.md",
+   "sha256": "281c0e1f0022810e387906c41d91710966a9aa72800117f2cac1b443a6c85a51",
+   "size": 935
+  },
+  {
+   "path": "lessons/decisions/visual-plus-transcript-moments.md",
+   "sha256": "f96f51901bdda5ec67d848782679efc11f38bf94ee66d0b81c66b8f7318f50c2",
+   "size": 2136
+  },
+  {
+   "path": "lessons/decisions/zoom-pulse-1-8s.md",
+   "sha256": "4684d8945527f2c9309ccb10307ea28b255293ad0b9eff0e016857d3b72866be",
+   "size": 400
+  },
+  {
+   "path": "lessons/gotchas/age-restricted-stop.md",
+   "sha256": "8f18a3acc8fd514085ea72a3b6ae7eee24a71714ce345ef16e91e181317dbae1",
+   "size": 578
+  },
+  {
+   "path": "lessons/gotchas/captions-are-the-clock.md",
+   "sha256": "306a05a7148925e8e71c80020db87df3040ec0a2c81d956b7d80e36f12eb2265",
+   "size": 589
+  },
+  {
+   "path": "lessons/gotchas/classifier-blocks.md",
+   "sha256": "7009bf5fdecf05602df5c214a21ee8174ea61d7fede7619b62a5579a48b2849f",
+   "size": 434
+  },
+  {
+   "path": "lessons/gotchas/clipping-sites-rules-are-per-campaign.md",
+   "sha256": "0269f077652e3190f74015d04d4bba81662df6c528b7fc3b068ae480b87a8dc0",
+   "size": 963
+  },
+  {
+   "path": "lessons/gotchas/commentary-quiet-slots-rare.md",
+   "sha256": "60f99bdbeb6c6b262294f89d168826bfd157a02d1bfa4e268a5316211786813b",
+   "size": 1111
+  },
+  {
+   "path": "lessons/gotchas/facecam-girl-calm-range.md",
+   "sha256": "173c56bcad1575410c8157b7586cc19710b69324ce4e842edd3d40318e19332a",
+   "size": 758
+  },
+  {
+   "path": "lessons/gotchas/ffmpeg-crop-in-w-fixed.md",
+   "sha256": "191fe58c734436fedf2c116fab791fafb9f480f0fa1bcd43ff3f54a0e3c84148",
+   "size": 482
+  },
+  {
+   "path": "lessons/gotchas/gemini-auto-layout-cuts-stream.md",
+   "sha256": "a7911fb1784f3432c8c6ac81e9d041a32390a26b7f2d672b216c59afea440b3c",
+   "size": 815
+  },
+  {
+   "path": "lessons/gotchas/gemini-free-key-limits.md",
+   "sha256": "69c6bc0486081a0c8415c4e7848c1ef1bdcbac7e30fd74519654d094e17013e6",
+   "size": 566
+  },
+  {
+   "path": "lessons/gotchas/gpu-path-no-captions-switch.md",
+   "sha256": "36d819099765872da886cdf98e55b96f83291bbc5a0ff2d9542b6bad9780130d",
+   "size": 583
+  },
+  {
+   "path": "lessons/gotchas/highlights-preview-size-cap.md",
+   "sha256": "330fb86aefebf133b00121aafa626b6837bf359e918320836592d0065fcf87a8",
+   "size": 1160
+  },
+  {
+   "path": "lessons/gotchas/highlights-segment-cache-and-overlay-retry.md",
+   "sha256": "3bac666144e5dc9e665abdc8be9ae49db87d58d6a3efd47bbd7496fba88912fa",
+   "size": 1161
+  },
+  {
+   "path": "lessons/gotchas/hyperframes-needs-disk.md",
+   "sha256": "0fd58329d1fe93698689d995e42e833c89c3a362a7f7377f996b9a4eea45ca53",
+   "size": 553
+  },
+  {
+   "path": "lessons/gotchas/long-jobs-detach-and-register.md",
+   "sha256": "55268caa254435d3c053cd679f80c47c189d829799c41bbf01e3bb64a9a19e74",
+   "size": 1374
+  },
+  {
+   "path": "lessons/gotchas/loudnorm-aac-headroom.md",
+   "sha256": "a28e073f963bd13996f4569e4776348443ff3d77ca21f0a0167a4a6a4c83eb23",
+   "size": 710
+  },
+  {
+   "path": "lessons/gotchas/read-before-write-same-file.md",
+   "sha256": "c69964f0e5390c247da89cc85cc7382339291bbe7fc87efaf63e78c34c4b0faa",
+   "size": 621
+  },
+  {
+   "path": "lessons/gotchas/rockstar-policy-non-commercial.md",
+   "sha256": "0c82a2d38fac7022d39f369b5ff7a350a182cfd08b540a294a22d586919132ae",
+   "size": 1419
+  },
+  {
+   "path": "lessons/gotchas/transcript-captions-first-whisper-weak.md",
+   "sha256": "e11c385ed0cd0518b0439293510973b6e44c8abb237ef618f3fa55b3f0c3192a",
+   "size": 1555
+  },
+  {
+   "path": "lessons/gotchas/transcript-leading-space.md",
+   "sha256": "693e6ffa300f553fb32b7f6a321d6eec7d7b6525857afd81a5485d77ab1ed665",
+   "size": 494
+  },
+  {
+   "path": "lessons/gotchas/vidiq-layout-cuts-gameplay.md",
+   "sha256": "cbfa042e1f2e51409b76e611bbdffe7a226fc9a0121ae32ba05aeef16be39907",
+   "size": 717
+  },
+  {
+   "path": "lessons/gotchas/webcam-layout-crops-game-cpu.md",
+   "sha256": "a5b70c220a92f3a8fc0eabae196ba20c94f514cd0b38686d7861cc61180d81ef",
+   "size": 647
+  },
+  {
+   "path": "lessons/gotchas/whisper-t4-large-v3-batched-below-captions.md",
+   "sha256": "4dfd3bed120fc6b77949957dbada42cfe34eb072168ca236faa6704a9b154a11",
+   "size": 1644
+  },
+  {
+   "path": "lessons/gotchas/whisper-t4-worse-than-captions.md",
+   "sha256": "f956b1968dc8dde8e0f520ecb006f751356edf366d5af563f9160f4d6f2995f2",
+   "size": 1861
+  },
+  {
+   "path": "lessons/gotchas/youtube-blocks-vm.md",
+   "sha256": "cdf29a4eaae83985b7a58c1118d1b52446befa1bf3032fc4027f50e554c2d4de",
+   "size": 592
+  },
+  {
+   "path": "lessons/gotchas/youtube-reused-content-needs-commentary.md",
+   "sha256": "fd731c40a21297e77aa35489062d935c8044acc18274864f4b5565834f9cc0c1",
+   "size": 1192
+  },
+  {
+   "path": "lessons/graph.json",
+   "sha256": "712e4b5a7b09160e34893d7c3d9271daea2bd899a218c66376a4b1e98a2ce8a8",
+   "size": 56416
+  },
+  {
+   "path": "lessons/incidents.json",
+   "sha256": "fc0c5ec58540d1d9bb1733ad7ca12acf72bd95103dc037ae104b64be7b36a32b",
+   "size": 4816
+  },
+  {
+   "path": "lessons/preferences/animations-liked-title-default.md",
+   "sha256": "550836c71ab3bd998cae4416f928a50b6d255c220f01fafeefed84fd461a6d30",
+   "size": 1446
+  },
+  {
+   "path": "lessons/preferences/animations-only-for-highlights.md",
+   "sha256": "eda3dd550423be8a73f0d2eb62ced40e7d7bd84437813ecd520e9914362f16f9",
+   "size": 1172
+  },
+  {
+   "path": "lessons/preferences/animations-only-when-asked.md",
+   "sha256": "9977ef3adc9084a3c51dfa38cdca88425b3ba7d64091ca720dcb5350aa76e20a",
+   "size": 1004
+  },
+  {
+   "path": "lessons/preferences/ask-facecam-with-without-both.md",
+   "sha256": "7f70e72e7daae284d4650da03a300e391e39bcd528fdf32461d32df06bab04c6",
+   "size": 1113
+  },
+  {
+   "path": "lessons/preferences/ask-first-cpu-default.md",
+   "sha256": "716f3e681b591c762604aa9e3622e3f54d508a4492141888366cf473f42aebea",
+   "size": 632
+  },
+  {
+   "path": "lessons/preferences/ask-only-what-defaults-miss.md",
+   "sha256": "eddeb8020bbb426dd8bd3e931a14b4332bf9f48690c6ee2d92f78cba87fd5b76",
+   "size": 1405
+  },
+  {
+   "path": "lessons/preferences/best-output-quality.md",
+   "sha256": "d63bc3ed22c2621009904f87a9971e61b40561193ab512fd1982f19bac7cbe55",
+   "size": 977
+  },
+  {
+   "path": "lessons/preferences/captions-minimal-low-hinglish.md",
+   "sha256": "7c23a15cff67aca3581317ac1bd652f62bcb5a4befbd99f54e06fb740dbae873",
+   "size": 772
+  },
+  {
+   "path": "lessons/preferences/captions-off-by-default.md",
+   "sha256": "4d984a2af3677fed20977004ffb9aa3635a28fad742b0dd1fe4177810c1c6da6",
+   "size": 705
+  },
+  {
+   "path": "lessons/preferences/clip-length-30-60.md",
+   "sha256": "80ddc281f9db3dc6a1994f1ac4081934c38ea4b6f837ea9e4ec9d0a9d3a340d5",
+   "size": 682
+  },
+  {
+   "path": "lessons/preferences/clip-length-40-55.md",
+   "sha256": "b62c8eb033692af24fd32d2638bcb89e4d69daacc6d3650de78253bffd645d7c",
+   "size": 1058
+  },
+  {
+   "path": "lessons/preferences/comparison-video-type.md",
+   "sha256": "efe49afae5880bdd20d8fb260db16d37e6570bd1e18b19eac4a76303f9f783b0",
+   "size": 1113
+  },
+  {
+   "path": "lessons/preferences/edit-effects-on-request.md",
+   "sha256": "d4e0cdaaa9a14a766f438a46e13406569562e7009eb49909a4e4c56ac0f10a60",
+   "size": 1225
+  },
+  {
+   "path": "lessons/preferences/every-aspect-editable.md",
+   "sha256": "322358643e6b4634c95d38186cf3d2698ef048f359290b281fdf6a0e7815694e",
+   "size": 872
+  },
+  {
+   "path": "lessons/preferences/facecam-from-library-passive-default.md",
+   "sha256": "f6fae16ab81810d985f7025d337483387cae8cd9be1743750741734d436960d2",
+   "size": 1590
+  },
+  {
+   "path": "lessons/preferences/facecam-gemini-app-girl.md",
+   "sha256": "9264bd9f16f222916ebfba6fd29a353db32616b7c4f46eca25794a4cd8938312",
+   "size": 921
+  },
+  {
+   "path": "lessons/preferences/facecam-lower-in-layout-c.md",
+   "sha256": "c1cd150c7eaf136320ef2d5b33ec5abc6f38000367007d3470fe6474a954520a",
+   "size": 926
+  },
+  {
+   "path": "lessons/preferences/facecam-rounded-rect-library.md",
+   "sha256": "ef6d1fda10d40791aabc8b259cf0b0a2ea1bc631966f2dc40fea40fe450c0a99",
+   "size": 1077
+  },
+  {
+   "path": "lessons/preferences/facecam-rounded-rect-safe-c-library.md",
+   "sha256": "f32df9f8cea08f4aa35dca7f47428832b161d8587bb153796a1f0af9b2b60ac6",
+   "size": 1661
+  },
+  {
+   "path": "lessons/preferences/facecam-subtle-expression.md",
+   "sha256": "7c5d915b5213e9802723643bba9c1de5ac7add113d296b968f788a2d6e8af43d",
+   "size": 684
+  },
+  {
+   "path": "lessons/preferences/facecam-voice-optional-quiet.md",
+   "sha256": "053bbaffdd845c7ee148e426b565b04f84a68a34d5e525ae099ef26f79f52660",
+   "size": 1630
+  },
+  {
+   "path": "lessons/preferences/finalise-then-hand-over.md",
+   "sha256": "577ffd09d8490c38dc21b7af04739db8d5ed56252abda64951db18f84bd18799",
+   "size": 1154
+  },
+  {
+   "path": "lessons/preferences/find-all-moments-as-40-55s-clips.md",
+   "sha256": "d36b11c51db9d85272e760fd5ddd674b9210e4dc52e070b59c332948c6b77559",
+   "size": 1477
+  },
+  {
+   "path": "lessons/preferences/find-all-moments-per-stream-link.md",
+   "sha256": "505201e94e7fc2ba99136a0258d62448f43b8ca6b04e725b457d2bb7ccf77d27",
+   "size": 987
+  },
+  {
+   "path": "lessons/preferences/gameplay-stays-whole.md",
+   "sha256": "76a5079ee3ae186468201fad484e3122ab1b71418ef86d69ca7ff6312fd17dbc",
+   "size": 715
+  },
+  {
+   "path": "lessons/preferences/girl-speaks-english-only.md",
+   "sha256": "889c3d5516633579732b22f68e874f46a1c421eb5446c895ba1fb36fd63fcc3d",
+   "size": 948
+  },
+  {
+   "path": "lessons/preferences/highlights-yt-video-type.md",
+   "sha256": "57fcfc763ab30f10e69aec68aa8024a297bf3b2886a77ee376f193344d05e6d1",
+   "size": 1343
+  },
+  {
+   "path": "lessons/preferences/hook-editorial-serif-auto-contrast.md",
+   "sha256": "55515a6726afbef43cf074a0580ea317c2d43cb6efb7d18a8a5f3c6dd615a2c4",
+   "size": 1223
+  },
+  {
+   "path": "lessons/preferences/hook-title-classy.md",
+   "sha256": "c52efaf6066035c144d3cdff46b2afac67bb1b8b886896752ddc62267f69edd1",
+   "size": 819
+  },
+  {
+   "path": "lessons/preferences/kaggle-gpu-30h-with-cpu-fallback.md",
+   "sha256": "001ad59eb31e747f2556dcbf7de3b6cec0f47b4464c12ada298bb244113c1dd2",
+   "size": 1124
+  },
+  {
+   "path": "lessons/preferences/kaggle-gpu-where-it-works-no-quality-fallback.md",
+   "sha256": "c748e8f664802dd32b853b71c4c2386800215f0aec125472669be79a6fb4f873",
+   "size": 1650
+  },
+  {
+   "path": "lessons/preferences/layout-c-safe-zones.md",
+   "sha256": "e56e1c266d05868656c88d1dd38330cf9f239b63a4bcf363590ff22e84da67ea",
+   "size": 1156
+  },
+  {
+   "path": "lessons/preferences/lead-plans-cheap-agents-execute.md",
+   "sha256": "576098f2574531e01119d39e8c68b7a91f16e00adbea7830aac4ab3334a2a833",
+   "size": 901
+  },
+  {
+   "path": "lessons/preferences/leverage-available-skills.md",
+   "sha256": "5abb09f9d0a90e8e5bf5e95b45a45756c69b6072d856303d3041449011839c3c",
+   "size": 1127
+  },
+  {
+   "path": "lessons/preferences/long-mode-in-v1-vm-limits.md",
+   "sha256": "2e5b64eddf07400e7d04c102bf1c166a701786c51a80aea5c65d02fbe43bfda7",
+   "size": 1377
+  },
+  {
+   "path": "lessons/preferences/many-upload-destinations.md",
+   "sha256": "3e5c96ce09321a2b360fa11178ec415fe79960c6f4545ebdaa429d297d320890",
+   "size": 1175
+  },
+  {
+   "path": "lessons/preferences/new-clips-easy-to-find.md",
+   "sha256": "b81143f3f80b8071bd01f99f2fa99ad1e3d458bc692d79853b68f52813e7cdf8",
+   "size": 767
+  },
+  {
+   "path": "lessons/preferences/output-preview-in-git-master-on-keep.md",
+   "sha256": "170946affef17a3aeaf48b1cec2a86c87acc0578dc352940f4f1b89e5e3f4300",
+   "size": 1442
+  },
+  {
+   "path": "lessons/preferences/post-kit-per-clip.md",
+   "sha256": "751a79c7df4747e89346d07aed1cc6a1e0b1de6036ba46f2e810f3ac96888597",
+   "size": 968
+  },
+  {
+   "path": "lessons/preferences/quality-not-cringe.md",
+   "sha256": "170b88cfd1dca5be8f4177c8a3d1de9a757f53332b8c27dfdbc4b872f531675c",
+   "size": 576
+  },
+  {
+   "path": "lessons/preferences/refine-do-not-regenerate.md",
+   "sha256": "d4ef2bb2fd51041a99bf9c903cbec47d096946b620d62ccd984699f523a749b6",
+   "size": 867
+  },
+  {
+   "path": "lessons/preferences/render-cpu-first.md",
+   "sha256": "dc98bc513a0983f677b387aa9170ded3aad71d407061e2cd6b885babe344a381",
+   "size": 719
+  },
+  {
+   "path": "lessons/preferences/scope-freeze-v1-then-backlog.md",
+   "sha256": "303bd86a333dafd1ee9a78000d3caee207864d53c5aae0ca541fd5b1f4375ba3",
+   "size": 1057
+  },
+  {
+   "path": "lessons/preferences/skill-runs-on-sonnet.md",
+   "sha256": "a61a5f44defe84753cf43734700f9e6983e05469b1bcdbc65f8be93931de506f",
+   "size": 1053
+  },
+  {
+   "path": "lessons/preferences/small-offline-trainable-models.md",
+   "sha256": "46949772975ad4ddc14dafbf443e5a95d22e616e97e3059124daf26f447412b4",
+   "size": 1040
+  },
+  {
+   "path": "lessons/preferences/streams-english-or-hindi.md",
+   "sha256": "9b58661402028fa863eac056e6cdb0feea0633de4934592c5cac4a95a6e8135f",
+   "size": 908
+  },
+  {
+   "path": "lessons/preferences/use-subagents-parallel.md",
+   "sha256": "e659aaf1910c0adeec70384951a76b11f80e345345dc186ffead2c9e34f7cac1",
+   "size": 569
+  },
+  {
+   "path": "lessons/preferences/video-type-profiles-gaming-first.md",
+   "sha256": "0332157f5fbdd4930e5c3070448e9d6f9a9af2603b524e9b273d97de0a360b28",
+   "size": 1029
+  },
+  {
+   "path": "lessons/preferences/voice-demo-feedback-subtle.md",
+   "sha256": "fed17d1218bd88be77da23ed48f1bb4359c8fa56bf2d65c1136955e99401ad07",
+   "size": 1373
+  },
+  {
+   "path": "lessons/preferences/voice-level-tweak-on-request.md",
+   "sha256": "a6e4e630804c1c6ee03b3bd43b1fc999d7913bed748a53f81ad816f4e6ea8947",
+   "size": 969
+  },
+  {
+   "path": "lessons/preferences/voiceover-human-like-not-user-voice.md",
+   "sha256": "295cd4e36571c9ae6f17311b58963bb1f677b15353e0a3e8ae9c463b1c1da0de",
+   "size": 1387
+  },
+  {
+   "path": "lessons/preferences/zoom-follow-what-is-pointed-at.md",
+   "sha256": "460831d7fd0b7551498b122e8a3cc130a3b4e42a09a7eaa9087247f1704f197f",
+   "size": 791
+  },
+  {
+   "path": "lessons/preferences/zoom-hold-while-discussed.md",
+   "sha256": "b7fa1830d318483e8b84aa7b6af9085e0f0e93970d1fe39381cf2f4611bdf5dd",
+   "size": 828
+  },
+  {
+   "path": "lessons/preferences/zoom-subtle-by-default.md",
+   "sha256": "ad35fddbd171cb73199743886a6ff7dcd8bc8dffe1c81f4084162086878bb8d2",
+   "size": 524
+  },
+  {
+   "path": "lessons/rules/agents-never-see-kaggle-key.md",
+   "sha256": "f8659230f06be4264c4b95c70e4d81000fbc0abde676446ac43b3ac8e9e2c1c8",
+   "size": 843
+  },
+  {
+   "path": "lessons/rules/captions-never-over-stream.md",
+   "sha256": "396b9ef46b52a3084fcf3f5242ff101f062c8b2573cf87af07b2fb6bb9e40b49",
+   "size": 1035
+  },
+  {
+   "path": "lessons/rules/checkpoint-every-step-finalise-squash-to-main.md",
+   "sha256": "c68224f4d40a623415d306a9b2a4ad3891a61a277733727c7cac820007b5ba3a",
+   "size": 2533
+  },
+  {
+   "path": "lessons/rules/complete-moment-in-clip.md",
+   "sha256": "9e2eb42d356f6a71db262f22e67c9fc7cde0c5897e1f813584fcdf325442393e",
+   "size": 888
+  },
+  {
+   "path": "lessons/rules/fable-orchestrates-only.md",
+   "sha256": "a915daf8289de4f8c1d18e28be04b77379464101b37810dacb18f2ca268b2f42",
+   "size": 1231
+  },
+  {
+   "path": "lessons/rules/facecam-ai-generated-only.md",
+   "sha256": "80260a9592e47451a217566027f1b661929b299f867f358839b7c83d23573051",
+   "size": 500
+  },
+  {
+   "path": "lessons/rules/final-validation-fable-then-fix.md",
+   "sha256": "cc97d23119ed3dc987a6b3345a00319765ae0b835fbb6bd4bd2e235dcf23b8a5",
+   "size": 1282
+  },
+  {
+   "path": "lessons/rules/finalise-to-main-then-delete-from-vm.md",
+   "sha256": "a9872bf10082f8816ff1bb8f3578b7484adb825094b4c4328e6bc40cdec9395f",
+   "size": 1385
+  },
+  {
+   "path": "lessons/rules/keys-never-in-chat.md",
+   "sha256": "058217342a9de13b0014a3fec7de282289337d892b44d8f7988b79474d5157e4",
+   "size": 1030
+  },
+  {
+   "path": "lessons/rules/learn-first-then-plan.md",
+   "sha256": "a2fd8ec29324fd4ca5c997bda7fb2c67d218dd9d8fd33c2822a4f1d2eccdc4c7",
+   "size": 909
+  },
+  {
+   "path": "lessons/rules/limits-retry-then-tell-user.md",
+   "sha256": "4978cb1c90122b5a2affa6a16c76588d7be0440a351047fad48281cab9909907",
+   "size": 1152
+  },
+  {
+   "path": "lessons/rules/never-skip-moments.md",
+   "sha256": "ccc0d36496d1b76a61eafa713587143b8657db7dabf92fb225906b4d3e9cbaed",
+   "size": 848
+  },
+  {
+   "path": "lessons/rules/no-copyright-evasion.md",
+   "sha256": "ca7810a15b0e13fea1ebdde602695e34660787271dfaae16a263656c2c5fd0e0",
+   "size": 526
+  },
+  {
+   "path": "lessons/rules/push-main-then-delete-from-vm.md",
+   "sha256": "3b92c1798aaae94d640b5d18ab28ec11452b7ddf152f4995f635b63b205bbd5a",
+   "size": 608
+  },
+  {
+   "path": "lessons/rules/push-to-main-in-intervals.md",
+   "sha256": "f8b6568eed436fabd4134df250106263316ee56f054dface3fa453be7dc04693",
+   "size": 885
+  },
+  {
+   "path": "lessons/rules/repo-keeps-only-current-work.md",
+   "sha256": "6bc0d700683ee4fe9b3c4d967650db037f156e606a8f941f682332494e587487",
+   "size": 1430
+  },
+  {
+   "path": "lessons/rules/repo-site-ready-structure.md",
+   "sha256": "d7cc9ea9e95c835e8a94913c11f528890351203d77318c78b07bffc07e7f1f37",
+   "size": 1473
+  },
+  {
+   "path": "lessons/rules/repo-structure-clear.md",
+   "sha256": "1241ad26db45a4a4dbf208d03ed3e8c9220cfaf3e60a979a7a792e20d7ae649e",
+   "size": 545
+  },
+  {
+   "path": "lessons/rules/retro-step-9-and-incident-table.md",
+   "sha256": "50e9097786264a9e783cb552a90566e0fa80d8f32186f859410b994299687f24",
+   "size": 1740
+  },
+  {
+   "path": "lessons/rules/tick-first-during-jobs.md",
+   "sha256": "aa1fc2aee9e4b0fd05b7ec830816e55dc51e0c51712f0e071d1953c1299a11f7",
+   "size": 1819
+  },
+  {
+   "path": "lessons/rules/time-and-log-every-run.md",
+   "sha256": "6c573b982fc81498c9b6a1924a44977f4c39e8837674e65e658d93e110dcbcaf",
+   "size": 682
+  },
+  {
+   "path": "lessons/tools/animations-off-by-default-how-to-turn-on.md",
+   "sha256": "d279adc5c13de7f081d114169ec15d5f63eb572196a1b9e227bd3f2f275998df",
+   "size": 1323
+  },
+  {
+   "path": "lessons/tools/higgsfield.md",
+   "sha256": "381ca1b766df9f00bcc333a70e4b51dbaba99e6116806685e89c3dde3a79e815",
+   "size": 482
+  },
+  {
+   "path": "lessons/tools/highlights-audio-limiter-after-loudnorm.md",
+   "sha256": "8042f742aef76745b788a94af43f10040caa42c7570a79b345b47e9c8e1ed178",
+   "size": 1221
+  },
+  {
+   "path": "lessons/tools/hyperframes.md",
+   "sha256": "cee32f7ffc83c9c13eb5f96c914f185599c59116559847e214d6e2837bc9cd5d",
+   "size": 523
+  },
+  {
+   "path": "lessons/tools/kaggle-two-accounts.md",
+   "sha256": "3197295c285b56a8e488a9f9b2e3d6ef17968cf8a9cca7a71c5c398db49f432b",
+   "size": 1439
+  },
+  {
+   "path": "lessons/tools/kaggle.md",
+   "sha256": "2f68073d945c903906dbc5f0ae6194dbcef37057933582b38cece9dd18611c23",
+   "size": 530
+  },
+  {
+   "path": "lessons/tools/kokoro-commentary-tts-venv-312.md",
+   "sha256": "1084a22ae8a530747a8941ac86ab7a3530449066b4a32d5d04456201df77f5a4",
+   "size": 1250
+  },
+  {
+   "path": "lessons/tools/moment-finder.md",
+   "sha256": "e609e97976e27f313b7a0452486cc8043a5d73178e7fc64a01e9378542ecbfff",
+   "size": 507
+  },
+  {
+   "path": "lessons/tools/openshorts.md",
+   "sha256": "37266ebd455548823b35fe56f12ccded86c2ce30f7eb67ac92c5727f8652601d",
+   "size": 510
+  },
+  {
+   "path": "lessons/tools/opusclip.md",
+   "sha256": "2e23bec407b9f13d2a46d39377671be14cccf2076556bc05af0e0aae09722771",
+   "size": 413
+  },
+  {
+   "path": "lessons/tools/vidiq.md",
+   "sha256": "1f5219e11aeae1d2db33a3e258b4f21ea4a61af3fe0077435968c5ecda407033",
+   "size": 485
+  },
+  {
+   "path": "migration-setup/CLAUDE-ACCOUNT-SETUP.md",
+   "sha256": "b8d5b88bf87ce0e89d3ef3b07b85b3115a03ff00a2e5d02451415f9e82b37e51",
+   "size": 15912
+  },
+  {
+   "path": "migration-setup/CLAUDE-INSTRUCTIONS.md",
+   "sha256": "5cee6fcfd6d7ba7a3b7554d7e9354344dfe69fa00ab67c52cbde9db6c4ae2f98",
+   "size": 12788
+  },
+  {
+   "path": "migration-setup/FABLE-CARRYOVER-CHECK.md",
+   "sha256": "34250e7785f41183e1cd7878b77ed9c3e944c6c90f8ed76f6f8dd6f60a539c9e",
+   "size": 6735
+  },
+  {
+   "path": "migration-setup/GITHUB-MOVE.md",
+   "sha256": "59f819f307942891ff42c1cdfeac2ad2bc105090bb49248e7418fbcc85e6d85a",
+   "size": 14945
+  },
+  {
+   "path": "migration-setup/HISTORY-AND-REQUIREMENTS.md",
+   "sha256": "0416c9e0618072ea93802925c86aa6f6bb2691954d09e2191cbb247548bae7f6",
+   "size": 14741
+  },
+  {
+   "path": "migration-setup/KAGGLE.md",
+   "sha256": "224116700bb313397cde326332ba185eb8794282508aa95de799c74fb98554d6",
+   "size": 8863
+  },
+  {
+   "path": "migration-setup/KNOWLEDGE-BASE.md",
+   "sha256": "3a1b8cb16be561b70e88b45256028f61be20f60fe9df5a5841c1d8f8dcb34754",
+   "size": 54857
+  },
+  {
+   "path": "migration-setup/MIGRATION-AUDIT.md",
+   "sha256": "1b99bf22e995838986dda8b8a9f58ea53cf62c90355e41daa9c343cb602cc6f8",
+   "size": 11195
+  },
+  {
+   "path": "migration-setup/MIGRATION-REAUDIT.md",
+   "sha256": "88444c0f97474d8f13a480514ae76404862aa944f2da16d0863f46fd126dd4f0",
+   "size": 4584
+  },
+  {
+   "path": "migration-setup/PIPELINE.md",
+   "sha256": "e27fc0f7603930e8a54a206f5b91f302a12e096534c97179038ba2313e8699aa",
+   "size": 30721
+  },
+  {
+   "path": "migration-setup/README.md",
+   "sha256": "e7b5e02eee0acb4aa6de746801aa68a8161f9b9bd1040ddb5fe90915772e4aee",
+   "size": 15799
+  },
+  {
+   "path": "migration-setup/REVOKE-AND-SECURITY.md",
+   "sha256": "14d5338049fa2a254f3801cf1e21104b0b9e313bda631e738c63e104778697d5",
+   "size": 5606
+  },
+  {
+   "path": "migration-setup/TROUBLESHOOTING.md",
+   "sha256": "8e672d23209df08c2525231029c479fcce487710a4f76134efffe94560f6d0b1",
+   "size": 10116
+  },
+  {
+   "path": "migration-setup/VERIFY.md",
+   "sha256": "80236ffee1536f8f9246b68d63c61f06570903b83c983c06b6c2fc8bee9dbd8d",
+   "size": 5847
+  },
+  {
+   "path": "migration-setup/VM-SETUP-LOG.md",
+   "sha256": "1e39d51b9fce2bd8b52d01b6893039ae80e2d506366d177a42c715f241c16797",
+   "size": 8383
+  },
+  {
+   "path": "migration-setup/export_history.py",
+   "sha256": "6cbd7e956c2144ad331d1ecfc5883e1b5f3303840a6b4ae957a7bfd161856d95",
+   "size": 32759
+  },
+  {
+   "path": "migration-setup/history/00-README.md",
+   "sha256": "34415dfec4161d8e8637ea3b1ef4e5953378900152e4f75efd3817f1aba09942",
+   "size": 4364
+  },
+  {
+   "path": "migration-setup/history/01-user-messages.md",
+   "sha256": "9671a6520e853978f95c36c9871533daf8a5e004e734396e7a4a81a3b4dc453e",
+   "size": 51922
+  },
+  {
+   "path": "migration-setup/history/02-conversation.md",
+   "sha256": "6bcf4301e1927293a20bcb8467e725878fed53b7512cbb9436769d5ff250a811",
+   "size": 531901
+  },
+  {
+   "path": "migration-setup/history/03-agent-briefs.md",
+   "sha256": "3f69c08bafde25010b846c559ba72fdaf71e4725db9448099ac438768c47d4eb",
+   "size": 299440
+  },
+  {
+   "path": "migration-setup/history/04-session-summaries.md",
+   "sha256": "9b15afd2716235aee99d52e62c89662a9a79b6b30a4f723647004ae2dc24fb91",
+   "size": 51508
+  },
+  {
+   "path": "migration-setup/make_manifest.py",
+   "sha256": "be9c20223cd9ce8b7846e1555f3b3d6833250683f6e6657e8a12afc5088bb758",
+   "size": 11508
+  },
+  {
+   "path": "migration-setup/setup-environment.sh",
+   "sha256": "18e876f2e13ebaaa1a5057ac65748c77cf49dc2852676cf64df2dee173621e78",
+   "size": 6095
+  },
+  {
+   "path": "migration-setup/verify_manifest.py",
+   "sha256": "04939031c5040f679add2879e629e01d96196d53faf3936b5f552de4f7ed762d",
+   "size": 14267
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/clip.json",
+   "sha256": "2b7d8a7427dc6c8923622171914078925765836faa29b440b002be8003bdcc80",
+   "size": 3015
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/edit-notes.md",
+   "sha256": "f4b63f423481ce2a0b1ed7b2f52cc8a53b98d91383c8ee32fc9be9e608dbaa0e",
+   "size": 1255
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/post.md",
+   "sha256": "0da5e45844bb5ef9eb092307bf2192af15c06465b3a2c1e2ff588c881367b494",
+   "size": 1797
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/poster.jpg",
+   "sha256": "f44f37c836be70792c0236f1691346e17415fab8d16633413cd150f0267e54ec",
+   "size": 42094
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/social.mp4",
+   "sha256": "7543bebc922c85d96318a2e67170ecb6076d3e8918bad920410e099692bde3da",
+   "size": 25065618
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/index.json",
+   "sha256": "8d92287f8f89a6d1c251e9a0af2b20ebb190b2e36d47e67aa863395621033540",
+   "size": 1388
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v1.clip.json",
+   "sha256": "10dc3624eb67668843318e0d5cd3109ce2de0197775905ead2ff029eb29dacff",
+   "size": 1659
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v2.clip.json",
+   "sha256": "74d5950e3e15d292f9729e6afec6c3d274af154c336f6bc0e30080a03e644b57",
+   "size": 1745
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v3.clip.json",
+   "sha256": "300020779acbbd802413494e9d9aa20cf2e14e31a4d1895632a4993eece964f7",
+   "size": 1875
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v4.clip.json",
+   "sha256": "1449a1f09748c48f910ed23466503113738a5155a4437c2714332779349c2bbe",
+   "size": 1983
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v5.clip.json",
+   "sha256": "f2999b195f04859a136a05baeb615762184e45b6986eae29e3bc6752d78c53b8",
+   "size": 1983
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v6.clip.json",
+   "sha256": "c121801a7fec2651bc61cd1b53a75d73b9bb8f863be7d76b274740673b426d9f",
+   "size": 2949
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v7.clip.json",
+   "sha256": "2b7d8a7427dc6c8923622171914078925765836faa29b440b002be8003bdcc80",
+   "size": 3015
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v8.clip.json",
+   "sha256": "278e7c60c0c72924c08dd961c201c0d84c9814641d570d3049d4a420a53610a9",
+   "size": 3014
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1278-1318s_lucia-jason-tshirt/versions/v9.clip.json",
+   "sha256": "2b7d8a7427dc6c8923622171914078925765836faa29b440b002be8003bdcc80",
+   "size": 3015
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/clean.mp4",
+   "sha256": "47f44da1b57ca112bdfab438fe23f15b3703ef060ce8976ec6b3a0467f52896a",
+   "size": 16237219
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/clip.json",
+   "sha256": "8c59f7f4e3331bc62b2128403436354b7ff059b8bd3c044de76d7d8ca03e5d81",
+   "size": 3617
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/edit-notes.md",
+   "sha256": "0ae245ceee47a7b5cb9e6ba41b37ef09003910c3eb051e59e6ae08fc63438133",
+   "size": 2895
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/post.md",
+   "sha256": "5ec07968416cf7ead1db729fc24fa757fafff645c2310ade5de53654c2867761",
+   "size": 1878
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/poster.jpg",
+   "sha256": "8f4b822df9b84594a3031e6f764be249f866807b26241b1487f4aef7c1cef77b",
+   "size": 26816
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/social.mp4",
+   "sha256": "8e259aba11df1eb018ccbd4836b4ed40514d2b5652eda8e23069556647e77017",
+   "size": 16519507
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/index.json",
+   "sha256": "bad776483feb05f4a6016a430d9377f0078bdad48e2f037e2a60ddb9d7c87d14",
+   "size": 3247
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v1.clip.json",
+   "sha256": "498e1be326cdba85f3b56f96bd843c1167f3c05338c08afba61bc50f56ccab20",
+   "size": 1705
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v10.clip.json",
+   "sha256": "8c59f7f4e3331bc62b2128403436354b7ff059b8bd3c044de76d7d8ca03e5d81",
+   "size": 3617
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v2.clip.json",
+   "sha256": "ae95efae3958bd8d8638285b2e6ae87a1717971d00dd264fa0c0fa1dd86cdbc9",
+   "size": 1788
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v3.clip.json",
+   "sha256": "40e6b8695c9b211c1172ab4e58e6dd9761fb66dc0f12d99998d917a4048c576b",
+   "size": 1795
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v4.clip.json",
+   "sha256": "807681c777ee85626de43a5985704080b9a904ee7ddcebc859f8ddeb08f74b34",
+   "size": 2330
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v5.clip.json",
+   "sha256": "05cacf7722be766087336b2756cb38b8cae92be6f6aeeb36b99c7ed5dcb35bc7",
+   "size": 2438
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v6.clip.json",
+   "sha256": "2299a397b62c04699b5fedb45b8b9a09ce2d83578978c5b6c6e832588619809f",
+   "size": 2438
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v7.clip.json",
+   "sha256": "2299a397b62c04699b5fedb45b8b9a09ce2d83578978c5b6c6e832588619809f",
+   "size": 2438
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v8.clip.json",
+   "sha256": "45cba31a01b86b7d06c9cff17931cc50a6bb0f8191de331a562e98e1d1dc97bc",
+   "size": 3551
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/1736-1778s_red-dead-slow-motion/versions/v9.clip.json",
+   "sha256": "acc43951821b0776a24504403ca8f3f47afca023aabf6a5c2d91479f997a861c",
+   "size": 3551
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/clip.json",
+   "sha256": "661ad76e59a5fe40c634c618d8cba4ed7ae0fbc7390fdf4593c2bce99b102f73",
+   "size": 3056
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/edit-notes.md",
+   "sha256": "707df1d05b5edc24f5b34c2d6d65f845a345bce2ed14bf0248bdde4063922d8f",
+   "size": 1042
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/post.md",
+   "sha256": "e05216aa91eaf7f136ee37ae6b101e906b781b87f56f4770e1a9bff1c44dcbde",
+   "size": 1827
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/poster.jpg",
+   "sha256": "671aacebf175b09e8309afc878df777fe0485c778695d606bf877e2060227cf9",
+   "size": 21844
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/social.mp4",
+   "sha256": "d3c96a9fafc8949d3a2dec41902455c45963d1f9c0ac94a239306e707c757931",
+   "size": 15212871
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/versions/index.json",
+   "sha256": "246e41624cd4065a5312dbe6b7710a916694d9b86b96dd3e22728d42274c41f1",
+   "size": 1150
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/versions/v1.clip.json",
+   "sha256": "aadb29db9dad2f0844a7eda8db72fda3d220dca4cb9d4db979a39b7a5dc118b9",
+   "size": 1661
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/versions/v2.clip.json",
+   "sha256": "71842d4b35e371721871ec5234e735329cbae03ae452885bf8ab69255e7f6489",
+   "size": 1751
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/versions/v3.clip.json",
+   "sha256": "f88f142a99910bef365e23f662bee66b677121a358592c68686d68d974cdcf37",
+   "size": 1881
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/versions/v4.clip.json",
+   "sha256": "4658c8d490967b561da2dc4c0bfff89e2bf55f45a1ab4ed446df7d757f689d99",
+   "size": 1989
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/versions/v5.clip.json",
+   "sha256": "0cc835a22fd1403a94183cae29a0ab4e3ba2eb21efb1d200e95dc934b2ccb724",
+   "size": 1989
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/versions/v6.clip.json",
+   "sha256": "5484fe4b0a4f863ea7cd81da1113a467dfa6a01f352cd7e3176401de8c6a8f90",
+   "size": 2990
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/clips/449-503s_gta-6-logo-goosebumps/versions/v7.clip.json",
+   "sha256": "661ad76e59a5fe40c634c618d8cba4ed7ae0fbc7390fdf4593c2bce99b102f73",
+   "size": 3056
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/animation-demo.md",
+   "sha256": "eb858c74d116979d6584f47f6dd7dfef2c0bc05070e6e2261bbcfa6d90012757",
+   "size": 5154
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/build-report.md",
+   "sha256": "5fe5b9565802f14ea92a6f8adf8518de95f4a4a2fc31248f6b299e5e275f0130",
+   "size": 26759
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/demo/01_demo_animations.mp4",
+   "sha256": "306fcdca9bf8860134e5ca0c3a59e32f4495ece852f231501d3158298da98439",
+   "size": 17232665
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/demo/effects_demo.mp4",
+   "sha256": "1f5f2337146f0e53f73983c26a0e045547f302cb9cd998d80e4d24f4c951dbc9",
+   "size": 9640716
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/highlights-titles.json",
+   "sha256": "b7cf16db7aa7404f0d79bd53ef324324231f13263a7a09602183c48a35e941b4",
+   "size": 1226
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/layout-c-before-after.png",
+   "sha256": "3e79d0443d12d00fde4df5ea3f458bfaae49f8c14e98ce7f9da94b4c30a01bec",
+   "size": 171281
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/audio_db_0.5s.npy",
+   "sha256": "2c738af6bc4b96388f8abf62ad92c2c4d8ed742a64221be5a403bfcde1904261",
+   "size": 15696
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/candidates.json",
+   "sha256": "a365cfb32f832808db83908823aa04dc6be8c9000f05f446a1b295c933b09065",
+   "size": 52610
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/candidates.md",
+   "sha256": "4cf3376fb809347eb6b0e8954cadf6c27c223a4a213a32ad68af84196dbe9e94",
+   "size": 35727
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank02_a_1744s.jpg",
+   "sha256": "8f5e355f946ea8ab21df14be11f96bf97ffb01aaa6e1c0e0841959969b417f61",
+   "size": 34240
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank02_b_1757s.jpg",
+   "sha256": "82c76b780dce23d6e7a41aaf7ec014e337c86dca70d26dec4b1af5b063339de4",
+   "size": 40704
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank02_c_1769s.jpg",
+   "sha256": "000dc12257c0bc8b714583565fe5ee399ee115b613f5605fa5f32a3a73718cf6",
+   "size": 32196
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank03_a_1263s.jpg",
+   "sha256": "ee4b0f5ba5ed3e26e6ecff91acccc707e9e765bef1d42bcff432424c92a884e6",
+   "size": 39585
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank03_b_1280s.jpg",
+   "sha256": "4cb970dd587f8a8688a6b21939f38dd31c959d47f94d868205e1679872bfdcab",
+   "size": 77297
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank03_c_1297s.jpg",
+   "sha256": "44b06546ed9c0039ac2168dd66efd0a353cef523e05a26f05eac34c4a8562149",
+   "size": 66535
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank08_a_1879s.jpg",
+   "sha256": "0b2740956ebeedcedf4d4c3d73ea5945686806c0fd5b57bfcc96ffafc2616b47",
+   "size": 26625
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank08_b_1890s.jpg",
+   "sha256": "e2014a4869e800b0063face308ec94c9766cefaa77e8c2dec30b60adf8335bc8",
+   "size": 58784
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/frames_missed/rank08_c_1902s.jpg",
+   "sha256": "c3939c582f1f7d7d0c2b03edf213e38441a4ca2c5af48ef8db8bf3158917539c",
+   "size": 57927
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moment-finder/report.md",
+   "sha256": "b8b5fead68798a27fcde6bdbd96eafb574335353e6eca032bd13f372cde8a537",
+   "size": 8928
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/moments.json",
+   "sha256": "24972904b42c81765981a502a4baffa186b12536e0c4fc8021bee327ddc197a4",
+   "size": 1022
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/restructure-report.md",
+   "sha256": "218d75a4cadb24078eb0c16025ead843f36905eb28ec559be95518f4165fc9b8",
+   "size": 4830
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/review.md",
+   "sha256": "2a27f8c06c3ed69cab1f2f577396f946211511772225a00e085509b301d1291e",
+   "size": 6166
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/safe-zone-options.png",
+   "sha256": "a8bb41622e2936190c8aed84490deed2ebd058dd8fb037ddafecdadbf29e756d",
+   "size": 1003628
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/safe-zone-options.py",
+   "sha256": "04a3417749c9683b834e806fae9fb226f58a29fff98282b927c94a0f670277e8",
+   "size": 9372
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/sheets/1278-1318s_lucia-jason-tshirt.png",
+   "sha256": "73167510f1595ae02c1fa84bbdf48e28ae51db76fd9df8288bedb9d27d377730",
+   "size": 827865
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/sheets/1736-1778s_red-dead-slow-motion.png",
+   "sha256": "188e49584bf77c9b535913d4372a338b86836083cfc65a576ba8e98506fd693f",
+   "size": 541748
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/sheets/449-503s_gta-6-logo-goosebumps.png",
+   "sha256": "88eef90e74a250fcd6930d9e8f14be0ff5dd53ee8a8860c8bac8990b3dfe2991",
+   "size": 782759
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/title-style-options.png",
+   "sha256": "8257f5be7289e44205d4a207e858d1a1378271d9c62c49a531d13c34c73bbb04",
+   "size": 370042
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/title-style-options.py",
+   "sha256": "cb6d7fe833bf013a038337eb595705bd23fc1ee5b2f67b60a67223bf079c5060",
+   "size": 7752
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/transcript_hi.json",
+   "sha256": "743fd7619e5c98f643f159da97673145070ce98e559a0d98b418342fc0f40578",
+   "size": 166785
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/visual/moments_merged.json",
+   "sha256": "b664a29b433153d8c760891cce3bbb40043d901dbe9b9a7367aa3cd977bd58da",
+   "size": 24351
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/visual/reviewer_raw.json",
+   "sha256": "385d5066600958bbd2c3746f6fc25f5cf1d21745b39ea7dfb3f627e967e6e4a9",
+   "size": 4442
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/visual/transcript_candidates.json",
+   "sha256": "86ca14ee7269d43b1d8dbb6cb8f33f87f8cf128878663c6a5e76c0f6866a845f",
+   "size": 42472
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/visual/visual_energy.json",
+   "sha256": "6d28569a6b906b37f8c7770df71ac834a9240a714b3a5207f3af9e3e4162ac57",
+   "size": 40496
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/visual/visual_review.json",
+   "sha256": "31fc78dfa92e6b510efe529e7c6d5a084ab5b417294ceacba8b603d13238c857",
+   "size": 5967
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/visual/visual_review_tasks.json",
+   "sha256": "1858f5284d17fffc0d6266e314631e8239b98a978999b73440843d9e048d4490",
+   "size": 29618
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/docs/visual/visual_scan.json",
+   "sha256": "c47c30ea9981e9e09b73846bcf155ef8d40558af0875074341e7db5122fc6309",
+   "size": 3196
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/highlights/best-of/commentary-script.md",
+   "sha256": "b382420b0a91aa2c3334fe042de9a07b68fa9cd1da86aab96293753476a0c714",
+   "size": 17057
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/highlights/best-of/highlights.json",
+   "sha256": "5e4c8b4e5fde072ca7a7840d14d12d563ad1f0d5d77e715eca42ea89839c23ee",
+   "size": 32941
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/highlights/best-of/post.md",
+   "sha256": "fd8ded68b288d8fac1353742ddb2ac3cda4b2fcbb507ddd9425ffd4bc4e47e5e",
+   "size": 1743
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/highlights/best-of/preview.mp4",
+   "sha256": "c67f2996281853c610a7f2a2d64be30b80d38252da8987bd68431c4e1fa0302f",
+   "size": 79353338
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/highlights/best-of/render-report.json",
+   "sha256": "b3ad653dce8b1d83836ecf0d44d69f4b6b921a0256dc77b6261be93613934d2e",
+   "size": 3806
+  },
+  {
+   "path": "streams/2026-11-14_this-is-not-a-game/stream.json",
+   "sha256": "e29d3cb3da220840d7b4137302cba11a114f4e877801eb96d2f3d9a21cca5234",
+   "size": 224
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/11432-11486s_talking-to-someone-now-killing/clip.json",
+   "sha256": "12d0374e857be541b4a0731d793ce08d343b118057b217b3cd5967b5dc839049",
+   "size": 3067
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/11432-11486s_talking-to-someone-now-killing/instagram-reels.mp4",
+   "sha256": "4b44a8a1b304ffbca23b26b64d5ff846c74e3a5c6a6129ee5023e70dcaa9276a",
+   "size": 24180415
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/11432-11486s_talking-to-someone-now-killing/post.md",
+   "sha256": "8e873b348331dd081fd4766423d45056448af8f3a927002f69512415c8cbd490",
+   "size": 1737
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/11432-11486s_talking-to-someone-now-killing/poster.jpg",
+   "sha256": "e281295314df6f13ee542f4a52765de38289ce0eddac6e61e9a755f6037c34ec",
+   "size": 25953
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/11432-11486s_talking-to-someone-now-killing/youtube-shorts.mp4",
+   "sha256": "4b44a8a1b304ffbca23b26b64d5ff846c74e3a5c6a6129ee5023e70dcaa9276a",
+   "size": 24180415
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13114-13157s_racing-my-own-son-and-losing/clip.json",
+   "sha256": "e5557f8d0198e7677c40202e3c2bd7feb0fb9f4d3bd4603d03758ebedb3228ea",
+   "size": 3009
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13114-13157s_racing-my-own-son-and-losing/instagram-reels.mp4",
+   "sha256": "6378e6911efdc455ae18ab09034e808009bd5b38497b34d36002257a0a083f69",
+   "size": 35132172
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13114-13157s_racing-my-own-son-and-losing/post.md",
+   "sha256": "01e6219d398076463fc1bc5197788dcebddfdbd38e3c826b956e7cbb6145ba74",
+   "size": 1692
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13114-13157s_racing-my-own-son-and-losing/poster.jpg",
+   "sha256": "4fe50de325c240d307236f8c204543a1b57aebccfb7f30106f13f964b1e4f60c",
+   "size": 42806
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13114-13157s_racing-my-own-son-and-losing/youtube-shorts.mp4",
+   "sha256": "6378e6911efdc455ae18ab09034e808009bd5b38497b34d36002257a0a083f69",
+   "size": 35132172
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13267-13321s_because-i-m-old-my-son-won/clip.json",
+   "sha256": "fee18b26c93b39a4b5b5898c2e83d32d13af059524153e0a11962e53443d5cdc",
+   "size": 3020
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13267-13321s_because-i-m-old-my-son-won/instagram-reels.mp4",
+   "sha256": "88e8cafd6da00df68bec2fe9ce70707286dfca4b5067748a4062e7c45ed55b0b",
+   "size": 37263652
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13267-13321s_because-i-m-old-my-son-won/post.md",
+   "sha256": "f720c53945629ff92b3875ec51465efd18dbffe8b20bd7ca6f39c57c94c7ebf0",
+   "size": 1695
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13267-13321s_because-i-m-old-my-son-won/poster.jpg",
+   "sha256": "6245628f866f162b6b96d0468b85dde0615b8397e692586a2848cd53a5fe50b3",
+   "size": 45224
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13267-13321s_because-i-m-old-my-son-won/youtube-shorts.mp4",
+   "sha256": "88e8cafd6da00df68bec2fe9ce70707286dfca4b5067748a4062e7c45ed55b0b",
+   "size": 37263652
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/14560-14602s_we-ll-be-called-terrorists/clip.json",
+   "sha256": "b8d320441716067219b534ffee63b26e984f1796e523d67d702b37db7e06c268",
+   "size": 3043
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/14560-14602s_we-ll-be-called-terrorists/instagram-reels.mp4",
+   "sha256": "e97656e5c6205349945c45982d00aa541a1dbc29463917a01805041418dfc53e",
+   "size": 20573287
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/14560-14602s_we-ll-be-called-terrorists/post.md",
+   "sha256": "a255aa2c90c8faa5e9bdabce996087c0ee00afe4796c1ed6a8fd1061824e6e3b",
+   "size": 1702
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/14560-14602s_we-ll-be-called-terrorists/poster.jpg",
+   "sha256": "e40e5d74906346133a2f60345d730e7c72aa280cbf4418f4ce4984938dd14f77",
+   "size": 24183
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/14560-14602s_we-ll-be-called-terrorists/youtube-shorts.mp4",
+   "sha256": "e97656e5c6205349945c45982d00aa541a1dbc29463917a01805041418dfc53e",
+   "size": 20573287
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16060-16112s_what-if-this-shop-is-madrazo-s/clip.json",
+   "sha256": "e083d09a2dbba251e06b56c45eaa7e06766dbf9121950828f70aebf9f7007914",
+   "size": 3091
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16060-16112s_what-if-this-shop-is-madrazo-s/instagram-reels.mp4",
+   "sha256": "844703f2b3c03bbb5977f672d75242fba53d976c189d0c02337eba2ce9904a61",
+   "size": 33187125
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16060-16112s_what-if-this-shop-is-madrazo-s/post.md",
+   "sha256": "74d76b84e8981e3c4a1889db33459b030b95578f2876e150deff2bf4667a2d10",
+   "size": 1743
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16060-16112s_what-if-this-shop-is-madrazo-s/poster.jpg",
+   "sha256": "9a7a092a3dd542a5f82f9a4facb3ea4635cc2f606ec003a7677708e4ff1cb9cf",
+   "size": 41933
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16060-16112s_what-if-this-shop-is-madrazo-s/youtube-shorts.mp4",
+   "sha256": "844703f2b3c03bbb5977f672d75242fba53d976c189d0c02337eba2ce9904a61",
+   "size": 33187125
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16486-16534s_the-heist-payout-after-madrazo/clip.json",
+   "sha256": "4bbb9f048527cebe256a004f0e8f1b5ff30535c2988a040e39eb1a2713f67762",
+   "size": 3075
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16486-16534s_the-heist-payout-after-madrazo/instagram-reels.mp4",
+   "sha256": "0ad89586ceee6563dc6ca7f643b0db0f30e7874e8d9437ffebe063d3dd9d8bf7",
+   "size": 7152621
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16486-16534s_the-heist-payout-after-madrazo/post.md",
+   "sha256": "3edbe49848dc33708ac7a5356968e8a69d0d61f340c8d755ac832a838ab0e2e1",
+   "size": 1739
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16486-16534s_the-heist-payout-after-madrazo/poster.jpg",
+   "sha256": "ec5789cda5bf62677354bac6102eacabb0b4cdfb05a724a63da4b1f2c164ec8f",
+   "size": 34375
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16486-16534s_the-heist-payout-after-madrazo/youtube-shorts.mp4",
+   "sha256": "0ad89586ceee6563dc6ca7f643b0db0f30e7874e8d9437ffebe063d3dd9d8bf7",
+   "size": 7152621
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/20796-20847s_trevor-is-110-percent-mad/clip.json",
+   "sha256": "7891fd804dd0d803a8f75b7f81be4df6d13fd254f573de3bde49c06a2d701601",
+   "size": 2997
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/20796-20847s_trevor-is-110-percent-mad/instagram-reels.mp4",
+   "sha256": "961ca8e30ccc582537e6441f6198ce31587874070fed516ee116cbd9af6298d8",
+   "size": 38672079
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/20796-20847s_trevor-is-110-percent-mad/post.md",
+   "sha256": "bb81d734b65cc8a3240537f2f330b869260a0ecf972003149e24009fd75a9085",
+   "size": 1679
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/20796-20847s_trevor-is-110-percent-mad/poster.jpg",
+   "sha256": "f1284b5c0d736d6d09c9c782e431be0a272bcc8cb322293950b15ea8f429f5c5",
+   "size": 38610
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/20796-20847s_trevor-is-110-percent-mad/youtube-shorts.mp4",
+   "sha256": "961ca8e30ccc582537e6441f6198ce31587874070fed516ee116cbd9af6298d8",
+   "size": 38672079
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/2212-2265s_evie-the-dog-that-bit-his-frie/clip.json",
+   "sha256": "720d073c3a91d29fb82f19768cb5249997f695d9f40b2a2019d645c38f8db2c4",
+   "size": 3070
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/2212-2265s_evie-the-dog-that-bit-his-frie/instagram-reels.mp4",
+   "sha256": "bcebe8a2b7d927b15ee1a51b684920a6d94fd6f8f505dcebfd6cffba7a83a7cc",
+   "size": 30861167
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/2212-2265s_evie-the-dog-that-bit-his-frie/post.md",
+   "sha256": "a13490e118d17e2f014ea21482c22157419386966118c308e6c1cd56390d7068",
+   "size": 1731
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/2212-2265s_evie-the-dog-that-bit-his-frie/poster.jpg",
+   "sha256": "51bea292328d16b255ab4ec0bd3b8b45423454772c0dffd5029d17fc650ac93a",
+   "size": 31797
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/2212-2265s_evie-the-dog-that-bit-his-frie/youtube-shorts.mp4",
+   "sha256": "bcebe8a2b7d927b15ee1a51b684920a6d94fd6f8f505dcebfd6cffba7a83a7cc",
+   "size": 30861167
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/25017-25061s_the-npc-who-would-not-leave/clip.json",
+   "sha256": "44808c9fc49d374a4df40ad345c030ce15f698e0f76a0d6841a297edf05b5d48",
+   "size": 3037
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/25017-25061s_the-npc-who-would-not-leave/instagram-reels.mp4",
+   "sha256": "8f0aee6d6a85f5b44793695a051658501eb2e188ecaf27a137f4913509b5b2c8",
+   "size": 30944889
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/25017-25061s_the-npc-who-would-not-leave/post.md",
+   "sha256": "48b47d482c502a674ed4c0b40afa387056edab13bb0628a1d86cb33e500fafb5",
+   "size": 1701
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/25017-25061s_the-npc-who-would-not-leave/poster.jpg",
+   "sha256": "4a339ff69f44cb8bdffff35239395f75cfa8c90c13f05059a6cd8054ae7d7efd",
+   "size": 45289
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/25017-25061s_the-npc-who-would-not-leave/youtube-shorts.mp4",
+   "sha256": "8f0aee6d6a85f5b44793695a051658501eb2e188ecaf27a137f4913509b5b2c8",
+   "size": 30944889
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/26569-26622s_my-son-drugged-me/clip.json",
+   "sha256": "125aead63da74204194c0dd4d70baa76de8700403f4a361574cc2a0be191a7f6",
+   "size": 3013
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/26569-26622s_my-son-drugged-me/instagram-reels.mp4",
+   "sha256": "f97d504a63d77f61eefd190b453ad68271a6bda77547eef4a410fb3b9940321e",
+   "size": 22558464
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/26569-26622s_my-son-drugged-me/post.md",
+   "sha256": "17993c8868ec3e700e728d83f0a19cecb54810428eab8010f2bb5365c9cf0e4e",
+   "size": 1671
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/26569-26622s_my-son-drugged-me/poster.jpg",
+   "sha256": "78b9bd8ca40893d6ddaf1d17a42ba7f3e3a20501d5207abd19bd790250f17801",
+   "size": 23850
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/26569-26622s_my-son-drugged-me/youtube-shorts.mp4",
+   "sha256": "f97d504a63d77f61eefd190b453ad68271a6bda77547eef4a410fb3b9940321e",
+   "size": 22558464
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/36450-36496s_the-bus-saved-me/clip.json",
+   "sha256": "778f43b1fc1beaba114100e130d26e47a4e27ed30d83e80c0319c626c5f322f2",
+   "size": 2957
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/36450-36496s_the-bus-saved-me/instagram-reels.mp4",
+   "sha256": "18b957384cec04c32da889a8eb528fc96eaf624b6baa24551e06b24636bb4589",
+   "size": 41605529
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/36450-36496s_the-bus-saved-me/post.md",
+   "sha256": "9bb82aa54c83f245478dda334f00f109b3948a3e5f98f4f21229b6aa762a6ccc",
+   "size": 1642
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/36450-36496s_the-bus-saved-me/poster.jpg",
+   "sha256": "cf788fe4b7ac00e95c1763f8173831085c93d58ae89eb6544b56221fd93232de",
+   "size": 34614
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/36450-36496s_the-bus-saved-me/youtube-shorts.mp4",
+   "sha256": "18b957384cec04c32da889a8eb528fc96eaf624b6baa24551e06b24636bb4589",
+   "size": 41605529
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/3763-3810s_did-i-install-a-gta-mod/clip.json",
+   "sha256": "7c88ba89d7c6c162b4b2158880fa9342a06a53544d504a2c5586e1dba22c5ee4",
+   "size": 3024
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/3763-3810s_did-i-install-a-gta-mod/instagram-reels.mp4",
+   "sha256": "52628a7cfb0974ef5a32f91563f93600d1b32acb9168199ec6a9c7cd038273da",
+   "size": 20242626
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/3763-3810s_did-i-install-a-gta-mod/post.md",
+   "sha256": "4e9a4b241b73c5c6b3f3601789ac9490381438e392ffdfbe56f6e6c50baab861",
+   "size": 1693
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/3763-3810s_did-i-install-a-gta-mod/poster.jpg",
+   "sha256": "6e321284228810b2a3db7cbe9392c0cb3fad3b3e8dc9f3ee02cf5ba398dfc08e",
+   "size": 29054
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/3763-3810s_did-i-install-a-gta-mod/youtube-shorts.mp4",
+   "sha256": "52628a7cfb0974ef5a32f91563f93600d1b32acb9168199ec6a9c7cd038273da",
+   "size": 20242626
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4281-4332s_copyright-lagega-yaar/clip.json",
+   "sha256": "08cbc2452bd03de398a5637e6f123d692d8670e748bb2537da2186d80014751e",
+   "size": 3036
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4281-4332s_copyright-lagega-yaar/instagram-reels.mp4",
+   "sha256": "64db691d43e557c59e6b82a0754105778453fd02ea47a6cdb7c09906ce4a22f5",
+   "size": 37663191
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4281-4332s_copyright-lagega-yaar/post.md",
+   "sha256": "38dda95f25a2fbd4769fa5c7130ed1f38b30d74dc7f1ecf6c618db3f331662a1",
+   "size": 1691
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4281-4332s_copyright-lagega-yaar/poster.jpg",
+   "sha256": "d90a6a76ef28f934c4f8dc10bc6970607d6134042a729cdf598c4aff659e4442",
+   "size": 35666
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4281-4332s_copyright-lagega-yaar/youtube-shorts.mp4",
+   "sha256": "64db691d43e557c59e6b82a0754105778453fd02ea47a6cdb7c09906ce4a22f5",
+   "size": 37663191
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4479-4526s_i-m-from-a-good-family-officer/clip.json",
+   "sha256": "a4a624c4dd41376e27fdaf17210b3cf01ed1f38d871d582cc447beff5b66e620",
+   "size": 3012
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4479-4526s_i-m-from-a-good-family-officer/instagram-reels.mp4",
+   "sha256": "fabad309cad3d6754e7c4c81f086d1ed1bc91bc75886371abc74803056fcd997",
+   "size": 42579208
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4479-4526s_i-m-from-a-good-family-officer/post.md",
+   "sha256": "bbdbac1e1c80f23036ed4c245b8da84a9f45dcc90451b632dcd5acfeaba6e7d0",
+   "size": 1700
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4479-4526s_i-m-from-a-good-family-officer/poster.jpg",
+   "sha256": "9c8dc701456411e938bd0ab886072bfec0e7183e2c7638834559a77743458ca1",
+   "size": 45479
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4479-4526s_i-m-from-a-good-family-officer/youtube-shorts.mp4",
+   "sha256": "fabad309cad3d6754e7c4c81f086d1ed1bc91bc75886371abc74803056fcd997",
+   "size": 42579208
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/9150-9193s_aunty-rammed-my-car/clip.json",
+   "sha256": "2ca654ca25e2ae659c30fbe242bf2d7a1ffb8527a016e4e37c85b32684ce3c6e",
+   "size": 2953
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/9150-9193s_aunty-rammed-my-car/instagram-reels.mp4",
+   "sha256": "ba75ca369a5378d1c383228c98f256c390a244121f502cfc842843325bac3466",
+   "size": 37353642
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/9150-9193s_aunty-rammed-my-car/post.md",
+   "sha256": "ca279a2433a7b5a61254fff327a1d2f047678adf5650a2a653dfd71a22163fac",
+   "size": 1647
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/9150-9193s_aunty-rammed-my-car/poster.jpg",
+   "sha256": "b67fd5f30cf6348e13312cc8b61e7498b16894c20d03b82980fda1150ab1260d",
+   "size": 39986
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/9150-9193s_aunty-rammed-my-car/youtube-shorts.mp4",
+   "sha256": "ba75ca369a5378d1c383228c98f256c390a244121f502cfc842843325bac3466",
+   "size": 37353642
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/candidates.json",
+   "sha256": "b13a6a06a22cac13f90f00636ebbf7898037ecc953efbf54e27b6c2d91dff626",
+   "size": 445702
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/candidates.md",
+   "sha256": "278e5796da5b833d457fe800d1cd9fb18a4bea13a578ecf86bb6e782fc3b9ae2",
+   "size": 195967
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/info.json",
+   "sha256": "0d23a18a872ae2bb506c465b118d70f5076da11f9741c606c5eb5303d416a71f",
+   "size": 6976
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/jobs.json",
+   "sha256": "9c677d27adaa68ca5bfca22cc5c628e14ea30eb33b34625b27618a8994c201d6",
+   "size": 2796
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/journal.jsonl",
+   "sha256": "c5be524ca3c79bb36121e4cb5cf3450218e61e6f8a9697157f1823161aa233a7",
+   "size": 1463
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/logs/render-20261116T061911Z.log",
+   "sha256": "d9000f28a2e309c0019d05000e2de0edf8398ea0de26f2d829e2be815530e796",
+   "size": 10443
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/logs/render-20261116T063355Z.log",
+   "sha256": "14da034fccea23aa7b15d3d77a8fe5a9e40da4f53b0f0144a8c29809aeb9957b",
+   "size": 2342
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/moments.json",
+   "sha256": "60ffb68295716913ee22ce0e9d9c4f2a0531f0a8d6773a1edc1ae3b77fc12712",
+   "size": 41902
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/prepare_report.json",
+   "sha256": "decacb6cd80368c02ffb78881feea72a875b0bfa61ff39c1b5be09a38adf4fef",
+   "size": 1413
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/retro.md",
+   "sha256": "c5e3e34516544991fe3a0169730e0ab55efa38c6ea4ca78fb517b2be72092f1b",
+   "size": 2804
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/review_1.md",
+   "sha256": "b2d22a2daec8e93838c34a212e19c24f540fb4c172c4f26f3af6682f7daf9d13",
+   "size": 14911
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/review_2.md",
+   "sha256": "ce6f05ef4efaa839f3246fe737e249323326854259a5ba763e502db889f56f17",
+   "size": 2950
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/11432-11486s_talking-to-someone-now-killing.png",
+   "sha256": "4626076bdd6f460a9d1456837dca8c4bdbe848d0ed8bd2f3a9102c1d66a90046",
+   "size": 543806
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/13114-13157s_racing-my-own-son-and-losing.png",
+   "sha256": "c94876f7818d59d552ed636385f04672b16eda6b015c97d90c160daa7aa301ee",
+   "size": 717033
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/13267-13321s_because-i-m-old-my-son-won.png",
+   "sha256": "58c4edc054951b73e5f159c60ad3e581aa2ae7766f03674871c585da9aa85a96",
+   "size": 702739
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/14560-14602s_we-ll-be-called-terrorists.png",
+   "sha256": "a58254682fe531243fdfcbad089a73910a14ca724f3077864bee584e0b02e00e",
+   "size": 517982
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/16060-16112s_what-if-this-shop-is-madrazo-s.png",
+   "sha256": "c9421b03e73c0cb857ad2c6f5c3a76ff538dc4f5d2fc6b9926ff61ca5f6ce532",
+   "size": 630715
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/16486-16534s_the-heist-payout-after-madrazo.png",
+   "sha256": "1f578bf438b8045ee553543400adba7ad217480ef8fa1292db719faa54e5634f",
+   "size": 360089
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/20796-20847s_trevor-is-110-percent-mad.png",
+   "sha256": "14352dc52cf5261c39b5637e8746ecdc03583eea0796e7875fcc215bbcd8a62f",
+   "size": 866565
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/2212-2265s_evie-the-dog-that-bit-his-frie.png",
+   "sha256": "72cf74f4fc7179625d02cabc8688dae9ab3b21e36796a55cd371a1d27c4067a9",
+   "size": 703139
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/25017-25061s_the-npc-who-would-not-leave.png",
+   "sha256": "0fa4ec217219f60418c5397bceb8e410728240f99aacbf925c57089953b75644",
+   "size": 905976
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/26569-26622s_my-son-drugged-me.png",
+   "sha256": "4cf1cd563ec64f919ad6fd724aac281b81a1d8ac7292af16a25e98e5d04d0be2",
+   "size": 509589
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/36450-36496s_the-bus-saved-me.png",
+   "sha256": "7ca03d1854874290c004f1b45ff7a56ba219fcde40253ac8ceeae981306038ef",
+   "size": 766590
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/3763-3810s_did-i-install-a-gta-mod.png",
+   "sha256": "3bbe4cc34c0192f09c01d3cd022057725c4df568d091e036aa50c585f058658e",
+   "size": 491804
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/4281-4332s_copyright-lagega-yaar.png",
+   "sha256": "f7b83dce6eaa89bafd646d29d8af214d3ce3a6bb250fe88280836542ecee14ac",
+   "size": 689397
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/4479-4526s_i-m-from-a-good-family-officer.png",
+   "sha256": "311000cb7af8d160e6bb4c3908664094e58fbdeb8086058712d52bd711ea6829",
+   "size": 740539
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/sheets/9150-9193s_aunty-rammed-my-car.png",
+   "sha256": "6d4521f67f0ffed8f8ae09275d2b7371fbb938a01fdb0f2c7d1f5cbb27c203b6",
+   "size": 749018
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/snap.json",
+   "sha256": "d5bf44360357cabae03cf23637d0fa366331047622594e13064d3a95e7c5c8c5",
+   "size": 899
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c104.json",
+   "sha256": "e2356bb1d65c75bd9fc445ed091edb62e4978f02b45ac84c3395ee96318fb72b",
+   "size": 27459
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c11.json",
+   "sha256": "13d3c5e107293a41f7d013e4f9d6459f17ec3e015f2b98b6e8fe1af5a8eca851",
+   "size": 37985
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c112.json",
+   "sha256": "0fb5c7161aa47efebad9c94cd6f8964f93f03b802bc228531b8a34a289c34b45",
+   "size": 35958
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c12.json",
+   "sha256": "09f90eb08a96dda558455c1adf7f00e67072456592dd2231a25a0fe25d3172ca",
+   "size": 30183
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c19.json",
+   "sha256": "f1b00bb9160d9ffdf93ce30eacebe7c06d03a1b79945cff203388c519b95969a",
+   "size": 41305
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c24.json",
+   "sha256": "303c6dadba1b082e9e19e9c49f89a506a3b8e59176b8626a397a32f7da8fdc1c",
+   "size": 30216
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c26.json",
+   "sha256": "1fe825bedcf1c14fe83b9257bbd878260c2e388f0e5ff494764c8bc094849e94",
+   "size": 56999
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c32.json",
+   "sha256": "6e560a3ec417e5da1783f1cb01c22ec328cc900ebb84efecb66455a37aecfc84",
+   "size": 40778
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c34.json",
+   "sha256": "2701bd8ce9a190ac6090aef0c5733f7a8e13ae36238de5c71ec6d303e460996d",
+   "size": 29124
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c37.json",
+   "sha256": "cad8c800dc04bad1e53bf5e3b4c501f58e328e63c0c50940a81055ede5239127",
+   "size": 39622
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c48.json",
+   "sha256": "91ddb0af618ede954186f479ca3208832f9dea919352de367028b9dc25d43a99",
+   "size": 30343
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c54.json",
+   "sha256": "e5008d4630238da69c6e2fc6a7467c80dd84bda64c95dc6f9c5348d1dfc4236c",
+   "size": 37144
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c59.json",
+   "sha256": "a19ead0f0b4054c6d66fbc6d52982db5aab455f5a44ea031dc5745f575cf8101",
+   "size": 26952
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c8.json",
+   "sha256": "286f0b4b37c80ec026629d42fd799171c0ee68ced5e70f00719b5280e571a592",
+   "size": 49766
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/transcript_c89.json",
+   "sha256": "85da3e7b14eca23dcd679f6595f5053271eae83976779b824ad494cff1873b9e",
+   "size": 32551
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/windows.json",
+   "sha256": "a6e2e57fd6b7ee491a428836c627ed787e925571785bdf469d4736615698ad5d",
+   "size": 901
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/windows_call1.json",
+   "sha256": "7137cc0a6e566d343eeef962eb1dc6aa25ed2ebe238e9f3a275dac2e898ff7a0",
+   "size": 597
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/docs/windows_call2.json",
+   "sha256": "081bf17f3cae7cbe6bcc35f737ee71ea0c8758f9f843ae428719a0ecc3ab8e14",
+   "size": 306
+  },
+  {
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/stream.json",
+   "sha256": "497e5318f99e5375671d0b153354f1f6a9985d57076eb2cdc0a736cbf77714f6",
+   "size": 356
+  },
+  {
+   "path": "streams/index.json",
+   "sha256": "ebfad12368c3b9807fee9958ede1ff29d8ba221378e08f80b5dc50205ab03f1c",
+   "size": 41774
+  }
+ ],
+ "file_count": 611,
+ "counts": {
+  "lessons_active": 104,
+  "lessons_superseded": 22,
+  "lessons_total": 126,
+  "incidents": 7,
+  "scripts": 73,
+  "destinations": 5,
+  "streams": 2,
+  "clips_per_stream": {
+   "2026-11-14_this-is-not-a-game": 3,
+   "2026-11-16_gta-v-marathon-stream-gamerfleet": 15
+  },
+  "highlights_per_stream": {
+   "2026-11-14_this-is-not-a-game": 1,
+   "2026-11-16_gta-v-marathon-stream-gamerfleet": 0
+  },
+  "mp4_per_stream": {
+   "2026-11-14_this-is-not-a-game": 7,
+   "2026-11-16_gta-v-marathon-stream-gamerfleet": 30
+  },
+  "mp4_total": 52
+ },
+ "largest_blob_bytes": {
+  "head_history": 79353338,
+  "all_refs": 79353338
+ },
+ "blobs_over_30mb": [
+  {
+   "sha": "4258d4f480d2772d661ce19fca377c311b13ea4e",
+   "size": 79353338,
+   "path": "streams/2026-11-14_this-is-not-a-game/highlights/best-of/preview.mp4"
+  },
+  {
+   "sha": "853a2692c68c35823c926f71c58d1050e5db67dc",
+   "size": 42579208,
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4479-4526s_i-m-from-a-good-family-officer/instagram-reels.mp4"
+  },
+  {
+   "sha": "efd47c8ed07f9b9bfd1308d9e2a2da4925b088ac",
+   "size": 41605529,
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/36450-36496s_the-bus-saved-me/instagram-reels.mp4"
+  },
+  {
+   "sha": "62f17c6e0f42b06e1f3e5735daa3aa67209e80a1",
+   "size": 38672079,
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/20796-20847s_trevor-is-110-percent-mad/instagram-reels.mp4"
+  },
+  {
+   "sha": "4a7b626c10842f7164307039c8fddd75b1d149ac",
+   "size": 37663191,
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/4281-4332s_copyright-lagega-yaar/instagram-reels.mp4"
+  },
+  {
+   "sha": "f155d26725d205c6c733bd5aaf686a4ba67e116c",
+   "size": 37353642,
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/9150-9193s_aunty-rammed-my-car/instagram-reels.mp4"
+  },
+  {
+   "sha": "44688e8911517617fd8b08c4dfce00db2ed8bea8",
+   "size": 37263652,
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13267-13321s_because-i-m-old-my-son-won/instagram-reels.mp4"
+  },
+  {
+   "sha": "6b199b2474f981c4f705626c049f33a6fdff415f",
+   "size": 35132172,
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/13114-13157s_racing-my-own-son-and-losing/instagram-reels.mp4"
+  },
+  {
+   "sha": "e7b84267abadc29ec0c9c463f99deb5c593bbdcc",
+   "size": 33187125,
+   "path": "streams/2026-11-16_gta-v-marathon-stream-gamerfleet/clips/16060-16112s_what-if-this-shop-is-madrazo-s/instagram-reels.mp4"
+  }
+ ],
+ "env_var_names": {
+  "required_any": [
+   {
+    "purpose": "Kaggle account 1 username",
+    "names": [
+     "KAGGLE_USERNAME"
+    ],
+    "or_file": "~/.kaggle/kaggle.json"
+   },
+   {
+    "purpose": "Kaggle account 1 token",
+    "names": [
+     "KAGGLE_API_TOKEN",
+     "KAGGLE_APITOKEN"
+    ],
+    "or_file": "~/.kaggle/kaggle.json"
+   }
+  ],
+  "optional": [
+   {
+    "purpose": "Kaggle account 2 username (default `sovere` if unset)",
+    "names": [
+     "KAGGLE_USERNAME2"
+    ]
+   },
+   {
+    "purpose": "Kaggle account 2 token (if unset it is read in memory from the private dataset kagglegpu2 of account 1)",
+    "names": [
+     "KAGGLE_APITOKEN2",
+     "KAGGLE_API_TOKEN2"
+    ]
+   },
+   {
+    "purpose": "Gemini moment reviewer (only for --llm gemini)",
+    "names": [
+     "GEMINI_API_KEY"
+    ]
+   }
+  ]
+ },
+ "kaggle_datasets": [
+  {
+   "name": "gemini-key",
+   "note": "plaintext key vault: optional transfer copy, delete after the key is in the new environment",
+   "optional": true
+  },
+  {
+   "name": "streamer-face",
+   "note": "AI streamer reference images"
+  },
+  {
+   "name": "streamer-face-f",
+   "note": "AI streamer reference images (second set)"
+  },
+  {
+   "name": "vlog-1vzlt3-src",
+   "note": "source video of the first test job (156 MB)"
+  },
+  {
+   "name": "kagglegpu1",
+   "note": "plaintext key vault: optional transfer copy, delete after the keys are in the new environment",
+   "optional": true
+  },
+  {
+   "name": "kagglegpu2",
+   "note": "plaintext key vault: optional transfer copy, delete after the keys are in the new environment (holds the account-2 token; read in memory by kaggle.py only when KAGGLE_APITOKEN2 is unset)",
+   "optional": true
+  }
+ ],
+ "kaggle_dataset_owner_note": "datasets live under the Kaggle account 1 of the user; verify with `kaggle.py raw datasets list --mine` (names only)",
+ "skills": [
+  "clips",
+  "lessons",
+  "yt-audit",
+  "yt-chapters",
+  "yt-comment",
+  "yt-edit",
+  "yt-package",
+  "yt-plan",
+  "yt-retention",
+  "yt-script",
+  "yt-seo",
+  "yt-shorts",
+  "yt-templates",
+  "yt-viral"
+ ],
+ "tools": {
+  "ffmpeg": "6.1.1-3ubuntu5",
+  "node": "22.22.0",
+  "python": "3.13.17",
+  "numpy": "2.5.3",
+  "Pillow": "12.3.0",
+  "kaggle": "2.2.5"
+ }
+}
