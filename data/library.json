@@ -1,5 +1,32 @@
 [
   {
+    "id": "Df0-3XDJsLr",
+    "platform": "instagram",
+    "url": "https://www.instagram.com/reel/Df0-3XDJsLr/",
+    "title": "Lemo-Opuscar: Claude skill for code-made films",
+    "author": "an.idiotic_soul",
+    "posted": "2026-11-17 03:40:14+00:00",
+    "type": "reel",
+    "category": "ai",
+    "category_label": "AI",
+    "subcategory": "creative",
+    "subcategory_label": "Creative",
+    "location": null,
+    "location_label": null,
+    "also": [],
+    "recipe": null,
+    "tools": [
+      "Lemo-Opuscar",
+      "Claude Code",
+      "FFmpeg",
+      "Node.js"
+    ],
+    "usefulness": "helpful",
+    "verdict": "partly-verified",
+    "key_info": "A Hindi reel (an.idiotic_soul) promoting a GitHub repo he calls 'Lemo Opus'. The screen shows it is lemomo-ai/lemo-opuscar (about 15k stars on the page shown): a Claude Code skill plus a library of animation styles, such as sci-fi toon, crayon book and shadow puppet, with a demo page for each (lemomo-ai.github.io/lemo-opuscar/styles/...). The creator claims 'more than 100 types' of animation and that Claude will give you a viral animation video from the skill. The repo is real and MIT-licensed. It has your coding agent direct, draw, score and render a short film entirely in code, with no video model. The README warns that the styles are tuned for Claude Opus 5.5 and that a film takes an agent about 30 to 60 minutes and a fair amount of tokens. It needs Node.js 20+, FFmpeg and Python 3.11+ or uv. The setup is behind a 'comment and I'll DM the setup' funnel, but the repo has install commands, for example `claude plugin marketplace add lemomo-ai/lemo-opuscar`.",
+    "note_path": "notes/instagram/Df0-3XDJsLr.md"
+  },
+  {
     "id": "Dfw1I_byGen",
     "platform": "instagram",
     "url": "https://www.instagram.com/reel/Dfw1I_byGen/",
